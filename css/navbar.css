@@ -1,0 +1,37 @@
+#navBarSearchForm{
+    width: 30%;
+}
+
+.position-left{
+    margin-right: 10px;   
+}
+
+.icon-user{
+    display: inline-flexbox;    
+}
+
+svg{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0px;
+}
+
+.nav .color-white{
+    color: white;
+}
+
+.dropdown-menu a{
+    color: black;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+.navbar-brand strong{
+    font-size: 30px;
+}
