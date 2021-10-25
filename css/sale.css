@@ -1,0 +1,142 @@
+/*---------- [INFORMATION CSS] ----------*/
+
+.information{
+    display: flex;
+    flex-direction: row;
+    height: 82px;
+    background-color: #5611FF;
+    border-style: solid;
+    border-width: 1px;
+    border-color: aliceblue;
+}
+
+.in4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.in4 .block-text{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.in4 p{
+    margin-bottom: 0px;
+    color: #E4FF80;
+    font-weight: bold;
+}
+
+.r-border{
+    border: none solid none none;
+    border-style: solid;
+    border-width: 1px;    
+    border-color: aliceblue;
+}
+
+.l-border{
+    border: none none none solid;
+    border-style: solid;
+    border-width: 1px;    
+    border-color: aliceblue
+}
+
+/*-------------- [ADS CSS]----------- */
+.ads-img .background-img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(../image/sale_page_img/ads.png);    
+    height: 168px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;    
+}
+
+.big-part .background-text{
+    margin-top: 30px;
+    background-color: #EEFEFF;
+    width: 529px;
+    height: 58px;
+}
+
+.big-part h1{
+    width: fit-content;
+    line-height: 58px;
+    margin-bottom: 0px;
+    color: #5611FF;
+    font-size: 2.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.small-part .background-text{
+    background-color: #EEFEFF;
+    width: 450px;
+    height: 25px;
+}
+
+.small-part .text{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: #5611FF;
+    font-weight: bold;
+}
+
+/*-------------- [INTRODUCE CSS]----------- */
+
+.introduce-hot{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.introduce-hot .frame{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 800px;
+    /* border: solid 2px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.introduce-hot .img-here{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 610px;
+    width: 473px;
+    border: solid 2px;
+}
+
+.introduce-hot h1{
+    font-family: 'B612', sans-serif;
+    font-size: 2rem;
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    height: 88px;
+    width: 308px;
+    font-size: 198px;
+    border-width: 10px;
+}
+
+.btn h2{
+    font-size: 2rem;
+    font-weight: bold;
+}

@@ -2,6 +2,14 @@
     width: 30%;
 }
 
+#sale-id{
+    background-color: #D01345;
+}
+
+#sale-id a:hover{
+    color: black;
+}
+
 .position-left{
     margin-right: 10px;   
 }
@@ -10,7 +18,7 @@
     display: inline-flexbox;    
 }
 
-svg{
+.nav, .icon-user svg{
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -38,4 +46,8 @@ svg{
 
 .icon-user a{
     text-decoration: none;
+}
+
+.bottom-71px{
+    height: 100px;
 }
