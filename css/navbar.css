@@ -35,3 +35,7 @@ svg{
 .navbar-brand strong{
     font-size: 30px;
 }
+
+.icon-user a{
+    text-decoration: none;
+}
