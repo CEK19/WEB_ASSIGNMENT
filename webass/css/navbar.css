@@ -1,0 +1,53 @@
+#navBarSearchForm{
+    width: 30%;
+}
+
+#sale-id{
+    background-color: #D01345;
+}
+
+#sale-id a:hover{
+    color: black;
+}
+
+.position-left{
+    margin-right: 10px;   
+}
+
+.icon-user{
+    display: inline-flexbox;    
+}
+
+.nav, .icon-user svg{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0px;
+}
+
+.nav .color-white{
+    color: white;
+}
+
+.dropdown-menu a{
+    color: black;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+.navbar-brand strong{
+    font-size: 30px;
+}
+
+.icon-user a{
+    text-decoration: none;
+}
+
+.bottom-71px{
+    height: 100px;
+}
