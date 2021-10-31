@@ -1,6 +1,12 @@
+/* some function */
+.my_button:hover{
+    opacity: 0.85;
+}
+
+/* page */
 .my_page{
     background-color: #E5E5E5;
-    padding-bottom: 50px;
+    padding-bottom: 34px;
 }
 
 .my_container{
@@ -84,9 +90,6 @@
     #email, #password{
         font-weight: bold;
         color: rgba(102, 102, 102, 0.81);
-    }
-    #forgot_pass{
-
     }
     #forgot_pass a{
         text-decoration: none;
