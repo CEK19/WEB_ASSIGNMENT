@@ -1,0 +1,71 @@
+a{
+    color: black !important;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.logo_group{
+    background-color: #E5E5E5;
+    height: 100px;
+    width: 100%;
+}
+    /* child */
+    .VinBK{
+        /* position: absolute; */
+        font-family: Baloo Tammudu;
+        font-weight: bolder;
+        font-size: 45px;
+        /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 25), 0px 4px 4px rgba(0, 0, 0, 25)  */
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 25);
+    }
+    .my_account{
+        font-family: Baloo Tammudu;
+        font-weight: bolder;
+        font-size: 35px;
+    }
+
+
+/* --------------------------------------- */
+body{
+    background-color: #E5E5E5 !important;
+}
+
+.my_container{
+    background-color: #E5E5E5;
+    margin: 0 auto;
+    width: 981px;
+}
+
+
+.my_left{
+    width: 300px;
+    border: 1px solid black;
+}
+
+.my_right{
+    width: 620px;
+    border: 1px solid black;
+}
+    /* --------------------- */
+    .crop{
+        width: 100%;
+        height: 263px;
+        overflow: hidden;
+    }
+
+    .crop img{
+        width: 100%;
+        /* margin-top: -80px; margin-left: -38px; */
+        margin-top: -50px; margin-left: -10px;
+        /* margin-top: -50px; margin-left: -38px; */
+    }
+
+
+footer{
+    height: 56px;
+    background-color: white;
+}
