@@ -1,17 +1,13 @@
-<!-- Viết code để required cái Model và View -->
-
 <?php
-class Controller {
+class Controller{
 
-    public function model($model) {
+    public function model($model){
         require_once "./mvc/models/".$model.".php";
         return new $model;
     }
 
-    // public function view($view) {
-
-    // }
+    public function view($view, $data=[]){
+        require_once "./mvc/views/show.php";
+    }
 }
-
-
 ?>

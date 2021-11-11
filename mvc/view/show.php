@@ -369,7 +369,7 @@
     </nav>
     
     <div class="content">
-        <?php require_once "../view/page/sale.php" ?>
+        <?php require_once "../view/page/". $view .".php" ?>
     </div>
     
     <footer>
