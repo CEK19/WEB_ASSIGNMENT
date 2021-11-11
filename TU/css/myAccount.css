@@ -8,6 +8,10 @@ a:hover{
     text-decoration: none;
 }
 
+.my_button:hover{
+    opacity: 0.85;
+}
+
 .logo_group{
     background-color: #E5E5E5;
     height: 100px;
@@ -43,12 +47,12 @@ body{
 
 .my_left{
     width: 300px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .my_right{
     width: 620px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
     /* --------------------- */
     .crop{
@@ -62,6 +66,16 @@ body{
         /* margin-top: -80px; margin-left: -38px; */
         margin-top: -50px; 
         /* margin-top: -50px; margin-left: -38px; */
+    }
+
+    /* ----- form----- */
+    .my_label{
+        font-weight: bold;
+        color: rgba(102, 102, 102, 0.81);
+    }
+    .my_quote{
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 15px;
     }
 
 

@@ -19,49 +19,107 @@
                 <div class="logo_group d-flex align-items-center justify-content-center">
                     <span class="VinBK align-middle text-center">VinBK</span>
                 </div>
-                
-                <div class="bg-white mb-2 ps-2">
-                    Name
-                </div>
-                <div class="bg-white mb-2 ps-2">
-                    Account Overview
-                </div>
-                <div class="bg-white mb-2 ps-2">
-                    My order
-                    <br>
-                    Address Book
-                    <br>
-                    Payment Method
-                </div>
-                <div class="bg-white mb-2 ps-2">
-                    Contact Preference
-                    <br>
-                    Social Media
-                    <br>
-                    Gifts & Voucher
-                </div>
-                <div class="bg-white ps-2">
-                    Sign out
+
+                <div style="border: 1px solid black;">
+                    <div class="bg-white mb-2 ps-2">
+                        <h2>Name</h2>
+                    </div>
+                    <div class="bg-white mb-2 ps-2">
+                        <h4>Account Overview</h4>
+                    </div>
+                    <div class="bg-white mb-2 ps-2">
+                        <h4>My order</h4>
+                        <br>
+                        <h4>Address Book</h4>
+                        <br>
+                        <h4>Payment Method</h4>
+                    </div>
+                    <div class="bg-white mb-2 ps-2">
+                        <h4>Contact Preference</h4>
+                        <br>
+                        <h4>Social Media</h4>
+                        <br>
+                        <h4>Gifts & Voucher</h4>
+                    </div>
+                    <div class="bg-white ps-2">
+                        <h4>Sign out</h4>
+                    </div>
                 </div>
             </div>
+
+
 
             <div class="my_right">
                 <div class="logo_group d-flex align-items-center justify-content-start ps-3">
                     <span class="my_account align-middle text-start mt-3">My Account</span>
                 </div>
-                <div class="crop">
-                    <img src="../img/av3.jpg" alt="background image">
+
+                <div style="border: 1px solid black;">
+                    <div class="crop mb-3">
+                        <img src="../img/av3.jpg" alt="background image">
+                    </div>
+                    <div class="bg-white ps-5 pt-4">
+                        <h2 class="mb-4">My Details</h2>
+
+                        <form action="">
+                            <form name="my_form" onsubmit="validattion()">
+                                <div class="col-7">
+                                    <label class="form-label my_label" for="email">EMAIL ADDRESS</label>
+                                    <input class="form-control" type="text" id="email">
+                                </div>
+
+                                <br>
+
+                                <div class="col-7">
+                                    <label class="form-label my_label" for="firstName">FIRST NAME</label>
+                                    <input class="form-control" type="text" id="firstName">
+                                    <p class="mb-0 my_quote">Must have 2-30 characters</p>
+                                </div>
+            
+            
+                                <br>
+
+                                <div class="col-7">
+                                    <label class="form-label my_label" for="lastName">LAST NAME</label>
+                                    <input class="form-control" type="text" id="lastName">
+                                    <p class="mb-0 my_quote">Must have 2-30 characters</p>
+                                </div>
+            
+                                <br>
+            
+                                <div class="col-7">
+                                    <label class="form-label my_label" for="password">PASSWORD</label>
+                                    <input class="form-control" type="password" id="password">
+                                    <p class="mb-0 my_quote">Must have 10 or more characters</p>
+                                </div>
+            
+                                <br>
+            
+                                <div class="col-7">
+                                    <label class="form-label my_label" for="birthday">DATE OF BIRTH</label>
+                                    <input class="form-control" type="date" id="birthday">
+                                    <p class="mb-0 my_quote">Must be 16 years old or over to join VinBK</p>
+                                </div>
+
+                                <br>
+
+                                <div class="d-grid mt-2 pb-3 col-7">
+                                    <button class="btn btn-dark my_button" type="submit"><span class="fw-bold">UPDATE MY INFO</span></button>
+                                </div>
+                            </form>            
+                        </form>
+                    </div>
                 </div>
-                Out of crop
+
             </div>
         </div>
 
 
-        <footer class="d-flex align-items-center">
+        <footer class="d-flex align-items-center mt-5">
             <div class="footer_left" style="width: 50%;">
-                    <a class="ms-3" href="">VinBK HomePage</a>
-                    <a class="ms-3" href="">Terms & Conditions</a>
-                    <a class="ms-3" href="">Privacy & Policy</a>
+                <a class="ms-3" href="">VinBK HomePage</a>
+                <a class="ms-3" href="">Terms & Conditions</a>
+                <a class="ms-3" href="">Privacy & Policy</a>
             </div>
             <div class="footer-right text-end me-3" style="width: 50%;">
                 &copy; 2021 BK
