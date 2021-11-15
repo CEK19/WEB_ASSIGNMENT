@@ -41,31 +41,39 @@ body{
 .my_container{
     background-color: #E5E5E5;
     margin: 0 auto;
-    width: 981px;
+    /* width: 981px; */
+    width: 63%;
 }
 
 
 .my_left{
-    width: 300px;
+    /* width: 300px; */
+    width: 30%;
     /* border: 1px solid black; */
 }
+    /* --------------------- */
+    #avatar{
+        width: 35%;
+        height: auto;
+    }
 
 .my_right{
-    width: 620px;
+    /* width: 620px; */
+    width: 66%;
     /* border: 1px solid black; */
 }
     /* --------------------- */
     .crop{
         width: 100%;
-        height: 263px;
+        /* height: 263px; */
         overflow: hidden;
     }
 
     .crop img{
         width: 100%;
         /* margin-top: -80px; margin-left: -38px; */
-        margin-top: -50px; 
         /* margin-top: -50px; margin-left: -38px; */
+        margin-top: -80px;
     }
 
     /* ----- form----- */
