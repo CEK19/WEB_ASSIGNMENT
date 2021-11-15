@@ -23,7 +23,7 @@
                     <div class="vr"></div>
                 </div>
                 <div id="sign_in">
-                    <a href="">SIGN IN</a>
+                    <a href="signIn.html">SIGN IN</a>
                 </div>
             </div>
 
@@ -81,32 +81,32 @@
             <p class="text-center fw-bold fs-4 mb-3">OR SIGN UP WITH EMAIL</p>
 
             <div class="my_content">
-                <form>
-                    <label class="form-label my_label" for="email" id="email">EMAIL ADDRESS</label>
-                    <input class="form-control" type="text" id="email_text">
+                <form name="my_form" onsubmit="validattion()">
+                    <label class="form-label my_label" for="email">EMAIL ADDRESS</label>
+                    <input class="form-control" type="text" id="email">
 
                     <br>
 
-                    <label class="form-label my_label" for="firstName" id="firstName">FIRST NAME</label>
-                    <input class="form-control" type="text" id="firstName_text">
+                    <label class="form-label my_label" for="firstName">FIRST NAME</label>
+                    <input class="form-control" type="text" id="firstName">
                     <p class="mb-0 my_quote">Must have 2-30 characters</p>
 
                     <br>
 
-                    <label class="form-label my_label" for="lastName" id="lastName">LAST NAME</label>
-                    <input class="form-control" type="text" id="lastName_text">
+                    <label class="form-label my_label" for="lastName">LAST NAME</label>
+                    <input class="form-control" type="text" id="lastName">
                     <p class="mb-0 my_quote">Must have 2-30 characters</p>
 
                     <br>
 
-                    <label class="form-label my_label" for="password" id="password">PASSWORD</label>
-                    <input class="form-control" type="password" id="pasword_text">
+                    <label class="form-label my_label" for="password">PASSWORD</label>
+                    <input class="form-control" type="password" id="password">
                     <p class="mb-0 my_quote">Must have 10 or more characters</p>
 
                     <br>
 
-                    <label class="form-label my_label" for="birthday" id="birthday">DATE OF BIRTH</label>
-                    <input class="form-control" type="date" id="birthday_text">
+                    <label class="form-label my_label" for="birthday">DATE OF BIRTH</label>
+                    <input class="form-control" type="date" id="birthday">
                     <p class="mb-0 my_quote">Must be 16 years old or over to join VinBK</p>
 
                     <br>
@@ -116,23 +116,23 @@
                             <label class="mb-0 form-label my_label" for="all">CONTACT PREFERENCES</label>
                             <p class="mb-0 my_quote">Tell us which you'd like to be emailed</p>
                         </div>
-                        <button class="btn btn-secondary  fs-6" id="all">ALL</button>
+                        <button class="btn btn-secondary fs-6" id="all" type="button" onclick="toggle_CheckBox()">ALL</button>
                     </div>
 
                     <div>
                         <div class="d-flex justify-content-between">
                             <p class="mb-1">DISCOUNT AND SALES</p>
-                            <input class="form-check-input mt-0" type="checkbox" value="">
+                            <input class="form-check-input mt-0" type="checkbox">
                         </div>
 
                         <div class="d-flex justify-content-between">
                             <p class="mb-1">NEW STUFF</p>
-                            <input class="form-check-input mt-0" type="checkbox" value="">
+                            <input class="form-check-input mt-0" type="checkbox">
                         </div>
 
                         <div class="d-flex justify-content-between">
                             <p class="mb-1">NEW BRAND</p>
-                            <input class="form-check-input mt-0" type="checkbox" value="">
+                            <input class="form-check-input mt-0" type="checkbox">
                         </div>
                     </div>
 
@@ -140,11 +140,11 @@
 
                     <p class="mb-0 my_quote">
                         By creating your account, you agree to our 
-                        <a href="" class="terms">Terms & Condition</a>
-                        and <a href="" class="terms ms-1">Privacy policy</a>
+                        <a  class="terms" href="https://www.termsfeed.com/live/efb181e0-4bb1-49d9-96b7-1a1226c66fbe" target="_blank">Terms & Condition</a>
+                        and <a href="https://www.freeprivacypolicy.com/live/18f39e7d-8ce8-4382-9c11-9bd1c41b1364" target="_blank" class="terms ms-1">Privacy policy</a>
                     </p>
                     <div class="d-grid mt-2 mb-1">
-                        <button class="btn btn-dark my_button"><span class="fw-bold">SIGN UP</span></button>
+                        <button class="btn btn-dark my_button" type="submit"><span class="fw-bold">SIGN UP</span></button>
                     </div>
                 </form>
 
@@ -158,6 +158,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../js/signUp.js"></script>
 </body>
 </html>

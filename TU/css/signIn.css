@@ -4,9 +4,18 @@
 }
 
 /* page */
+html{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+body{
+    height: 100%;
+}
 .my_page{
     background-color: #E5E5E5;
-    padding-bottom: 34px;
+    min-height: 100%;
+    padding-bottom: 50px;
 }
 
 .my_container{
