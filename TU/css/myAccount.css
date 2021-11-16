@@ -12,6 +12,10 @@ a:hover{
     opacity: 0.85;
 }
 
+hr{
+    margin-left: 25% !important;
+}
+
 .logo_group{
     background-color: #E5E5E5;
     height: 100px;
@@ -52,6 +56,9 @@ body{
     /* border: 1px solid black; */
 }
     /* --------------------- */
+    #my_avatar{
+        width: fit-content;
+    }
     #avatar{
         width: 35%;
         height: auto;
