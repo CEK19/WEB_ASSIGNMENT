@@ -1,0 +1,57 @@
+#home-middle-background{
+    height: 100%;
+    width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home-middle-background .start-slogan {
+    text-align: center;
+    padding-top: 30px;    
+}
+
+#home-middle-background .sub-paragraph{
+    height: 100%;
+    width: 680px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#home-middle-background .home-contact-info{
+    height: 100%;
+    width: 680px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+#home-middle-background .home-font {    
+    font-family: futura-pt,FuturaStd,Helvetica,Arial,sans-serif;
+}
+
+#home-middle-background .home-font h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#home-middle-background .home-font h4{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#home-middle-background .home-font p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d2d2d;
+}
+
+#home-middle-background .button-box{
+    text-align: center;
+}

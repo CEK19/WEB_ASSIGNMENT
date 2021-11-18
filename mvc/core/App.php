@@ -2,15 +2,12 @@
 class App{
 
     protected $controller="Home";
-    protected $action="showPage";
+    protected $action="showHomePage";
     protected $params=[];
 
     function __construct(){
  
-        $arr = $this->UrlProcess();
-
-        print_r($arr);
- 
+        $arr = $this->UrlProcess(); 
         // Controller
         if($arr != NULL) {
             if( file_exists("./mvc/controllers/".$arr[0].".php") ){

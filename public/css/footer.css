@@ -1,8 +1,8 @@
-#no-margin-bot{
+#footer-layout-for-all #no-margin-bot{
     margin-bottom: 0px;
 }
 
-.payment-social{
+#footer-layout-for-all .payment-social{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -10,7 +10,7 @@
     height: 50px;
 }
 
-.social{
+#footer-layout-for-all .social{
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -22,7 +22,7 @@
     
 }
 
-.payment{
+#footer-layout-for-all .payment{
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -30,17 +30,17 @@
     align-items: center;
 }
 
-.item{
+#footer-layout-for-all .item{
     width: 25%;
 }
 
-.social svg, .payment svg{
+#footer-layout-for-all .social svg, .payment svg{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.contact{
+#footer-layout-for-all .contact{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -49,7 +49,7 @@
     background-color: #EEEEEE;
 }
 
-.contact-item{
+#footer-layout-for-all .contact-item{
     margin-top: 30px;
     width: 25%;
     display: flex;
@@ -57,18 +57,18 @@
     align-items: center;    
 }
 
-.contact-item h6{    
+#footer-layout-for-all .contact-item h6{    
     color: #666666;
     font-weight: bold;
     text-align: center;
 }
 
-.contact-item p{
+#footer-layout-for-all .contact-item p{
     color: #666666;
     text-align: center;
 }
 
-.little-thing{
+#footer-layout-for-all .little-thing{
     width: 100%;
     height: 41px;
     background-color: #DDDDDD;
@@ -77,7 +77,7 @@
     flex-direction: row;
 }
 
-.little-thing .left-thing{
+#footer-layout-for-all .little-thing .left-thing{
     display: flex;
     width: 50%;
     align-items: center;
@@ -85,7 +85,7 @@
     font-size: 13px;
 }
 
-.little-thing .right-thing{
+#footer-layout-for-all .little-thing .right-thing{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -95,19 +95,19 @@
     font-size: 13px;
 }
 
-.contact a{
+#footer-layout-for-all .contact a{
     text-decoration: none;
 }
 
-.contact a p:hover{
+#footer-layout-for-all .contact a p:hover{
     color: black;
 }
 
-.sub-right-thing a{
+#footer-layout-for-all .sub-right-thing a{
     color: #666666;
     text-decoration: none;
 }
 
-.sub-right-thing a:hover{
+#footer-layout-for-all .sub-right-thing a:hover{
     color: black;
 }

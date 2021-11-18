@@ -9,6 +9,7 @@
     <link type="text/css" rel="stylesheet" href="./public/css/navbar.css">
     <link type="text/css" rel="stylesheet" href="./public/css/footer.css">
     <link type="text/css" rel="stylesheet" href="./public/css/sale.css">
+    <link type="text/css" rel="stylesheet" href="./public/css/home_page.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>        
 
@@ -21,17 +22,17 @@
 <body>
 
     <!-- -----------------NAV BAR--------------------- -->
-    <nav class="navbar navbar-dark bg-dark">
+    <nav id="navbar-layout-for-all" class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand " href="#">
                     <strong>VinBK</strong>
                 </a>                
                 
-                <ul class="nav">
+                <ul class="nav">                
                     <li id="sale-id" class="nav-item">
                         <a class="nav-link color-white" aria-current="page" href="#">SALES</a>
                     </li>
-
+                
                     <li class="nav-item dropdown">
                         <div class="nav-link dropdown-toggle color-white" href="#"role="button" aria-expanded="false">
                         SHIRT
@@ -79,17 +80,7 @@
                             </span>
                             Shirts
                             </a>
-                        </li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="17.5" cy="17.5" r="17" stroke="black"/>
-                                <path d="M25.479 18.6812C25.479 16.8493 26.3827 15.692 26.3915 15.6805L27.0156 14.896L26.0585 14.6243C24.3837 14.1554 23.757 11.9084 23.3295 9.54986C23.2546 9.13983 23.2134 8.72434 23.2064 8.30758L23.1959 7.65625H11.7112L11.702 8.30889C11.6946 8.72557 11.6532 9.14094 11.578 9.55084C11.0835 12.2759 10.4305 14.1817 8.8503 14.6243L7.98438 14.8671L8.47788 15.6261C8.48313 15.6346 9.21714 16.8152 9.21714 18.7987C9.21714 22.541 8.39289 26.5041 8.38469 26.5438L8.21636 27.3438H26.7351L26.5165 26.5116C26.5064 26.4719 25.479 22.517 25.479 18.6812ZM9.02552 15.2628C10.988 14.7132 11.7178 12.4525 12.2228 9.66962C12.3061 9.2073 12.3511 8.75481 12.357 8.31841H13.5382C13.516 8.46699 13.5048 8.61703 13.5047 8.76728C13.5047 10.6448 15.2733 12.1667 17.4531 12.1667C19.6351 12.1667 21.4034 10.6448 21.4034 8.76728C21.4034 8.61503 21.3922 8.46541 21.3696 8.31841H22.5508C22.5577 8.75481 22.6007 9.20697 22.6847 9.66962C22.7831 10.2123 22.8908 10.7344 23.0138 11.2285L9.47603 23.991C9.67848 22.5272 9.87241 20.6441 9.87241 18.799C9.87241 16.5652 9.02552 15.2628 9.02552 15.2628ZM11.5846 26.6813L24.4333 14.3454C24.8257 14.7808 25.2992 15.0991 25.8836 15.2628C25.8836 15.2628 24.8241 16.5655 24.8241 18.6812C24.8241 22.6542 25.8836 26.6816 25.8836 26.6816H11.5846V26.6813Z" fill="black"/>
-                                </svg>                            
-                            Active Wears
-                            </a>
-                        </li>
+                        </li>                                
                         </ul>
                     </li>
 
@@ -117,19 +108,7 @@
                             </span>
                             Trainers
                             </a>
-                        </li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                            <span>
-                                <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M34.6665 18.4747C34.6665 27.9491 27.0514 35.6224 17.6665 35.6224C8.28162 35.6224 0.666504 27.9491 0.666504 18.4747C0.666504 9.00033 8.28162 1.32703 17.6665 1.32703C27.0514 1.32703 34.6665 9.00033 34.6665 18.4747Z" stroke="black"/>
-                                <path d="M14.9998 10.6667H23.1665M14.4165 6H23.7498L21.4165 24.6667L22.1375 25.0272C22.622 25.2694 23.0294 25.6417 23.3142 26.1025C23.599 26.5632 23.7498 27.0942 23.7498 27.6358V29.3333H9.1665V28.1667L16.7498 24.6667L14.4165 6Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                              
-                            </span>
-                            Boots
-                        </a>
-                        </li>
+                        </li>                                                
                         <li><hr class="dropdown-divider"></li>
                         <li>
                             <a class="dropdown-item" href="#">
@@ -183,24 +162,6 @@
                         <li>
                             <a class="dropdown-item" href="#">
                             <span>
-                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M34.5054 17.6477C34.5054 27.122 26.8903 34.7954 17.5054 34.7954C8.12048 34.7954 0.505371 27.122 0.505371 17.6477C0.505371 8.17331 8.12048 0.5 17.5054 0.5C26.8903 0.5 34.5054 8.17331 34.5054 17.6477Z" stroke="black"/>
-                                <path d="M25.3863 21.2617L29.0986 24.9741L24.9739 29.0988L21.2616 25.3865" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M18.7866 14.6619L10.1241 6L5.99995 10.1247L14.6619 18.7872" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M25.7983 20.8494C25.9066 20.741 25.9926 20.6124 26.0513 20.4708C26.1099 20.3292 26.1401 20.1775 26.1401 20.0243C26.1401 19.871 26.1099 19.7193 26.0513 19.5777C25.9926 19.4361 25.9066 19.3075 25.7983 19.1991L20.8487 14.2495C20.6299 14.0308 20.3332 13.908 20.0238 13.908C19.7145 13.908 19.4178 14.0308 19.199 14.2495L14.2494 19.1991C14.141 19.3075 14.0551 19.4361 13.9964 19.5777C13.9377 19.7193 13.9076 19.871 13.9076 20.0243C13.9076 20.1775 13.9377 20.3292 13.9964 20.4708C14.0551 20.6124 14.141 20.741 14.2494 20.8494L19.199 25.799C19.4178 26.0177 19.7145 26.1405 20.0238 26.1405C20.3332 26.1405 20.6299 26.0177 20.8487 25.799L25.7983 20.8494V20.8494Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M16.7239 16.7246L20.8486 20.8488" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M13.0112 8.88696L8.88706 13.0123" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M15.8994 11.7744L11.7747 15.8997" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M22.499 15.8998L15.8986 22.499" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                              
-                            </span>
-                            Belts
-                            </a>
-                        </li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                            <span>
                                 <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M34.5 17.6477C34.5 27.122 26.8849 34.7954 17.5 34.7954C8.11511 34.7954 0.5 27.122 0.5 17.6477C0.5 8.17331 8.11511 0.5 17.5 0.5C26.8849 0.5 34.5 8.17331 34.5 17.6477Z" stroke="black"/>
                                 <path d="M10.3999 18.1429C10.3999 13.0931 14.3396 9 19.1999 9C24.0603 9 27.9999 13.0931 27.9999 18.1429V21.5714H10.3999V18.1429Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
@@ -209,21 +170,7 @@
                             </span>
                             Caps
                             </a>
-                        </li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                            <span>
-                                <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M34.5 17.6477C34.5 27.122 26.8849 34.7954 17.5 34.7954C8.11511 34.7954 0.5 27.122 0.5 17.6477C0.5 8.17331 8.11511 0.5 17.5 0.5C26.8849 0.5 34.5 8.17331 34.5 17.6477Z" stroke="black"/>
-                                <path d="M14.1348 17C14.1348 10.636 16.7628 8.354 18.1348 8C19.3548 8.177 22.1348 10.212 22.1348 17C22.1348 23.788 19.3548 26 18.1348 26C16.7628 25.823 14.1348 23.364 14.1348 17Z" stroke="black"/>
-                                <path d="M14.1348 16C12.5808 14.462 7.75283 14.84 6.13483 15C5.64983 16.762 6.48683 20.492 8.42783 22.414C10.8548 24.817 12.7958 26 18.1348 26" stroke="black"/>
-                                <path d="M22.1348 16C23.5708 14.467 27.6388 14.84 29.1348 15C29.4348 16.597 29.2748 20.188 26.7628 22.87C24.2498 25.555 19.6348 26 18.1348 26" stroke="black"/>
-                                </svg>                              
-                            </span>
-                            Jewellery
-                            </a>
-                        </li>
+                        </li>                        
                         <li><hr class="dropdown-divider"></li>
                         <li>
                             <a class="dropdown-item" href="#">
@@ -237,35 +184,7 @@
                             </span>                          
                             Sunglasses
                             </a>
-                        </li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                            <span>
-                                <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M34.5 17.6477C34.5 27.122 26.8849 34.7954 17.5 34.7954C8.11511 34.7954 0.5 27.122 0.5 17.6477C0.5 8.17331 8.11511 0.5 17.5 0.5C26.8849 0.5 34.5 8.17331 34.5 17.6477Z" stroke="black"/>
-                                <path d="M13 24.6L16.1667 11.95H19.3333L22.5 24.6L17.75 28.9999L13 24.6Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M16.1668 7H19.3335L20.9168 8.1L19.3335 11.95H16.1668L14.5835 8.1L16.1668 7Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                              
-                            </span>
-                            Ties
-                            </a>
-                        </li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                            <span>
-                                <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21.3101 8.38295L13.7184 4L11.1818 8.39395L21.3101 8.38295V8.38295Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M29 9.4999C29 9.20816 28.8841 8.92838 28.6778 8.72209C28.4715 8.5158 28.1917 8.3999 27.9 8.3999H8.1C7.80826 8.3999 7.52847 8.5158 7.32218 8.72209C7.11589 8.92838 7 9.20816 7 9.4999V24.8999C7 25.1916 7.11589 25.4714 7.32218 25.6777C7.52847 25.884 7.80826 25.9999 8.1 25.9999H27.9C28.1917 25.9999 28.4715 25.884 28.6778 25.6777C28.8841 25.4714 29 25.1916 29 24.8999V9.4999Z" stroke="black" stroke-linejoin="round"/>
-                                <path d="M11.8127 19.9501H7.0002V14.4501H11.8127C13.4077 14.4501 14.7002 15.6815 14.7002 17.2001C14.7002 18.7186 13.4077 19.9501 11.8127 19.9501Z" stroke="black" stroke-linejoin="round"/>
-                                <path d="M7 10.875V24.075" stroke="black" stroke-linecap="round"/>
-                                <path d="M34.5 17.6477C34.5 27.122 26.8849 34.7954 17.5 34.7954C8.11511 34.7954 0.5 27.122 0.5 17.6477C0.5 8.17331 8.11511 0.5 17.5 0.5C26.8849 0.5 34.5 8.17331 34.5 17.6477Z" stroke="black"/>
-                                </svg>                              
-                            </span>
-                            Wallet
-                            </a>
-                        </li>                                            
+                        </li>                                                                 
                         </ul>
                     </li>
 
@@ -287,19 +206,7 @@
                             </span>
                             Jeans
                             </a>
-                        </li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                            <span>
-                                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="17.5" cy="17.5" r="17" stroke="black"/>
-                                <path d="M17.2917 26.5556H22.7134C22.9003 26.5559 23.0803 26.4849 23.2166 26.357C23.3529 26.2291 23.4353 26.054 23.4468 25.8674L24.5761 7.77856C24.5823 7.67862 24.5679 7.57848 24.5339 7.4843C24.4999 7.39013 24.447 7.30391 24.3784 7.23097C24.3098 7.15803 24.227 7.0999 24.1351 7.06018C24.0432 7.02046 23.9441 6.99998 23.844 7H10.7332C10.6335 7.00002 10.5349 7.02036 10.4433 7.05978C10.3518 7.0992 10.2692 7.15688 10.2007 7.22929C10.1322 7.3017 10.0791 7.38732 10.0448 7.48092C10.0105 7.57452 9.99563 7.67413 10.0011 7.77367L11.1427 28.307C11.153 28.4942 11.2346 28.6704 11.3708 28.7992C11.5069 28.9281 11.6873 29 11.8748 29H16.5583C16.7528 29 16.9394 28.9227 17.0769 28.7852C17.2144 28.6477 17.2917 28.4612 17.2917 28.2667V13.1111" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                              
-                            </span>
-                            Trousers
-                            </a>
-                        </li>
+                        </li>                        
                         <li><hr class="dropdown-divider"></li>
                         <li>
                             <a class="dropdown-item" href="#">
@@ -333,9 +240,6 @@
                         </li>                      
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link color-white" aria-current="page" href="#">SIZE</a>
-                    </li>                
                 </ul>            
 
                 <form id="navBarSearchForm">
@@ -372,7 +276,7 @@
         <?php require_once "./mvc/view/page/". $data['content'] .".php" ?>        
     </div>
 
-    <footer>
+    <footer id="footer-layout-for-all">
         <hr>
         <div class="payment-social">
             <div class="social">
