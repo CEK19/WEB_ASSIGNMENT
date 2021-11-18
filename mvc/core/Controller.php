@@ -7,7 +7,7 @@ class Controller{
     }
 
     public function view($view, $data=[]){
-        require_once "./mvc/views/show.php";
+        require_once "./mvc/view/".$view.".php";
     }
 }
 ?>

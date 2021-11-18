@@ -1,17 +1,12 @@
 <?php
 class Home extends Controller{
-    function SayHi() {
-        $teo = $this->model("SinhVienModel");
-        echo $teo->GetSV();
-        
-        $this->view("./page/sale.php", DATA[])
+    public function showPage () {
+        // $teo = $this->model("SinhVienModel");
+        // print_r($teo->GetSV());        
+        $this->view("show", [
+            "content" => "sale"
+        ]);
     }
-    function Show($a,$b) {
-        echo "Home - Show <br>";
-        $teo = $this->model("SinhVienModel");
-        echo $teo->sum($a,$b);
-    }
-
 }
 
 ?>
