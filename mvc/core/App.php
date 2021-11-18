@@ -7,7 +7,9 @@ class App{
 
     function __construct(){
  
-        $arr = $this->UrlProcess();        
+        $arr = $this->UrlProcess();
+
+        print_r($arr);
  
         // Controller
         if($arr != NULL) {
