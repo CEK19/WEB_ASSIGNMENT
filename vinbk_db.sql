@@ -40,7 +40,26 @@ CREATE TABLE `access_bag` (
 --
 
 INSERT INTO `access_bag` (`id`, `name`, `cost`, `quantity`, `rating`) VALUES
-(1, 'Gucchi 2021', 202.1, 13, 4.4);
+(1, 'Gucchi 2018', 202.1, 13, 4.4),
+(2, 'Gucchi 2019', 688.1, 115, 1.2),
+(3, 'Gucchi 2020', 390.2, 4, 1.2),
+(4, 'Gucchi 2021', 880.9, 184, 4.9),
+(5, 'Gucchi spring', 584.0, 37, 3.0),
+(6, 'Gucchi summer', 603.4, 124, 3.9),
+(7, 'Gucchi fall', 282.0, 179, 2.6),
+(8, 'Gucchi winter', 590.6, 65, 1.6),
+(9, 'Gucchi limited', 590.6, 6, 1.6),
+(10, 'Gucchi trending', 64.0, 6, 4.3),
+(11, 'Chanel 2018', 503.2, 107, 1.7),
+(12, 'Chanel 2019', 650.6, 152, 4.9),
+(13, 'Chanel 2020', 718.9, 25, 4.6),
+(14, 'Chanel 2021', 900.8, 155, 1.7),
+(15, 'Chanel spring', 154.3, 186, 1.1),
+(16, 'Chanel summer', 18.9, 109, 2.8),
+(17, 'Chanel fall', 236.5, 200, 1.6),
+(18, 'Chanel winter', 678.8, 149, 3.0),
+(19, 'Chanel limited', 756.2, 8, 3.1),
+(20, 'Chanel trending', 68.7, 69, 1.6);
 
 -- --------------------------------------------------------
 
@@ -61,7 +80,26 @@ CREATE TABLE `access_caps` (
 --
 
 INSERT INTO `access_caps` (`id`, `name`, `cost`, `quantity`, `rating`) VALUES
-(1, 'honda', 30, 500, 1.2);
+(1, 'Honda 2018', 202.1, 13, 4.4),
+(2, 'Honda 2019', 688.1, 115, 1.2),
+(3, 'Honda 2020', 390.2, 4, 1.2),
+(4, 'Honda 2021', 880.9, 184, 4.9),
+(5, 'Honda spring', 584.0, 37, 3.0),
+(6, 'Honda summer', 603.4, 124, 3.9),
+(7, 'Honda fall', 282.0, 179, 2.6),
+(8, 'Honda winter', 590.6, 65, 1.6),
+(9, 'Honda limited', 590.6, 6, 1.6),
+(10, 'Honda trending', 64.0, 6, 4.3),
+(11, 'Son 2018', 503.2, 107, 1.7),
+(12, 'Son 2019', 650.6, 152, 4.9),
+(13, 'Son 2020', 718.9, 25, 4.6),
+(14, 'Son 2021', 900.8, 155, 1.7),
+(15, 'Son spring', 154.3, 186, 1.1),
+(16, 'Son summer', 18.9, 109, 2.8),
+(17, 'Son fall', 236.5, 200, 1.6),
+(18, 'Son winter', 678.8, 149, 3.0),
+(19, 'Son limited', 756.2, 8, 3.1),
+(20, 'Son trending', 68.7, 69, 1.6);
 
 -- --------------------------------------------------------
 
@@ -82,7 +120,26 @@ CREATE TABLE `access_glass` (
 --
 
 INSERT INTO `access_glass` (`id`, `name`, `cost`, `quantity`, `rating`) VALUES
-(1, 'intense', 300, 15, 4.8);
+(1, 'led 2018', 202.1, 13, 4.4),
+(2, 'led 2019', 688.1, 115, 1.2),
+(3, 'led 2020', 390.2, 4, 1.2),
+(4, 'led 2021', 880.9, 184, 4.9),
+(5, 'led spring', 584.0, 37, 3.0),
+(6, 'led summer', 603.4, 124, 3.9),
+(7, 'led fall', 282.0, 179, 2.6),
+(8, 'led winter', 590.6, 65, 1.6),
+(9, 'led limited', 590.6, 6, 1.6),
+(10, 'led trending', 64.0, 6, 4.3),
+(11, 'poly 2018', 503.2, 107, 1.7),
+(12, 'poly 2019', 650.6, 152, 4.9),
+(13, 'poly 2020', 718.9, 25, 4.6),
+(14, 'poly 2021', 900.8, 155, 1.7),
+(15, 'poly spring', 154.3, 186, 1.1),
+(16, 'poly summer', 18.9, 109, 2.8),
+(17, 'poly fall', 236.5, 200, 1.6),
+(18, 'poly winter', 678.8, 149, 3.0),
+(19, 'poly limited', 756.2, 8, 3.1),
+(20, 'poly trending', 68.7, 69, 1.6);
 
 -- --------------------------------------------------------
 
@@ -130,7 +187,26 @@ CREATE TABLE `pants_jeans` (
 --
 
 INSERT INTO `pants_jeans` (`id`, `name`, `cost`, `quantity`, `rating`) VALUES
-(1, 'big black', 119, 78, 2.2);
+(1, 'jj 2018', 202.1, 13, 4.4),
+(2, 'jj 2019', 688.1, 115, 1.2),
+(3, 'jj 2020', 390.2, 4, 1.2),
+(4, 'jj 2021', 880.9, 184, 4.9),
+(5, 'jj spring', 584.0, 37, 3.0),
+(6, 'jj summer', 603.4, 124, 3.9),
+(7, 'jj fall', 282.0, 179, 2.6),
+(8, 'jj winter', 590.6, 65, 1.6),
+(9, 'jj limited', 590.6, 6, 1.6),
+(10, 'jj trending', 64.0, 6, 4.3),
+(11, 'True Religion 2018', 503.2, 107, 1.7),
+(12, 'True Religion 2019', 650.6, 152, 4.9),
+(13, 'True Religion 2020', 718.9, 25, 4.6),
+(14, 'True Religion 2021', 900.8, 155, 1.7),
+(15, 'True Religion spring', 154.3, 186, 1.1),
+(16, 'True Religion summer', 18.9, 109, 2.8),
+(17, 'True Religion fall', 236.5, 200, 1.6),
+(18, 'True Religion winter', 678.8, 149, 3.0),
+(19, 'True Religion limited', 756.2, 8, 3.1),
+(20, 'True Religion trending', 68.7, 69, 1.6);
 
 -- --------------------------------------------------------
 
@@ -172,7 +248,26 @@ CREATE TABLE `pants_lounges` (
 --
 
 INSERT INTO `pants_lounges` (`id`, `name`, `cost`, `quantity`, `rating`) VALUES
-(1, 'C6H12O6', 999.9, 2, 5);
+(1, 'Cali 2018', 202.1, 13, 4.4),
+(2, 'Cali 2019', 688.1, 115, 1.2),
+(3, 'Cali 2020', 390.2, 4, 1.2),
+(4, 'Cali 2021', 880.9, 184, 4.9),
+(5, 'Cali spring', 584.0, 37, 3.0),
+(6, 'Cali summer', 603.4, 124, 3.9),
+(7, 'Cali fall', 282.0, 179, 2.6),
+(8, 'Cali winter', 590.6, 65, 1.6),
+(9, 'Cali limited', 590.6, 6, 1.6),
+(10, 'Cali trending', 64.0, 6, 4.3),
+(11, 'fit 2018', 503.2, 107, 1.7),
+(12, 'fit 2019', 650.6, 152, 4.9),
+(13, 'fit 2020', 718.9, 25, 4.6),
+(14, 'fit 2021', 900.8, 155, 1.7),
+(15, 'fit spring', 154.3, 186, 1.1),
+(16, 'fit summer', 18.9, 109, 2.8),
+(17, 'fit fall', 236.5, 200, 1.6),
+(18, 'fit winter', 678.8, 149, 3.0),
+(19, 'fit limited', 756.2, 8, 3.1),
+(20, 'fit trending', 68.7, 69, 1.6);
 
 -- --------------------------------------------------------
 
@@ -193,8 +288,26 @@ CREATE TABLE `shirt_polo` (
 --
 
 INSERT INTO `shirt_polo` (`id`, `name`, `cost`, `quantity`, `rating`) VALUES
-(1, 'LV for spring', 300, 15, 4.8),
-(2, 'winter 2021', 299.5, 30, 3.3);
+(1, 'AX 2018', 202.1, 13, 4.4),
+(2, 'AX 2019', 688.1, 115, 1.2),
+(3, 'AX 2020', 390.2, 4, 1.2),
+(4, 'AX 2021', 880.9, 184, 4.9),
+(5, 'AX spring', 584.0, 37, 3.0),
+(6, 'AX summer', 603.4, 124, 3.9),
+(7, 'AX fall', 282.0, 179, 2.6),
+(8, 'AX winter', 590.6, 65, 1.6),
+(9, 'AX limited', 590.6, 6, 1.6),
+(10, 'AX trending', 64.0, 6, 4.3),
+(11, 'Lacoste 2018', 503.2, 107, 1.7),
+(12, 'Lacoste 2019', 650.6, 152, 4.9),
+(13, 'Lacoste 2020', 718.9, 25, 4.6),
+(14, 'Lacoste 2021', 900.8, 155, 1.7),
+(15, 'Lacoste spring', 154.3, 186, 1.1),
+(16, 'Lacoste summer', 18.9, 109, 2.8),
+(17, 'Lacoste fall', 236.5, 200, 1.6),
+(18, 'Lacoste winter', 678.8, 149, 3.0),
+(19, 'Lacoste limited', 756.2, 8, 3.1),
+(20, 'Lacoste trending', 68.7, 69, 1.6);
 
 -- --------------------------------------------------------
 
@@ -215,7 +328,26 @@ CREATE TABLE `shirt_shirt` (
 --
 
 INSERT INTO `shirt_shirt` (`id`, `name`, `cost`, `quantity`, `rating`) VALUES
-(1, 'Toyota 1900', 34.5, 100, 2.4);
+(1, 'uniform 2018', 202.1, 13, 4.4),
+(2, 'uniform 2019', 688.1, 115, 1.2),
+(3, 'uniform 2020', 390.2, 4, 1.2),
+(4, 'uniform 2021', 880.9, 184, 4.9),
+(5, 'uniform spring', 584.0, 37, 3.0),
+(6, 'uniform summer', 603.4, 124, 3.9),
+(7, 'uniform fall', 282.0, 179, 2.6),
+(8, 'uniform winter', 590.6, 65, 1.6),
+(9, 'uniform limited', 590.6, 6, 1.6),
+(10, 'uniform trending', 64.0, 6, 4.3),
+(11, 'VinhPhuc 2018', 503.2, 107, 1.7),
+(12, 'VinhPhuc 2019', 650.6, 152, 4.9),
+(13, 'VinhPhuc 2020', 718.9, 25, 4.6),
+(14, 'VinhPhuc 2021', 900.8, 155, 1.7),
+(15, 'VinhPhuc spring', 154.3, 186, 1.1),
+(16, 'VinhPhuc summer', 18.9, 109, 2.8),
+(17, 'VinhPhuc fall', 236.5, 200, 1.6),
+(18, 'VinhPhuc winter', 678.8, 149, 3.0),
+(19, 'VinhPhuc limited', 756.2, 8, 3.1),
+(20, 'VinhPhuc trending', 68.7, 69, 1.6);
 
 -- --------------------------------------------------------
 
@@ -236,7 +368,26 @@ CREATE TABLE `shirt_tshirt_vest` (
 --
 
 INSERT INTO `shirt_tshirt_vest` (`id`, `name`, `cost`, `quantity`, `rating`) VALUES
-(1, 'var', 249.5, 45, 3.7);
+(1, 'uniform 2018', 202.1, 13, 4.4),
+(2, 'uniform 2019', 688.1, 115, 1.2),
+(3, 'uniform 2020', 390.2, 4, 1.2),
+(4, 'uniform 2021', 880.9, 184, 4.9),
+(5, 'uniform spring', 584.0, 37, 3.0),
+(6, 'uniform summer', 603.4, 124, 3.9),
+(7, 'uniform fall', 282.0, 179, 2.6),
+(8, 'uniform winter', 590.6, 65, 1.6),
+(9, 'uniform limited', 590.6, 6, 1.6),
+(10, 'uniform trending', 64.0, 6, 4.3),
+(11, 'VinCloth 2018', 503.2, 107, 1.7),
+(12, 'VinCloth 2019', 650.6, 152, 4.9),
+(13, 'VinCloth 2020', 718.9, 25, 4.6),
+(14, 'VinCloth 2021', 900.8, 155, 1.7),
+(15, 'VinCloth spring', 154.3, 186, 1.1),
+(16, 'VinCloth summer', 18.9, 109, 2.8),
+(17, 'VinCloth fall', 236.5, 200, 1.6),
+(18, 'VinCloth winter', 678.8, 149, 3.0),
+(19, 'VinCloth limited', 756.2, 8, 3.1),
+(20, 'VinCloth trending', 68.7, 69, 1.6);
 
 -- --------------------------------------------------------
 
@@ -257,7 +408,26 @@ CREATE TABLE `shoes_sandals_slippers` (
 --
 
 INSERT INTO `shoes_sandals_slippers` (`id`, `name`, `cost`, `quantity`, `rating`) VALUES
-(1, 'nike win', 666, 6, 4.6);
+(1, 'bitis 2018', 202.1, 13, 4.4),
+(2, 'bitis 2019', 688.1, 115, 1.2),
+(3, 'bitis 2020', 390.2, 4, 1.2),
+(4, 'bitis 2021', 880.9, 184, 4.9),
+(5, 'bitis spring', 584.0, 37, 3.0),
+(6, 'bitis summer', 603.4, 124, 3.9),
+(7, 'bitis fall', 282.0, 179, 2.6),
+(8, 'bitis winter', 590.6, 65, 1.6),
+(9, 'bitis limited', 590.6, 6, 1.6),
+(10, 'bitis trending', 64.0, 6, 4.3),
+(11, 'DepLao 2018', 503.2, 107, 1.7),
+(12, 'DepLao 2019', 650.6, 152, 4.9),
+(13, 'DepLao 2020', 718.9, 25, 4.6),
+(14, 'DepLao 2021', 900.8, 155, 1.7),
+(15, 'DepLao spring', 154.3, 186, 1.1),
+(16, 'DepLao summer', 18.9, 109, 2.8),
+(17, 'DepLao fall', 236.5, 200, 1.6),
+(18, 'DepLao winter', 678.8, 149, 3.0),
+(19, 'DepLao limited', 756.2, 8, 3.1),
+(20, 'DepLao trending', 68.7, 69, 1.6);
 
 -- --------------------------------------------------------
 
@@ -278,7 +448,26 @@ CREATE TABLE `shoes_shocks` (
 --
 
 INSERT INTO `shoes_shocks` (`id`, `name`, `cost`, `quantity`, `rating`) VALUES
-(1, 'bitis Marvel', 105.5, 78, 4.5);
+(1, 'Addidas 2018', 202.1, 13, 4.4),
+(2, 'Addidas 2019', 688.1, 115, 1.2),
+(3, 'Addidas 2020', 390.2, 4, 1.2),
+(4, 'Addidas 2021', 880.9, 184, 4.9),
+(5, 'Addidas spring', 584.0, 37, 3.0),
+(6, 'Addidas summer', 603.4, 124, 3.9),
+(7, 'Addidas fall', 282.0, 179, 2.6),
+(8, 'Addidas winter', 590.6, 65, 1.6),
+(9, 'Addidas limited', 590.6, 6, 1.6),
+(10, 'Addidas trending', 64.0, 6, 4.3),
+(11, 'Sneaker 2018', 503.2, 107, 1.7),
+(12, 'Sneaker 2019', 650.6, 152, 4.9),
+(13, 'Sneaker 2020', 718.9, 25, 4.6),
+(14, 'Sneaker 2021', 900.8, 155, 1.7),
+(15, 'Sneaker spring', 154.3, 186, 1.1),
+(16, 'Sneaker summer', 18.9, 109, 2.8),
+(17, 'Sneaker fall', 236.5, 200, 1.6),
+(18, 'Sneaker winter', 678.8, 149, 3.0),
+(19, 'Sneaker limited', 756.2, 8, 3.1),
+(20, 'Sneaker trending', 68.7, 69, 1.6);
 
 -- --------------------------------------------------------
 
@@ -299,7 +488,26 @@ CREATE TABLE `shoes_trainers` (
 --
 
 INSERT INTO `shoes_trainers` (`id`, `name`, `cost`, `quantity`, `rating`) VALUES
-(1, 'tanker', 374, 68, 3.1);
+(1, 'Addidas 2018', 202.1, 13, 4.4),
+(2, 'Addidas 2019', 688.1, 115, 1.2),
+(3, 'Addidas 2020', 390.2, 4, 1.2),
+(4, 'Addidas 2021', 880.9, 184, 4.9),
+(5, 'Addidas spring', 584.0, 37, 3.0),
+(6, 'Addidas summer', 603.4, 124, 3.9),
+(7, 'Addidas fall', 282.0, 179, 2.6),
+(8, 'Addidas winter', 590.6, 65, 1.6),
+(9, 'Addidas limited', 590.6, 6, 1.6),
+(10, 'Addidas trending', 64.0, 6, 4.3),
+(11, 'Nike 2018', 503.2, 107, 1.7),
+(12, 'Nike 2019', 650.6, 152, 4.9),
+(13, 'Nike 2020', 718.9, 25, 4.6),
+(14, 'Nike 2021', 900.8, 155, 1.7),
+(15, 'Nike spring', 154.3, 186, 1.1),
+(16, 'Nike summer', 18.9, 109, 2.8),
+(17, 'Nike fall', 236.5, 200, 1.6),
+(18, 'Nike winter', 678.8, 149, 3.0),
+(19, 'Nike limited', 756.2, 8, 3.1),
+(20, 'Nike trending', 68.7, 69, 1.6);
 
 -- --------------------------------------------------------
 
@@ -319,7 +527,26 @@ CREATE TABLE `wishlist` (
 --
 
 INSERT INTO `wishlist` (`id`, `userID`, `category`, `clothID`) VALUES
-(1, 1, 'pants_jeans', 2);
+(1, 3, 'pants_jeans', 2),
+(2, 3, 'shirt_tshirt_vest', 3),
+(3, 3, 'shoes_trainers', 10),
+(4, 3, 'shirt_polo', 4),
+(5, 3, 'shirt_polo', 8),
+(6, 4, 'pants_jeans', 12),
+(7, 4, 'shoes_shocks', 2),
+(8, 4, 'access_caps', 1),
+(9, 4, 'access_glass', 8),
+(10, 4, 'access_bag', 6),
+(11, 4, 'pants_jog', 2),
+(12, 1, 'pants_jeans', 4),
+(13, 1, 'shoes_sandals_slippers', 15),
+(14, 1, 'shoes_trainers', 17),
+(15, 1, 'shirt_tshirt_vest', 1),
+(16, 1, 'pants_jeans', 13),
+(17, 1, 'shoes_sandals_slippers', 16),
+(18, 1, 'access_caps', 4),
+(19, 1, 'shoes_shocks', 19),
+(20, 1, 'shirt_tshirt_vest', 18);
 
 --
 -- Indexes for dumped tables
