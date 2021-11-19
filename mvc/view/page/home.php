@@ -9,7 +9,7 @@
     </div>
 
     <div class="sub-paragraph home-font">
-    <p>We believe in a world where you have total freedom to be you, without judgement. To experiment. To express yourself. To be brave and grab life as the extraordinary adventure it is. So we make sure everyone has an equal chance to discover all the amazing things they’re capable of – no matter who they are, where they’re from or what looks they like to boss. We exist to give you the confidence to be whoever you want to be.</p>
+    <p>We believe in a world where you have total freedom to be you, without judgment. To experiment. To express yourself. To be brave and grab life as the extraordinary adventure it is. So we make sure everyone has an equal chance to discover all the amazing things they’re capable of – no matter who they are, where they’re from ,or what looks they like to boss. We exist to give you the confidence to be whomever you want to be.</p>
     </div>
 
     <img src="./public/image/home_page_img/who_we_are_peak_in_page_who_we_are.jpeg" alt="who-we-are-1">
