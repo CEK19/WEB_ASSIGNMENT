@@ -14,24 +14,6 @@
         </div>
     </div>
 
-    <!-- -----------------ADS--------------------- -->
-
-    <!-- <div class="ads-img">
-        <div class="background-img">     
-            <div class="big-part">
-                <div class="background-text">
-                    <h3>UP TO 50% OF SWEET STYLE</h3>
-                </div>
-            </div>       
-            <br>
-            <div class="small-part">
-                <div class="background-text">
-                    <div class="text">Limited time only. Selected style and markdown on site</div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <!-- -----------------SAVE ITEMS-------------------- -->
 
     <div class="bg-secondary bg-gradient d-flex align-items-center justify-content-center" style="height: 8vh; min-height:53px">
@@ -39,300 +21,306 @@
     </div>
 
     <!-- -----------------INTRODUCE--------------------- -->
+    <div class="wishList-container d-flex justify-content-center">
 
-    <div class="introduce-hot">
+        <div class="wishList-introduce-hot">
 
-        <!-- 1 sản phẩm -->
-        <div class="frame mb-3">
-            <div class="img-here">
-                <!--IMAGE HERE-->
-            </div>
-            <div style="width:100%; padding: 0 13.5px 0 13.5px;">
-                <h3>Đây là tên của sản phẩm người ta</h3>
-                <div class="d-flex flex-row mt-2 mb-2">
-                    <h3 class="text-decoration-line-through fst-italic fs-3 mb-0 me-5 align-middle">178.000Đ</h3>
-                    <h3 class="fw-bolder fs-2 mb-0 align-middle">150.000Đ</h3>
+            <!-- 1 sản phẩm -->
+            <div class="wishList-frame mb-3">
+                <div class="wishList-img-here">
+                    <!--IMAGE HERE-->
                 </div>
-                <hr>
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <th class="align-middle fs-5">Size</th>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">S</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">M</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">L</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">XL</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="align-middle fs-5">Color</th>
-                            <td>
-                                <button type="button" class="btn-lg btn-dark shadow border border-4 border-primary" style="width: 50px; height:50px;"></button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-lg btn-light shadow border border-dark" style="width: 50px; height:50px;"></button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <hr>
-            </div>
-            <button type="button" class="btn btn-outline-dark">
-                <h2>MOVE TO BAG</h2>
-            </button>
-        </div>
-
-
-
-        <!-- 1 sản phẩm -->
-        <div class="frame mb-3">
-            <div class="img-here">
-                <!--IMAGE HERE-->
-            </div>
-            <div style="width:100%; padding: 0 13.5px 0 13.5px;">
-                <h3>Đây là tên của sản phẩm người ta</h3>
-                <div class="d-flex flex-row mt-2 mb-2">
-                    <h3 class="text-decoration-line-through fst-italic fs-3 mb-0 me-5 align-middle">178.000Đ</h3>
-                    <h3 class="fw-bolder fs-2 mb-0 align-middle">150.000Đ</h3>
+                <div style="width:100%; padding: 0 25px 0 25px;">
+                    <h4>Tên của sản phẩm người ta</h4>
+                    <div class="d-flex flex-row mt-2">
+                        <p class="text-decoration-line-through fst-italic fs-5 mb-0 me-5 align-middle">178.000Đ<p>
+                        <p class="fw-bolder fs-4 mb-0 align-middle">150.000Đ</p>
+                    </div>
+                    <hr class="mt-2 mb-2">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr class="border-bottom">
+                                <th class="align-middle fs-5">Size</th>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">S</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">M</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">L</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">XL</button>
+                                </td>
+                            </tr>
+                            <tr class="border-top">
+                                <th class="align-middle fs-5">Color</th>
+                                <td>
+                                    <button type="button" class="btn-lg btn-dark shadow border border-4 border-primary" style="width: 45px; height:45px;"></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-lg btn-light shadow border border-dark" style="width: 45px; height:45px;"></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr class="mt-2 mb-2">
                 </div>
-                <hr>
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <th class="align-middle fs-5">Size</th>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">S</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">M</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">L</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">XL</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="align-middle fs-5">Color</th>
-                            <td>
-                                <button type="button" class="btn-lg btn-dark shadow border border-4 border-primary" style="width: 50px; height:50px;"></button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-lg btn-light shadow border border-dark" style="width: 50px; height:50px;"></button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <hr>
+                <button type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2">
+                    <h2 class="mb-0">MOVE TO BAG</h2>
+                </button>
             </div>
-            <button type="button" class="btn btn-outline-dark">
-                <h2>MOVE TO BAG</h2>
-            </button>
-        </div>
 
 
 
-        <!-- 1 sản phẩm -->
-        <div class="frame mb-3">
-            <div class="img-here">
-                <!--IMAGE HERE-->
-            </div>
-            <div style="width:100%; padding: 0 13.5px 0 13.5px;">
-                <h3>Đây là tên của sản phẩm người ta</h3>
-                <div class="d-flex flex-row mt-2 mb-2">
-                    <h3 class="text-decoration-line-through fst-italic fs-3 mb-0 me-5 align-middle">178.000Đ</h3>
-                    <h3 class="fw-bolder fs-2 mb-0 align-middle">150.000Đ</h3>
+            <!-- 1 sản phẩm -->
+            <div class="wishList-frame mb-3">
+                <div class="wishList-img-here">
+                    <!--IMAGE HERE-->
                 </div>
-                <hr>
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <th class="align-middle fs-5">Size</th>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">S</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">M</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">L</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">XL</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="align-middle fs-5">Color</th>
-                            <td>
-                                <button type="button" class="btn-lg btn-dark shadow border border-4 border-primary" style="width: 50px; height:50px;"></button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-lg btn-light shadow border border-dark" style="width: 50px; height:50px;"></button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <hr>
-            </div>
-            <button type="button" class="btn btn-outline-dark">
-                <h2>MOVE TO BAG</h2>
-            </button>
-        </div>
-
-
-
-        <!-- 1 sản phẩm -->
-        <div class="frame mb-3">
-            <div class="img-here">
-                <!--IMAGE HERE-->
-            </div>
-            <div style="width:100%; padding: 0 13.5px 0 13.5px;">
-                <h3>Đây là tên của sản phẩm người ta</h3>
-                <div class="d-flex flex-row mt-2 mb-2">
-                    <h3 class="text-decoration-line-through fst-italic fs-3 mb-0 me-5 align-middle">178.000Đ</h3>
-                    <h3 class="fw-bolder fs-2 mb-0 align-middle">150.000Đ</h3>
+                <div style="width:100%; padding: 0 25px 0 25px;">
+                    <h4>Tên của sản phẩm người ta</h4>
+                    <div class="d-flex flex-row mt-2 mb-2">
+                        <p class="text-decoration-line-through fst-italic fs-5 mb-0 me-5 align-middle">178.000Đ<p>
+                        <p class="fw-bolder fs-4 mb-0 align-middle">150.000Đ</p>
+                    </div>
+                    <hr class="mt-2 mb-2">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr class="border-bottom">
+                                <th class="align-middle fs-5">Size</th>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">S</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">M</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">L</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">XL</button>
+                                </td>
+                            </tr>
+                            <tr class="border-top">
+                                <th class="align-middle fs-5">Color</th>
+                                <td>
+                                    <button type="button" class="btn-lg btn-dark shadow border border-4 border-primary" style="width: 45px; height:45px;"></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-lg btn-light shadow border border-dark" style="width: 45px; height:45px;"></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr class="mt-2 mb-2">
                 </div>
-                <hr>
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <th class="align-middle fs-5">Size</th>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">S</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">M</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">L</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">XL</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="align-middle fs-5">Color</th>
-                            <td>
-                                <button type="button" class="btn-lg btn-dark shadow border border-4 border-primary" style="width: 50px; height:50px;"></button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-lg btn-light shadow border border-dark" style="width: 50px; height:50px;"></button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <hr>
+                <button type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2">
+                    <h2 class="mb-0">MOVE TO BAG</h2>
+                </button>
             </div>
-            <button type="button" class="btn btn-outline-dark">
-                <h2>MOVE TO BAG</h2>
-            </button>
-        </div>
 
 
 
-        <!-- 1 sản phẩm -->
-        <div class="frame mb-3">
-            <div class="img-here">
-                <!--IMAGE HERE-->
-            </div>
-            <div style="width:100%; padding: 0 13.5px 0 13.5px;">
-                <h3>Đây là tên của sản phẩm người ta</h3>
-                <div class="d-flex flex-row mt-2 mb-2">
-                    <h3 class="text-decoration-line-through fst-italic fs-3 mb-0 me-5 align-middle">178.000Đ</h3>
-                    <h3 class="fw-bolder fs-2 mb-0 align-middle">150.000Đ</h3>
+            <!-- 1 sản phẩm -->
+            <div class="wishList-frame mb-3">
+                <div class="wishList-img-here">
+                    <!--IMAGE HERE-->
                 </div>
-                <hr>
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <th class="align-middle fs-5">Size</th>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">S</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">M</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">L</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">XL</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="align-middle fs-5">Color</th>
-                            <td>
-                                <button type="button" class="btn-lg btn-dark shadow border border-4 border-primary" style="width: 50px; height:50px;"></button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-lg btn-light shadow border border-dark" style="width: 50px; height:50px;"></button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <hr>
-            </div>
-            <button type="button" class="btn btn-outline-dark">
-                <h2>MOVE TO BAG</h2>
-            </button>
-        </div>
-
-
-        <!-- 1 sản phẩm -->
-        <div class="frame mb-3">
-            <div class="img-here">
-                <!--IMAGE HERE-->
-            </div>
-            <div style="width:100%; padding: 0 13.5px 0 13.5px;">
-                <h3>Đây là tên của sản phẩm người ta</h3>
-                <div class="d-flex flex-row mt-2 mb-2">
-                    <h3 class="text-decoration-line-through fst-italic fs-3 mb-0 me-5 align-middle">178.000Đ</h3>
-                    <h3 class="fw-bolder fs-2 mb-0 align-middle">150.000Đ</h3>
+                <div style="width:100%; padding: 0 25px 0 25px;">
+                    <h4>Tên của sản phẩm người ta</h4>
+                    <div class="d-flex flex-row mt-2 mb-2">
+                        <p class="text-decoration-line-through fst-italic fs-5 mb-0 me-5 align-middle">178.000Đ<p>
+                        <p class="fw-bolder fs-4 mb-0 align-middle">150.000Đ</p>
+                    </div>
+                    <hr class="mt-2 mb-2">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr class="border-bottom">
+                                <th class="align-middle fs-5">Size</th>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">S</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">M</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">L</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">XL</button>
+                                </td>
+                            </tr>
+                            <tr class="border-top">
+                                <th class="align-middle fs-5">Color</th>
+                                <td>
+                                    <button type="button" class="btn-lg btn-dark shadow border border-4 border-primary" style="width: 45px; height:45px;"></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-lg btn-light shadow border border-dark" style="width: 45px; height:45px;"></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr class="mt-2 mb-2">
                 </div>
-                <hr>
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <th class="align-middle fs-5">Size</th>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">S</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">M</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">L</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 50px; height:50px;">XL</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="align-middle fs-5">Color</th>
-                            <td>
-                                <button type="button" class="btn-lg btn-dark shadow border border-4 border-primary" style="width: 50px; height:50px;"></button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-lg btn-light shadow border border-dark" style="width: 50px; height:50px;"></button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <hr>
+                <button type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2">
+                    <h2 class="mb-0">MOVE TO BAG</h2>
+                </button>
             </div>
-            <button type="button" class="btn btn-outline-dark">
-                <h2>MOVE TO BAG</h2>
-            </button>
-        </div>
 
+
+
+            <!-- 1 sản phẩm -->
+            <div class="wishList-frame mb-3">
+                <div class="wishList-img-here">
+                    <!--IMAGE HERE-->
+                </div>
+                <div style="width:100%; padding: 0 25px 0 25px;">
+                    <h4>Tên của sản phẩm người ta</h4>
+                    <div class="d-flex flex-row mt-2 mb-2">
+                        <p class="text-decoration-line-through fst-italic fs-5 mb-0 me-5 align-middle">178.000Đ<p>
+                        <p class="fw-bolder fs-4 mb-0 align-middle">150.000Đ</p>
+                    </div>
+                    <hr class="mt-2 mb-2">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr class="border-bottom">
+                                <th class="align-middle fs-5">Size</th>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">S</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">M</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">L</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">XL</button>
+                                </td>
+                            </tr>
+                            <tr class="border-top">
+                                <th class="align-middle fs-5">Color</th>
+                                <td>
+                                    <button type="button" class="btn-lg btn-dark shadow border border-4 border-primary" style="width: 45px; height:45px;"></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-lg btn-light shadow border border-dark" style="width: 45px; height:45px;"></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr class="mt-2 mb-2">
+                </div>
+                <button type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2">
+                    <h2 class="mb-0">MOVE TO BAG</h2>
+                </button>
+            </div>
+
+
+
+            <!-- 1 sản phẩm -->
+            <div class="wishList-frame mb-3">
+                <div class="wishList-img-here">
+                    <!--IMAGE HERE-->
+                </div>
+                <div style="width:100%; padding: 0 25px 0 25px;">
+                    <h4>Tên của sản phẩm người ta</h4>
+                    <div class="d-flex flex-row mt-2 mb-2">
+                        <p class="text-decoration-line-through fst-italic fs-5 mb-0 me-5 align-middle">178.000Đ<p>
+                        <p class="fw-bolder fs-4 mb-0 align-middle">150.000Đ</p>
+                    </div>
+                    <hr class="mt-2 mb-2">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr class="border-bottom">
+                                <th class="align-middle fs-5">Size</th>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">S</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">M</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">L</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">XL</button>
+                                </td>
+                            </tr>
+                            <tr class="border-top">
+                                <th class="align-middle fs-5">Color</th>
+                                <td>
+                                    <button type="button" class="btn-lg btn-dark shadow border border-4 border-primary" style="width: 45px; height:45px;"></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-lg btn-light shadow border border-dark" style="width: 45px; height:45px;"></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr class="mt-2 mb-2">
+                </div>
+                <button type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2">
+                    <h2 class="mb-0">MOVE TO BAG</h2>
+                </button>
+            </div>
+
+
+            <!-- 1 sản phẩm -->
+            <div class="wishList-frame mb-3">
+                <div class="wishList-img-here">
+                    <!--IMAGE HERE-->
+                </div>
+                <div style="width:100%; padding: 0 25px 0 25px;">
+                    <h4>Tên của sản phẩm người ta</h4>
+                    <div class="d-flex flex-row mt-2 mb-2">
+                        <p class="text-decoration-line-through fst-italic fs-5 mb-0 me-5 align-middle">178.000Đ<p>
+                        <p class="fw-bolder fs-4 mb-0 align-middle">150.000Đ</p>
+                    </div>
+                    <hr class="mt-2 mb-2">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr class="border-bottom">
+                                <th class="align-middle fs-5">Size</th>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">S</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">M</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">L</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">XL</button>
+                                </td>
+                            </tr>
+                            <tr class="border-top">
+                                <th class="align-middle fs-5">Color</th>
+                                <td>
+                                    <button type="button" class="btn-lg btn-dark shadow border border-4 border-primary" style="width: 45px; height:45px;"></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-lg btn-light shadow border border-dark" style="width: 45px; height:45px;"></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr class="mt-2 mb-2">
+                </div>
+                <button type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2">
+                    <h2 class="mb-0">MOVE TO BAG</h2>
+                </button>
+            </div>
+
+
+
+        </div>
 
     </div>
+
+
 </div>
