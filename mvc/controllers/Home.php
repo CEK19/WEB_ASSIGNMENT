@@ -9,6 +9,13 @@
         }
 
         //------------------------------ SALE ------------------------------//
+        public function wishList(){
+            $this->view("show", [
+                "content" => "wishList"
+            ]);
+        }
+
+        //------------------------------ SALE ------------------------------//
         public function sale(){
             $this->view("show", [
                 "content" => "sale"
