@@ -48,7 +48,7 @@
 
     <br><br><br>
     <div class="button-box">
-        <button type="button" class="btn btn-outline-dark"><h2>SHOP NOW</h2></button>
+        <button type="button" class="btn btn-outline-dark" onclick="location.href='./?url=Home/sale'"><h2>SHOP NOW</h2></button>
     </div>
     <br><br>
 
