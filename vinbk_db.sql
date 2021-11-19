@@ -104,7 +104,12 @@ CREATE TABLE `account` (
 --
 
 INSERT INTO `account` (`id`, `firstName`, `lastName`, `birthday`, `email`, `password`) VALUES
-(1, 'Admin', 'Admin', '2001-02-13', 'admin.admin@hcmut.edu.vn', '1910000');
+(1, 'Admin', 'Admin', '2001-02-13', 'admin.admin@hcmut.edu.vn', '1910000'),
+(2, 'Admin', 'Admin', '2001-02-13', 'admin2.admin@hcmut.edu.vn', '1910000'),
+(3, 'Tu', 'Le', '2001-02-13', 'tu.user@hcmut.edu.vn', '1915812'),
+(4, 'Nhan', 'Nguyen', '2001-12-13', 'nhan.user@hcmut.edu.vn', '1914446'),
+(5, 'Cong', 'Vu', '2001-07-13', 'cong.user@hcmut.edu.vn', '1912811'),
+(6, 'Trong', 'Ho', '2001-05-13', 'trong.user@hcmut.edu.vn', '1915672');
 
 -- --------------------------------------------------------
 
