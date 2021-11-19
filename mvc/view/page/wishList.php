@@ -43,8 +43,8 @@
     <div class="introduce-hot">
 
         <!-- 1 sản phẩm -->
-        <div class="wishList-frame mb-3">
-            <div class="wishList-img-here">
+        <div class="frame mb-3">
+            <div class="img-here">
                 <!--IMAGE HERE-->
             </div>
             <div style="width:100%; padding: 0 13.5px 0 13.5px;">
@@ -92,8 +92,8 @@
 
 
         <!-- 1 sản phẩm -->
-        <div class="wishList-frame mb-3">
-            <div class="wishList-img-here">
+        <div class="frame mb-3">
+            <div class="img-here">
                 <!--IMAGE HERE-->
             </div>
             <div style="width:100%; padding: 0 13.5px 0 13.5px;">
@@ -141,8 +141,8 @@
 
 
         <!-- 1 sản phẩm -->
-        <div class="wishList-frame mb-3">
-            <div class="wishList-img-here">
+        <div class="frame mb-3">
+            <div class="img-here">
                 <!--IMAGE HERE-->
             </div>
             <div style="width:100%; padding: 0 13.5px 0 13.5px;">
@@ -190,8 +190,8 @@
 
 
         <!-- 1 sản phẩm -->
-        <div class="wishList-frame mb-3">
-            <div class="wishList-img-here">
+        <div class="frame mb-3">
+            <div class="img-here">
                 <!--IMAGE HERE-->
             </div>
             <div style="width:100%; padding: 0 13.5px 0 13.5px;">
@@ -239,8 +239,8 @@
 
 
         <!-- 1 sản phẩm -->
-        <div class="wishList-frame mb-3">
-            <div class="wishList-img-here">
+        <div class="frame mb-3">
+            <div class="img-here">
                 <!--IMAGE HERE-->
             </div>
             <div style="width:100%; padding: 0 13.5px 0 13.5px;">
@@ -287,8 +287,8 @@
 
 
         <!-- 1 sản phẩm -->
-        <div class="wishList-frame mb-3">
-            <div class="wishList-img-here">
+        <div class="frame mb-3">
+            <div class="img-here">
                 <!--IMAGE HERE-->
             </div>
             <div style="width:100%; padding: 0 13.5px 0 13.5px;">
