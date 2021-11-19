@@ -1,8 +1,5 @@
 <!-- -----------------INFORMATION--------------------- -->
 
-    
-<!-- -----------------INFORMATION--------------------- -->
-
 <div id="home-middle-background">
     <div class="start-slogan home-font">
         <h1>Who we are ?</h1>

@@ -24,22 +24,22 @@
     <!-- -----------------NAV BAR--------------------- -->
     <nav id="navbar-layout-for-all" class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand " href="#">
+                <a class="navbar-brand " href="./">
                     <strong>VinBK</strong>
                 </a>                
                 
                 <ul class="nav">                
                     <li id="sale-id" class="nav-item">
-                        <a class="nav-link color-white" aria-current="page" href="#">SALES</a>
+                        <a class="nav-link color-white" aria-current="page" href="./?url=Home/sale">SALES</a>
                     </li>
                 
                     <li class="nav-item dropdown">
-                        <div class="nav-link dropdown-toggle color-white" href="#"role="button" aria-expanded="false">
+                        <div class="nav-link dropdown-toggle color-white" href=""role="button" aria-expanded="false">
                         SHIRT
                         </div>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="./?url=Home/shirt_polo">
                             <span>
                                 <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="17.5" cy="17.5" r="17" stroke="black"/>
@@ -57,7 +57,7 @@
                         </li>
                         <li><hr class="dropdown-divider"></li>
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="./?url=Home/shirt_tshirt_vest">
                             <span>
                                 <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="17.5" cy="17.5" r="17" stroke="black"/>
@@ -70,7 +70,7 @@
                         </li>
                         <li><hr class="dropdown-divider"></li>
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="./?url=Home/shirt_shirt">
                             <span>
                                 <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="17.5" cy="17.5" r="17" stroke="black"/>
@@ -85,12 +85,12 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <div class="nav-link dropdown-toggle color-white" href="#" role="button" aria-expanded="false">
+                        <div class="nav-link dropdown-toggle color-white" href="" role="button" aria-expanded="false">
                         SHOES
                         </div>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="./?url=Home/shoes_trainers">
                             <span>
                                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M34.6665 18.0359C34.6665 27.5102 27.0514 35.1835 17.6665 35.1835C8.28162 35.1835 0.666504 27.5102 0.666504 18.0359C0.666504 8.56149 8.28162 0.888184 17.6665 0.888184C27.0514 0.888184 34.6665 8.56149 34.6665 18.0359Z" stroke="black"/>
@@ -111,7 +111,7 @@
                         </li>                                                
                         <li><hr class="dropdown-divider"></li>
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="./?url=Home/shoes_sandals_slippers">
                             <span>
                                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M29.6667 19.9167H6.33342V23.4167H29.6667V19.9167Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
@@ -124,7 +124,7 @@
                         </li>
                         <li><hr class="dropdown-divider"></li>
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="./?url=Home/shoes_shocks">
                             <span>
                                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M34.6665 17.6477C34.6665 27.122 27.0514 34.7954 17.6665 34.7954C8.28162 34.7954 0.666504 27.122 0.666504 17.6477C0.666504 8.17331 8.28162 0.5 17.6665 0.5C27.0514 0.5 34.6665 8.17331 34.6665 17.6477Z" stroke="black"/>
@@ -140,12 +140,12 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <div class="nav-link dropdown-toggle color-white" href="#" role="button" aria-expanded="false">
+                        <div class="nav-link dropdown-toggle color-white" href="" role="button" aria-expanded="false">
                         ACCESSORIES
                         </div>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="./?url=Home/access_bag">
                             <span>
                                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M34.6665 18.0359C34.6665 27.5102 27.0514 35.1835 17.6665 35.1835C8.28162 35.1835 0.666504 27.5102 0.666504 18.0359C0.666504 8.56149 8.28162 0.888184 17.6665 0.888184C27.0514 0.888184 34.6665 8.56149 34.6665 18.0359Z" stroke="black"/>
@@ -160,7 +160,7 @@
                         </li>
                         <li><hr class="dropdown-divider"></li>
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="./?url=Home/access_caps">
                             <span>
                                 <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M34.5 17.6477C34.5 27.122 26.8849 34.7954 17.5 34.7954C8.11511 34.7954 0.5 27.122 0.5 17.6477C0.5 8.17331 8.11511 0.5 17.5 0.5C26.8849 0.5 34.5 8.17331 34.5 17.6477Z" stroke="black"/>
@@ -173,7 +173,7 @@
                         </li>                        
                         <li><hr class="dropdown-divider"></li>
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="./?url=Home/access_glass">
                             <span>
                                 <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M34.5 17.6477C34.5 27.122 26.8849 34.7954 17.5 34.7954C8.11511 34.7954 0.5 27.122 0.5 17.6477C0.5 8.17331 8.11511 0.5 17.5 0.5C26.8849 0.5 34.5 8.17331 34.5 17.6477Z" stroke="black"/>
@@ -189,12 +189,12 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <div class="nav-link dropdown-toggle color-white" href="#" role="button" aria-expanded="false">
+                        <div class="nav-link dropdown-toggle color-white" href="" role="button" aria-expanded="false">
                         PANTS
                         </div>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="./?url=Home/pants_jeans">
                             <span>
                                 <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="17.5" cy="17.5" r="17" stroke="black"/>
@@ -209,7 +209,7 @@
                         </li>                        
                         <li><hr class="dropdown-divider"></li>
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="./?url=Home/pants_jog">
                             <span>
                                 <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="17.5" cy="17.5" r="17" stroke="black"/>
@@ -225,7 +225,7 @@
                         </li>
                         <li><hr class="dropdown-divider"></li>
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="./?url=Home/pants_lounges">
                             <span>
                                 <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="17.5" cy="17.5" r="17" stroke="black"/>
