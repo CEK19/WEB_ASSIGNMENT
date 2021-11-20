@@ -25,7 +25,7 @@
     <!-- -----------------NAV BAR--------------------- -->
     <nav id="navbar-layout-for-all" class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand " href="./">
+                <a class="navbar-brand " href="./?url=Home/home">
                     <strong>VinBK</strong>
                 </a>                
                 
@@ -270,7 +270,7 @@
                             </li>                        
                             <li><hr class="dropdown-divider"></li>
                             <li>
-                                <a class="dropdown-item" href="./?url=Home/">
+                                <a class="dropdown-item" href="./?url=Home/home">
                                 <span>
                                     <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.9792 5.83325H8.02083C7.21542 5.83325 6.5625 6.48617 6.5625 7.29159V30.6249C6.5625 31.4303 7.21542 32.0833 8.02083 32.0833H26.9792C27.7846 32.0833 28.4375 31.4303 28.4375 30.6249V7.29159C28.4375 6.48617 27.7846 5.83325 26.9792 5.83325Z" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
@@ -286,7 +286,7 @@
                             </li>   
                             <li><hr class="dropdown-divider"></li>                         
                             <li>
-                                <a class="dropdown-item middle-text" href="">                                    
+                                <a class="dropdown-item middle-text" href="./?url=login">                                    
                                     <span>
                                         <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M27.4722 5.83336V5.58336H27.2222H9.9907C10.0439 5.22646 10.2102 4.89345 10.4685 4.63521C10.7862 4.31744 11.2172 4.13892 11.6666 4.13892H27.2222C27.6716 4.13892 28.1026 4.31744 28.4203 4.63521C28.7381 4.95298 28.9166 5.38397 28.9166 5.83336V29.1667C28.9166 29.6161 28.7381 30.0471 28.4203 30.3648C28.1026 30.6826 27.6716 30.8611 27.2222 30.8611H11.6666C11.2172 30.8611 10.7862 30.6826 10.4685 30.3648C10.1507 30.0471 9.97217 29.6161 9.97217 29.1667V19.8889H11.4166V29.1667V29.4167H11.6666H27.2222H27.4722V29.1667V5.83336Z" fill="black" stroke="black" stroke-width="0.5"/>
