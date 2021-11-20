@@ -90,30 +90,30 @@ $home_url = getUrl().'/';
             <div class="my_content">
                 <form name="my_form" onsubmit="validattion()" action="" method="post">
                     <label class="form-label my_label" for="email">EMAIL ADDRESS</label>
-                    <input class="form-control" type="text" id="email">
+                    <input class="form-control" type="text" id="email" name="email">
 
                     <br>
 
                     <label class="form-label my_label" for="firstName">FIRST NAME</label>
-                    <input class="form-control" type="text" id="firstName">
+                    <input class="form-control" type="text" id="firstName" name="fname">
                     <p class="mb-0 my_quote">Must have 2-30 characters</p>
 
                     <br>
 
                     <label class="form-label my_label" for="lastName">LAST NAME</label>
-                    <input class="form-control" type="text" id="lastName">
+                    <input class="form-control" type="text" id="lastName" name="lname">
                     <p class="mb-0 my_quote">Must have 2-30 characters</p>
 
                     <br>
 
                     <label class="form-label my_label" for="password">PASSWORD</label>
-                    <input class="form-control" type="password" id="password">
+                    <input class="form-control" type="password" id="password" name="pass">
                     <p class="mb-0 my_quote">Must have 10 or more characters</p>
 
                     <br>
 
                     <label class="form-label my_label" for="birthday">DATE OF BIRTH</label>
-                    <input class="form-control" type="date" id="birthday" name="birthday">
+                    <input class="form-control" type="date" id="birthday" name="birthday" name="birthday">
                     <p class="mb-0 my_quote">Must be 16 years old or over to join VinBK</p>
 
                     <br>

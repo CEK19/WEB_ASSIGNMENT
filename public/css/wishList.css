@@ -1,0 +1,31 @@
+/*---------- [ITEM] ----------*/
+.wishList-container{
+    width: 100%;
+}
+
+.wishList-introduce-hot{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.wishList-frame{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 800px;
+    /* border: solid 2px; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.wishList-img-here{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 300px;
+    border: solid 2px;
+}

@@ -1,6 +1,6 @@
 <?php
     class Home extends Controller{
-        public function home(){
+        public function viewHome(){
             // $teo = $this->model("SinhVienModel");
             // print_r($teo->GetSV());        
             $this->view("show", [
