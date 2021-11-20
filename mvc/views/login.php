@@ -28,7 +28,7 @@ $home_url = getUrl().'/';
             </div>
             <div id="change_option">
                 <div id="sign_up">
-                    <a href="signUp.html">SIGN UP</a>
+                    <a href="register">SIGN UP</a>
                 </div>
                 <div class="d-flex" id="vertical_line">
                     <div class="vr"></div>
