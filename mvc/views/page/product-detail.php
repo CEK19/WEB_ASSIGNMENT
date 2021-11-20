@@ -114,15 +114,15 @@
                 
                 <div style="display: flex; flex-direction: column;">
                     <div class="product-detail-comments-name">
-
+                        Trong Ho
                     </div>
-                    <div class="product-detail-date-cmt">
-
+                    <div class="product-detail-date-cmt" style="color: #929090; padding-left: 10px">
+                        20/11/2021
                     </div>
                 </div>
             </div>
-            <div class="product-detail-comment">
-
+            <div class="product-detail-comment" style="padding-left: 10px">
+                kjfjkjakjdjaj
             </div>
         </div>
         <br>

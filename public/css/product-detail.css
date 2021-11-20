@@ -51,9 +51,20 @@
 
 }
 
-.product-detail-comments-account-pic{
+.product-detail-comments-avatar{    
     margin-top: 20px;
     height: 40px;
     width: 40px;
     border: solid 2px;
+    margin-left: 40px;
+}
+
+.product-detail-comments-account{
+    display: flex;
+}
+
+.product-detail-comments-name{
+    margin-top: 20px;
+    padding-left: 10px;
+    font-weight: bold;
 }
