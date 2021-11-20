@@ -6,7 +6,7 @@ class db{
     protected $servername = "localhost";
     protected $username = "root";
     protected $password = "";
-    protected $dbname = "assweb";
+    protected $dbname = "webass";
 
     function __construct(){
         $this->connect = mysqli_connect($this->servername, $this->username, $this->password);

@@ -338,7 +338,7 @@
     </nav>    
 
     <div class="content">
-        <?php require_once "./mvc/view/page/". $data['content'] .".php" ?>        
+        <?php require_once "page/". $data['content'] .".php" ?>        
     </div>
 
     <footer id="footer-layout-for-all">

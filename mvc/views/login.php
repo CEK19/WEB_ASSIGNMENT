@@ -1,13 +1,21 @@
+<?php
+require_once "./mvc/core/basehref.php";
+$home_url = getUrl().'/';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <?php
+        echo "<base href='${home_url}'>";
+    ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in to VinBK</title>
     <!-- CSS -->
-    <link type="text/css" rel="stylesheet" href="../css/signIn.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/signIn.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 </head>
@@ -30,19 +38,19 @@
                 </div>
             </div>
             <div class="my_content">
-                <form>
+                <form action="login/verify" method="post">
                     <label class="form-label" for="email" id="email">EMAIL ADDRESS</label>
-                    <input class="form-control" type="email" id="email_text">
+                    <input class="form-control" type="email" id="email_text" name="email">
 
                     <br>
 
                     <label class="form-label" for="password" id="password">PASSWORD</label>
-                    <input class="form-control" type="password" id="pasword_text">
+                    <input class="form-control" type="password" id="pasword_text" name="pass">
 
                     <br>
 
                     <div class="d-grid mt-2 mb-1">
-                        <button class="btn btn-dark my_button"><span class="fw-bold">SIGN IN</span></button>
+                        <button type = "submit" name ="submit"class="btn btn-dark my_button"><span class="fw-bold">SIGN IN</span></button>
                     </div>
 
                     <div class="text-center mb-5" id="forgot_pass">

@@ -1,5 +1,5 @@
 <?php
-class Controller{
+class controller{
 
     public function model($model){
         require_once "./mvc/models/".$model.".php";
@@ -7,7 +7,10 @@ class Controller{
     }
 
     public function view($view, $data=[]){
-        require_once "./mvc/view/".$view.".php";
+        foreach($data as $key => $value){
+            $$key = $value;
+        }
+        require_once "./mvc/views/".$view.".php";
     }
 }
 ?>
