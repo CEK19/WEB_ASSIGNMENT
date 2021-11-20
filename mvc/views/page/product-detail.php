@@ -121,15 +121,97 @@
                     </div>
                 </div>
             </div>
-            <div class="product-detail-comment" style="padding-left: 10px">
-                kjfjkjakjdjaj
+            <div class="product-detail-comment" style="padding: 20px 20px 20px 20px;">
+                Comment gì đó không biết nữa <br>
+                Comment gì đó không biết nữa <br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa Comment gì đó không biết nữa  Comment gì đó không biết nữa Comment gì đó không biết nữa  Comment gì đó không biết nữa 
             </div>
         </div>
-        <br>
+        
         <div class="product-detail-comments-frame">
-            hafklsahfla
+            <div class="product-detail-comments-account">
+                <div class="product-detail-comments-avatar ">
+                <!---- avatar hear ----> 
+                </div>
+                
+                <div style="display: flex; flex-direction: column;">
+                    <div class="product-detail-comments-name">
+                        Trong Ho
+                    </div>
+                    <div class="product-detail-date-cmt" style="color: #929090; padding-left: 10px">
+                        20/11/2021
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-comment" style="padding: 20px 20px 20px 20px;">
+                Comment gì đó không biết nữa <br>
+                Comment gì đó không biết nữa <br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa Comment gì đó không biết nữa  Comment gì đó không biết nữa Comment gì đó không biết nữa  Comment gì đó không biết nữa 
+            </div>
         </div>
-            <div style="margin: auto">
+        <div class="product-detail-comments-frame">
+            <div class="product-detail-comments-account">
+                <div class="product-detail-comments-avatar ">
+                <!---- avatar hear ----> 
+                </div>
+                
+                <div style="display: flex; flex-direction: column;">
+                    <div class="product-detail-comments-name">
+                        Trong Ho
+                    </div>
+                    <div class="product-detail-date-cmt" style="color: #929090; padding-left: 10px">
+                        20/11/2021
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-comment" style="padding: 20px 20px 20px 20px;">
+                Comment gì đó không biết nữa <br>
+                Comment gì đó không biết nữa <br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa Comment gì đó không biết nữa  Comment gì đó không biết nữa Comment gì đó không biết nữa  Comment gì đó không biết nữa 
+            </div>
+        </div>
+        <div class="product-detail-comments-frame">
+            <div class="product-detail-comments-account">
+                <div class="product-detail-comments-avatar ">
+                <!---- avatar hear ----> 
+                </div>
+                
+                <div style="display: flex; flex-direction: column;">
+                    <div class="product-detail-comments-name">
+                        Trong Ho
+                    </div>
+                    <div class="product-detail-date-cmt" style="color: #929090; padding-left: 10px">
+                        20/11/2021
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-comment" style="padding: 20px 20px 20px 20px;">
+                Comment gì đó không biết nữa <br>
+                Comment gì đó không biết nữa <br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa<br>
+                Comment gì đó không biết nữa Comment gì đó không biết nữa  Comment gì đó không biết nữa Comment gì đó không biết nữa  Comment gì đó không biết nữa 
+            </div>
+        </div>
+        <div class="product-detail-cmt-count" >
+            
+        </div>
+
+            <div style="margin: auto; width: 300px; margin-bottom: 50px;">
                 <button type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2" style="width: 300px;">
                     <div class="mb-0"  style="font-size: 20px; font-weight:bold;">
                         LOAD MORE

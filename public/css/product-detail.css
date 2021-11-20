@@ -48,7 +48,8 @@
     width: 100%;
     border-radius: 10px;
     background-color: rgba(153,153,153,0.2);
-
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .product-detail-comments-avatar{    
