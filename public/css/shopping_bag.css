@@ -1,0 +1,46 @@
+.Sb-page-background{
+    background-color: #E5E5E5 !important;
+}
+
+.Sb-container{
+    width: 70% !important;
+    background-color: #E5E5E5;
+}
+
+/* ------------------------------------ */
+
+.Sb-left{
+    width: 65%;
+    height: fit-content;
+    background-color: #E5E5E5;
+}
+
+    /* child of left */
+    .Sb-left div{
+        background-color: white;
+    }
+
+
+
+/* -------- frame ------------ */
+.Sb-frame{
+    height: fit-content;
+    width: 100%;
+}
+    /* --- child ---- */
+    .Sb-img{
+        width: 110px;
+        height: 140px;
+    }
+    .Sb-detail{
+        width: 100%;
+    }
+
+
+/* ------------------------------------- */
+
+.Sb-right{
+    width: 34%;
+    height: fit-content;
+    background-color: white;
+}
