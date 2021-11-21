@@ -30,7 +30,7 @@ $home_url = getUrl().'/';
                     <div class="vr"></div>
                 </div>
                 <div id="sign_in">
-                    <a href="login">SIGN IN</a>
+                    <a href="./?url=login">SIGN IN</a>
                 </div>
             </div>
 

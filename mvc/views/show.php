@@ -315,7 +315,7 @@ $home_url = getUrl().'/';
                             </li>                              
                             <li><hr class="dropdown-divider"></li>                         
                             <li>
-                                <a class="middle-text dropdown-item" href="">                                    
+                                <a class="middle-text dropdown-item" href="./?url=register">                                    
                                     <span>
                                         <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.5007 17.5C21.5277 17.5 24.7923 14.2354 24.7923 10.2083C24.7923 6.18122 21.5277 2.91663 17.5007 2.91663C13.4736 2.91663 10.209 6.18122 10.209 10.2083C10.209 14.2354 13.4736 17.5 17.5007 17.5Z" stroke="black" stroke-width="2.91667"/>
