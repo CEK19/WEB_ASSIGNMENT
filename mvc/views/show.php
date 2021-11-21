@@ -13,11 +13,20 @@ $home_url = getUrl().'/';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- -----------------Library--------------------- -->
+<<<<<<< HEAD
     <link type="text/css" rel="stylesheet" href="public/css/navbar.css">
     <link type="text/css" rel="stylesheet" href="public/css/footer.css">
     <link type="text/css" rel="stylesheet" href="public/css/wishList.css">
     <link type="text/css" rel="stylesheet" href="public/css/sale.css">
     <link type="text/css" rel="stylesheet" href="public/css/home_page.css">
+=======
+    <link type="text/css" rel="stylesheet" href="./public/css/navbar.css">
+    <link type="text/css" rel="stylesheet" href="./public/css/footer.css">
+    <link type="text/css" rel="stylesheet" href="./public/css/wishList.css">
+    <link type="text/css" rel="stylesheet" href="./public/css/shopping_bag.css">
+    <link type="text/css" rel="stylesheet" href="./public/css/sale.css">
+    <link type="text/css" rel="stylesheet" href="./public/css/home_page.css">
+>>>>>>> b83ad95916cc01ab1d7f4f524cad39d3ec967594
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>        
 
@@ -330,7 +339,7 @@ $home_url = getUrl().'/';
                     </li>
 
                     <li class="nav-item"> 
-                        <a class="nav-link color-white" aria-current="page" href="">
+                        <a class="nav-link color-white" aria-current="page" href="./?url=Home/shopping_bag">
                             <svg id="buy-icon" width="30" height="30" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.375 30.25C13.1344 30.25 13.75 29.6344 13.75 28.875C13.75 28.1156 13.1344 27.5 12.375 27.5C11.6156 27.5 11 28.1156 11 28.875C11 29.6344 11.6156 30.25 12.375 30.25Z" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M27.5 30.25C28.2594 30.25 28.875 29.6344 28.875 28.875C28.875 28.1156 28.2594 27.5 27.5 27.5C26.7406 27.5 26.125 28.1156 26.125 28.875C26.125 29.6344 26.7406 30.25 27.5 30.25Z" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
