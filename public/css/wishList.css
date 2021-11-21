@@ -25,7 +25,20 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    height: 400px;
+    /* height: 400px; */
+    height: 382px;
     width: 300px;
     border: solid 2px;
+    position: relative;
+}
+
+.wishList-del-btn{
+    position: absolute;
+    top: 3%;
+    left: 80%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.wishList-del-btn svg{
+    position: absolute;
 }
