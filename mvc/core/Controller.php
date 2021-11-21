@@ -7,9 +7,6 @@ class controller{
     }
 
     public function view($view, $data=[]){
-        foreach($data as $key => $value){
-            $$key = $value;
-        }
         require_once "./mvc/views/".$view.".php";
     }
 }
