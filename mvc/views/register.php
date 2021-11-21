@@ -88,7 +88,7 @@ $home_url = getUrl().'/';
             <p class="text-center fw-bold fs-4 mb-3">OR SIGN UP WITH EMAIL</p>
 
             <div class="my_content">
-                <form name="my_form" onsubmit="validattion()" action="" method="post">
+                <form name="my_form" onsubmit="validattion()" action="register/comfirm_account" method="post">
                     <label class="form-label my_label" for="email">EMAIL ADDRESS</label>
                     <input class="form-control" type="text" id="email" name="email">
 
@@ -113,7 +113,7 @@ $home_url = getUrl().'/';
                     <br>
 
                     <label class="form-label my_label" for="birthday">DATE OF BIRTH</label>
-                    <input class="form-control" type="date" id="birthday" name="birthday" name="birthday">
+                    <input class="form-control" type="date" id="birthday" name="birthday">
                     <p class="mb-0 my_quote">Must be 16 years old or over to join VinBK</p>
 
                     <br>

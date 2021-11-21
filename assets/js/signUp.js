@@ -61,7 +61,7 @@ function validattion() {
     // check valid date
     let today = new Date();
     let input_date = document.forms["my_form"]["birthday"].valueAsDate;
-    alert(input_date);
+    
     if (input_date == null) {
         isError = true;
         msg += "Please enter your Birthday\n"
@@ -73,7 +73,6 @@ function validattion() {
         if (gap_month < 0 || (gap_month === 0 && gap_day < 0)) {
             age--;
         }
-        alert(age);
         if (age < 16) {
             isError = true;
             msg += "You are under 16 years old\n"

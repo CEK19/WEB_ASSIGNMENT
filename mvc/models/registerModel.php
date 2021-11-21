@@ -16,8 +16,8 @@ class registerModel extends db {
         return false;
         
     }
-    public function newAccount($email, $password, $age, $fname, $lname){
-        $sql = "INSERT INTO account(email, password ,age, fname,lname)  VALUES('$email', '$password','$age','$fname','$lname')";
+    public function newAccount($email, $password, $birthday, $fname, $lname){
+        $sql = "INSERT INTO account(email, password ,birthday, firstName,lastName)  VALUES('$email', '$password','$birthday','$fname','$lname')";
         $query = $this->_query($sql);
         return $query;
     }
