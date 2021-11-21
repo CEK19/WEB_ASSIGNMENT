@@ -323,7 +323,7 @@
                     </li>
 
                     <li class="nav-item"> 
-                        <a class="nav-link color-white" aria-current="page" href="">
+                        <a class="nav-link color-white" aria-current="page" href="./?url=Home/shopping_bag">
                             <svg id="buy-icon" width="30" height="30" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.375 30.25C13.1344 30.25 13.75 29.6344 13.75 28.875C13.75 28.1156 13.1344 27.5 12.375 27.5C11.6156 27.5 11 28.1156 11 28.875C11 29.6344 11.6156 30.25 12.375 30.25Z" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M27.5 30.25C28.2594 30.25 28.875 29.6344 28.875 28.875C28.875 28.1156 28.2594 27.5 27.5 27.5C26.7406 27.5 26.125 28.1156 26.125 28.875C26.125 29.6344 26.7406 30.25 27.5 30.25Z" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
