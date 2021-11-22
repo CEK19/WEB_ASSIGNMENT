@@ -19,18 +19,26 @@ $home_url = getUrl() . '/';
 
 <body>
     <div class="my_page">
-        <div class="CO_container d-flex flex-row justify-content-between">
-            <!-- <div id="logo_group">
-                <span class="VinBK">VinBK</span>
-            </div> -->
-
-            <!-- ---------- LEFT ---------- -->
-            <!-- ========================== -->
+        <!-- ---------- TOP ---------- -->
+        <!-- ========================= -->
+        <div class="CO_header d-flex flex-row justify-content-between">
             <div class="CO-left">
                 <div class="CO-logo-group d-flex flex-row justify-content-between align-items-center ps-3 pe-5">
                     <span class="CO-VinBK mb-0">VinBK</span>
                     <h2 class="fw-bolder mb-0">Check Out</h2>
                 </div>
+            </div>
+            <div class="CO-right">
+                <div class="CO-logo-group"></div>
+            </div>
+        </div>
+
+
+        <div class="CO_container d-flex flex-row justify-content-between">
+
+            <!-- ---------- LEFT ---------- -->
+            <!-- ========================== -->
+            <div class="CO-left">
                 <div class="ps-4 pe-5 pt-4 pb-4">
                     <form>
                         <h4>Delivery Address</h4>
@@ -61,13 +69,125 @@ $home_url = getUrl() . '/';
                                 <p class="blockquote-footer">The third party will be reponsible for delivery, so it may take 3 to 7 days to deliver your order</p>
                             </div>
                         </div>
+
                         <hr class="mt-4 mb-4">
+
                         <h4>Payment Method</h4>
-                        <hr class="mt-4 mb-4">
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-success">
-                                <h5 class="mb-1 mt-1">ORDER</h5>
-                            </button>
+                        <div class="ps-4 pe-4 mt-3">
+                            <div class="d-grid" style="width: 60%;">
+                                <button type="button" class="btn border border-secondary d-flex flex-row align-items-center justify-content-evenly pt-2 pb-2">
+                                    <svg width="38" height="30" viewBox="0 0 38 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.1245 20.3571C25.7465 20.3571 25.3841 20.5264 25.1168 20.8278C24.8496 21.1292 24.6995 21.538 24.6995 21.9642C24.6995 22.3904 24.8496 22.7992 25.1168 23.1006C25.3841 23.402 25.7465 23.5713 26.1245 23.5713H30.8745C31.2524 23.5713 31.6149 23.402 31.8821 23.1006C32.1493 22.7992 32.2995 22.3904 32.2995 21.9642C32.2995 21.538 32.1493 21.1292 31.8821 20.8278C31.6149 20.5264 31.2524 20.3571 30.8745 20.3571H26.1245Z" fill="black" />
+                                        <path d="M5.225 0C3.83924 0 2.51024 0.620852 1.53037 1.72598C0.55049 2.8311 0 4.32997 0 5.89286V24.1071C0 25.67 0.55049 27.1689 1.53037 28.274C2.51024 29.3791 3.83924 30 5.225 30H32.775C34.1608 30 35.4898 29.3791 36.4696 28.274C37.4495 27.1689 38 25.67 38 24.1071V5.89286C38 4.32997 37.4495 2.8311 36.4696 1.72598C35.4898 0.620852 34.1608 0 32.775 0H5.225ZM2.85 24.1071V12.8571H35.15V24.1071C35.15 25.5857 34.086 26.7857 32.775 26.7857H5.225C3.914 26.7857 2.85 25.5857 2.85 24.1071ZM2.85 9.64286V5.89286C2.85 4.41429 3.914 3.21429 5.225 3.21429H32.775C34.086 3.21429 35.15 4.41429 35.15 5.89286V9.64286H2.85Z" fill="black" />
+                                    </svg>
+
+                                    <p class="mb-0">Add your credit or debit card</p>
+                                </button>
+
+                                <p class="mt-2 mb-2 text-center fw-bold" style="color: grey;">OR</p>
+
+                                <button type="button" class="btn border border-secondary  pt-2 pb-2">
+                                    <img src="./assets/img/payment.png" title="E-Wallet" width="100%">
+                                </button>
+                            </div>
+
+
+                            <!-- Credit or Debit card -->
+                            <div class="">
+                                <hr class="CO-style mt-5 mb-3 ">
+
+                                <h5>Add credit/debit card</h5>
+
+
+                                <label class="form-label">Card Number</label>
+                                <input type="text" class="form-control" style="width: 60%;">
+
+                                <label class="form-label mt-3">Expired Day</label>
+                                <div class="d-flex flex-row">
+                                    <select class="form-select me-2" style="width: 20%;">
+                                        <option selected>Month</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+
+                                    <select class="form-select" style="width: 20%;">
+                                        <option selected>Year</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                        <option value="2031">2031</option>
+                                        <option value="2032">2032</option>
+                                    </select>
+                                </div>
+
+                                <label class="form-label mt-3">Name of card</label>
+                                <input type="text" class="form-control" style="width: 60%;">
+
+
+                            </div>
+
+
+                            <!-- Ví điện tử -->
+                            <div class="">
+                                <hr class="CO-style mt-5 mb-3 ">
+
+                                <h5>E-Wallet</h5>
+
+                                <label class="form-label">Your phone number for this payment</label>
+                                <input type="text" class="form-control" style="width: 60%;">
+
+                                <p class="mt-3">Choose one electronic wallet to pay the bill</p>
+                                <div class="ps-4 pe-4">
+
+                                    <div class="form-check mt-2">
+                                        <input type="radio" class="form-check-input" name="e-wallet-company">
+                                        <label class="form-check-label" for="delivery-method">
+                                            <img src="./assets/img/paypal.png" style="width: 56px;" title="PayPal">
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check mt-2">
+                                        <input type="radio" class="form-check-input" name="e-wallet-company">
+                                        <label class="form-check-label" for="delivery-method">
+                                            <img src="./assets/img/momo.png" style="width: 56px;" title="MoMo">
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check mt-2">
+                                        <input type="radio" class="form-check-input" name="e-wallet-company">
+                                        <label class="form-check-label" for="delivery-method">
+                                            <img class="border border-secondary rounded" src="./assets/img/zaloPay.png" style="width: 56px;" title="ZaloPay">
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <hr class="mt-4 mb-4">
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success">
+                                    <h5 class="mb-1 mt-1">ORDER</h5>
+                                </button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -76,12 +196,11 @@ $home_url = getUrl() . '/';
 
             <!-- ---------- RIGHT ---------- -->
             <!-- =========================== -->
-            <div class="CO-right">
-                <div class="CO-logo-group"></div>
+            <div class="CO-right sticky-top">
                 <div class="ps-3 pe-4 pt-3 pb-3">
                     <div class="d-flex flex-row justify-content-between align-items-center">
                         <div class="d-flex flex-row ps-1">
-                            <h4 class="mb-0">2 &nbsp;</h4>
+                            <h4 class="mb-0">3 &nbsp;</h4>
                             <h4 class="mb-0">Items</h4>
                         </div>
                         <a class="mb-0 CO-edit pe-2">Edit</a>
@@ -90,70 +209,74 @@ $home_url = getUrl() . '/';
                     <hr class="ms-1 me-1">
 
                     <!-- FRAME ARRAY HERE -->
-                    <div class="CO-frame d-flex flex-row mb-3">
-                        <div class="border CO-img">
-                            <!-- img -->
-                            <img src="./mvc/database/access_bags/5.jpeg" style="width:100%;">
-                        </div>
-                        <div class="CO-detail ms-3 pt-2">
-                            <h5 class="mb-1">45.00 $</h5>
-                            <p class="mb-1">Đây là tên của sản phẩm người ta</p>
-                            <div class="CO-detail-ls d-flex flex-row">
-                                <p class="mb-0">White</p>
-                                &nbsp; &ensp;
-                                <p class="mb-0">XL</p>
-                                &nbsp; &ensp;
-                                Qty: <p class="mb-0">1</p>
+                    <div class="ps-2">
+                        <div class="CO-frame d-flex flex-row mb-3">
+                            <div class="border CO-img">
+                                <!-- img -->
+                                <img src="./mvc/database/access_bags/5.jpeg" style="width:100%;">
+                            </div>
+                            <div class="CO-detail ms-3 pt-2">
+                                <h5 class="mb-1">45.00 $</h5>
+                                <p class="mb-1">Đây là tên của sản phẩm người ta</p>
+                                <div class="CO-detail-ls d-flex flex-row">
+                                    <p class="mb-0">White</p>
+                                    &nbsp; &ensp;
+                                    <p class="mb-0">XL</p>
+                                    &nbsp; &ensp;
+                                    Qty: <p class="mb-0">1</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="CO-frame d-flex flex-row mb-3">
-                        <div class="border CO-img">
-                            <!-- img -->
-                            <img src="./mvc/database/access_bags/14.jpeg" style="width:100%;">
-                        </div>
-                        <div class="CO-detail ms-3 pt-2">
-                            <h5 class="mb-1">45.00 $</h5>
-                            <p class="mb-1">Đây là tên của sản phẩm người ta</p>
-                            <div class="CO-detail-ls d-flex flex-row">
-                                <p class="mb-0">White</p>
-                                &nbsp; &ensp;
-                                <p class="mb-0">XL</p>
-                                &nbsp; &ensp;
-                                Qty: <p class="mb-0">1</p>
+                        <div class="CO-frame d-flex flex-row mb-3">
+                            <div class="border CO-img">
+                                <!-- img -->
+                                <img src="./mvc/database/access_bags/14.jpeg" style="width:100%;">
+                            </div>
+                            <div class="CO-detail ms-3 pt-2">
+                                <h5 class="mb-1">45.00 $</h5>
+                                <p class="mb-1">Đây là tên của sản phẩm người ta</p>
+                                <div class="CO-detail-ls d-flex flex-row">
+                                    <p class="mb-0">White</p>
+                                    &nbsp; &ensp;
+                                    <p class="mb-0">XL</p>
+                                    &nbsp; &ensp;
+                                    Qty: <p class="mb-0">1</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="CO-frame d-flex flex-row mb-3">
-                        <div class="border CO-img">
-                            <!-- img -->
-                            <img src="./mvc/database/access_bags/9.jpeg" style="width:100%;">
-                        </div>
-                        <div class="CO-detail ms-3 pt-2">
-                            <h5 class="mb-1">45.00 $</h5>
-                            <p class="mb-1">Đây là tên của sản phẩm người ta</p>
-                            <div class="CO-detail-ls d-flex flex-row">
-                                <p class="mb-0">White</p>
-                                &nbsp; &ensp;
-                                <p class="mb-0">XL</p>
-                                &nbsp; &ensp;
-                                Qty: <p class="mb-0">1</p>
+                        <div class="CO-frame d-flex flex-row mb-3">
+                            <div class="border CO-img">
+                                <!-- img -->
+                                <img src="./mvc/database/access_bags/9.jpeg" style="width:100%;">
+                            </div>
+                            <div class="CO-detail ms-3 pt-2">
+                                <h5 class="mb-1">45.00 $</h5>
+                                <p class="mb-1">Đây là tên của sản phẩm người ta</p>
+                                <div class="CO-detail-ls d-flex flex-row">
+                                    <p class="mb-0">White</p>
+                                    &nbsp; &ensp;
+                                    <p class="mb-0">XL</p>
+                                    &nbsp; &ensp;
+                                    Qty: <p class="mb-0">1</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <hr class="ms-1 me-1">
 
-                    <div class="d-flex flex-row justify-content-between align-items-center ms-1 me-1">
-                        <p class="mb-0">Sub-Total</p>
-                        <p class="mb-0">100.00 $</p>
-                    </div>
+                    <div class="ps-2">
+                        <div class="d-flex flex-row justify-content-between align-items-center ms-1 me-1">
+                            <p class="mb-0">Sub-Total</p>
+                            <p class="mb-0">100.00 $</p>
+                        </div>
 
-                    <div class="d-flex flex-row justify-content-between align-items-center ms-1 me-1">
-                        <p class="mb-0">Delivery</p>
-                        <p class="mb-0">40.00 $</p>
+                        <div class="d-flex flex-row justify-content-between align-items-center ms-1 me-1">
+                            <p class="mb-0">Delivery</p>
+                            <p class="mb-0">40.00 $</p>
+                        </div>
                     </div>
 
                     <hr class="ms-1 me-1">
