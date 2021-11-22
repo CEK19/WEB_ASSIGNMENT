@@ -193,7 +193,7 @@
             <hr>
 
             <div class="d-grid gap-2">
-                <button type="button" class="btn btn-success border-0">CHECK OUT</button>
+                <a href="?url=checkOut" role="button" class="btn btn-success border-0">CHECK OUT</a>
             </div>
 
             <p class="fw-bold mt-3">We also accept:</p>
