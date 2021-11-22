@@ -448,10 +448,10 @@
                 </div>
                 <div class="sub-right-thing">
                     
-                    <a href="">&nbsp;Privacy & Cookies |</a>
+                    <a href="https://www.freeprivacypolicy.com/live/18f39e7d-8ce8-4382-9c11-9bd1c41b1364" target="_blank">&nbsp;Privacy & Cookies |</a>
                 </div>
                 <div class="sub-right-thing">
-                    <a href="">&nbsp;Terms and Conditions</a>
+                    <a href="https://www.termsfeed.com/live/efb181e0-4bb1-49d9-96b7-1a1226c66fbe" target="_blank">&nbsp;Terms and Conditions</a>
                 </div>
             </div>
         </div>
