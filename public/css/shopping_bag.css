@@ -161,6 +161,7 @@
 #Sb-page-background svg:hover{
     opacity: 0.5;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
