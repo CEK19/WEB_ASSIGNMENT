@@ -1,6 +1,6 @@
 <div id="Sb-page-background" class="Sb-page-background pb-5">
     <!-- -----------------INFORMATION--------------------- -->
-    <div class="information del-mobile">
+    <div class="information del-mobile-sm">
         <div class="in4 r-border">
             <div class="block-text">
                 <p>EXTRA 20% OFF</p>
@@ -41,19 +41,19 @@
                         <p>Đây là tên của sản phẩm người ta</p>
 
                         <div class="d-flex row ms-0 me-0">
-                            <select class="form-select me-2" style="width:21%">
+                            <select class="form-select me-2 Sb-detail-color" style="width:21%">
                                 <option value="1" selected>Black</option>
                                 <option value="2">White</option>
                             </select>
 
-                            <select class="form-select me-2" style="width:15%">
+                            <select class="form-select me-2 Sb-detail-size" style="width:15%">
                                 <option value="1">S</option>
                                 <option value="2" selected>M</option>
                                 <option value="3">L</option>
                                 <option value="4">XL</option>
                             </select>
 
-                            <select class="form-select" style="width:22%">
+                            <select class="form-select Sb-detail-quantity" style="width:22%">
                                 <option value="1" selected>Qty 1</option>
                                 <option value="2">Qty 2</option>
                                 <option value="3">Qty 3</option>
@@ -86,19 +86,19 @@
                         <p>Đây là tên của sản phẩm người ta</p>
 
                         <div class="d-flex row ms-0 me-0">
-                            <select class="form-select me-2" style="width:21%">
+                            <select class="form-select me-2 Sb-detail-color" style="width:21%">
                                 <option value="1" selected>Black</option>
                                 <option value="2">White</option>
                             </select>
 
-                            <select class="form-select me-2" style="width:15%">
+                            <select class="form-select me-2 Sb-detail-size" style="width:15%">
                                 <option value="1">S</option>
                                 <option value="2" selected>M</option>
                                 <option value="3">L</option>
                                 <option value="4">XL</option>
                             </select>
 
-                            <select class="form-select" style="width:22%">
+                            <select class="form-select Sb-detail-quantity" style="width:22%">
                                 <option value="1" selected>Qty 1</option>
                                 <option value="2">Qty 2</option>
                                 <option value="3">Qty 3</option>
@@ -131,19 +131,19 @@
                         <p>Đây là tên của sản phẩm người ta</p>
 
                         <div class="d-flex row ms-0 me-0">
-                            <select class="form-select me-2" style="width:21%">
+                            <select class="form-select me-2 Sb-detail-color" style="width:21%">
                                 <option value="1" selected>Black</option>
                                 <option value="2">White</option>
                             </select>
 
-                            <select class="form-select me-2" style="width:15%">
+                            <select class="form-select me-2 Sb-detail-size" style="width:15%">
                                 <option value="1">S</option>
                                 <option value="2" selected>M</option>
                                 <option value="3">L</option>
                                 <option value="4">XL</option>
                             </select>
 
-                            <select class="form-select" style="width:22%">
+                            <select class="form-select Sb-detail-quantity" style="width:22%">
                                 <option value="1" selected>Qty 1</option>
                                 <option value="2">Qty 2</option>
                                 <option value="3">Qty 3</option>

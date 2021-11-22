@@ -1,12 +1,28 @@
 /* BEGIN SHARED CLASS */
 /* ================== */
-@media screen and (max-width: 500px) {
-    .del-mobile{
+
+/* ---------- small mobile --------- */
+@media screen and (min-width: 320px) and (max-width: 391px) {
+    .del-mobile-sm{
         display: none !important;
     }
 
     .information-mobile{
         display: inline-block !important;
+    }
+}
+
+/* ---------- normal mobile --------- */
+@media screen and (min-width: 391px) and (max-width: 800px) {
+    .del-mobile{
+        display: none !important;
+    }
+}
+
+/* ---------- tablet --------- */
+@media screen and (min-width: 800px) and (max-width: 1400px) {
+    .del-mobile-lg{
+        display: none !important;
     }
 }
 

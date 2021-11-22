@@ -1,6 +1,6 @@
 /* BEGIN RESPONSIVE CODE */
 /* ===================== */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) and (min-width: 390px) {
     /* .information-mobile{
         display: inline-block !important;
     } */
@@ -17,6 +17,19 @@
 
     #Sb-page-background .Sb-container.d-flex{
         display: block !important;
+    }
+
+    .Sb-detail .Sb-detail-color{
+        width: 28% !important;
+        font-size: small;
+    }
+    .Sb-detail .Sb-detail-size{
+        width: 25% !important;
+        font-size: small;
+    }
+    .Sb-detail .Sb-detail-quantity{
+        width: 35% !important;
+        font-size: small;
     }
 
 }
