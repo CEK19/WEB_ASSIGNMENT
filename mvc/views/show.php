@@ -19,6 +19,7 @@
 
     <link type="text/css" rel="stylesheet" href="./public/css/navbar.css">
     <link type="text/css" rel="stylesheet" href="./public/css/footer.css">
+    <link type="text/css" rel="stylesheet" href="./public/css/responsive.css">
     <link type="text/css" rel="stylesheet" href="./public/css/wishList.css">
     <link type="text/css" rel="stylesheet" href="./public/css/shopping_bag.css">
     <link type="text/css" rel="stylesheet" href="./public/css/sale.css">
