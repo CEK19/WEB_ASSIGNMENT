@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <!-- INFORMATION IN MOBILE -->
+    <!-- INFORMATION IN MOBILE STYLE -->
     <div class="information-mobile" style="display: none;">
         <div class="block-text-mobile" style="width:100%;">
             <p>UP TO 50% OF SWEET STYLES</p>
