@@ -1,3 +1,28 @@
+/* BEGIN RESPONSIVE CODE */
+/* ===================== */
+@media screen and (max-width: 500px) {
+    /* .information-mobile{
+        display: inline-block !important;
+    } */
+
+    .Sb-container{
+        display: block !important;
+        width: 100% !important;
+        background-color: red !important;
+    }
+
+    .Sb-container .Sb-left, .Sb-container .Sb-right{
+        width: 100%;
+    }
+
+    #Sb-page-background .Sb-container.d-flex{
+        display: block !important;
+    }
+
+}
+/* =================== */
+/* END RESPONSIVE CODE */
+
 /*---------- [INFORMATION CSS] ----------*/
 #Sb-page-background .information{
     display: flex;
@@ -98,8 +123,9 @@
 }
 
 .Sb-container{
-    width: 70% !important;
+    width: 70%;
     background-color: #E5E5E5;
+    margin: 0 auto;
 }
 
 /* ------------------------------------ */
@@ -127,7 +153,8 @@
     /* --- child ---- */
     .Sb-img{
         width: 140px;
-        height: 140px;
+        /* height: 140px; */
+        height: fit-content;
     }
     .Sb-detail{
         width: 100%;
