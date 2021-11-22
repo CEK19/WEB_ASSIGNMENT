@@ -1,3 +1,42 @@
+/* BEGIN SHARED CLASS */
+/* ================== */
+@media screen and (max-width: 500px) {
+    .del-mobile{
+        display: none !important;
+    }
+
+    .information-mobile{
+        display: inline-block !important;
+    }
+}
+
+/* -------------- in mobile ---------------- */
+.information-mobile{
+    height: 82px;
+    width: 100%;
+    background-color: #5611FF;
+    border-style: solid;
+    border-width: 1px;
+    border-color: aliceblue;
+}
+
+.block-text-mobile{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-text-mobile p{
+    margin-bottom: 0px;
+    color: #E4FF80;
+    font-weight: bold;
+}
+/* ================ */
+/* END SHARED CLASS */
+
+
+
 /*---------- [INFORMATION CSS] ----------*/
 #wishList-page-background .information{
     display: flex;
