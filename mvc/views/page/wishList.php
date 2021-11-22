@@ -1,4 +1,4 @@
-<div id="sale-page-background">
+<div id="wishList-page-background">
     <!-- -----------------INFORMATION--------------------- -->
     <div class="information">
         <div class="in4 r-border">
