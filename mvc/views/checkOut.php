@@ -203,7 +203,7 @@ $home_url = getUrl() . '/';
                             <h4 class="mb-0">3 &nbsp;</h4>
                             <h4 class="mb-0">Items</h4>
                         </div>
-                        <a class="mb-0 CO-edit pe-2">Edit</a>
+                        <a class="mb-0 CO-edit pe-2" href="?url=Home/shopping_bag">Edit</a>
                     </div>
 
                     <hr class="ms-1 me-1">
