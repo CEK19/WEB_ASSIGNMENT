@@ -1,9 +1,13 @@
 <?php
 require_once "./mvc/core/basehref.php";
 $home_url = getUrl().'/';
+<<<<<<< Updated upstream
 // if(!$_SESSION['error'] || !isset($_SESSION['error'])){
 //     header("Location: " . geturl(). "/login");
 // }
+=======
+
+>>>>>>> Stashed changes
 ?>
 
 <!DOCTYPE html>
@@ -210,7 +214,7 @@ $home_url = getUrl().'/';
             </div>
         </footer>
     </div>
-
+    <?php echo $_SESSION['level']?>
 
 
     <!--  JavaScript  -->

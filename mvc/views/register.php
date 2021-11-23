@@ -17,6 +17,7 @@ $home_url = getUrl().'/';
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 </head>
 <body>
+    
     <div class="my_page">
         <div class="my_container">
             <div id="logo_group">
