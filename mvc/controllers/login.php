@@ -8,8 +8,8 @@ class login extends controller
     public function viewHome()
     {
         // $productsByType = $this->model('ProductsModel')->getProductByType();
-        if (!isset($_SESSION['error'])){
-            $_SESSION['error'] = False;
+        if (isset($_SESSION['login']) && $_SESSION['login']){
+            header("Location: " . geturl(). "/Home");
         }
         $this->view("login");
     }
@@ -23,12 +23,12 @@ class login extends controller
             "pass" => $pass
         ]);
         if ($data == ""){
-            $_SESSION['error'] = True;
+            $_SESSION['login'] = false;
             header("Location: " . geturl(). "/login");
 
         }else {
             // $_SESSION['error'] = False;
-            unset($_SESSION['error']);
+            $_SESSION['login'] = true;
             $_SESSION['firstname'] = $data['firstName'] ;
             $_SESSION['lastname'] = $data['lastName'];
             // $_SESSION['username'] = $data['ID'];

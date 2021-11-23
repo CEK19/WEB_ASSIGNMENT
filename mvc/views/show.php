@@ -279,7 +279,7 @@
                             </li>                        
                             <li><hr class="dropdown-divider"></li>
                             <li>
-                                <a class="dropdown-item" href="./?url=Home/home">
+                                <a class="dropdown-item" href="logout">
                                 <span>
                                     <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.9792 5.83325H8.02083C7.21542 5.83325 6.5625 6.48617 6.5625 7.29159V30.6249C6.5625 31.4303 7.21542 32.0833 8.02083 32.0833H26.9792C27.7846 32.0833 28.4375 31.4303 28.4375 30.6249V7.29159C28.4375 6.48617 27.7846 5.83325 26.9792 5.83325Z" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
