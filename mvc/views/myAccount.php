@@ -1,18 +1,9 @@
 <?php
 require_once "./mvc/core/basehref.php";
 $home_url = getUrl().'/';
-<<<<<<< Updated upstream
-// if(!$_SESSION['error'] || !isset($_SESSION['error'])){
-//     header("Location: " . geturl(). "/login");
-// }
-=======
-
->>>>>>> Stashed changes
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <?php
         echo "<base href='${home_url}'>";
@@ -182,12 +173,6 @@ $home_url = getUrl().'/';
 
                                 <br>
 
-                                <div class="col-7">
-                                    <label class="form-label my_label" for="birthday">DATE OF BIRTH</label>
-                                    <input name = "birthday" class="form-control" type="date" id="birthday" value="<?php echo $_SESSION['birthday'] ?> ">
-                                    <p class="mb-0 my_quote">Must be 16 years old or over to join VinBK</p>
-                                </div>
-
                                 <br>
 
                                 <div class="d-grid mt-2 pb-3 col-7">
@@ -214,7 +199,7 @@ $home_url = getUrl().'/';
             </div>
         </footer>
     </div>
-    <?php echo $_SESSION['level']?>
+
 
 
     <!--  JavaScript  -->

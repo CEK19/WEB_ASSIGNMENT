@@ -2,7 +2,6 @@
 require_once "./mvc/core/basehref.php";
 $home_url = getUrl().'/';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

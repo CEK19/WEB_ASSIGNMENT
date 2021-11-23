@@ -7,6 +7,7 @@ class login extends controller
 
     public function viewHome()
     {
+        require_once "./mvc/core/basehref.php";
         // $productsByType = $this->model('ProductsModel')->getProductByType();
         if (isset($_SESSION['login']) && $_SESSION['login']){
             header("Location: " . geturl(). "/Home");

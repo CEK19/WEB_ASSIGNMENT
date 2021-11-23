@@ -8,15 +8,16 @@ class myAccount extends controller
     public function viewHome()
     {
         // $productsByType = $this->model('ProductsModel')->getProductByType();
+        require_once "./mvc/core/basehref.php";
         if (isset($_SESSION['login'])){
             if($_SESSION['login']){
                 $this->view("myAccount");
             }
             else {
-                $this->view("login");
+                header("Location: " . geturl(). "/login");
             }
         } else {
-            $this->view("login");
+            header("Location: " . geturl(). "/login");
         }
         
     }
@@ -27,14 +28,13 @@ class myAccount extends controller
         $lname = $_POST['lname'];
         $email = $_POST['email'];
         $pass = $_POST['pass'];
-        if(       
-                    (strlen($lname) >= 2 && strlen($lname) <= 30) &&
-                    (strlen($fname) >= 2 && strlen($fname) <= 30) &&
-                    (strlen($pass) >= 10) &&
-                    preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $email)
+        if(     (strlen($lname) >= 2 && strlen($lname) <= 30) &&
+        (strlen($fname) >= 2 && strlen($fname) <= 30) &&
+        (strlen($pass) >= 10) &&
+        preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $email)
         )
         {
-        $update = $this->model('myAccountModel')->updateAccount($email,md5($pass),$birthday,$fname,$lname,$id);
+        $update = $this->model('myAccountModel')->updateAccount($email,md5($pass),$fname,$lname,$id);
         header("Location: " . geturl(). "/Home");
         }
         else{
