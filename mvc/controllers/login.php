@@ -32,7 +32,8 @@ class login extends controller
             $_SESSION['firstname'] = $data['firstName'] ;
             $_SESSION['lastname'] = $data['lastName'];
             // $_SESSION['username'] = $data['ID'];
-            $_SESSION['user_ID'] = $data['id'];
+            $_SESSION['level'] = $data['level'];
+            $_SESSION['user_ID'] = $data['user_id'];
             $_SESSION['email'] = $data['email'];
             $_SESSION['birthday'] = $data['birthday'];
             header("Location: " . geturl(). "/Home");

@@ -6,7 +6,7 @@
         }
     
         public function updateAccount($email, $password, $birthday, $fname, $lname, $id){
-            $sql = "UPDATE account SET email = '$email', password = '$password', birthday = '$birthday', firstName = '$fname', lastName = '$lname' WHERE id = '$id'";
+            $sql = "UPDATE account SET email = '$email', password = '$password', birthday = '$birthday', firstName = '$fname', lastName = '$lname' WHERE user_id = '$id'";
             $query = $this->_query($sql);
             return $query;
         }
