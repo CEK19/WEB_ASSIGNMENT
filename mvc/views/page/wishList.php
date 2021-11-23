@@ -1,6 +1,6 @@
 <div id="wishList-page-background">
     <!-- -----------------INFORMATION--------------------- -->
-    <div class="information del-mobile">
+    <div class="information del-mobile-sm">
         <div class="in4 r-border">
             <div class="block-text">
                 <p>EXTRA 20% OFF</p>

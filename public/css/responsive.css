@@ -2,7 +2,7 @@
 /* ================== */
 
 /* ---------- small mobile --------- */
-@media screen and (min-width: 320px) and (max-width: 391px) {
+@media screen and (min-width: 320px) and (max-width: 390px) {
     .del-mobile-sm{
         display: none !important;
     }
@@ -13,7 +13,7 @@
 }
 
 /* ---------- normal mobile --------- */
-@media screen and (min-width: 391px) and (max-width: 800px) {
+@media screen and (min-width: 390px) and (max-width: 800px) {
     .del-mobile{
         display: none !important;
     }
