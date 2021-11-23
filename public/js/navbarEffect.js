@@ -1,4 +1,4 @@
-function mouseOver(obj){
+function mouseOver_NAV(obj){
     let subObjects = obj.getElementsByTagName("path");
     let myLen = subObjects.length;
     for(let index = 0; index < myLen; ++index){
@@ -6,7 +6,7 @@ function mouseOver(obj){
     }
 }
 
-function mouseOut(obj){
+function mouseOut_NAV(obj){
     let subObjects = obj.getElementsByTagName("path");
     let myLen = subObjects.length;
     for(let index = 0; index < myLen; ++index){
@@ -21,25 +21,25 @@ const objIconList = {
 }
 
 objIconList.login.addEventListener("mouseenter", function(){
-    mouseOver(objIconList.login);
+    mouseOver_NAV(objIconList.login);
 });
 
 objIconList.login.addEventListener("mouseleave", function(){
-    mouseOut(objIconList.login);
+    mouseOut_NAV(objIconList.login);
 });
 
 objIconList.wish_list.addEventListener("mouseenter", function(){
-    mouseOver(objIconList.wish_list);
+    mouseOver_NAV(objIconList.wish_list);
 });
 
 objIconList.wish_list.addEventListener("mouseleave", function(){
-    mouseOut(objIconList.wish_list);
+    mouseOut_NAV(objIconList.wish_list);
 });
 
 objIconList.buy_icon.addEventListener("mouseenter", function(){
-    mouseOver(objIconList.buy_icon);
+    mouseOver_NAV(objIconList.buy_icon);
 });
 
 objIconList.buy_icon.addEventListener("mouseleave", function(){
-    mouseOut(objIconList.buy_icon);
+    mouseOut_NAV(objIconList.buy_icon);
 });    

@@ -143,13 +143,12 @@
     position: relative;
 }
 
-.sellingPageLayout .selling-del-btn{
+.sellingPageLayout .selling-heart-btn{
     position: absolute;
-    top: 3%;
-    left: 80%;
-    /* transform: translate(-50%, -50%); */
+    top: 2%;
+    right: 3%;
 }
 
-.sellingPageLayout .selling-del-btn svg{
+.sellingPageLayout .selling-hear-btn svg{
     position: absolute;
 }
