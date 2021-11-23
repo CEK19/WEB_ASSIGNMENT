@@ -1,6 +1,7 @@
 #home-middle-background{
     height: 100%;
-    width: 1260px;
+    /* width: 1260px; */
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -12,7 +13,8 @@
 
 #home-middle-background .sub-paragraph{
     height: 100%;
-    width: 680px;
+    /* width: 680px; */
+    width: 60%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -23,7 +25,8 @@
 
 #home-middle-background .home-contact-info{
     height: 100%;
-    width: 680px;
+    /* width: 680px; */
+    width: 60%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -55,3 +58,63 @@
 #home-middle-background .button-box{
     text-align: center;
 }
+
+/* BEGIN RESPONSIVE CODE */
+/* ===================== */
+@media screen and (max-width: 352px) {
+    #home-middle-background .home-contact-info p{
+        font-size: x-small !important;
+    }
+}
+@media screen and (min-width: 352px) and (max-width: 850px) {
+    #home-middle-background .home-contact-info p{
+        font-size: small !important;
+    }
+}
+@media screen and (min-width: 850px) and (max-width: 1000px) {
+    #home-middle-background .home-contact-info p{
+        font-size: medium !important;
+    }
+}
+/* ---------- normal mobile --------- */
+@media screen and (max-width: 1000px) {
+    #home-middle-background{
+        width: 100%;
+    }
+
+    #home-middle-background .sub-paragraph{
+        width: 80%;
+    }
+
+    #home-middle-background .home-contact-info{
+        width: 80%;
+    }
+
+    #home-middle-background img{
+        width: 130%;
+    }
+
+    .home-img{
+        position: relative;
+        left: -15%;
+    }
+
+    #home-middle-background .home-font h1{
+        font-size: xx-large;
+    }
+
+    #home-middle-background .home-font h4{
+        font-size: x-large;
+    }
+    #home-middle-background .home-font:not(.home-contact-info) p{
+        font-size: medium;
+    }
+    #home-middle-background .home-first-text{
+        padding-top: 15px;
+    }
+    #home-middle-background .home-contact-info p{
+        font-size: small;
+    }
+}
+/* =================== */
+/* END RESPONSIVE CODE */
