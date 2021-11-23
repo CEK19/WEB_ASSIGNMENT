@@ -26,4 +26,41 @@
             Bags
         </h1>
     </div>
+
+    <!-- -----------------INTRODUCE--------------------- -->
+    <div class="selling-container d-flex justify-content-center">
+        <div class="selling-introduce-hot">
+
+        <?php
+            if(isset($data['img_info'])){
+                foreach($data['img_info'] as $item){ 
+        ?>
+            <div class="selling-frame mb-3">
+                <div class="selling-img-here mb-3">
+                    <!--IMAGE HERE-->
+                    <?php
+                        $PATH_IMAGE = './mvc/database/'.$data['folder-img'].'/'.$item['id'].'.jpeg';                        
+                        echo '<img src="'.$PATH_IMAGE.'"'.'style="width:100%;">';
+                    ?>                            
+                    <!--IMAGE HERE-->
+                </div>
+                <div style="width:100%; padding: 0 25px 0 25px;">
+                    <h4><?php echo $item['name'] ?></h4>
+                    <div class="d-flex flex-row mt-2">
+                        <p class="text-decoration-line-through fst-italic fs-5 mb-0 me-5 align-middle"><?php echo $item['cost_origin'].'$' ?><p>
+                        <p class="fw-bolder fs-4 mb-0 align-middle"> <?php echo $item['cost'].'$' ?> </p>
+                    </div>
+                    <hr class="mt-2 mb-2">                    
+                </div>
+                <button type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2">
+                    <h3 class="mb-0">MOVE TO BAG</h3>
+                </button>
+            </div>  
+                    
+        <?php
+                }
+            }
+        ?>
+
+        </div>                                    
 </div>

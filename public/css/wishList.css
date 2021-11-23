@@ -93,18 +93,18 @@
 
 
 /*---------- [ITEM] ----------*/
-.wishList-container{
+#wishList-page-background .wishList-container{
     width: 100%;
 }
 
-.wishList-introduce-hot{
+#wishList-page-background .wishList-introduce-hot{
     display: flex;
     width: 90%;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.wishList-frame{
+#wishList-page-background .wishList-frame{
     display: flex;
     flex-direction: column;
     width: 350px;
@@ -115,7 +115,7 @@
 }
 
 
-.wishList-img-here{
+#wishList-page-background .wishList-img-here{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -126,13 +126,13 @@
     position: relative;
 }
 
-.wishList-del-btn{
+#wishList-page-background .wishList-del-btn{
     position: absolute;
     top: 3%;
     left: 80%;
     /* transform: translate(-50%, -50%); */
 }
 
-.wishList-del-btn svg{
+#wishList-page-background .wishList-del-btn svg{
     position: absolute;
 }

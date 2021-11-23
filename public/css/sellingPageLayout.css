@@ -59,5 +59,97 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    font-weight: bold;
+}
 
+/*---------- [INFORMATION CSS] ----------*/
+.sellingPageLayout .information{
+    display: flex;
+    flex-direction: row;
+    height: 82px;
+    background-color: #5611FF;
+    border-style: solid;
+    border-width: 1px;
+    border-color: aliceblue;
+}
+
+.sellingPageLayout .in4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.sellingPageLayout .in4 .block-text{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.sellingPageLayout .in4 p{
+    margin-bottom: 0px;
+    color: #E4FF80;
+    font-weight: bold;
+}
+
+.sellingPageLayout .r-border{
+    border: none solid none none;
+    border-style: solid;
+    border-width: 1px;    
+    border-color: aliceblue;
+}
+
+.sellingPageLayout .l-border{
+    border: none none none solid;
+    border-style: solid;
+    border-width: 1px;    
+    border-color: aliceblue;
+}
+
+/*---------- [ITEM] ----------*/
+.sellingPageLayout .selling-container{
+    width: 100%;
+}
+
+.sellingPageLayout .selling-introduce-hot{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.sellingPageLayout .selling-frame{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 600px;
+    /* border: solid 2px; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sellingPageLayout .selling-img-here{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 400px; */
+    height: 382px;
+    width: 300px;
+    border: solid 2px;
+    position: relative;
+}
+
+.sellingPageLayout .selling-del-btn{
+    position: absolute;
+    top: 3%;
+    left: 80%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.sellingPageLayout .selling-del-btn svg{
+    position: absolute;
 }

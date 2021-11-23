@@ -10,13 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- -----------------Library--------------------- -->
-
-    <link type="text/css" rel="stylesheet" href="public/css/navbar.css">
-    <link type="text/css" rel="stylesheet" href="public/css/footer.css">
-    <link type="text/css" rel="stylesheet" href="public/css/wishList.css">
-    <link type="text/css" rel="stylesheet" href="public/css/sale.css">
-    <link type="text/css" rel="stylesheet" href="public/css/home_page.css">
-
+    
     <link type="text/css" rel="stylesheet" href="./public/css/navbar.css">
     <link type="text/css" rel="stylesheet" href="./public/css/footer.css">
     <link type="text/css" rel="stylesheet" href="./public/css/responsive.css">
@@ -24,7 +18,6 @@
     <link type="text/css" rel="stylesheet" href="./public/css/shopping_bag.css">
     <link type="text/css" rel="stylesheet" href="./public/css/sale.css">
     <link type="text/css" rel="stylesheet" href="./public/css/home_page.css">
-
     <link type="text/css" rel="stylesheet" href="./public/css/sellingPageLayout.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -353,14 +346,10 @@
         </div>              
     </nav>    
 
-    <div class="content">
-        <?php require_once "./mvc/views/page/". $data['content'] .".php" ;
-            foreach($data['img_info'] as $item){
-                print_r($item);
-                echo "<br>";
-            }
-        ?>        
-    </div>
+
+    <?php 
+        require_once "./mvc/views/page/". $data['content'] .".php" ;
+    ?>            
 
     <footer id="footer-layout-for-all">
         <hr>
