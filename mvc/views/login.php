@@ -61,9 +61,9 @@ $home_url = getUrl().'/';
 
                 <p class="text-center fw-bold fs-4 mb-2">OR SIGN IN WITH ...</p>
 
-                <div class="d-flex mb-2">
+                <div class="d-flex mb-2 justify-content-center">
                     <button class="me-2 my_icon" type="button">
-                        <svg class="ms-3 me-4" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                        <svg class="ms-3 " width="30" height="30" viewBox="0 0 30 30" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M27.2569 12.5519H26.25V12.5H15V17.5H22.0644C21.0338 20.4106 18.2644 22.5 15 22.5C10.8581 22.5 7.5 19.1419 7.5 15C7.5 10.8581 10.8581 7.5 15 7.5C16.9119 7.5 18.6513 8.22125 19.9756 9.39937L23.5112 5.86375C21.2787 3.78312 18.2925 2.5 15 2.5C8.09688 2.5 2.5 8.09688 2.5 15C2.5 21.9031 8.09688 27.5 15 27.5C21.9031 27.5 27.5 21.9031 27.5 15C27.5 14.1619 27.4137 13.3438 27.2569 12.5519Z"
@@ -78,11 +78,11 @@ $home_url = getUrl().'/';
                                 d="M27.2569 12.5519H26.25V12.5H15V17.5H22.0644C21.5714 18.8853 20.6833 20.0957 19.51 20.9819L19.5119 20.9806L23.3806 24.2544C23.1069 24.5031 27.5 21.25 27.5 15C27.5 14.1619 27.4137 13.3438 27.2569 12.5519Z"
                                 fill="#1976D2" />
                         </svg>
-                        <p class="mb-0 my_icon_text">GOOGLE</p>
+                        <p class="mb-0 my_icon_text align-middle">GOOGLE</p>
                     </button>
 
                     <button class="my_icon">
-                        <svg class="ms-3 me-4" width="33" height="33" viewBox="0 0 33 33" fill="none"
+                        <svg class="ms-3" width="33" height="33" viewBox="0 0 33 33" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M24.0861 17.2638C24.0732 15.0659 25.069 13.4095 27.08 12.1881C25.9553 10.5768 24.2537 9.69053 22.0107 9.51973C19.887 9.35215 17.5635 10.7572 16.7127 10.7572C15.8136 10.7572 13.7575 9.57774 12.1397 9.57774C8.80107 9.6293 5.25293 12.2396 5.25293 17.5506C5.25293 19.12 5.53975 20.741 6.11338 22.4104C6.88037 24.6082 9.64541 29.9933 12.5297 29.9063C14.0379 29.8708 15.1046 28.8363 17.0672 28.8363C18.9718 28.8363 19.9579 29.9063 21.6401 29.9063C24.5502 29.8644 27.051 24.9691 27.7793 22.7648C23.8767 20.9247 24.0861 17.3766 24.0861 17.2638ZM20.6991 7.43467C22.333 5.49463 22.1848 3.72861 22.1364 3.09375C20.6927 3.17754 19.0233 4.07666 18.0727 5.18203C17.0253 6.36797 16.4098 7.83428 16.5419 9.4875C18.1017 9.60674 19.5261 8.8043 20.6991 7.43467Z"
@@ -92,9 +92,9 @@ $home_url = getUrl().'/';
                     </button>
                 </div>
 
-                <div class="d-flex">
+                <div class="d-flex justify-content-center">
                     <button class="me-2 my_icon">
-                        <svg class="ms-3 me-3" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                        <svg class="ms-3" width="30" height="30" viewBox="0 0 30 30" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M27.5 15C27.5 8.1 21.9 2.5 15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.05 6.8 26.0875 12.5 27.25V18.75H10V15H12.5V11.875C12.5 9.4625 14.4625 7.5 16.875 7.5H20V11.25H17.5C16.8125 11.25 16.25 11.8125 16.25 12.5V15H20V18.75H16.25V27.4375C22.5625 26.8125 27.5 21.4875 27.5 15Z"
@@ -105,7 +105,7 @@ $home_url = getUrl().'/';
                     </button>
 
                     <button class="my_icon">
-                        <svg class="ms-3 me-4" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                        <svg class="ms-3" width="26" height="26" viewBox="0 0 26 26" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_43:153)">
                                 <path

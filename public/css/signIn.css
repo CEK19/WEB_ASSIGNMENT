@@ -105,22 +105,53 @@
     /* other login */
     .my_icon{
         height: 56px;
-        width: 178px;
+        /* width: 178px; */
+        /* width: 100%; */
+        width: 48%;
         display: flex;
         align-items: center;
         background-color: white;
         border: 1px solid rgba(0, 0, 0, 0.2);
     }
     .my_icon_text{
-        height: fit-content;
-        width: fit-content;
+        /* height: fit-content; */
+        /* width: fit-content; */
         font-size: 16px;
         font-weight: bold;
-        justify-self: center;
+        height: fit-content;
+        width: 100%;
+        vertical-align: middle !important;
+        justify-self: stretch;
+        align-self: center;
     }
 
 /* BEGIN RESPONSIVE CODE */
 /* ===================== */
+@media screen and (max-width: 385px) {
+    .my_icon svg.ms-3{
+        margin-left: 8px !important;
+    }
+    .my_icon_text{
+        font-size: 13px;
+    }
+}
 
+@media screen and (max-width: 550px) {
+    .my_content{
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .my_container{
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+    .my_container{
+        width: 80% !important;
+    }
+}
 /* =================== */
 /* END RESPONSIVE CODE */
