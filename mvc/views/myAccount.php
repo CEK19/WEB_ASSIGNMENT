@@ -1,9 +1,9 @@
 <?php
 require_once "./mvc/core/basehref.php";
 $home_url = getUrl().'/';
-if(!$_SESSION['error'] || !isset($_SESSION['error'])){
-    header("Location: " . geturl(). "/login");
-}
+// if(!$_SESSION['error'] || !isset($_SESSION['error'])){
+//     header("Location: " . geturl(). "/login");
+// }
 ?>
 
 <!DOCTYPE html>
