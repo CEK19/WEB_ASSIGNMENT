@@ -25,7 +25,7 @@
 
     <!-- Sb: Shopping_bag -->
     <div class="Sb-container mt-3 d-flex flex-row justify-content-between">
-        <div class="Sb-left">
+        <div class="Sb-left mb-3">
             <div class="ps-4 pe-5 pt-4 pb-4">
                 <h4 class="mb-0">MY BAG</h4>
             </div>
@@ -165,7 +165,7 @@
                 </div>
             </div>
 
-            <div class="ps-4 pe-5 pt-4 pb-4 mt-3 d-flex flex-row justify-content-end">
+            <div class="ps-4 pe-5 pt-4 pb-4 mt-3 d-flex flex-row justify-content-end del-mobile">
                 <h5 class="mb-0">SUB-TOTAL &nbsp;&nbsp;</h5>
                 <h5 class="mb-0 fst-italic">100.00 $</h5>
             </div>

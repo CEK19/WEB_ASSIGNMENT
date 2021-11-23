@@ -14,7 +14,7 @@
 
 /* ---------- normal mobile --------- */
 @media screen and (min-width: 390px) and (max-width: 800px) {
-    .del-mobile{
+    .del-mobile, .del-mobile.d-flex{
         display: none !important;
     }
 }

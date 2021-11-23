@@ -10,7 +10,7 @@
     .Sb-container{
         display: block !important;
         width: 100% !important;
-        background-color: red !important;
+        /* background-color: red !important; */
     }
 
     .Sb-container .Sb-left, .Sb-container .Sb-right{
@@ -65,6 +65,11 @@
         font-size: small;
     }
 
+    /* info */
+    .dropdown-content{
+        left: -220px;
+    }
+
 }
 
 
@@ -77,7 +82,7 @@
     .Sb-container{
         display: block !important;
         width: 100% !important;
-        background-color: red !important;
+        /* background-color: red !important; */
     }
 
     .Sb-container .Sb-left, .Sb-container .Sb-right{
@@ -99,6 +104,11 @@
     .Sb-detail .Sb-detail-quantity{
         width: 35% !important;
         font-size: small;
+    }
+
+    /* info */
+    .dropdown-content{
+        left: -220px;
     }
 
 }
