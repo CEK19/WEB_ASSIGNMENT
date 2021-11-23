@@ -11,7 +11,8 @@
 
 .my_container{
     background-color: white;
-    width: 650px;
+    /* width: 650px; */
+    width: 43%;
     margin: 0 auto;
     padding-bottom: 30px;
 }
@@ -117,4 +118,8 @@
         justify-self: center;
     }
 
-    
+/* BEGIN RESPONSIVE CODE */
+/* ===================== */
+
+/* =================== */
+/* END RESPONSIVE CODE */
