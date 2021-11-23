@@ -25,7 +25,6 @@ $home_url = getUrl().'/';
     <div class="my_page">
         <div class="my_container">
             <div id="logo_group">
-                <!-- <span class="VinBK">VinBK</span> -->
                 <a href="?url=Home" class="VinBK text-decoration-none link-dark">VinBK</a>
             </div>
             <div id="change_option">

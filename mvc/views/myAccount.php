@@ -23,8 +23,7 @@ $home_url = getUrl().'/';
         <div class="my_top d-flex justify-content-between">
             <div class="my_left">
                 <div class="logo_group d-flex align-items-center justify-content-center">
-                    <!-- <span class="VinBK align-middle text-center">VinBK</span> -->
-                    <a href="?url=Home" class="VinBK align-middle text-center">VinBK</a>
+                    <a href="?url=Home" class="VinBK align-middle text-center text-decoration-none link-dark">VinBK</a>
                 </div>
 
                 <div style="border: 1px solid black;">
