@@ -85,7 +85,8 @@
 
 .my_content{
     margin: 0 auto;
-    width: 360px;
+    /* width: 360px; */
+    width: 55%;
 }
     /* child */
     #email, #password{
