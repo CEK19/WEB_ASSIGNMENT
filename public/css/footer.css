@@ -70,7 +70,8 @@
 
 #footer-layout-for-all .little-thing{
     width: 100%;
-    height: 41px;
+    height: fit-content;
+    min-height: 41px;
     background-color: #DDDDDD;
     display: flex;
     flex-wrap: wrap;

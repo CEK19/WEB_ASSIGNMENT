@@ -353,7 +353,7 @@
 
     <footer id="footer-layout-for-all">
         <hr>
-        <div class="payment-social">
+        <div class="payment-social del-mobile-footer">
             <div class="social">
                 <div class="item">
                     <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -404,6 +404,12 @@
                 </div>                               
             </div>
         </div>
+
+        <!-- RESPONSIVE IN MOBILE MODE -->
+        <div class="payment-social-mobile justify-content-center" style="display: none;">
+            <img src="./assets/img/payment.png" width="80%">
+        </div>
+
         <hr id="no-margin-bot">
         <div class="contact">
             <div class="contact-item">
