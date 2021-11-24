@@ -1,5 +1,5 @@
 <div class="sellingPageLayout">
-    <div class="information">
+    <div class="information del-mobile-sm">
         <div class="in4 r-border">
             <div class="block-text">
                 <p>EXTRA 20% OFF</p>
@@ -10,6 +10,13 @@
             <div class="block-text">
                 <p>UP TO 50% OF SWEET STYLES</p>
             </div>
+        </div>
+    </div>
+
+    <!-- INFORMATION IN MOBILE STYLE -->
+    <div class="information-mobile" style="display: none;">
+        <div class="block-text-mobile" style="width:100%;">
+            <p>UP TO 50% OF SWEET STYLES</p>
         </div>
     </div>
 
