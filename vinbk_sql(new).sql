@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 23, 2021 at 03:31 PM
+-- Generation Time: Nov 25, 2021 at 12:00 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -241,6 +241,41 @@ INSERT INTO `comments` (`id`, `email`, `clothID`, `category`, `star`, `comment`)
 (18, 'trong.user@hcmut.edu.vn', 2, 'shirt_shirt', 2, 'Áo bị bung chỉ'),
 (19, 'cong.user@hcmut.edu.vn', 3, 'shirt_shirt', 3, 'Ngoài giao hàng chậm, còn lại đều ổn, tôi vote 3 sao'),
 (20, 'tu.user@hcmut.edu.vn', 3, 'shoes_trainers', 5, 'Giày đi vừa chân, êm, chạy rất nhẹ');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orders`
+--
+
+CREATE TABLE `orders` (
+  `id` int(11) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `clothID` int(11) NOT NULL,
+  `category` varchar(150) NOT NULL,
+  `color` varchar(100) NOT NULL,
+  `size` varchar(100) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `phone` varchar(150) NOT NULL,
+  `address` varchar(150) NOT NULL,
+  `deliveryMethod` varchar(100) NOT NULL DEFAULT 'fast',
+  `paymentMethod` varchar(100) NOT NULL DEFAULT 'card',
+  `cardNumber` varchar(100) NOT NULL,
+  `e-wallet` varchar(100) NOT NULL DEFAULT 'paypal'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id`, `email`, `clothID`, `category`, `color`, `size`, `quantity`, `phone`, `address`, `deliveryMethod`, `paymentMethod`, `cardNumber`, `e-wallet`) VALUES
+(2, 'tu.user@hcmut.edu.vn', 2, 'pants_jog', 'black', 'M', 2, '0915882865', 'Bình Hưng Hòa, Ga Hòa Hưng, kênh nhiêu lộc', 'fast', 'card', '123087653', 'paypal'),
+(3, 'tu.user@hcmut.edu.vn', 9, 'shirt_shirt', 'white', 'XL', 1, '0915881865', 'Bình Hưng Hòa, Ga Hòa Hưng, kênh nhiêu lộc', 'fast', 'card', '123087653', 'paypal'),
+(4, 'tu.user@hcmut.edu.vn', 15, 'shirt_polo', 'black', 'L', 2, '0915882865', 'Bình Hưng Hòa, Ga Hòa Hưng, kênh nhiêu lộc', 'fast', 'card', '123087653', 'paypal'),
+(5, 'nhan.user@hcmut.edu.vn', 8, 'access_glass', 'white', 'XL', 10, '098123456', 'Gầm cầu Công Lý, Kênh Thị Nghè', 'normal', 'e-wallet', 'null', 'momo'),
+(6, 'nhan.user@hcmut.edu.vn', 3, 'access_glass', 'black', 'M', 5, '098123456', 'Gầm cầu Công Lý, Kênh Thị Nghè', 'normal', 'e-wallet', 'null', 'momo'),
+(7, 'nhan.user@hcmut.edu.vn', 12, 'access_bag', 'black', 'XL', 2, '098123456', 'Gầm cầu Công Lý, Kênh Thị Nghè', 'normal', 'e-wallet', 'null', 'momo'),
+(8, 'nhan.user@hcmut.edu.vn', 4, 'shoes_trainers', 'black', 'S', 3, '098123456', 'Gầm cầu Công Lý, Kênh Thị Nghè', 'normal', 'e-wallet', 'null', 'paypal');
 
 -- --------------------------------------------------------
 
@@ -695,6 +730,35 @@ INSERT INTO `shoes_trainers` (`id`, `name`, `brand`, `detail`, `cost_origin`, `c
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `shopping_bag`
+--
+
+CREATE TABLE `shopping_bag` (
+  `id` int(11) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `clothID` int(11) NOT NULL,
+  `category` varchar(150) NOT NULL,
+  `color` varchar(100) NOT NULL,
+  `size` varchar(100) NOT NULL,
+  `quantity` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `shopping_bag`
+--
+
+INSERT INTO `shopping_bag` (`id`, `email`, `clothID`, `category`, `color`, `size`, `quantity`) VALUES
+(1, 'tu.user@hcmut.edu.vn', 2, 'pants_jog', 'black', 'M', 2),
+(2, 'tu.user@hcmut.edu.vn', 9, 'shirt_shirt', 'white', 'XL', 1),
+(3, 'tu.user@hcmut.edu.vn', 15, 'shirt_polo', 'black', 'L', 2),
+(4, 'nhan.user@hcmut.edu.vn', 8, 'access_glass', 'white', 'XL', 10),
+(5, 'nhan.user@hcmut.edu.vn', 3, 'access_glass', 'black', 'M', 5),
+(6, 'nhan.user@hcmut.edu.vn', 12, 'access_bag', 'black', 'XL', 2),
+(7, 'nhan.user@hcmut.edu.vn', 4, 'shoes_trainers', 'black', 'S', 3);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `wishlist`
 --
 
@@ -767,6 +831,12 @@ ALTER TABLE `comments`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `pants_jeans`
 --
 ALTER TABLE `pants_jeans`
@@ -821,6 +891,12 @@ ALTER TABLE `shoes_trainers`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `shopping_bag`
+--
+ALTER TABLE `shopping_bag`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `wishlist`
 --
 ALTER TABLE `wishlist`
@@ -859,6 +935,12 @@ ALTER TABLE `account`
 --
 ALTER TABLE `comments`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `pants_jeans`
@@ -913,6 +995,12 @@ ALTER TABLE `shoes_shocks`
 --
 ALTER TABLE `shoes_trainers`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- AUTO_INCREMENT for table `shopping_bag`
+--
+ALTER TABLE `shopping_bag`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `wishlist`

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 20, 2021 at 04:19 AM
+-- Generation Time: Nov 23, 2021 at 03:31 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `vinbk_db`
+-- Database: `webass`
 --
 
 -- --------------------------------------------------------
@@ -171,7 +171,6 @@ INSERT INTO `access_glass` (`id`, `name`, `brand`, `detail`, `cost_origin`, `cos
 (19, 'poly limited', 'CH4', 'Lấy chất liệu từ vàng thỏi để trang trí', 901.2, 756.2, 8, 3.1, 0, 0, 10, 1, 0, 11, 0),
 (20, 'poly trending', 'CH4', 'vina house', 100, 68.7, 69, 1.6, 5, 2, 0, 0, 0, 7, 0);
 
-
 -- --------------------------------------------------------
 
 --
@@ -179,25 +178,28 @@ INSERT INTO `access_glass` (`id`, `name`, `brand`, `detail`, `cost_origin`, `cos
 --
 
 CREATE TABLE `account` (
-  `id` int(8) NOT NULL,
+  `user_id` int(8) NOT NULL,
   `firstName` varchar(100) NOT NULL,
   `lastName` varchar(100) NOT NULL,
   `birthday` date NOT NULL,
   `email` varchar(150) NOT NULL,
-  `password` varchar(150) NOT NULL
+  `password` varchar(150) NOT NULL,
+  `level` int(11) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `account`
 --
 
-INSERT INTO `account` (`id`, `firstName`, `lastName`, `birthday`, `email`, `password`) VALUES
-(1, 'Admin', 'Admin', '2001-02-13', 'admin.admin@hcmut.edu.vn', '8c649e23ba34274f603b93d38e8840eb'),
-(2, 'Admin', 'Admin', '2001-02-13', 'admin2.admin@hcmut.edu.vn', '8c649e23ba34274f603b93d38e8840eb'),
-(3, 'Tu', 'Le', '2001-02-13', 'tu.user@hcmut.edu.vn', 'c5edba99599009bfa7b950c5c42825a0'),
-(4, 'Nhan', 'Nguyen', '2001-12-13', 'nhan.user@hcmut.edu.vn', 'd2ad33faa1e2dd36709b17470b87e294'),
-(5, 'Cong', 'Vu', '2001-07-13', 'cong.user@hcmut.edu.vn', 'bcbc63d8f601f17bd120890b8abb7578'),
-(6, 'Trong', 'Ho', '2001-05-13', 'trong.user@hcmut.edu.vn', '59e14ba142a2bd4bc7426e158a01d435');
+INSERT INTO `account` (`user_id`, `firstName`, `lastName`, `birthday`, `email`, `password`, `level`) VALUES
+(1, 'Admin', 'Admin', '2001-02-13', 'admin.admin@hcmut.edu.vn', '8c649e23ba34274f603b93d38e8840eb', 1),
+(2, 'Admin', 'Admin', '2001-02-13', 'admin2.admin@hcmut.edu.vn', '8c649e23ba34274f603b93d38e8840eb', 1),
+(3, 'Tu', 'Le', '2001-02-13', 'tu.user@hcmut.edu.vn', 'c5edba99599009bfa7b950c5c42825a0', 1),
+(4, 'Nhan', 'Nguyen', '2001-12-13', 'nhan.user@hcmut.edu.vn', 'd2ad33faa1e2dd36709b17470b87e294', 1),
+(5, 'Cong', 'Vu', '2001-07-13', 'cong.user@hcmut.edu.vn', 'bcbc63d8f601f17bd120890b8abb7578', 1),
+(6, 'Trong', 'Ho', '2001-05-13', 'trong.user@hcmut.edu.vn', '59e14ba142a2bd4bc7426e158a01d435', 1),
+(9, 'Kong', 'Cute', '2001-09-06', 'admin@gmail.com', 'e841d8cb3ebd2c1cb71c7a8c6f5306f3', 2),
+(10, 'Coongkun', 'hahaa', '2001-09-06', 'congkun@gmail.com', '8a30d69f36c0035a0d67bfaaad132fc8', 1);
 
 -- --------------------------------------------------------
 
@@ -207,7 +209,7 @@ INSERT INTO `account` (`id`, `firstName`, `lastName`, `birthday`, `email`, `pass
 
 CREATE TABLE `comments` (
   `id` int(11) NOT NULL,
-  `userID` int(11) NOT NULL,
+  `email` varchar(100) NOT NULL,
   `clothID` int(11) NOT NULL,
   `category` varchar(100) NOT NULL,
   `star` int(11) DEFAULT 1,
@@ -218,27 +220,27 @@ CREATE TABLE `comments` (
 -- Dumping data for table `comments`
 --
 
-INSERT INTO `comments` (`id`, `userID`, `clothID`, `category`, `star`, `comment`) VALUES
-(1, 3, 15, 'pants_jeans', 4, 'Sản phẩm đúng như mô tả, cám ơn vinBK rất nhiều'),
-(2, 5, 2, 'access_glass', 1, 'Mắt kính bị giòn, và rất dễ gãy, mong shop khắc phục'),
-(3, 3, 12, 'shirt_polo', 3, 'Giao hàng bị chậm, tôi phải chờ rất lâu'),
-(4, 4, 8, 'pants_jog', 2, 'Quần bị lỏng dây thun, mặc vào là tuột'),
-(5, 6, 9, 'access_glass', 4, 'Tất cả đều oke.'),
-(6, 5, 15, 'shirt_shirt', 4, 'Tôi rất thích sản phẩm'),
-(7, 4, 15, 'shirt_shirt', 2, 'Nhân viên giao hàng thái độ với khách, mong shop xử lý'),
-(8, 4, 9, 'access_glass', 5, 'Sản phẩm rất tuyệt vời, tôi đeo rất êm, không bị nhức đầu'),
-(9, 6, 2, 'access_caps', 3, 'Ổn'),
-(10, 5, 8, 'pants_jog', 5, 'quần mặc rất sexy'),
-(11, 3, 9, 'access_glass', 5, 'đeo lên rất cool nha, có cả led chiếu chiếu nữa.'),
-(12, 5, 9, 'access_bags', 4, 'Sản phẩm rất tuyệt'),
-(13, 3, 2, 'access_caps', 5, 'Tôi rất thích nó'),
-(14, 3, 9, 'access_glass', 5, 'Tuyệt vời ông mặt trời'),
-(15, 4, 9, 'access_glass', 2, 'Mắt kính không vừa với cái đầu bự của tôi'),
-(16, 6, 8, 'pants_jog', 4, 'Giao hàng ổn, mặt hàng đúng như mô tả'),
-(17, 6, 3, 'shoes_shocks', 1, 'Giao vớ bị lủng'),
-(18, 6, 2, 'shirt_shirt', 2, 'Áo bị bung chỉ'),
-(19, 5, 3, 'shirt_shirt', 3, 'Ngoài giao hàng chậm, còn lại đều ổn, tôi vote 3 sao'),
-(20, 3, 3, 'shoes_trainers', 5, 'Giày đi vừa chân, êm, chạy rất nhẹ');
+INSERT INTO `comments` (`id`, `email`, `clothID`, `category`, `star`, `comment`) VALUES
+(1, 'tu.user@hcmut.edu.vn', 15, 'pants_jeans', 4, 'Sản phẩm đúng như mô tả, cám ơn vinBK rất nhiều'),
+(2, 'cong.user@hcmut.edu.vn', 2, 'access_glass', 1, 'Mắt kính bị giòn, và rất dễ gãy, mong shop khắc phục'),
+(3, 'tu.user@hcmut.edu.vn', 12, 'shirt_polo', 3, 'Giao hàng bị chậm, tôi phải chờ rất lâu'),
+(4, 'nhan.user@hcmut.edu.vn', 8, 'pants_jog', 2, 'Quần bị lỏng dây thun, mặc vào là tuột'),
+(5, 'trong.user@hcmut.edu.vn', 9, 'access_glass', 4, 'Tất cả đều oke.'),
+(6, 'cong.user@hcmut.edu.vn', 15, 'shirt_shirt', 4, 'Tôi rất thích sản phẩm'),
+(7, 'nhan.user@hcmut.edu.vn', 15, 'shirt_shirt', 2, 'Nhân viên giao hàng thái độ với khách, mong shop xử lý'),
+(8, 'nhan.user@hcmut.edu.vn', 9, 'access_glass', 5, 'Sản phẩm rất tuyệt vời, tôi đeo rất êm, không bị nhức đầu'),
+(9, 'trong.user@hcmut.edu.vn', 2, 'access_caps', 3, 'Ổn'),
+(10, 'cong.user@hcmut.edu.vn', 8, 'pants_jog', 5, 'quần mặc rất sexy'),
+(11, 'tu.user@hcmut.edu.vn', 9, 'access_glass', 5, 'đeo lên rất cool nha, có cả led chiếu chiếu nữa.'),
+(12, 'cong.user@hcmut.edu.vn', 9, 'access_bags', 4, 'Sản phẩm rất tuyệt'),
+(13, 'tu.user@hcmut.edu.vn', 2, 'access_caps', 5, 'Tôi rất thích nó'),
+(14, 'tu.user@hcmut.edu.vn', 9, 'access_glass', 5, 'Tuyệt vời ông mặt trời'),
+(15, 'nhan.user@hcmut.edu.vn', 9, 'access_glass', 2, 'Mắt kính không vừa với cái đầu bự của tôi'),
+(16, 'trong.user@hcmut.edu.vn', 8, 'pants_jog', 4, 'Giao hàng ổn, mặt hàng đúng như mô tả'),
+(17, 'trong.user@hcmut.edu.vn', 3, 'shoes_shocks', 1, 'Giao vớ bị lủng'),
+(18, 'trong.user@hcmut.edu.vn', 2, 'shirt_shirt', 2, 'Áo bị bung chỉ'),
+(19, 'cong.user@hcmut.edu.vn', 3, 'shirt_shirt', 3, 'Ngoài giao hàng chậm, còn lại đều ổn, tôi vote 3 sao'),
+(20, 'tu.user@hcmut.edu.vn', 3, 'shoes_trainers', 5, 'Giày đi vừa chân, êm, chạy rất nhẹ');
 
 -- --------------------------------------------------------
 
@@ -390,7 +392,6 @@ INSERT INTO `pants_lounges` (`id`, `name`, `brand`, `detail`, `cost_origin`, `co
 (19, 'fit limited', 'Nezuko', 'Lấy chất liệu từ vàng thỏi để trang trí', 901.2, 756.2, 8, 3.1, 0, 0, 10, 1, 0, 11, 0),
 (20, 'fit trending', 'Nezuko', 'vina house', 100, 68.7, 69, 1.6, 5, 2, 0, 0, 0, 7, 0);
 
-
 -- --------------------------------------------------------
 
 --
@@ -440,7 +441,6 @@ INSERT INTO `shirt_polo` (`id`, `name`, `brand`, `detail`, `cost_origin`, `cost`
 (18, 'Lacoste winter', 'Lacoste', 'Noel - santa', 700, 678.8, 149, 3, 0, 0, 10, 0, 0, 10, 0),
 (19, 'Lacoste limited', 'Lacoste', 'Lấy chất liệu từ vàng thỏi để trang trí', 901.2, 756.2, 8, 3.1, 0, 0, 10, 1, 0, 11, 0),
 (20, 'Lacoste trending', 'Lacoste', 'vina house', 100, 68.7, 69, 1.6, 5, 2, 0, 0, 0, 7, 0);
-
 
 -- --------------------------------------------------------
 
@@ -492,7 +492,6 @@ INSERT INTO `shirt_shirt` (`id`, `name`, `brand`, `detail`, `cost_origin`, `cost
 (19, 'sailor limited', 'Tokio Cosplay', 'Lấy chất liệu từ vàng thỏi để trang trí', 901.2, 756.2, 8, 3.1, 0, 0, 10, 1, 0, 11, 0),
 (20, 'sailor trending', 'Tokio Cosplay', 'vina house', 100, 68.7, 69, 1.6, 5, 2, 0, 0, 0, 7, 0);
 
-
 -- --------------------------------------------------------
 
 --
@@ -542,7 +541,6 @@ INSERT INTO `shirt_tshirt_vest` (`id`, `name`, `brand`, `detail`, `cost_origin`,
 (18, 'Lacoste winter', 'Lacoste', 'Noel - santa', 700, 678.8, 149, 3, 0, 0, 10, 0, 0, 10, 0),
 (19, 'Lacoste limited', 'Lacoste', 'Lấy chất liệu từ vàng thỏi để trang trí', 901.2, 756.2, 8, 3.1, 0, 0, 10, 1, 0, 11, 0),
 (20, 'Lacoste trending', 'Lacoste', 'vina house', 100, 68.7, 69, 1.6, 5, 2, 0, 0, 0, 7, 0);
-
 
 -- --------------------------------------------------------
 
@@ -594,7 +592,6 @@ INSERT INTO `shoes_sandals_slippers` (`id`, `name`, `brand`, `detail`, `cost_ori
 (19, 'DepLao limited', 'DepLao', 'Lấy chất liệu từ vàng thỏi để trang trí', 901.2, 756.2, 8, 3.1, 0, 0, 10, 1, 0, 11, 0),
 (20, 'DepLao trending', 'DepLao', 'vina house', 100, 68.7, 69, 1.6, 5, 2, 0, 0, 0, 7, 0);
 
-
 -- --------------------------------------------------------
 
 --
@@ -644,7 +641,6 @@ INSERT INTO `shoes_shocks` (`id`, `name`, `brand`, `detail`, `cost_origin`, `cos
 (18, 'Sneaker winter', 'Sneaker', 'Noel - santa', 700, 678.8, 149, 3, 0, 0, 10, 0, 0, 10, 0),
 (19, 'Sneaker limited', 'Sneaker', 'Lấy chất liệu từ vàng thỏi để trang trí', 901.2, 756.2, 8, 3.1, 0, 0, 10, 1, 0, 11, 0),
 (20, 'Sneaker trending', 'Sneaker', 'vina house', 100, 68.7, 69, 1.6, 5, 2, 0, 0, 0, 7, 0);
-
 
 -- --------------------------------------------------------
 
@@ -696,7 +692,6 @@ INSERT INTO `shoes_trainers` (`id`, `name`, `brand`, `detail`, `cost_origin`, `c
 (19, 'Nike limited', 'Nike', 'Lấy chất liệu từ vàng thỏi để trang trí', 901.2, 756.2, 8, 3.1, 0, 0, 10, 1, 0, 11, 0),
 (20, 'Nike trending', 'Nike', 'vina house', 100, 68.7, 69, 1.6, 5, 2, 0, 0, 0, 7, 0);
 
-
 -- --------------------------------------------------------
 
 --
@@ -705,7 +700,7 @@ INSERT INTO `shoes_trainers` (`id`, `name`, `brand`, `detail`, `cost_origin`, `c
 
 CREATE TABLE `wishlist` (
   `id` int(11) NOT NULL,
-  `userID` int(11) NOT NULL,
+  `email` varchar(100) NOT NULL,
   `clothID` int(11) NOT NULL,
   `category` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -714,27 +709,27 @@ CREATE TABLE `wishlist` (
 -- Dumping data for table `wishlist`
 --
 
-INSERT INTO `wishlist` (`id`, `userID`, `clothID`, `category`) VALUES
-(1, 3, 2, 'pants_jeans'),
-(2, 3, 3, 'shirt_tshirt_vest'),
-(3, 3, 10, 'shoes_trainers'),
-(4, 3, 4, 'shirt_polo'),
-(5, 3, 8, 'shirt_polo'),
-(6, 4, 12, 'pants_jeans'),
-(7, 4, 2, 'shoes_shocks'),
-(8, 4, 1, 'access_caps'),
-(9, 4, 8, 'access_glass'),
-(10, 4, 6, 'access_bag'),
-(11, 4, 2, 'pants_jog'),
-(12, 1, 4, 'pants_jeans'),
-(13, 1, 15, 'shoes_sandals_slippers'),
-(14, 1, 17, 'shoes_trainers'),
-(15, 1, 1, 'shirt_tshirt_vest'),
-(16, 1, 13, 'pants_jeans'),
-(17, 1, 16, 'shoes_sandals_slippers'),
-(18, 1, 4, 'access_caps'),
-(19, 1, 19, 'shoes_shocks'),
-(20, 1, 18, 'shirt_tshirt_vest');
+INSERT INTO `wishlist` (`id`, `email`, `clothID`, `category`) VALUES
+(1, 'tu.user@hcmut.edu.vn', 2, 'pants_jeans'),
+(2, 'tu.user@hcmut.edu.vn', 3, 'shirt_tshirt_vest'),
+(3, 'tu.user@hcmut.edu.vn', 10, 'shoes_trainers'),
+(4, 'tu.user@hcmut.edu.vn', 4, 'shirt_polo'),
+(5, 'tu.user@hcmut.edu.vn', 8, 'shirt_polo'),
+(6, 'nhan.user@hcmut.edu.vn', 12, 'pants_jeans'),
+(7, 'nhan.user@hcmut.edu.vn', 2, 'shoes_shocks'),
+(8, 'nhan.user@hcmut.edu.vn', 1, 'access_caps'),
+(9, 'nhan.user@hcmut.edu.vn', 8, 'access_glass'),
+(10, 'nhan.user@hcmut.edu.vn', 6, 'access_bag'),
+(11, 'nhan.user@hcmut.edu.vn', 2, 'pants_jog'),
+(12, 'cong.user@hcmut.edu.vn', 4, 'pants_jeans'),
+(13, 'cong.user@hcmut.edu.vn', 15, 'shoes_sandals_slippers'),
+(14, 'cong.user@hcmut.edu.vn', 17, 'shoes_trainers'),
+(15, 'cong.user@hcmut.edu.vn', 1, 'shirt_tshirt_vest'),
+(16, 'trong.user@hcmut.edu.vn', 13, 'pants_jeans'),
+(17, 'trong.user@hcmut.edu.vn', 16, 'shoes_sandals_slippers'),
+(18, 'trong.user@hcmut.edu.vn', 4, 'access_caps'),
+(19, 'trong.user@hcmut.edu.vn', 19, 'shoes_shocks'),
+(20, 'trong.user@hcmut.edu.vn', 18, 'shirt_tshirt_vest');
 
 --
 -- Indexes for dumped tables
@@ -762,7 +757,7 @@ ALTER TABLE `access_glass`
 -- Indexes for table `account`
 --
 ALTER TABLE `account`
-  ADD PRIMARY KEY (`id`),
+  ADD PRIMARY KEY (`user_id`),
   ADD UNIQUE KEY `email` (`email`);
 
 --
@@ -857,7 +852,7 @@ ALTER TABLE `access_glass`
 -- AUTO_INCREMENT for table `account`
 --
 ALTER TABLE `account`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `user_id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `comments`
@@ -875,7 +870,7 @@ ALTER TABLE `pants_jeans`
 -- AUTO_INCREMENT for table `pants_jog`
 --
 ALTER TABLE `pants_jog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `pants_lounges`
