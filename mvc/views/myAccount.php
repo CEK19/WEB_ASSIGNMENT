@@ -35,7 +35,7 @@ $home_url = getUrl().'/';
 
                         <div class="ms-3 w-100">
                             <p class="mb-0">Hi,</p>
-                            <p class="mb-0 fw-bolder">Minh Tú Lê Hoàng</p>
+                            <p class="mb-0 fw-bolder"><?php echo $_SESSION['firstname'].' '.$_SESSION['lastname']?></p>
                         </div>
                     </div>
 
@@ -51,7 +51,6 @@ $home_url = getUrl().'/';
                     </div>
 
                     <div class="bg-white mb-2 ps-1 pt-0 pb-0">
-
                         <a class="d-flex align-items-center" href="">
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -140,7 +139,7 @@ $home_url = getUrl().'/';
                         <h2 class="mb-4">My Details</h2>
 
                        
-                            <form name="my_form" onsubmit="validattion()" action="myAccount/update" method="post">
+                            <form name="my_form" onsubmit="validattion_update()" action="myAccount/update" method="post">
                                 <div class="col-7">
                                     <label class="form-label my_label" for="email">EMAIL ADDRESS</label>
                                     <input name ="email" class="form-control" type="text" id="email" value= "<?php echo $_SESSION['email'] ?> ">
@@ -176,7 +175,7 @@ $home_url = getUrl().'/';
                                 <br>
 
                                 <div class="d-grid mt-2 pb-3 col-7">
-                                    <button class="btn btn-dark my_button" type="submit"><span class="fw-bold">UPDATE MY
+                                    <button class="btn btn-dark my_button" type="submit" name = "submit"><span class="fw-bold">UPDATE MY
                                             INFO</span></button>
                                 </div>
                             </form>
@@ -207,6 +206,62 @@ $home_url = getUrl().'/';
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <!-- <script src="../js/singIn.js"></script> -->
+    <script>
+        function validattion_update(){
+    var isError = false;
+    var msg = "";
+
+    // check Email
+    let email = document.forms["my_form"]["email"].value;
+    if (email.length == 0) {
+        isError = true;
+        msg += "Please enter your email\n"
+    }
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        isError = true
+        msg += "Your email must be <sth>@<sth>.<sth>\n"
+    }
+
+    // Check name
+    let firstName = document.forms["my_form"]["firstName"].value;   //my_form is name of a form //firstName is id of input
+    let lastName = document.forms["my_form"]["lastName"].value;
+    if (firstName.length == 0) {
+        isError = true;
+        msg += "Please enter your first name\n";
+    }
+    else if (firstName.length < 2 || firstName.length > 30) {
+        isError = true;
+        msg += "Your first name length must be from 2 to 30\n";
+    }
+
+    if (lastName.length == 0) {
+        isError = true;
+        msg += "Please enter your last name\n";
+    }
+    else if (lastName.length < 2 || lastName.length > 30) {
+        isError = true;
+        msg += "Your last name length must be from 2 to 30\n";
+    }
+
+    // check Password
+    let password = document.forms["my_form"]["password"].value;
+    if (password.length < 2 || password.length > 30) {
+        isError = true
+        msg += "Your password length must be from 2 to 30\n"
+    }
+    // Notify
+    if (isError) {
+        alert(msg);
+        isError = false;
+        msg = "";
+        return false;
+    }
+    else {
+        alert("Well done kid !!!");
+        return true;
+    }
+}
+    </script>
 </body>
 
 </html>

@@ -91,3 +91,57 @@ function validattion() {
         return true;
     }
 }
+function validattion_update(){
+    var isError = false;
+    var msg = "";
+
+    // check Email
+    let email = document.forms["my_form"]["email"].value;
+    if (email.length == 0) {
+        isError = true;
+        msg += "Please enter your email\n"
+    }
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        isError = true
+        msg += "Your email must be <sth>@<sth>.<sth>\n"
+    }
+
+    // Check name
+    let firstName = document.forms["my_form"]["firstName"].value;   //my_form is name of a form //firstName is id of input
+    let lastName = document.forms["my_form"]["lastName"].value;
+    if (firstName.length == 0) {
+        isError = true;
+        msg += "Please enter your first name\n";
+    }
+    else if (firstName.length < 2 || firstName.length > 30) {
+        isError = true;
+        msg += "Your first name length must be from 2 to 30\n";
+    }
+
+    if (lastName.length == 0) {
+        isError = true;
+        msg += "Please enter your last name\n";
+    }
+    else if (lastName.length < 2 || lastName.length > 30) {
+        isError = true;
+        msg += "Your last name length must be from 2 to 30\n";
+    }
+
+    // check Password
+    let password = document.forms["my_form"]["password"].value;
+    if (password.length < 2 || password.length > 30) {
+        isError = true
+        msg += "Your password length must be from 2 to 30\n"
+    }
+    // Notify
+    if (isError) {
+        alert(msg);
+        isError = false;
+        msg = "";
+        return false;
+    }
+    else {
+        alert("Well done kid !!!");
+        return true;
+    }
+}
