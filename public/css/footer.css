@@ -153,5 +153,14 @@
         line-height: 110%;
     }
 }
+
+@media screen and (max-width: 730px) {
+    #footer-layout-for-all .little-thing .left-thing{
+        width: 40%;
+    }
+    #footer-layout-for-all .little-thing .right-thing{
+        width: 60%;
+    }
+}
 /* =================== */
 /* END RESPONSIVE CODE */

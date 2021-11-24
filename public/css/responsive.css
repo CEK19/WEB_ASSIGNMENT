@@ -20,6 +20,10 @@
     .information-mobile{
         display: inline-block !important;
     }
+
+    .del-mobile-sm.Sb-subTotal{
+        display: none !important;
+    }
 }
 
 /* ---------- normal mobile --------- */
