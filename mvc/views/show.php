@@ -415,11 +415,11 @@
         <div class="contact">
             <div class="contact-item">
                 <h6>HELP AND INFORMATION</h6>                            
-                <a href=""><p>Help</p></a>
+                <a class="del-mobile-sm del-mobile" href=""><p>Help</p></a>
                 <a href=""><p>Track order</p></a>
                 <a href=""><p>Delivery and returns</p></a>
             </div>
-            <div class="contact-item">
+            <div class="contact-item about">
                 <h6>ABOUT US</h6>                            
                 <a href=""><p>Facebook</p></a>
                 <a href=""><p>Instagram</p></a>
@@ -431,7 +431,7 @@
             </div>
             <div class="contact-item">
                 <h6>SHOPPING FROM</h6>
-                <p>You’re in: Vietnam</p>                 
+                <p class="footer-not-scale">You’re in: Vietnam</p>                 
                 <a href=""><p><strong>CHANGE</strong></p> </a>              
             </div>
         </div>
