@@ -14,6 +14,13 @@
             ]);
         }
 
+        //------------------------------ WISHLIST ------------------------------//
+        public function productDetail(){
+            $this->view("show", [
+                "content" => "product-detail"
+            ]);
+        }
+
         //------------------------------ SALE ------------------------------//
         public function sale(){
             $this->view("show", [
