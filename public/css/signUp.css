@@ -17,7 +17,7 @@ html{
 
 .my_container{
     background-color: white;
-    width: 650px;
+    width: 43%;
     margin: 0 auto;
     padding-bottom: 30px;
 }
@@ -90,7 +90,7 @@ html{
 
 .my_content{
     margin: 0 auto;
-    width: 360px;
+    width: 55%;
 }
     /* child */
     .my_label{
@@ -108,12 +108,14 @@ html{
 
     /* other login */
     .bt_container{
+        width: 100%;
         display: flex;
         justify-content: center;
     }
     .my_icon{
         height: 50px;
-        width: 160px;
+        /* width: 160px; */
+        width: 26%;
         display: flex;
         align-items: center;
         background-color: white;
@@ -121,7 +123,7 @@ html{
     }
     .my_icon_text{
         height: fit-content;
-        width: fit-content;
+        width: 100%;
         font-size: 16px;
         font-weight: bold;
         justify-self: center;
@@ -148,3 +150,45 @@ html{
         font-weight: bold;
         margin-right: 0px;
     }
+
+    /* BEGIN RESPONSIVE CODE */
+/* ===================== */
+@media screen and (max-width: 550px) {
+    .bt_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .my_icon{
+        width: 50%;
+        margin-bottom: 3px;
+    }
+    .my_icon.me-3{
+        margin-right: 0px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .my_content{
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .my_container{
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 720px) {
+    .my_icon_text{
+        font-size: 13px !important;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+    .my_container{
+        width: 80% !important;
+    }
+}
+/* =================== */
+/* END RESPONSIVE CODE */

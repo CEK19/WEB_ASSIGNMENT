@@ -12,7 +12,7 @@ $home_url = getUrl().'/';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up to VinBK</title>
-    <link type="text/css" rel="stylesheet" href="assets/css/signUp.css">
+    <link type="text/css" rel="stylesheet" href="./public/css/signUp.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 </head>
@@ -37,7 +37,7 @@ $home_url = getUrl().'/';
 
             <p class="text-center fw-bold fs-4 mb-3">SIGN UP WITH ...</p>
 
-            <div class="d-flex mb-4 bt_container">
+            <div class="mb-4 bt_container">
                 <button class="me-3 my_icon" type="button">
                     <svg class="ms-2 me-4" width="30" height="30" viewBox="0 0 30 30" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -167,7 +167,7 @@ $home_url = getUrl().'/';
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="assets/js/signUp.js"></script>
+    <script src="./public/js/signUp.js"></script>
   
 </body>
 </html>
