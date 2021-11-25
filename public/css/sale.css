@@ -96,16 +96,16 @@
 
 #sale-page-background .introduce-hot{
     display: flex;
-    width: 100%;
-    justify-content: space-around;
+    width: 90%;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 #sale-page-background .introduce-hot .frame{
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 800px;
+    width: 350px;
+    height: 600px;
     /* border: solid 2px; */
     align-items: center;
     justify-content: center;
@@ -115,28 +115,53 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    height: 610px;
-    width: 473px;
+    /* height: 400px; */
+    height: 382px;
+    width: 300px;
     border: solid 2px;
+    /* position: relative; */
 }
 
 #sale-page-background .introduce-hot h1{
     font-family: 'B612', sans-serif;
     font-size: 2rem;
     width: fit-content;
+    /* height: 77px; */
+    height: fit-content;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    vertical-align: middle !important;
 }
 
-#sale-page-background .btn{
+/* #sale-page-background .btn{
     height: 88px;
-    width: 308px;
+    width: 85%;
     font-size: 198px;
     border-width: 10px;
-}
+} */
 
 #sale-page-background .btn h2{
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 0px;
 }
+
+/* BEGIN RESPONSIVE CODE */
+/* ===================== */
+@media screen and (max-width: 670px) {
+    .big-part, .small-part{
+        display: none !important;
+    }
+
+    .ads-img{
+        height: fit-content;
+    }
+
+    .background-img{
+        height: 90px !important;
+    }
+}
+/* =================== */
+/* END RESPONSIVE CODE */
