@@ -8,8 +8,7 @@
             return true;
         }
 
-        public function is_exist_email_wish_list($email){                                    
-            echo $email;
+        public function is_exist_email_wish_list($email){                                                
             $mail = '"'.$email.'"';
             $SQL_MAIL = "SELECT email FROM wishlist WHERE email={$mail}";            
             $result = mysqli_query($this->connect, $SQL_MAIL);                        
@@ -30,6 +29,20 @@
                     array_push($arrayInfo, $row);
                 }
             }
+
+            // QUERY COST AND NAME BASE ON CATEGORY AND ID
+            $index = 0;
+            foreach($arrayInfo as $eachItem){
+                $SQL_QUERY_COST_NAME = "SELECT name, cost_origin, cost FROM {$eachItem['category']} WHERE id = {$eachItem['clothID']}";
+                $result = mysqli_query($this->connect, $SQL_QUERY_COST_NAME);                
+
+                if(mysqli_num_rows($result) > 0){                    
+                    while($row = mysqli_fetch_assoc($result)){                        
+                        $arrayInfo[$index] = array_merge($eachItem, $row);                        
+                        $index = $index + 1;
+                    }
+                }
+            }            
             return $arrayInfo;   
         }             
     }

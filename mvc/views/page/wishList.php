@@ -24,7 +24,7 @@
     <!-- -----------------SAVE ITEMS-------------------- -->
 
     <div class="bg-secondary bg-gradient d-flex align-items-center justify-content-center" style="height: 8vh; min-height:53px">
-        <h4 class="mb-0 text-light">SAVE ITEMS</h4>
+        <h4 class="mb-0 text-light"><?php echo $data["info_login"] ?></h4>
     </div>
 
     <!-- -----------------INTRODUCE--------------------- -->
@@ -52,10 +52,10 @@
                     </a>
                 </div>
                 <div style="width:100%; padding: 0 25px 0 25px;">
-                    <h4>Tên của sản phẩm người ta</h4>
+                    <h4><?php echo $item['name'] ?></h4>
                     <div class="d-flex flex-row mt-2">
-                        <p class="text-decoration-line-through fst-italic fs-5 mb-0 me-5 align-middle">178.000Đ<p>
-                        <p class="fw-bolder fs-4 mb-0 align-middle">150.000Đ</p>
+                        <p class="text-decoration-line-through fst-italic fs-5 mb-0 me-5 align-middle"><?php echo $item['cost_origin']?>$<p>
+                        <p class="fw-bolder fs-4 mb-0 align-middle"><?php echo $item['cost'] ?>$</p>
                     </div>
                     <hr class="mt-2 mb-2">
                 </div>
