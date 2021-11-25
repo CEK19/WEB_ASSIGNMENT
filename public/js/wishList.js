@@ -1,19 +1,21 @@
-function mouseOver_WishList(obj){ 
-    console.log("wish list in")   ;
+function mouseOver_WishList(obj){     
     let subObjects = obj.getElementsByTagName("path");
     let myLen = subObjects.length;
     for(let index = 0; index < myLen; ++index){
-        subObjects[index].setAttribute("stroke", "#000000"); //
+        subObjects[index].setAttribute("fill", "black"); //
     }
 }
 
-function mouseOut_WishList(obj){   
-    console.log("wish list out")   ; 
+function mouseOut_WishList(obj){       
     let subObjects = obj.getElementsByTagName("path");
     let myLen = subObjects.length;
     for(let index = 0; index < myLen; ++index){
-        subObjects[index].setAttribute("stroke", "black"); //
+        subObjects[index].setAttribute("fill", "gray"); //
     }    
+}
+
+function mouseClicked_WishList(obj){
+    // AJAX CALL :DDD
 }
 
 // IF EXIST SELLING PAGE
@@ -28,5 +30,9 @@ if(wishListObj){
         delIconList[index].addEventListener("mouseleave", function(){
             mouseOut_WishList(delIconList[index]);
         });
+        
+        delIconList[index].addEventListener("click", function(){
+            mouseClicked_WishList(delIconList[index]);
+        })
     }
 }
