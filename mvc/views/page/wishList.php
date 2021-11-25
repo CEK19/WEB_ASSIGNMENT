@@ -31,12 +31,18 @@
     <div class="wishList-container d-flex justify-content-center">
 
         <div class="wishList-introduce-hot">
-
+        
+            <?php
+                foreach($data["img_info"] as $item){
+            ?>
             <!-- 1 sản phẩm -->
             <div class="wishList-frame mb-3">
                 <div class="wishList-img-here mb-3">
                     <!--IMAGE HERE-->
-                    <img src="./mvc/database/access_bags/1.jpeg" style="width:100%;">
+                    <?php 
+                        $IMG_PATH = "./mvc/database/{$item['category']}/{$item['clothID']}".".jpeg";
+                        echo '<img src='.$IMG_PATH.' style="width:100%;">';
+                    ?>
                     <a role="button" class="wishList-del-btn shadow" href="">
                         <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="23.5" cy="23.5" r="23.5" fill="white"/>
@@ -52,41 +58,21 @@
                         <p class="fw-bolder fs-4 mb-0 align-middle">150.000Đ</p>
                     </div>
                     <hr class="mt-2 mb-2">
-                    <table class="table table-borderless">
-                        <tbody>
-                            <tr class="border-bottom">
-                                <th class="align-middle fs-5">Size</th>
-                                <td>
-                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">S</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">M</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">L</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">XL</button>
-                                </td>
-                            </tr>
-                            <tr class="border-top">
-                                <th class="align-middle fs-5">Color</th>
-                                <td>
-                                    <button type="button" class="btn-lg btn-dark shadow border border-4 border-primary" style="width: 45px; height:45px;"></button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn-lg btn-light shadow border border-dark" style="width: 45px; height:45px;"></button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <hr class="mt-2 mb-2">
                 </div>
                 <button type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2">
                     <h3 class="mb-0">MOVE TO BAG</h3>
                 </button>
             </div>
+            <?php
+                }
+            ?>
+
         </div>
 
+    <?php        
+        // echo $data["content"]."<br>";
+        // print_r($data["img_info"]);
+        // echo $data["info_login"]."<br>";
+    ?>
 
 </div>

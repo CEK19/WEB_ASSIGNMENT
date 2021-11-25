@@ -9,8 +9,24 @@
 
         //------------------------------ WISHLIST ------------------------------//
         public function wishList(){
+            $MODEL = $this->model("wishlistModel");                                    
+            $INFO_LOGIN = "YOU MUST LOGIN TO SEE YOUR WISHLIST"; // NO LOGIN
+            $ITEM_DATA = null; // NO LOGIN
+            
+            if($MODEL->isLogin() == true){                                            
+                if($MODEL->is_exist_email_wish_list($_SESSION['email']) == true){                                        
+                    $ITEM_DATA = $MODEL->get_item_based_email($_SESSION['email']);             
+                    $INFO_LOGIN = "SAVED ITEM";
+                }
+                else{
+                    $INFO_LOGIN = "Hi, you wanna add something to your wishlist ?";
+                }
+            }
+            
             $this->view("show", [
-                "content" => "wishList"
+                "content" => "wishList",
+                "img_info" => $ITEM_DATA,
+                "info_login" => $INFO_LOGIN
             ]);
         }
 
@@ -73,7 +89,7 @@
             $this->view("show", [
                 "content" => "shoes_trainers",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "shoes_trainer"
+                "folder-img" => "shoes_trainers"
             ]);
         }
 
@@ -83,7 +99,7 @@
             $this->view("show", [
                 "content" => "shoes_sandals_slippers",                
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "shoes_sandal_slippers"
+                "folder-img" => "shoes_sandals_slippers"
             ]);
         }
 
@@ -104,7 +120,7 @@
             $this->view("show", [
                 "content" => "access_bag",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "access_bags"
+                "folder-img" => "access_bag"
             ]);
         }
 
@@ -124,7 +140,7 @@
             $this->view("show", [
                 "content" => "access_glass",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "access_sunglasses"
+                "folder-img" => "access_glass"
             ]);
         }
 
@@ -145,7 +161,7 @@
             $this->view("show", [
                 "content" => "pants_jog",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "pants_jogger"
+                "folder-img" => "pants_jog"
             ]);
         }
 
@@ -155,7 +171,7 @@
             $this->view("show", [
                 "content" => "pants_lounges",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "pants_lounge"
+                "folder-img" => "pants_lounges"
             ]);
         }
     }

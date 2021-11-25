@@ -1,4 +1,5 @@
-function mouseOver_WishList(obj){        
+function mouseOver_WishList(obj){ 
+    console.log("wish list in")   ;
     let subObjects = obj.getElementsByTagName("path");
     let myLen = subObjects.length;
     for(let index = 0; index < myLen; ++index){
@@ -6,7 +7,8 @@ function mouseOver_WishList(obj){
     }
 }
 
-function mouseOut_WishList(obj){    
+function mouseOut_WishList(obj){   
+    console.log("wish list out")   ; 
     let subObjects = obj.getElementsByTagName("path");
     let myLen = subObjects.length;
     for(let index = 0; index < myLen; ++index){

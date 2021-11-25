@@ -1,4 +1,5 @@
 function mouseOver_NAV(obj){
+    console.log("tes nav");
     let subObjects = obj.getElementsByTagName("path");
     let myLen = subObjects.length;
     for(let index = 0; index < myLen; ++index){
@@ -7,6 +8,7 @@ function mouseOver_NAV(obj){
 }
 
 function mouseOut_NAV(obj){
+    console.log("tes nav");
     let subObjects = obj.getElementsByTagName("path");
     let myLen = subObjects.length;
     for(let index = 0; index < myLen; ++index){
