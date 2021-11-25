@@ -1,0 +1,320 @@
+a{
+    color: black !important;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.my_button:hover{
+    opacity: 0.85;
+}
+
+hr{
+    margin-left: 25% !important;
+}
+
+.logo_group{
+    background-color: #E5E5E5;
+    height: 100px;
+    width: 100%;
+}
+    /* child */
+    .VinBK{
+        /* position: absolute; */
+        font-family: Baloo Tammudu;
+        font-weight: bolder;
+        font-size: 45px;
+        /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 25), 0px 4px 4px rgba(0, 0, 0, 25)  */
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 25);
+    }
+    .my_account{
+        font-family: Baloo Tammudu;
+        font-weight: bolder;
+        font-size: 35px;
+    }
+
+
+/* --------------------------------------- */
+body{
+    background-color: #E5E5E5 !important;
+}
+
+.my_container{
+    background-color: #E5E5E5;
+    margin: 0 auto;
+    /* width: 981px; */
+    width: 63%;
+}
+
+
+.my_left{
+    /* width: 300px; */
+    width: 30%;
+    /* border: 1px solid black; */
+}
+    /* --------------------- */
+    #my_avatar{
+        width: fit-content;
+    }
+    #avatar{
+        width: 35%;
+        height: auto;
+    }
+    svg{
+        width: 20%;
+        height: auto;
+    }
+
+.my_right{
+    /* width: 620px; */
+    width: 66%;
+    /* border: 1px solid black; */
+}
+    /* --------------------- */
+    .crop{
+        width: 100%;
+        height: auto;
+        /* height: 263px; */
+        /* overflow: hidden; */
+    }
+
+    .crop img{
+        width: 100%;
+        height: auto;
+        /* margin-top: -80px; margin-left: -38px; */
+        /* margin-top: -50px; margin-left: -38px; */
+        /* margin-top: -80px; */
+    }
+
+    /* ----- form----- */
+    .my_label{
+        font-weight: bold;
+        color: rgba(102, 102, 102, 0.81);
+    }
+    .my_quote{
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 15px;
+    }
+    .bg-white.ps-5{
+        padding-left: 10% !important;
+    }
+
+
+footer{
+    height: 56px;
+    background-color: white;
+}
+
+
+
+/* BEGIN RESPONSIVE CODE */
+/* ===================== */
+@media screen and (min-width: 1100px) and (max-width: 1350px) {
+    .my_container{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1100px) {
+    .my_container{
+        width: 90%;
+    }
+
+    .my_left h5{
+        font-size: large;
+    }
+
+    .my_left{
+        width: 32%;
+    }
+    .my_right{
+        width: 64%;
+    }
+/* 
+    .my_left svg{
+        width: 20%;
+        height: auto;
+    } */
+}
+
+@media screen and (min-width: 650px) and (max-width: 850px) {
+    .my_container{
+        width: 100%;
+    }
+
+    .my_left h5{
+        font-size: large;
+    }
+
+    .my_left{
+        width: 32%;
+    }
+    .my_right{
+        width: 64%;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 650px) {
+    .my_container{
+        width: 100%;
+    }
+
+    .my_left h5{
+        font-size: medium;
+    }
+
+    .my_left{
+        width: 32%;
+    }
+    .my_right{
+        width: 64%;
+    }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 550px) {
+    .my_container{
+        width: 100%;
+    }
+
+    .my_left p{
+        font-size: small;
+    }
+
+    .my_left h5{
+        font-size: small;
+    }
+
+    .my_left{
+        width: 32%;
+    }
+    .my_right{
+        width: 64%;
+    }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 400px) {
+    .my_container{
+        width: 100%;
+    }
+
+    .my_left p{
+        font-size: small;
+    }
+
+    .my_left h5{
+        font-size: small;
+    }
+
+    .my_left{
+        width: 32%;
+    }
+    .my_right{
+        width: 64%;
+    }
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 350px) {
+    .my_container{
+        width: 100%;
+    }
+
+    .my_left p{
+        font-size: small;
+        display: none !important;
+    }
+
+    .my_left h5{
+        font-size: small;
+        display: none !important;
+    }
+
+    .my_left{
+        width: 20%;
+    }
+    .my_right{
+        width: 76%;
+    }
+
+    #avatar{
+        width: 80%;
+    }
+
+    svg{
+        width: 80%;
+        height: auto;
+    }
+
+    hr{
+        margin-left: 2px !important;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 430px) and (max-width: 850px){
+    form .col-7{
+        width: 80% !important;
+    }
+}
+@media screen and (max-width: 430px){
+    form .col-7{
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .mA-mobile{
+        display: block !important;
+    }
+    .my_top .logo_group.d-flex{
+        display: none !important;
+    }
+    .logo_group{
+        height: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .VinBK{
+        font-size: xx-large;
+    }
+}
+
+@media screen and (max-width: 974px){
+    .footer_left{
+        width: 70% !important;
+    }
+    .footer_right{
+        width: 30% !important;
+    }
+}
+@media screen and (max-width: 754px){
+    .footer_left a{
+        font-size: small !important;
+    }
+    .footer_right p{
+        font-size: small !important;
+    }
+}
+@media screen and (max-width: 531px){
+    .footer-del{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 361px){
+    .footer_left a{
+        font-size: x-small !important;
+    }
+    .footer_right p{
+        font-size: x-small !important;
+    }
+}
+/* =================== */
+/* END RESPONSIVE CODE */

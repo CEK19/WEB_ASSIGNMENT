@@ -13,13 +13,19 @@ $home_url = getUrl().'/';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vinBK Account</title>
     <!-- CSS -->
-    <link type="text/css" rel="stylesheet" href="assets/css/myAccount.css">
+    <link type="text/css" rel="stylesheet" href="./public/css/myAccount.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="my_container">
+        <div class="mA-mobile" style="display:none;">
+            <div class="logo_group d-flex align-items-center justify-content-center">
+                <a href="?url=Home" class="VinBK align-middle text-center text-decoration-none link-dark">VinBK</a>
+            </div>
+        </div>
+
         <div class="my_top d-flex justify-content-between">
             <div class="my_left">
                 <div class="logo_group d-flex align-items-center justify-content-center">
@@ -132,8 +138,8 @@ $home_url = getUrl().'/';
                 </div>
 
                 <div style="border: 1px solid black;">
-                    <div class="crop mb-3">
-                        <img src="assets/img/av4.jpg" class="img-fluid" alt="background image">
+                    <div class="crop mb-3" style="width: 100%;">
+                        <img src="assets/img/av5.jpg" class="img-fluid" alt="background image" width="100%">
                     </div>
                     <div class="bg-white ps-5 pt-4">
                         <h2 class="mb-4">My Details</h2>
@@ -189,12 +195,12 @@ $home_url = getUrl().'/';
 
         <footer class="d-flex align-items-center mt-5">
             <div class="footer_left" style="width: 50%;">
-                <a class="ms-3" href="">VinBK HomePage</a>
+                <a class="ms-3 footer-del" href="">VinBK HomePage</a>
                 <a class="ms-3" href="">Terms & Conditions</a>
                 <a class="ms-3" href="">Privacy & Policy</a>
             </div>
-            <div class="footer-right text-end me-3" style="width: 50%;">
-                &copy; 2021 BK
+            <div class="footer_right text-end me-3" style="width: 50%;">
+                <p class="mb-0">&copy; 2021 BK</p>
             </div>
         </footer>
     </div>
