@@ -2,7 +2,7 @@
 /* ===================== */
 
 /* ---------- small mobile --------- */
-@media screen and (min-width: 320px) and (max-width: 390px) {
+@media screen and (min-width: 100px) and (max-width: 390px) {
     /* .information-mobile{
         display: inline-block !important;
     } */
