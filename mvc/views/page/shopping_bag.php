@@ -31,14 +31,21 @@
             </div>
 
             <div class="Sb-list mt-3 ps-4 pe-5 pt-4 pb-4">
+                <?php
+                    foreach($data["img_info"] as $item){
+                ?>
+                <!-- MỘT SẢN PHẨM -->
                 <div class="Sb-frame d-flex flex-row">
                     <div class="border Sb-img">
-                        <!-- img -->
-                        <img src="./mvc/database/access_bags/5.jpeg" style="width:100%;">
+                        <!-- IMG HERE -->
+                        <?php 
+                        $IMG_PATH = "./mvc/database/{$item['category']}/{$item['clothID']}".".jpeg";
+                        echo '<img src='.$IMG_PATH.' style="width:100%;">';
+                        ?>
                     </div>
                     <div class="Sb-detail ms-3 pt-2">
-                        <h4>45.00 $</h4>
-                        <p>Đây là tên của sản phẩm người ta</p>
+                        <h4 class="price_sp"><?php echo $item['cost']?> $</h4>
+                        <p><?php echo $item['name'] ?></p>
 
                         <div class="d-flex row ms-0 me-0">
                             <select class="form-select me-2 mb-1 Sb-detail-color" style="width:21%">
@@ -53,7 +60,7 @@
                                 <option value="4">XL</option>
                             </select>
 
-                            <select class="form-select mb-1 Sb-detail-quantity" style="width:22%">
+                            <select class="form-select mb-1 Sb-detail-quantity quantity_sp" style="width:22%">
                                 <option value="1" selected>Qty 1</option>
                                 <option value="2">Qty 2</option>
                                 <option value="3">Qty 3</option>
@@ -75,94 +82,9 @@
                 </div>
 
                 <hr>
-
-                <div class="Sb-frame d-flex flex-row">
-                    <div class="border Sb-img">
-                        <!-- img -->
-                        <img src="./mvc/database/access_bags/2.jpeg" style="width:100%;">
-                    </div>
-                    <div class="Sb-detail ms-3 pt-2">
-                        <h4>45.00 $</h4>
-                        <p>Đây là tên của sản phẩm người ta</p>
-
-                        <div class="d-flex row ms-0 me-0">
-                            <select class="form-select me-2 mb-1 Sb-detail-color" style="width:21%">
-                                <option value="1" selected>Black</option>
-                                <option value="2">White</option>
-                            </select>
-
-                            <select class="form-select me-2 mb-1 Sb-detail-size" style="width:15%">
-                                <option value="1">S</option>
-                                <option value="2" selected>M</option>
-                                <option value="3">L</option>
-                                <option value="4">XL</option>
-                            </select>
-
-                            <select class="form-select mb-1 Sb-detail-quantity" style="width:22%">
-                                <option value="1" selected>Qty 1</option>
-                                <option value="2">Qty 2</option>
-                                <option value="3">Qty 3</option>
-                                <option value="4">Qty 4</option>
-                                <option value="5">Qty 5</option>
-                                <option value="6">Qty 6</option>
-                                <option value="7">Qty 7</option>
-                                <option value="8">Qty 8</option>
-                                <option value="9">Qty 9</option>
-                                <option value="10">Qty 10</option>
-                                <option value="11">Qty 11</option>
-                                <option value="12">Qty 12</option>
-                                <option value="13">Qty 13</option>
-                                <option value="14">Qty 14</option>
-                                <option value="15">Qty 15</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="Sb-frame d-flex flex-row">
-                    <div class="border Sb-img">
-                        <!-- img -->
-                        <img src="./mvc/database/access_bags/7.jpeg" style="width:100%;">
-                    </div>
-                    <div class="Sb-detail ms-3 pt-2">
-                        <h4>45.00 $</h4>
-                        <p>Đây là tên của sản phẩm người ta</p>
-
-                        <div class="d-flex row ms-0 me-0">
-                            <select class="form-select me-2 mb-1 Sb-detail-color" style="width:21%">
-                                <option value="1" selected>Black</option>
-                                <option value="2">White</option>
-                            </select>
-
-                            <select class="form-select me-2 mb-1 Sb-detail-size" style="width:15%">
-                                <option value="1">S</option>
-                                <option value="2" selected>M</option>
-                                <option value="3">L</option>
-                                <option value="4">XL</option>
-                            </select>
-
-                            <select class="form-select mb-1 Sb-detail-quantity" style="width:22%">
-                                <option value="1" selected>Qty 1</option>
-                                <option value="2">Qty 2</option>
-                                <option value="3">Qty 3</option>
-                                <option value="4">Qty 4</option>
-                                <option value="5">Qty 5</option>
-                                <option value="6">Qty 6</option>
-                                <option value="7">Qty 7</option>
-                                <option value="8">Qty 8</option>
-                                <option value="9">Qty 9</option>
-                                <option value="10">Qty 10</option>
-                                <option value="11">Qty 11</option>
-                                <option value="12">Qty 12</option>
-                                <option value="13">Qty 13</option>
-                                <option value="14">Qty 14</option>
-                                <option value="15">Qty 15</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
+            <?php
+                }
+            ?>             
             </div>
 
             <div class="ps-4 pe-5 pt-4 pb-4 mt-3 d-flex flex-row justify-content-end del-mobile del-mobile-sm Sb-subTotal">
@@ -213,3 +135,7 @@
     </div>
 
 </div>
+<script>
+    var price = document.getElementsByClassName('price_sp');
+    var quanti = document.getElementsByClassName('quantity_sp');
+</script>

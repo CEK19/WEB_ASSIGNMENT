@@ -1,16 +1,16 @@
 <?php
-    class wishlistModel extends db{
+    class shopping_bagModel extends db{
 
         public function isLogin(){            
-            if($_SESSION['login'] == false|| !isset($_SESSION['login'])){
+            if($_SESSION['login'] == false || !isset($_SESSION['login'])){
                 return false;
             }
             return true;
         }
 
-        public function is_exist_email_wish_list($email){                                                
+        public function is_exist_email_shoppingbag_list($email){                                                
             $mail = '"'.$email.'"';
-            $SQL_MAIL = "SELECT email FROM wishlist WHERE email={$mail}";            
+            $SQL_MAIL = "SELECT email FROM shopping_bag WHERE email={$mail}";            
             $result = mysqli_query($this->connect, $SQL_MAIL);                        
             if (mysqli_num_rows($result) > 0) {
                 return true;
@@ -20,7 +20,7 @@
 
         public function get_item_based_email($email){
             $mail = '"'.$email.'"'; 
-            $SQL_QUERY_INFO = "SELECT id, clothID, category FROM wishlist WHERE email = {$mail}";
+            $SQL_QUERY_INFO = "SELECT id, clothID, category FROM shopping_bag WHERE email = {$mail}";
             $result = mysqli_query($this->connect, $SQL_QUERY_INFO);
             $arrayInfo = array();
 

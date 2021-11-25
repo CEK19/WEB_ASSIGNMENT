@@ -29,6 +29,25 @@
                 "info_login" => $INFO_LOGIN
             ]);
         }
+        //------------------------------ SHOPPING BAG ------------------------------//
+        public function shopping_bag(){  
+            $MODEL = $this->model("shopping_bagModel");
+            $INFO_LOGIN = "YOU MUST LOGIN TO SEE YOUR SHOPPING BAG"; // NO LOGIN;
+            $ITEM_DATA = null; // NO LOGIN
+            if($MODEL->isLogin() == true) {
+                if($MODEL->is_exist_email_shoppingbag_list($_SESSION['email']) == true){
+                    $ITEM_DATA = $MODEL->get_item_based_email($_SESSION['email']);
+                    $INFO_LOGIN = "MY BAG";
+                } else {
+                    $INFO_LOGIN = "NONE ITEM IN YOUR BAG";
+                }
+            }   
+            $this->view("show", [
+                "content" => "shopping_bag",
+                "img_info"=> $ITEM_DATA,
+                "info_login"=> $INFO_LOGIN
+            ]);
+        }
 
         //------------------------------ WISHLIST ------------------------------//
         public function productDetail(){
@@ -44,13 +63,7 @@
             ]);
         }
 
-        //------------------------------ SHOPPING BAG ------------------------------//
-        public function shopping_bag(){            
-            $this->view("show", [
-                "content" => "shopping_bag"
-            ]);
-        }
-
+        
         //------------------------------ SHIRT ------------------------------//
         public function shirt_polo(){
             $MODEL = $this->model("sellingPageModel");                        
