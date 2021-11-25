@@ -195,9 +195,9 @@ $home_url = getUrl().'/';
 
         <footer class="d-flex align-items-center mt-5">
             <div class="footer_left" style="width: 50%;">
-                <a class="ms-3 footer-del" href="">VinBK HomePage</a>
-                <a class="ms-3" href="">Terms & Conditions</a>
-                <a class="ms-3" href="">Privacy & Policy</a>
+                <a class="ms-3 footer-del" href="?url=Home">VinBK HomePage</a>
+                <a class="ms-3" href="https://www.termsfeed.com/live/efb181e0-4bb1-49d9-96b7-1a1226c66fbe" target="_blank">Terms & Conditions</a>
+                <a class="ms-3" href="https://www.freeprivacypolicy.com/live/18f39e7d-8ce8-4382-9c11-9bd1c41b1364" target="_blank" >Privacy & Policy</a>
             </div>
             <div class="footer_right text-end me-3" style="width: 50%;">
                 <p class="mb-0">&copy; 2021 BK</p>
