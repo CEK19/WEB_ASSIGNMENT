@@ -11,8 +11,11 @@
     }
 }
 
+/* we only responsive for device up to 320px */
+/* ----------------------------------------- */
+
 /* ---------- small mobile --------- */
-@media screen and (min-width: 320px) and (max-width: 390px) {
+@media screen and (max-width: 390px) {
     .del-mobile-sm{
         display: none !important;
     }

@@ -15,7 +15,7 @@
     </div>
 
     <!-- INFORMATION IN MOBILE STYLE -->
-    <div class="information-mobile" style="display: none;">
+    <div class="information-mobile del-mobile-sm" style="display: none;">
         <div class="block-text-mobile" style="width:100%;">
             <p>UP TO 50% OF SWEET STYLES</p>
         </div>
@@ -24,12 +24,12 @@
     <!-- -----------------ADS--------------------- -->
 
     <div class="ads-img">
-        <div class="background-img">     
+        <div class="background-img">
             <div class="big-part">
                 <div class="background-text">
                     <h1>UP TO 50% OF SWEET STYLE</h1>
                 </div>
-            </div>       
+            </div>
             <br>
             <div class="small-part">
                 <div class="background-text">
@@ -38,56 +38,83 @@
             </div>
         </div>
     </div>
-        
+
     <!-- -----------------INTRODUCE--------------------- -->
+    <div class="selling-container d-flex justify-content-center">
 
-    <div class="introduce-hot">
-        <div class="frame">
-            <div class="img-here">
-                <!--IMAGE HERE-->
+        <div class="introduce-hot">
+            <div class="frame mb-3">
+                <div class="img-here">
+                    <!--IMAGE HERE-->
+                </div>
+                <div class="align-middle d-flex align-items-center" style="width: 100%; height: 87px;">
+                    <h1>FASHIONAL & STYLISTIC</h1>
+                </div>
+                <!-- <button type="button" class="btn btn-outline-dark"> -->
+                <button type="button" class="btn btn-light btn-outline-dark border-4 mt-2" style="width: 70%;">
+                    <h2>SHOP NOW</h2>
+                </button>
             </div>
-            <h1>FASHIONAL & STYLISTIC</h1>
-            <button type="button" class="btn btn-outline-dark"><h2>SHOP NOW</h2></button>
-        </div>
 
-        <div class="frame">
-            <div class="img-here">
-                <!--IMAGE HERE-->
+            <div class="frame mb-3">
+                <div class="img-here">
+                    <!--IMAGE HERE-->
+                </div>
+                <div class="align-middle d-flex align-items-center" style="width: 100%; height: 87px;">
+                    <h1>GAMINE & SPORTY</h1>
+                </div>
+                <button type="button" class="btn btn-light btn-outline-dark border-4 mt-2" style="width: 70%;">
+                    <h2>SHOP NOW</h2>
+                </button>
             </div>
-            <h1>GAMINE & SPORTY</h1>
-            <button type="button" class="btn btn-outline-dark"><h2>SHOP NOW</h2></button>
-        </div>
 
-        <div class="frame">
-            <div class="img-here">
-                <!--IMAGE HERE-->
+            <div class="frame mb-3">
+                <div class="img-here">
+                    <!--IMAGE HERE-->
+                </div>
+                <div class="align-middle d-flex align-items-center" style="width: 100%; height: 87px;">
+                    <h1>CLASSIC & GLAMOROUS</h1>
+                </div>
+                <button type="button" class="btn btn-light btn-outline-dark border-4 mt-2" style="width: 70%;">
+                    <h2>SHOP NOW</h2>
+                </button>
             </div>
-            <h1>CLASSIC & GLAMOROUS</h1>
-            <button type="button" class="btn btn-outline-dark"><h2>SHOP NOW</h2></button>
-        </div>
 
-        <div class="frame">
-            <div class="img-here">
-                <!--IMAGE HERE-->
+            <div class="frame mb-3">
+                <div class="img-here">
+                    <!--IMAGE HERE-->
+                </div>
+                <div class="align-middle d-flex align-items-center" style="width: 100%; height: 87px;">
+                    <h1>DRAMATIC & TRENDY</h1>
+                </div>
+                <button type="button" class="btn btn-light btn-outline-dark border-4 mt-2" style="width: 70%;">
+                    <h2>SHOP NOW</h2>
+                </button>
             </div>
-            <h1>DRAMATIC & TRENDY</h1>
-            <button type="button" class="btn btn-outline-dark"><h2>SHOP NOW</h2></button>
-        </div>
 
-        <div class="frame">
-            <div class="img-here">
-                <!--IMAGE HERE-->
+            <div class="frame mb-3">
+                <div class="img-here">
+                    <!--IMAGE HERE-->
+                </div>
+                <div class="align-middle d-flex align-items-center" style="width: 100%; height: 87px;">
+                    <h1>NATURAL & COMMODIOUS</h1>
+                </div>
+                <button type="button" class="btn btn-light btn-outline-dark border-4 mt-2" style="width: 70%;">
+                    <h2>SHOP NOW</h2>
+                </button>
             </div>
-            <h1>NATURAL & COMMODIOUS</h1>
-            <button type="button" class="btn btn-outline-dark"><h2>SHOP NOW</h2></button>
-        </div>
 
-        <div class="frame">
-            <div class="img-here">
-                <!--IMAGE HERE-->
+            <div class="frame mb-3">
+                <div class="img-here">
+                    <!--IMAGE HERE-->
+                </div>
+                <div class="align-middle d-flex align-items-center" style="width: 100%; height: 87px;">
+                    <h1>WARM & ARTY</h1>
+                </div>
+                <button type="button" class="btn btn-light btn-outline-dark border-4 mt-2" style="width: 70%;">
+                    <h2>SHOP NOW</h2>
+                </button>
             </div>
-            <h1>WARM & ARTY</h1>
-            <button type="button" class="btn btn-outline-dark"><h2>SHOP NOW</h2></button>
         </div>
     </div>
 </div>
