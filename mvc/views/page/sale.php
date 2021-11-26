@@ -45,7 +45,7 @@
         <div class="introduce-hot">
             <div class="frame mb-3">
                 <div class="img-here">
-                    <!--IMAGE HERE-->
+                    <img src="./public/image/sale_page_img/1.png" style="width:100%;">
                 </div>
                 <div class="align-middle d-flex align-items-center" style="width: 100%; height: 87px;">
                     <h1>FASHIONAL & STYLISTIC</h1>
