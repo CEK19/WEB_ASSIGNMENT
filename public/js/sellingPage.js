@@ -10,15 +10,6 @@ function mouseOut_SELLING(obj){
 }
 //------------------------------------------//
 function mouseClicked_SELLING(obj){
-    let circleObj = obj.getElementsByTagName("circle")[0];
-    let getCurrFillColor = circleObj.getAttribute("fill");
-    if(getCurrFillColor == "white"){
-        circleObj.setAttribute("fill", "#F5C6A5");
-    }
-    else{
-        circleObj.setAttribute("fill", "white");
-    }
-
     // STEP 1: GET CATEGORY AND CLODTH ID => REFORMAT
     let frameObj = obj.parentElement;
     let imgObj = frameObj.getElementsByTagName("img")[0];
@@ -28,6 +19,7 @@ function mouseClicked_SELLING(obj){
     let category = splitPathArr[3];
     let clothID = splitPathArr[4].replace(".jpeg", "");
 
+    // STEP 2: POST INFO FORMATTED TO API
     $.ajax({
         url: './mvc/core/AJAX/addWishlist.php',
         type: 'POST',
@@ -37,11 +29,21 @@ function mouseClicked_SELLING(obj){
             ajax_clothid: clothID
         }
     }).done(function(result) {
-        console.log(result);
+        // STEP 3: UPDATE COLOR OF BUTTON
+        if(result.state_response == "no-sign-in"){
+            alert("Please sign-in to put item to your wishlist");
+        }
+        updateHeartColorBasedOnWishListExist(obj);
     });
 }
 
-function updateHearColorBasedOnWishListExist(arrayFrame){
+function updateHeartColorBasedOnWishListExist(obj){    
+    let circleObj = obj.getElementsByTagName("circle")[0];
+    let getCurrFillColor = circleObj.getAttribute("fill");
+
+    let beforeColor = getCurrFillColor;
+    let afterColor = beforeColor;
+
     let frameObj = obj.parentElement;
     let imgObj = frameObj.getElementsByTagName("img")[0];
     let pathImg = imgObj.getAttribute("src");
@@ -49,16 +51,29 @@ function updateHearColorBasedOnWishListExist(arrayFrame){
     
     let category = splitPathArr[3];
     let clothID = splitPathArr[4].replace(".jpeg", "");
+
     $.ajax({
-        url: './mvc/core/AJAX/addWishlist.php',
+        url: './mvc/core/AJAX/checkWishlistExist.php',
         type: 'POST',
         dataType: 'json',
         data: {
             ajax_category: category,
             ajax_clothid: clothID
         }
-    }).done(function(result) {
-        console.log(result);
+    }).done(function(result) {        
+        if(result.result_exist == "no-sign-in"){
+            afterColor = "white";  
+        }
+        else if(result.result_exist == "non-exist"){
+            afterColor = "white";
+        }
+        else if(result.result_exist == "exist"){
+            afterColor = "#F5C6A5";
+        }
+
+        if(beforeColor != afterColor){
+            circleObj.setAttribute("fill", afterColor);
+        }
     });    
 }
 
@@ -77,9 +92,10 @@ if(sellingClassObj.length > 0){
             mouseOut_SELLING(heartIconList[index]);
         });
 
-        heartIconList[index].addEventListener("click", function(){
-            console.log("ho");
+        heartIconList[index].addEventListener("click", function(){            
             mouseClicked_SELLING(heartIconList[index]);
         });
+        
+        updateHeartColorBasedOnWishListExist(heartIconList[index]);
     }
 }
