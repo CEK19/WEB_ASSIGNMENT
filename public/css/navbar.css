@@ -51,3 +51,17 @@
 #navbar-layout-for-all .middle-text{
    color: rebeccapurple;
 }
+
+.popUp-num{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+
+    background-color: red;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    width: 21px;
+    height: 21px;
+}

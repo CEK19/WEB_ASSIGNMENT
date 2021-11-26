@@ -21,6 +21,7 @@
     <link type="text/css" rel="stylesheet" href="./public/css/product-detail.css">
     <link type="text/css" rel="stylesheet" href="./public/css/sellingPageLayout.css">
 
+    <script src="https://kit.fontawesome.com/2a58fa4ca5.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -410,12 +411,13 @@
                     </li>
 
                     <li class="nav-item"> 
-                        <a class="nav-link color-white" aria-current="page" href="./?url=Home/shopping_bag">
+                        <a class="nav-link color-white" aria-current="page" href="./?url=Home/shopping_bag"  style="position: relative;">
                             <svg id="buy-icon" width="30" height="30" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.375 30.25C13.1344 30.25 13.75 29.6344 13.75 28.875C13.75 28.1156 13.1344 27.5 12.375 27.5C11.6156 27.5 11 28.1156 11 28.875C11 29.6344 11.6156 30.25 12.375 30.25Z" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M27.5 30.25C28.2594 30.25 28.875 29.6344 28.875 28.875C28.875 28.1156 28.2594 27.5 27.5 27.5C26.7406 27.5 26.125 28.1156 26.125 28.875C26.125 29.6344 26.7406 30.25 27.5 30.25Z" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M1.375 1.375H6.875L10.56 19.7863C10.6857 20.4193 11.0301 20.9879 11.5329 21.3927C12.0356 21.7974 12.6647 22.0124 13.31 22H26.675C27.3203 22.0124 27.9494 21.7974 28.4521 21.3927C28.9549 20.9879 29.2993 20.4193 29.425 19.7863L31.625 8.25H8.25" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
+                            <p class="popUp-num mb-0">29</p>
                         </a>
                     </li>
 
