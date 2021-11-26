@@ -47,15 +47,15 @@
                     </li>
 
                     <li  class="nav-item">
-                        <a class="nav-link color-white" aria-current="page" href="./?url=Home/sale" id="admin_cloth">CLOTH</a>
+                        <a class="nav-link color-white" aria-current="page" href="./?url=Admin/cloth" id="admin_cloth">CLOTH</a>
                     </li>
 
                     <li  class="nav-item">
-                        <a class="nav-link color-white" aria-current="page" href="./?url=Home/sale" id="admin_order">ORDER</a>
+                        <a class="nav-link color-white" aria-current="page" href="./?url=Admin/order" id="admin_order">ORDER</a>
                     </li>
 
                     <li  class="nav-item">
-                        <a class="nav-link color-white" aria-current="page" href="./?url=Home/sale" id="admin_comment">COMMENT</a>
+                        <a class="nav-link color-white" aria-current="page" href="./?url=Admin/comment" id="admin_comment">COMMENT</a>
                     </li>
 
                 </ul>            
