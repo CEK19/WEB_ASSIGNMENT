@@ -148,6 +148,11 @@
     margin-bottom: 0px;
 }
 
+#sale-page-background button a{    
+    text-decoration: none;
+    color: black;
+}
+
 /* BEGIN RESPONSIVE CODE */
 /* ===================== */
 @media screen and (max-width: 670px) {

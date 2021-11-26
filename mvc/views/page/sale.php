@@ -45,74 +45,74 @@
         <div class="introduce-hot">
             <div class="frame mb-3">
                 <div class="img-here">
-                    <img src="./public/image/sale_page_img/1.png" style="width:100%;">
+                    <img src="./public/image/sale_page_img/1.jpeg" style="width:100%;">
                 </div>
                 <div class="align-middle d-flex align-items-center" style="width: 100%; height: 87px;">
                     <h1>FASHIONAL & STYLISTIC</h1>
                 </div>
                 <!-- <button type="button" class="btn btn-outline-dark"> -->
                 <button type="button" class="btn btn-light btn-outline-dark border-4 mt-2" style="width: 70%;">
-                    <h2>SHOP NOW</h2>
+                    <a href="./?url=Home/shirt_polo"><h2>SHOP NOW</h2></a>
                 </button>
             </div>
 
             <div class="frame mb-3">
                 <div class="img-here">
-                    <!--IMAGE HERE-->
+                <img src="./public/image/sale_page_img/2.jpeg" style="width:100%;">
                 </div>
                 <div class="align-middle d-flex align-items-center" style="width: 100%; height: 87px;">
                     <h1>GAMINE & SPORTY</h1>
                 </div>
                 <button type="button" class="btn btn-light btn-outline-dark border-4 mt-2" style="width: 70%;">
-                    <h2>SHOP NOW</h2>
+                    <a href="./?url=Home/shoes_sandals_slippers"><h2>SHOP NOW</h2></a>
                 </button>
             </div>
 
             <div class="frame mb-3">
                 <div class="img-here">
-                    <!--IMAGE HERE-->
+                <img src="./public/image/sale_page_img/3.jpeg" style="width:100%;">
                 </div>
                 <div class="align-middle d-flex align-items-center" style="width: 100%; height: 87px;">
                     <h1>CLASSIC & GLAMOROUS</h1>
                 </div>
                 <button type="button" class="btn btn-light btn-outline-dark border-4 mt-2" style="width: 70%;">
-                    <h2>SHOP NOW</h2>
+                    <a href="./?url=Home/access_glass"><h2>SHOP NOW</h2></a>
                 </button>
             </div>
 
             <div class="frame mb-3">
                 <div class="img-here">
-                    <!--IMAGE HERE-->
+                <img src="./public/image/sale_page_img/4.jpeg" style="width:100%;">
                 </div>
                 <div class="align-middle d-flex align-items-center" style="width: 100%; height: 87px;">
                     <h1>DRAMATIC & TRENDY</h1>
                 </div>
                 <button type="button" class="btn btn-light btn-outline-dark border-4 mt-2" style="width: 70%;">
-                    <h2>SHOP NOW</h2>
+                    <a href="./?url=Home/shirt_shirt"><h2>SHOP NOW</h2></a>
                 </button>
             </div>
 
             <div class="frame mb-3">
                 <div class="img-here">
-                    <!--IMAGE HERE-->
+                <img src="./public/image/sale_page_img/5.jpeg" style="width:100%;">
                 </div>
                 <div class="align-middle d-flex align-items-center" style="width: 100%; height: 87px;">
                     <h1>NATURAL & COMMODIOUS</h1>
                 </div>
                 <button type="button" class="btn btn-light btn-outline-dark border-4 mt-2" style="width: 70%;">
-                    <h2>SHOP NOW</h2>
+                    <a href="./?url=Home/shirt_polo"><h2>SHOP NOW</h2></a>
                 </button>
             </div>
 
             <div class="frame mb-3">
                 <div class="img-here">
-                    <!--IMAGE HERE-->
+                <img src="./public/image/sale_page_img/6.jpeg" style="width:100%;">
                 </div>
                 <div class="align-middle d-flex align-items-center" style="width: 100%; height: 87px;">
                     <h1>WARM & ARTY</h1>
                 </div>
                 <button type="button" class="btn btn-light btn-outline-dark border-4 mt-2" style="width: 70%;">
-                    <h2>SHOP NOW</h2>
+                    <a href="./?url=Home/shirt_shirt"><h2>SHOP NOW</h2></a>
                 </button>
             </div>
         </div>
