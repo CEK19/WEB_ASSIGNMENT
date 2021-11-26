@@ -60,8 +60,9 @@
                                 <option value="4">XL</option>
                             </select>
 
-                            <select class="form-select mb-1 Sb-detail-quantity quantity_sp" style="width:22%">
-                                <option value="1" selected>Qty 1</option>
+                            <select class="form-select mb-1 Sb-detail-quantity quantity_sp" onchange = "fixtotal()" style="width:22%">
+                                <option  value ="<?php echo $item['quantity']?>" selected>Qty <?php echo $item['quantity']?></option>
+                                <option value="1" >Qty 1</option>
                                 <option value="2">Qty 2</option>
                                 <option value="3">Qty 3</option>
                                 <option value="4">Qty 4</option>
@@ -89,7 +90,7 @@
 
             <div class="ps-4 pe-5 pt-4 pb-4 mt-3 d-flex flex-row justify-content-end del-mobile del-mobile-sm Sb-subTotal">
                 <h5 class="mb-0">SUB-TOTAL &nbsp;&nbsp;</h5>
-                <h5 class="mb-0 fst-italic">100.00 $</h5>
+                <h5 class="mb-0 fst-italic totalsub"></h5>
             </div>
         </div>
 
@@ -101,13 +102,14 @@
 
             <div class="d-flex flex-row justify-content-between">
                 <p class="fw-bold">Sub-total</p>
-                <p class="fst-italic">100.00 $</p>
+                <p class="fst-italic"  id="subtotal"></p> 
+                
             </div>
 
             <div class="d-flex flex-row justify-content-between">
                 <p class="fw-bold">Delivery</p>
 
-                <div class="dropdown">
+                <div class="dropdown"> 
                     <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.143 22.8571V13.7142H12.5716V15.9999H14.8573V22.8571H11.4287V25.1428H20.5716V22.8571H17.143Z" fill="black"/>
                         <path d="M15.9999 6.85718C15.6609 6.85718 15.3294 6.95772 15.0475 7.14609C14.7656 7.33445 14.5459 7.60219 14.4161 7.91543C14.2864 8.22868 14.2524 8.57337 14.3186 8.9059C14.3847 9.23844 14.548 9.5439 14.7877 9.78365C15.0275 10.0234 15.333 10.1867 15.6655 10.2528C15.998 10.319 16.3427 10.285 16.656 10.1553C16.9692 10.0255 17.2369 9.80578 17.4253 9.52387C17.6137 9.24196 17.7142 8.91052 17.7142 8.57146C17.7142 8.11681 17.5336 7.68077 17.2121 7.35928C16.8906 7.03779 16.4546 6.85718 15.9999 6.85718V6.85718Z" fill="black"/>
@@ -136,6 +138,25 @@
 
 </div>
 <script>
+    
+    function fixtotal(){
     var price = document.getElementsByClassName('price_sp');
     var quanti = document.getElementsByClassName('quantity_sp');
+    var sum = 0;
+    
+    for (var i = 0; i < price.length; i++){
+        sum+= price[i].innerHTML.slice(0,-1) * quanti[i].value;
+    }
+    
+   var add = document.querySelector(".totalsub");
+   var add2 = document.querySelector("#subtotal");
+   console.log(add);
+   add.innerHTML = String(sum) + " $";
+   add2.innerText = String(sum) + " $";
+    }
+    fixtotal();
+
+
+    
+    
 </script>

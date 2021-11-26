@@ -20,7 +20,7 @@
 
         public function get_item_based_email($email){
             $mail = '"'.$email.'"'; 
-            $SQL_QUERY_INFO = "SELECT id, clothID, category FROM shopping_bag WHERE email = {$mail}";
+            $SQL_QUERY_INFO = "SELECT id, clothID, category,quantity FROM shopping_bag WHERE email = {$mail}";
             $result = mysqli_query($this->connect, $SQL_QUERY_INFO);
             $arrayInfo = array();
 
