@@ -55,7 +55,7 @@ $home_url = getUrl() . '/';
                         <h4>Delivery Address</h4>
                         <div class="ps-4 pe-4">
                             <label class="form-label">User Name</label>
-                            <input type="text" class="form-control" style="width: 60%;" readonly value="Lê Hoàng Minh Tú">
+                            <input type="text" class="form-control" style="width: 60%;" readonly value="<?php echo $_SESSION['firstname'].' '.$_SESSION['lastname']?>">
 
                             <label class="form-label mt-3">Address</label>
                             <input type="text" class="form-control" style="width: 60%;">
@@ -67,14 +67,14 @@ $home_url = getUrl() . '/';
                         <h4>Delivery Option</h4>
                         <div class="ps-4 pe-4 delivery-option">
                             <div class="form-check">
-                                <input type="radio" class="form-check-input" checked name="delivery-method">
+                                <input type="radio" class="form-check-input" checked name="delivery-method" value="40.00" onchange="fixtotal()">
                                 <label class="form-check-label" for="delivery-method">Fast Delivery - 40.00 $</label>
                                 <blockquote class="blockquote"></blockquote>
                                 <p class="blockquote-footer">With fast service, and high reponsibility, Our professional team ensure that your order will arrive between 1 and 2 days.</p>
                             </div>
 
                             <div class="form-check">
-                                <input type="radio" class="form-check-input" name="delivery-method">
+                                <input type="radio" class="form-check-input" name="delivery-method" value="20.00" onchange="fixtotal()"> 
                                 <label class="form-check-label" for="delivery-method">Normal Delivery - 20.00 $</label>
                                 <blockquote class="blockquote"></blockquote>
                                 <p class="blockquote-footer">The third party will be reponsible for delivery, so it may take 3 to 7 days to deliver your order</p>
@@ -168,7 +168,7 @@ $home_url = getUrl() . '/';
                                 <div class="ps-4 pe-4">
 
                                     <div class="form-check mt-2">
-                                        <input type="radio" class="form-check-input" name="e-wallet-company">
+                                        <input type="radio" class="form-check-input" name="e-wallet-company" >
                                         <label class="form-check-label" for="delivery-method">
                                             <img src="./assets/img/paypal.png" style="width: 56px;" title="PayPal">
                                         </label>
@@ -234,14 +234,14 @@ $home_url = getUrl() . '/';
                                 ?>
                             </div>
                             <div class="CO-detail ms-3 pt-2">
-                                <h5 class="mb-1" name="price_sp"><?php echo $item['cost']?> $</h5>
+                                <h5 class="mb-1 price_sp" name="price_sp"><?php echo $item['cost']?> $</h5>
                                 <p class="mb-1"><?php echo $item['name'] ?></p>
                                 <div class="CO-detail-ls d-flex flex-row">
                                     <p class="mb-0"><?php echo $item['color'] ?></p>
                                     &nbsp; &ensp;
                                     <p class="mb-0"><?php echo $item['size'] ?></p>
                                     &nbsp; &ensp;
-                                    <p class="mb-0">Qty: <span class=""><?php echo $item['quantity'] ?></span></p>
+                                    <p class="mb-0">Qty: <span class="quantity_sp"><?php echo $item['quantity'] ?></span></p>
                                 </div>
                             </div>
                         </div>
@@ -255,7 +255,7 @@ $home_url = getUrl() . '/';
                     <div class="ps-2">
                         <div class="d-flex flex-row justify-content-between align-items-center ms-1 me-1">
                             <p class="mb-0">Sub-Total</p>
-                            <p class="mb-0">100.00 $</p>
+                            <p class="mb-0" id ="totalsub"></p>
                         </div>
 
                         <div class="d-flex flex-row justify-content-between align-items-center ms-1 me-1">
@@ -268,7 +268,7 @@ $home_url = getUrl() . '/';
 
                     <div class="d-flex flex-row justify-content-between align-items-center ms-1 me-1">
                         <h4 class="mb-0">TOTAL TO PAY</h4>
-                        <p class="mb-0">140.00 $</p>
+                        <p class="mb-0" id ="totalpay"></p>
                     </div>
 
                 </div>
@@ -281,7 +281,29 @@ $home_url = getUrl() . '/';
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/signUp.js"></script>
      <script>
-
+        
+        
+        
+        function fixtotal(){
+        ship = document.querySelector('input[name="delivery-method"]:checked').value;
+        // console.log(ship);
+        var price = document.getElementsByClassName('price_sp');
+        var quanti = document.getElementsByClassName('quantity_sp');
+        var sum = 0;
+        for (var i = 0; i < price.length; i++){
+        sum+= price[i].innerHTML.slice(0,-1) * quanti[i].innerHTML*1.0;
+        }
+    
+        var add = document.querySelector("#totalpay");
+        var add2 = document.querySelector("#totalsub");
+        // console.log(add);
+        // add.innerHTML = String(sum) + " $";
+        total = sum*1.0 + ship*1.0;
+        add2.innerText = String(sum) + " $";
+        add.innerText = String(total) + " $";
+        
+    }
+    fixtotal();
      </script>                       
 </body>
 
