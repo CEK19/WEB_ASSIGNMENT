@@ -221,59 +221,33 @@ $home_url = getUrl() . '/';
 
                     <!-- FRAME ARRAY HERE -->
                     <div class="ps-2">
+                        <?php
+                            foreach($data["img_info"] as $item){
+                        ?>
+                        <!-- Một sản phẩm -->
                         <div class="CO-frame d-flex flex-row mb-3">
                             <div class="border CO-img">
                                 <!-- img -->
-                                <img src="./mvc/database/access_bag/5.jpeg" style="width:100%;">
+                                <?php 
+                                    $IMG_PATH = "./mvc/database/{$item['category']}/{$item['clothID']}".".jpeg";
+                                    echo '<img src='.$IMG_PATH.' style="width:100%;">';
+                                ?>
                             </div>
                             <div class="CO-detail ms-3 pt-2">
-                                <h5 class="mb-1">45.00 $</h5>
-                                <p class="mb-1">Đây là tên của sản phẩm người ta</p>
+                                <h5 class="mb-1" name="price_sp"><?php echo $item['cost']?> $</h5>
+                                <p class="mb-1"><?php echo $item['name'] ?></p>
                                 <div class="CO-detail-ls d-flex flex-row">
-                                    <p class="mb-0">White</p>
+                                    <p class="mb-0"><?php echo $item['color'] ?></p>
                                     &nbsp; &ensp;
-                                    <p class="mb-0">XL</p>
+                                    <p class="mb-0"><?php echo $item['size'] ?></p>
                                     &nbsp; &ensp;
-                                    <p class="mb-0">Qty: <span class="">1</span></p>
+                                    <p class="mb-0">Qty: <span class=""><?php echo $item['quantity'] ?></span></p>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="CO-frame d-flex flex-row mb-3">
-                            <div class="border CO-img">
-                                <!-- img -->
-                                <img src="./mvc/database/access_bag/14.jpeg" style="width:100%;">
-                            </div>
-                            <div class="CO-detail ms-3 pt-2">
-                                <h5 class="mb-1">45.00 $</h5>
-                                <p class="mb-1">Đây là tên của sản phẩm người ta</p>
-                                <div class="CO-detail-ls d-flex flex-row">
-                                    <p class="mb-0">White</p>
-                                    &nbsp; &ensp;
-                                    <p class="mb-0">XL</p>
-                                    &nbsp; &ensp;
-                                    <p class="mb-0">Qty: <span class="">1</span></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="CO-frame d-flex flex-row mb-3">
-                            <div class="border CO-img">
-                                <!-- img -->
-                                <img src="./mvc/database/access_bag/9.jpeg" style="width:100%;">
-                            </div>
-                            <div class="CO-detail ms-3 pt-2">
-                                <h5 class="mb-1">45.00 $</h5>
-                                <p class="mb-1">Đây là tên của sản phẩm người ta</p>
-                                <div class="CO-detail-ls d-flex flex-row">
-                                    <p class="mb-0">White</p>
-                                    &nbsp; &ensp;
-                                    <p class="mb-0">XL</p>
-                                    &nbsp; &ensp;
-                                    <p class="mb-0">Qty: <span class="">1</span></p>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                            }
+                        ?> 
                     </div>
 
                     <hr class="ms-1 me-1">
@@ -306,7 +280,9 @@ $home_url = getUrl() . '/';
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/signUp.js"></script>
+     <script>
 
+     </script>                       
 </body>
 
 </html>

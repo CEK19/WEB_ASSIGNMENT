@@ -29,12 +29,13 @@
             <div class="ps-4 pe-5 pt-4 pb-4">
                 <h4 class="mb-0">MY BAG</h4>
             </div>
-
+            <form action="checkOut/update_shoppingbag" method="post">
             <div class="Sb-list mt-3 ps-4 pe-5 pt-4 pb-4">
                 <?php
                     foreach($data["img_info"] as $item){
                 ?>
                 <!-- MỘT SẢN PHẨM -->
+                <input name="ids[]" style ="display:none;" type="text" value="<?php echo $item['id']?>">
                 <div class="Sb-frame d-flex flex-row">
                     <div class="border Sb-img">
                         <!-- IMG HERE -->
@@ -48,21 +49,20 @@
                         <p><?php echo $item['name'] ?></p>
 
                         <div class="d-flex row ms-0 me-0">
-                            <select class="form-select me-2 mb-1 Sb-detail-color" style="width:21%">
-                                <option value="1" selected>Black</option>
-                                <option value="2">White</option>
+                            <select name="colors[]" class="form-select me-2 mb-1 Sb-detail-color" style="width:21%" >
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
                             </select>
 
-                            <select class="form-select me-2 mb-1 Sb-detail-size" style="width:15%">
-                                <option value="1">S</option>
-                                <option value="2" selected>M</option>
-                                <option value="3">L</option>
-                                <option value="4">XL</option>
+                            <select name="sizes[]" class="form-select me-2 mb-1 Sb-detail-size" style="width:15%">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
                             </select>
 
-                            <select class="form-select mb-1 Sb-detail-quantity quantity_sp" onchange = "fixtotal()" style="width:22%">
-                                <option  value ="<?php echo $item['quantity']?>" selected>Qty <?php echo $item['quantity']?></option>
-                                <option value="1" >Qty 1</option>
+                            <select name ="quantities[]" class="form-select mb-1 Sb-detail-quantity quantity_sp" onchange = "fixtotal()" style="width:22%">
+                                <option value="1">Qty 1</option>
                                 <option value="2">Qty 2</option>
                                 <option value="3">Qty 3</option>
                                 <option value="4">Qty 4</option>
@@ -116,17 +116,17 @@
                         <path d="M16 32C12.8355 32 9.74207 31.0616 7.11088 29.3035C4.4797 27.5454 2.42894 25.0466 1.21793 22.1229C0.00693253 19.1993 -0.309921 15.9823 0.307443 12.8786C0.924806 9.77487 2.44866 6.92394 4.6863 4.6863C6.92394 2.44866 9.77487 0.924806 12.8786 0.307443C15.9823 -0.309921 19.1993 0.00693253 22.1229 1.21793C25.0466 2.42894 27.5454 4.4797 29.3035 7.11088C31.0616 9.74207 32 12.8355 32 16C32 20.2435 30.3143 24.3131 27.3137 27.3137C24.3131 30.3143 20.2435 32 16 32ZM16 2.28572C13.2876 2.28572 10.6361 3.09005 8.38076 4.59699C6.12545 6.10394 4.36766 8.24582 3.32966 10.7518C2.29166 13.2577 2.02007 16.0152 2.54924 18.6755C3.07841 21.3358 4.38456 23.7795 6.30254 25.6975C8.22052 27.6154 10.6642 28.9216 13.3245 29.4508C15.9848 29.9799 18.7423 29.7084 21.2482 28.6703C23.7542 27.6323 25.8961 25.8746 27.403 23.6193C28.91 21.3639 29.7143 18.7124 29.7143 16C29.7143 12.3628 28.2694 8.87447 25.6975 6.30254C23.1255 3.73061 19.6373 2.28572 16 2.28572V2.28572Z" fill="black"/>
                     </svg>
                     <div class="dropdown-content">
-                        <p class="mb-0">Click <span class="bg-success text-white rounded ps-2 pe-2 pt-2 pb-2">CHECK OUT</span> and enter your address and delivery company to calculate delivery cost.</p>
+                        <p class="mb-0">Click <span class="bg-success text-white rounded ps-2 pe-2 pt-2 pb-2">CHECK OUT</span> and enter your address and delivery company to calculate delivery cost.</p> 
                     </div>
                 </div>
             </div>
-
+              
             <hr>
 
             <div class="d-grid gap-2">
-                <a href="?url=checkOut" role="button" class="btn btn-success border-0">CHECK OUT</a>
+                <button class="btn btn-success border-0" name="submit" type="submit">CHECK OUT</button>
             </div>
-
+             </form>     
             <p class="fw-bold mt-3">We also accept:</p>
 
             <div class="d-flex flex-row">
@@ -154,8 +154,7 @@
    add.innerHTML = String(sum) + " $";
    add2.innerText = String(sum) + " $";
     }
-    fixtotal();
-
+fixtotal();
 
     
     
