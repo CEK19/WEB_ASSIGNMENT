@@ -20,13 +20,13 @@
 
                     <div class="d-flex mb-2">
                         <div style="width: 20%;">
-                            <label class="form-label col-auto">ClothID</label>
+                            <label class="form-label col-auto">clothID</label>
                             <div class="col-10">
                                 <input class="form-control" type="text">
                             </div>
                         </div>
                         <div style="width: 70%;">
-                            <label class="form-label col-auto">Category</label>
+                            <label class="form-label col-auto">category</label>
                             <div class="col-8">
                                 <select class="form-select">
                                     <option selected>Choose one category</option>
@@ -50,7 +50,7 @@
 
                     <div class="d-flex mb-2">
                         <div style="width: 24%;">
-                            <label class="form-label col-auto">Color</label>
+                            <label class="form-label col-auto">color</label>
                             <div class="col-10">
                                 <select class="form-select">
                                     <option value="black" selected>black</option>
@@ -60,7 +60,7 @@
                         </div>
 
                         <div style="width: 24%;">
-                            <label class="form-label col-auto">Size</label>
+                            <label class="form-label col-auto">size</label>
                             <div class="col-10">
                                 <select class="form-select">
                                     <option value="black">S</option>
@@ -72,19 +72,19 @@
                         </div>
 
                         <div style="width: 23%;">
-                            <label class="form-label col-auto">Quantity</label>
+                            <label class="form-label col-auto">quantity</label>
                             <div class="col-10">
                                 <input class="form-control" type="text">
                             </div>
                         </div>
                     </div>
 
-                    <label class="form-label col-auto">Phone</label>
+                    <label class="form-label col-auto">phone</label>
                     <div class="col-8 mb-2">
                         <input class="form-control" type="text">
                     </div>
 
-                    <label class="form-label col-auto">Address</label>
+                    <label class="form-label col-auto">address</label>
                     <div class="col-8 mb-2">
                         <input class="form-control" type="text">
                     </div>
@@ -92,7 +92,7 @@
 
                     <div class="d-flex mb-2">
                         <div style="width: 30%;">
-                            <label class="form-label col-auto">DeliMethod</label>
+                            <label class="form-label col-auto">deliveryMethod</label>
                             <div class="col-10 mb-2">
                                 <select class="form-select">
                                     <option value="fast" selected>fast</option>
@@ -102,7 +102,7 @@
                         </div>
 
                         <div style="width: 40%;">
-                            <label class="form-label col-auto">PayMethod</label>
+                            <label class="form-label col-auto">paymentMethod</label>
                             <div class="col-8 mb-2">
                                 <select class="form-select">
                                     <option value="black">card</option>
@@ -119,7 +119,7 @@
                         <input class="form-control" type="text">
                     </div>
 
-                    <label class="form-label col-auto">E-wallet</label>
+                    <label class="form-label col-auto">e-wallet</label>
                     <div class="col-8 mb-2">
                         <input class="form-control" type="text">
                     </div>
@@ -153,13 +153,13 @@
 
                     <div class="d-flex mb-2">
                         <div style="width: 20%;">
-                            <label class="form-label col-auto">ClothID</label>
+                            <label class="form-label col-auto">clothID</label>
                             <div class="col-10">
                                 <input class="form-control" type="text">
                             </div>
                         </div>
                         <div style="width: 70%;">
-                            <label class="form-label col-auto">Category</label>
+                            <label class="form-label col-auto">category</label>
                             <div class="col-8">
                                 <select class="form-select">
                                     <option selected>Choose one category</option>
@@ -183,7 +183,7 @@
 
                     <div class="d-flex mb-2">
                         <div style="width: 24%;">
-                            <label class="form-label col-auto">Color</label>
+                            <label class="form-label col-auto">color</label>
                             <div class="col-10">
                                 <select class="form-select">
                                     <option value="black" selected>black</option>
@@ -193,7 +193,7 @@
                         </div>
 
                         <div style="width: 24%;">
-                            <label class="form-label col-auto">Size</label>
+                            <label class="form-label col-auto">size</label>
                             <div class="col-10">
                                 <select class="form-select">
                                     <option value="black">S</option>
@@ -205,19 +205,19 @@
                         </div>
 
                         <div style="width: 23%;">
-                            <label class="form-label col-auto">Quantity</label>
+                            <label class="form-label col-auto">quantity</label>
                             <div class="col-10">
                                 <input class="form-control" type="text">
                             </div>
                         </div>
                     </div>
 
-                    <label class="form-label col-auto">Phone</label>
+                    <label class="form-label col-auto">phone</label>
                     <div class="col-8 mb-2">
                         <input class="form-control" type="text">
                     </div>
 
-                    <label class="form-label col-auto">Address</label>
+                    <label class="form-label col-auto">address</label>
                     <div class="col-8 mb-2">
                         <input class="form-control" type="text">
                     </div>
@@ -225,7 +225,7 @@
 
                     <div class="d-flex mb-2">
                         <div style="width: 30%;">
-                            <label class="form-label col-auto">DeliMethod</label>
+                            <label class="form-label col-auto">deliveryMethod</label>
                             <div class="col-10 mb-2">
                                 <select class="form-select">
                                     <option value="fast" selected>fast</option>
@@ -235,7 +235,7 @@
                         </div>
 
                         <div style="width: 40%;">
-                            <label class="form-label col-auto">PayMethod</label>
+                            <label class="form-label col-auto">paymentMethod</label>
                             <div class="col-8 mb-2">
                                 <select class="form-select">
                                     <option value="black">card</option>
@@ -244,14 +244,14 @@
                             </div>
                         </div>
                     </div>
-                    
 
-                    <label class="form-label col-auto">Card Number</label>
+
+                    <label class="form-label col-auto">cardNumber</label>
                     <div class="col-8 mb-2">
                         <input class="form-control" type="text">
                     </div>
 
-                    <label class="form-label col-auto">E-wallet</label>
+                    <label class="form-label col-auto">e-wallet</label>
                     <div class="col-8 mb-2">
                         <input class="form-control" type="text">
                     </div>
@@ -272,16 +272,16 @@
                     <tr>
                         <th>id</th>
                         <th>email</th>
-                        <th>ClothID</th>
-                        <th>Category</th>
+                        <th>clothID</th>
+                        <th>category</th>
                         <th>color</th>
                         <th>size</th>
                         <th>quantity</th>
                         <th>phone</th>
-                        <th>address</th>
-                        <th>deliMethod</th>
-                        <th>payMethod</th>
-                        <th>card_num</th>
+                        <th style="padding-right: 100px;">address</th>
+                        <th>deliveryMethod</th>
+                        <th>paymentMethod</th>
+                        <th>cardNumber</th>
                         <th>e-wallet</th>
                         <th>Fucntion</th>
                     </tr>
