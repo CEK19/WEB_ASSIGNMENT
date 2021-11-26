@@ -1,53 +1,28 @@
-#navbar-layout-for-all #navBarSearchForm{
-    width: 30%;
+.admin-bg{
+    background-color: #E5E5E5;
 }
 
-#navbar-layout-for-all #sale-id{
-    background-color: #D01345;
+.admin-container{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
 }
 
-#navbar-layout-for-all #sale-id a:hover{
-    color: black;
+form label{
+    font-weight: bold;
+    color: rgba(102, 102, 102, 0.81);
 }
 
-#navbar-layout-for-all .position-left{
-    margin-right: 10px;   
-}
 
-#navbar-layout-for-all .nav, .icon-user svg{
-    margin-left: 10px;
-    margin-right: 10px;
+.aa-top{
+    width: 100%;
 }
-
-#navbar-layout-for-all .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0px;
+.aa-left{
+    width: 50%;
 }
-
-#navbar-layout-for-all .nav .color-white{
-    color: white;
-}
-
-#navbar-layout-for-all .dropdown-menu a{
-    color: black;
-}
-
-#navbar-layout-for-all .navbar-brand {
-    margin-left: 10px;
-}
-
-#navbar-layout-for-all .navbar-brand strong{
-    font-size: 30px;
-}
-
-#navbar-layout-for-all .icon-user a{
-    text-decoration: none;
-}
-
-#navbar-layout-for-all .bottom-71px{
-    height: 100px;
-}
-
-#navbar-layout-for-all .middle-text{
-   color: rebeccapurple;
+/* .aa_middle{
+    width: 33%;
+} */
+.aa-right{
+    width: 50%;
 }

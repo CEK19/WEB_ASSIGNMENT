@@ -1,10 +1,10 @@
 <?php
-    class admin extends Controller{
+    class Admin extends Controller{
 
         // HAVE SHOW COMMENT
-        public function adminPanel(){
+        public function account(){
             $this->view("adminpage", [
-            
+                "content" => "admin_account"
             ]);
         }        
     }
