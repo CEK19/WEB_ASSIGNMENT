@@ -57,7 +57,7 @@
                     <label class="form-label col-auto">Type</label>
                     <div class="col-8 mb-2">
                         <select class="form-select">
-                            <option selected>Choose level for user</option>
+                            <option selected>Choose level for account</option>
                             <option value="1">user level</option>
                             <option value="2">admin level</option>
                         </select>
