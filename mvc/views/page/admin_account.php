@@ -11,29 +11,40 @@
                 <div class="aa-left">
                     <h3>Add/Edit existed user</h3>
 
-                    <label class="form-label col-auto">User ID</label>
-                    <div class="col-8 mb-2">
-                        <input class="form-control" type="text">
+                    <div class="mb-2 mt-2">
+                        <button type="button" class="btn btn-primary col-2 me-1" id="add-btn">Add</button>
+                        <button type="button" class="btn btn-dark col-2" id="edit-btn">Edit</button>
                     </div>
 
-                    <label class="form-label col-auto">F_Name</label>
-                    <div class="col-8 mb-2">
-                        <input class="form-control" type="text">
+                    <div class="d-none" id="left">
+                        <div class="d-none" id="user-id">
+                            <label class="form-label col-auto">User ID</label>
+                            <div class="col-8 mb-2">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+
+                        <label class="form-label col-auto">F_Name</label>
+                        <div class="col-8 mb-2">
+                            <input class="form-control" type="text">
+                        </div>
+
+                        <label class="form-label col-auto">L_Name</label>
+                        <div class="col-8 mb-2">
+                            <input class="form-control" type="text">
+                        </div>
+
+                        <label class="form-label col-auto">email</label>
+                        <div class="col-8 mb-2">
+                            <input class="form-control" type="text">
+                        </div>
+
+                        <div class="d-grid col-8">
+                            <button class="btn btn-success">OK</button>
+                        </div>
                     </div>
 
-                    <label class="form-label col-auto">L_Name</label>
-                    <div class="col-8 mb-2">
-                        <input class="form-control" type="text">
-                    </div>
 
-                    <label class="form-label col-auto">email</label>
-                    <div class="col-8 mb-2">
-                        <input class="form-control" type="text">
-                    </div>
-
-                    <div class="d-grid col-8">
-                        <button class="btn btn-success">OK</button>
-                    </div>
                 </div>
                 <div class="aa-right">
                     <h3>Edit type of existed user</h3>
@@ -43,9 +54,20 @@
                         <input class="form-control" type="text">
                     </div>
 
+                    <label class="form-label col-auto">Type</label>
+                    <div class="col-8 mb-2">
+                        <select class="form-select">
+                            <option selected>Choose level for user</option>
+                            <option value="1">user level</option>
+                            <option value="2">admin level</option>
+                        </select>
+                    </div>
+
                     <div class="d-grid col-8">
                         <button class="btn btn-success">OK</button>
                     </div>
+
+                    <!-- =================================== -->
 
                     <h3 class="mt-5">Import img for user</h3>
 
@@ -119,9 +141,8 @@
                     </td>
                 </tr>
             </table>
-
-
-
         </form>
     </div>
 </div>
+
+<script type="text/javascript" src="./public/js/admin_account.js"></script>
