@@ -84,63 +84,65 @@
 
             <br>
 
+            <!-- ===== TABLE ====== -->
+            <div class="table-responsive">
+                <table class="table table-striped align-middle table-hover">
+                    <tr>
+                        <th>UserID</th>
+                        <th>Avatar</th>
+                        <th>F_Name</th>
+                        <th>L_Name</th>
+                        <th>Email</th>
+                        <th>Type</th>
+                        <th>Fucntion</th>
+                    </tr>
 
-            <table class="table table-striped">
-                <tr>
-                    <th>UserID</th>
-                    <th>Avatar</th>
-                    <th>F_Name</th>
-                    <th>L_Name</th>
-                    <th>Email</th>
-                    <th>Type</th>
-                    <th>Fucntion</th>
-                </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="py-1">
+                            <div style="width: 50px;"><img src="./assets/img/av0.png" width="100%"></div>
+                        </td>
+                        <td>Kong</td>
+                        <td>Cute</td>
+                        <td>admin@gmail.com</td>
+                        <td>admin</td>
+                        <td>
+                            <button class="btn btn-danger">Kick</button>
+                            <button class="btn btn-warning">Del img</button>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>9</td>
-                    <td class="py-1">
-                        <div style="width: 50px;"><img src="./assets/img/av0.png" width="100%"></div>
-                    </td>
-                    <td>Kong</td>
-                    <td>Cute</td>
-                    <td>admin@gmail.com</td>
-                    <td>admin</td>
-                    <td>
-                        <button class="btn btn-danger">Kick</button>
-                        <button class="btn btn-warning">Del img</button>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="py-1">
+                            <div style="width: 50px;"><img src="./assets/img/av0.png" width="100%"></div>
+                        </td>
+                        <td>tu</td>
+                        <td>le</td>
+                        <td>tu.user@hcmut.edu.vn</td>
+                        <td>user</td>
+                        <td>
+                            <button class="btn btn-danger">Kick</button>
+                            <button class="btn btn-warning">Del img</button>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>3</td>
-                    <td class="py-1">
-                        <div style="width: 50px;"><img src="./assets/img/av0.png" width="100%"></div>
-                    </td>
-                    <td>tu</td>
-                    <td>le</td>
-                    <td>tu.user@hcmut.edu.vn</td>
-                    <td>user</td>
-                    <td>
-                        <button class="btn btn-danger">Kick</button>
-                        <button class="btn btn-warning">Del img</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>3</td>
-                    <td class="py-1">
-                        <div style="width: 50px;"><img src="./assets/img/av0.png" width="100%"></div>
-                    </td>
-                    <td>tu</td>
-                    <td>le</td>
-                    <td>tu.user@hcmut.edu.vn</td>
-                    <td>user</td>
-                    <td>
-                        <button class="btn btn-danger">Kick</button>
-                        <button class="btn btn-warning">Del img</button>
-                    </td>
-                </tr>
-            </table>
+                    <tr>
+                        <td>3</td>
+                        <td class="py-1">
+                            <div style="width: 50px;"><img src="./assets/img/av0.png" width="100%"></div>
+                        </td>
+                        <td>tu</td>
+                        <td>le</td>
+                        <td>tu.user@hcmut.edu.vn</td>
+                        <td>user</td>
+                        <td>
+                            <button class="btn btn-danger">Kick</button>
+                            <button class="btn btn-warning">Del img</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </form>
     </div>
 </div>

@@ -5,125 +5,329 @@
 </style>
 
 <div class="admin-bg">
-    <h1>Not doing aything on this page yet</h1>
-
     <div class="admin-container bg-white pt-4 ps-5 pe-5">
         <form>
             <div class="aa-top d-flex ps-5">
                 <div class="aa-left">
-                    <h3>Add/Edit existed user</h3>
+                    <h3>Add new order</h3>
 
-                    <label class="form-label col-auto">User ID</label>
+                    <div>
+                        <label class="form-label col-auto">email</label>
+                        <div class="col-8 mb-2">
+                            <input class="form-control" type="text">
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-2">
+                        <div style="width: 20%;">
+                            <label class="form-label col-auto">ClothID</label>
+                            <div class="col-10">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div style="width: 70%;">
+                            <label class="form-label col-auto">Category</label>
+                            <div class="col-8">
+                                <select class="form-select">
+                                    <option selected>Choose one category</option>
+                                    <option value="access_bag">access_bag</option>
+                                    <option value="access_caps">access_caps</option>
+                                    <option value="access_glass">access_glass</option>
+                                    <option value="pants_jeans">pants_jeans</option>
+                                    <option value="pants_jog">pants_jog</option>
+                                    <option value="pants_lounges">pants_lounges</option>
+                                    <option value="shirt_polo">shirt_polo</option>
+                                    <option value="shirt_shirt">shirt_shirt</option>
+                                    <option value="shirt_tshirt_vest">shirt_tshirt_vest</option>
+                                    <option value="shoes_sandals_slippers">shoes_sandals_slippers</option>
+                                    <option value="shoes_shocks">shoes_shocks</option>
+                                    <option value="shoes_trainers">shoes_trainers</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex mb-2">
+                        <div style="width: 24%;">
+                            <label class="form-label col-auto">Color</label>
+                            <div class="col-10">
+                                <select class="form-select">
+                                    <option value="black" selected>black</option>
+                                    <option value="white">white</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div style="width: 24%;">
+                            <label class="form-label col-auto">Size</label>
+                            <div class="col-10">
+                                <select class="form-select">
+                                    <option value="black">S</option>
+                                    <option value="white" selected>M</option>
+                                    <option value="white">L</option>
+                                    <option value="white">XL</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div style="width: 23%;">
+                            <label class="form-label col-auto">Quantity</label>
+                            <div class="col-10">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="form-label col-auto">Phone</label>
                     <div class="col-8 mb-2">
                         <input class="form-control" type="text">
                     </div>
 
-                    <label class="form-label col-auto">F_Name</label>
+                    <label class="form-label col-auto">Address</label>
                     <div class="col-8 mb-2">
                         <input class="form-control" type="text">
                     </div>
 
-                    <label class="form-label col-auto">L_Name</label>
+
+                    <div class="d-flex mb-2">
+                        <div style="width: 30%;">
+                            <label class="form-label col-auto">DeliMethod</label>
+                            <div class="col-10 mb-2">
+                                <select class="form-select">
+                                    <option value="fast" selected>fast</option>
+                                    <option value="normal">normal</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div style="width: 40%;">
+                            <label class="form-label col-auto">PayMethod</label>
+                            <div class="col-8 mb-2">
+                                <select class="form-select">
+                                    <option value="black">card</option>
+                                    <option value="white">e-wallet</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <label class="form-label col-auto">Card Number</label>
                     <div class="col-8 mb-2">
                         <input class="form-control" type="text">
                     </div>
 
-                    <label class="form-label col-auto">email</label>
+                    <label class="form-label col-auto">E-wallet</label>
                     <div class="col-8 mb-2">
                         <input class="form-control" type="text">
                     </div>
 
                     <div class="d-grid col-8">
-                        <button class="btn btn-success">OK</button>
+                        <button class="btn btn-success">ADD</button>
                     </div>
                 </div>
+
+
+
                 <div class="aa-right">
-                    <h3>Edit type of existed user</h3>
+                    <h3>Edit existed order</h3>
 
-                    <label class="form-label col-auto">User ID</label>
+                    <div class="d-flex">
+                        <div style="width: 20%;">
+                            <label class="form-label col-auto">id</label>
+                            <div class="col-10 mb-2">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+
+                        <div style="width: 70%;">
+                            <label class="form-label col-auto">email</label>
+                            <div class="col-8 mb-2">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex mb-2">
+                        <div style="width: 20%;">
+                            <label class="form-label col-auto">ClothID</label>
+                            <div class="col-10">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div style="width: 70%;">
+                            <label class="form-label col-auto">Category</label>
+                            <div class="col-8">
+                                <select class="form-select">
+                                    <option selected>Choose one category</option>
+                                    <option value="access_bag">access_bag</option>
+                                    <option value="access_caps">access_caps</option>
+                                    <option value="access_glass">access_glass</option>
+                                    <option value="pants_jeans">pants_jeans</option>
+                                    <option value="pants_jog">pants_jog</option>
+                                    <option value="pants_lounges">pants_lounges</option>
+                                    <option value="shirt_polo">shirt_polo</option>
+                                    <option value="shirt_shirt">shirt_shirt</option>
+                                    <option value="shirt_tshirt_vest">shirt_tshirt_vest</option>
+                                    <option value="shoes_sandals_slippers">shoes_sandals_slippers</option>
+                                    <option value="shoes_shocks">shoes_shocks</option>
+                                    <option value="shoes_trainers">shoes_trainers</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex mb-2">
+                        <div style="width: 24%;">
+                            <label class="form-label col-auto">Color</label>
+                            <div class="col-10">
+                                <select class="form-select">
+                                    <option value="black" selected>black</option>
+                                    <option value="white">white</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div style="width: 24%;">
+                            <label class="form-label col-auto">Size</label>
+                            <div class="col-10">
+                                <select class="form-select">
+                                    <option value="black">S</option>
+                                    <option value="white" selected>M</option>
+                                    <option value="white">L</option>
+                                    <option value="white">XL</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div style="width: 23%;">
+                            <label class="form-label col-auto">Quantity</label>
+                            <div class="col-10">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="form-label col-auto">Phone</label>
+                    <div class="col-8 mb-2">
+                        <input class="form-control" type="text">
+                    </div>
+
+                    <label class="form-label col-auto">Address</label>
+                    <div class="col-8 mb-2">
+                        <input class="form-control" type="text">
+                    </div>
+
+
+                    <div class="d-flex mb-2">
+                        <div style="width: 30%;">
+                            <label class="form-label col-auto">DeliMethod</label>
+                            <div class="col-10 mb-2">
+                                <select class="form-select">
+                                    <option value="fast" selected>fast</option>
+                                    <option value="normal">normal</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div style="width: 40%;">
+                            <label class="form-label col-auto">PayMethod</label>
+                            <div class="col-8 mb-2">
+                                <select class="form-select">
+                                    <option value="black">card</option>
+                                    <option value="white">e-wallet</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <label class="form-label col-auto">Card Number</label>
+                    <div class="col-8 mb-2">
+                        <input class="form-control" type="text">
+                    </div>
+
+                    <label class="form-label col-auto">E-wallet</label>
                     <div class="col-8 mb-2">
                         <input class="form-control" type="text">
                     </div>
 
                     <div class="d-grid col-8">
-                        <button class="btn btn-success">OK</button>
-                    </div>
-
-                    <h3 class="mt-5">Import img for user</h3>
-
-                    <label for="formFile" class="form-label col-auto">Upload file</label>
-                    <div class="d-grid col-8 mb-2">
-                        <input class="form-control" type="file" id="formFile">
-                    </div>
-
-                    <div class="d-grid col-8">
-                        <button class="btn btn-success">SUBMIT</button>
+                        <button class="btn btn-success">EDIT</button>
                     </div>
                 </div>
+
+
             </div>
 
             <br>
 
+            <!-- ===== TABLE ===== -->
+            <div class="table-responsive">
+                <table class="table table-striped align-middle table-hover table-bordered">
+                    <tr>
+                        <th>id</th>
+                        <th>email</th>
+                        <th>ClothID</th>
+                        <th>Category</th>
+                        <th>color</th>
+                        <th>size</th>
+                        <th>quantity</th>
+                        <th>phone</th>
+                        <th>address</th>
+                        <th>deliMethod</th>
+                        <th>payMethod</th>
+                        <th>card_num</th>
+                        <th>e-wallet</th>
+                        <th>Fucntion</th>
+                    </tr>
 
-            <table class="table table-striped">
-                <tr>
-                    <th>UserID</th>
-                    <th>Avatar</th>
-                    <th>F_Name</th>
-                    <th>L_Name</th>
-                    <th>Email</th>
-                    <th>Type</th>
-                    <th>Fucntion</th>
-                </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>tu.user@hcmut.edu.vn</td>
+                        <td>2</td>
+                        <td>pants_jog</td>
+                        <td>black</td>
+                        <td>M</td>
+                        <td>2</td>
+                        <td>0915882863</td>
+                        <td>Bình Hưng Hòa, Ga Hòa Hưng, kênh nhiêu lộc</td>
+                        <td>fast</td>
+                        <td>card</td>
+                        <td>123087653</td>
+                        <td>paypal</td>
+                        <td>
+                            <button class="btn btn-danger">Del</button>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>9</td>
-                    <td class="py-1">
-                        <div style="width: 50px;"><img src="./assets/img/av0.png" width="100%"></div>
-                    </td>
-                    <td>Kong</td>
-                    <td>Cute</td>
-                    <td>admin@gmail.com</td>
-                    <td>admin</td>
-                    <td>
-                        <button class="btn btn-danger">Kick</button>
-                        <button class="btn btn-warning">Del img</button>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>tu.user@hcmut.edu.vn</td>
+                        <td>15</td>
+                        <td>pants_jeans</td>
+                        <td>black</td>
+                        <td>M</td>
+                        <td>2</td>
+                        <td>0915882863</td>
+                        <td>Bình Hưng Hòa, Ga Hòa Hưng, kênh nhiêu lộc</td>
+                        <td>fast</td>
+                        <td>card</td>
+                        <td>123087653</td>
+                        <td>paypal</td>
+                        <td>
+                            <button class="btn btn-danger">Del</button>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>3</td>
-                    <td class="py-1">
-                        <div style="width: 50px;"><img src="./assets/img/av0.png" width="100%"></div>
-                    </td>
-                    <td>tu</td>
-                    <td>le</td>
-                    <td>tu.user@hcmut.edu.vn</td>
-                    <td>user</td>
-                    <td>
-                        <button class="btn btn-danger">Kick</button>
-                        <button class="btn btn-warning">Del img</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>3</td>
-                    <td class="py-1">
-                        <div style="width: 50px;"><img src="./assets/img/av0.png" width="100%"></div>
-                    </td>
-                    <td>tu</td>
-                    <td>le</td>
-                    <td>tu.user@hcmut.edu.vn</td>
-                    <td>user</td>
-                    <td>
-                        <button class="btn btn-danger">Kick</button>
-                        <button class="btn btn-warning">Del img</button>
-                    </td>
-                </tr>
-            </table>
-
-
-
+                </table>
+            </div>
         </form>
     </div>
 </div>
+
+<!-- <script type="text/javascript" src="./public/js/admin_account.js"></script> -->
