@@ -19,22 +19,44 @@ function mouseClicked_SELLING(obj){
     let category = splitPathArr[3];
     let clothID = splitPathArr[4].replace(".jpeg", "");
 
-    // STEP 2: POST INFO FORMATTED TO API
-    $.ajax({
-        url: './mvc/core/AJAX/addWishlist.php',
-        type: 'POST',
-        dataType: 'json',
-        data: {
-            ajax_category: category,
-            ajax_clothid: clothID
-        }
-    }).done(function(result) {
-        // STEP 3: UPDATE COLOR OF BUTTON
-        if(result.state_response == "no-sign-in"){
-            alert("Please sign-in to put item to your wishlist");
-        }
-        updateHeartColorBasedOnWishListExist(obj);
-    });
+
+    // STEP 2: GET CURRENT COLOR OF BUTTON
+    let circleObj = obj.getElementsByTagName("circle")[0];
+    let getCurrFillColor = circleObj.getAttribute("fill");
+
+    // STEP 3: POST INFO FORMATTED TO API
+    if(getCurrFillColor == "white"){ // NOT EXIST ON WISH LIST
+        $.ajax({
+            url: './mvc/core/AJAX/addWishlist.php',
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                ajax_category: category,
+                ajax_clothid: clothID
+            }
+        }).done(function(result) {
+            // STEP 3: UPDATE COLOR OF BUTTON
+            if(result.state_response == "no-sign-in"){
+                alert("Please sign-in to put item to your wishlist");
+            }        
+            updateHeartColorBasedOnWishListExist(obj);
+        });
+    }
+    else if (getCurrFillColor == "#F5C6A5"){ // EXIST ON WISHLIST
+        $.ajax({
+            url: './mvc/core/AJAX/delWishlist.php',
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                ajax_category: category,
+                ajax_clothid: clothID
+            }
+        }).done(function(result) {
+            // STEP 3: UPDATE COLOR OF BUTTON 
+            console.log(result)           ;
+            updateHeartColorBasedOnWishListExist(obj);
+        });
+    }
 }
 
 function updateHeartColorBasedOnWishListExist(obj){    
@@ -82,20 +104,22 @@ function updateHeartColorBasedOnWishListExist(obj){
 // IF EXIST SELLING PAGE
 let sellingClassObj = document.getElementsByClassName("sellingPageLayout");
 if(sellingClassObj.length > 0){    
-    let heartIconList = sellingClassObj[0].getElementsByClassName("selling-heart-btn");    
-    for(let index = 0; index < heartIconList.length; ++index){
-        heartIconList[index].addEventListener("mouseenter", function(){
-            mouseOver_SELLING(heartIconList[index]);
-        });
-        
-        heartIconList[index].addEventListener("mouseleave", function(){
-            mouseOut_SELLING(heartIconList[index]);
-        });
-
-        heartIconList[index].addEventListener("click", function(){            
-            mouseClicked_SELLING(heartIconList[index]);
-        });
-        
-        updateHeartColorBasedOnWishListExist(heartIconList[index]);
+    let heartIconList = sellingClassObj[0].getElementsByClassName("selling-heart-btn");
+    if(heartIconList.length > 0)    {
+        for(let index = 0; index < heartIconList.length; ++index){
+            heartIconList[index].addEventListener("mouseenter", function(){
+                mouseOver_SELLING(heartIconList[index]);
+            });
+            
+            heartIconList[index].addEventListener("mouseleave", function(){
+                mouseOut_SELLING(heartIconList[index]);
+            });
+    
+            heartIconList[index].addEventListener("click", function(){            
+                mouseClicked_SELLING(heartIconList[index]);
+            });
+            
+            updateHeartColorBasedOnWishListExist(heartIconList[index]);
+        }
     }
 }

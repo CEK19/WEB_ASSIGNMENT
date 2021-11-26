@@ -6,7 +6,7 @@
         public function delWL($clothID, $category, $email){
             $format_CATEGORY = "'".$category."'";
             $format_EMAIL = "'".$email."'";
-            $SQL_QUERY_DEL_WL = "DELETE FROM wishlist WHERE clothID = {$clothID} AND email = {$format_EMAIL} AND category={$category}";
+            $SQL_QUERY_DEL_WL = "DELETE FROM wishlist WHERE clothID = {$clothID} AND email = {$format_EMAIL} AND category={$format_CATEGORY}";
 
             $responseData = array(     
                 "state_response" => "error"           
