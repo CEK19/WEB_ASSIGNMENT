@@ -27,6 +27,7 @@ html{
 /* ----------------------------------------- */
 .CO-logo-group{
     height: 10vh;
+    min-height: 66px;
     background-color: #E5E5E5;
 }
 
@@ -35,7 +36,7 @@ html{
     font-family: Baloo Tammudu;
     font-weight: bolder;
     /* font-size: 30px; */
-    font-size: 5vh;
+    font-size: calc(1.325rem + .9vw);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 25);
 }
 
@@ -47,7 +48,7 @@ html{
 }
     /* --- child ---- */
     .CO-img{
-        width: 30%;
+        width: 40%;
         height: fit-content;
     }
     .CO-detail{
@@ -105,3 +106,83 @@ hr.CO-style:after {
     padding: 0 0.25em;
     background: white;
 }
+
+/* BEGIN RESPONSIVE CODE */
+/* ===================== */
+@media screen and (max-width: 1200px) {
+    .CO-detail.pt-2{
+        padding-top: 0px !important;
+    }
+    .CO-frame p{
+        font-size: 15px !important;
+    }
+    .CO-frame h5{
+        font-size: large;
+    }
+    .CO_header, .CO_container{
+        width: 80% !important;
+    }
+    .CO-frame.mb-3{
+        margin-bottom: 20px !important;
+    }
+    
+}
+@media screen and (max-width: 900px){
+    .CO_header, .CO_container{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 800px){
+    form input.form-control{
+        width: 80% !important;
+    }
+    form select{
+        width: 30% !important;
+    }
+    .payment-method{
+        width: 80% !important;
+    }
+}
+@media screen and (max-width: 700px){
+    .CO-del.d-flex{
+        display: none !important;
+    }
+    .CO-mobile{
+        display: flex !important;
+    }
+    .CO_container.d-flex{
+        /* display: block !important; */
+        flex-direction: column-reverse !important;
+    }
+    .CO-left{
+        width: 100%!important;
+    }
+    .CO-right{
+        width: 100% !important;
+        margin-bottom: 16px;
+    }
+    .CO-right.sticky-top{
+        position: initial !important;
+    }
+    .CO-img{
+        width: 45% !important;
+    }
+}
+@media screen and (max-width: 410px){
+    form input.form-control{
+        width: 100% !important;
+    }
+    form select{
+        width: 40% !important;
+    }
+    .payment-method{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 324px){
+    .delivery-option.pe-4{
+        padding-right: 1rem!important;
+    }
+}
+/* =================== */
+/* END RESPONSIVE CODE */

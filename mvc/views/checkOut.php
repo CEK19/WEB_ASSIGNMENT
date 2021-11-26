@@ -21,10 +21,10 @@ $home_url = getUrl() . '/';
     <div class="my_page">
         <!-- ---------- TOP ---------- -->
         <!-- ========================= -->
-        <div class="CO_header d-flex flex-row justify-content-between">
+        <div class="CO_header d-flex flex-row justify-content-between CO-del">
             <div class="CO-left">
                 <div class="CO-logo-group d-flex flex-row justify-content-between align-items-center ps-3 pe-5">
-                    <span class="CO-VinBK mb-0">VinBK</span>
+                    <a href="?url=Home" class="CO-VinBK mb-0 text-decoration-none link-dark">VinBK</a>
                     <h2 class="fw-bolder mb-0">Check Out</h2>
                 </div>
             </div>
@@ -33,7 +33,18 @@ $home_url = getUrl() . '/';
             </div>
         </div>
 
+        <div class="CO_header flex-row justify-content-between CO-mobile" style="display: none;">
+            <div class="CO-left" style="width: 100% !important;">
+                <div class="CO-logo-group d-flex flex-row justify-content-between align-items-center ps-3 pe-4">
+                    <a href="?url=Home" class="CO-VinBK mb-0 text-decoration-none link-dark">VinBK</a>
+                    <h2 class="fw-bolder mb-0">Check Out</h2>
+                </div>
+            </div>
+        </div>
 
+
+        <!-- ---------- MIDDLE ---------- -->
+        <!-- ============================ -->
         <div class="CO_container d-flex flex-row justify-content-between">
 
             <!-- ---------- LEFT ---------- -->
@@ -54,7 +65,7 @@ $home_url = getUrl() . '/';
                         </div>
                         <hr class="mt-4 mb-4">
                         <h4>Delivery Option</h4>
-                        <div class="ps-4 pe-4">
+                        <div class="ps-4 pe-4 delivery-option">
                             <div class="form-check">
                                 <input type="radio" class="form-check-input" checked name="delivery-method">
                                 <label class="form-check-label" for="delivery-method">Fast Delivery - 40.00 $</label>
@@ -74,7 +85,7 @@ $home_url = getUrl() . '/';
 
                         <h4>Payment Method</h4>
                         <div class="ps-4 pe-4 mt-3">
-                            <div class="d-grid" style="width: 60%;">
+                            <div class="d-grid payment-method" style="width: 60%;">
                                 <button type="button" class="btn border border-secondary d-flex flex-row align-items-center justify-content-evenly pt-2 pb-2">
                                     <svg width="38" height="30" viewBox="0 0 38 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M26.1245 20.3571C25.7465 20.3571 25.3841 20.5264 25.1168 20.8278C24.8496 21.1292 24.6995 21.538 24.6995 21.9642C24.6995 22.3904 24.8496 22.7992 25.1168 23.1006C25.3841 23.402 25.7465 23.5713 26.1245 23.5713H30.8745C31.2524 23.5713 31.6149 23.402 31.8821 23.1006C32.1493 22.7992 32.2995 22.3904 32.2995 21.9642C32.2995 21.538 32.1493 21.1292 31.8821 20.8278C31.6149 20.5264 31.2524 20.3571 30.8745 20.3571H26.1245Z" fill="black" />
@@ -213,7 +224,7 @@ $home_url = getUrl() . '/';
                         <div class="CO-frame d-flex flex-row mb-3">
                             <div class="border CO-img">
                                 <!-- img -->
-                                <img src="./mvc/database/access_bags/5.jpeg" style="width:100%;">
+                                <img src="./mvc/database/access_bag/5.jpeg" style="width:100%;">
                             </div>
                             <div class="CO-detail ms-3 pt-2">
                                 <h5 class="mb-1">45.00 $</h5>
@@ -223,7 +234,7 @@ $home_url = getUrl() . '/';
                                     &nbsp; &ensp;
                                     <p class="mb-0">XL</p>
                                     &nbsp; &ensp;
-                                    Qty: <p class="mb-0">1</p>
+                                    <p class="mb-0">Qty: <span class="">1</span></p>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +242,7 @@ $home_url = getUrl() . '/';
                         <div class="CO-frame d-flex flex-row mb-3">
                             <div class="border CO-img">
                                 <!-- img -->
-                                <img src="./mvc/database/access_bags/14.jpeg" style="width:100%;">
+                                <img src="./mvc/database/access_bag/14.jpeg" style="width:100%;">
                             </div>
                             <div class="CO-detail ms-3 pt-2">
                                 <h5 class="mb-1">45.00 $</h5>
@@ -241,7 +252,7 @@ $home_url = getUrl() . '/';
                                     &nbsp; &ensp;
                                     <p class="mb-0">XL</p>
                                     &nbsp; &ensp;
-                                    Qty: <p class="mb-0">1</p>
+                                    <p class="mb-0">Qty: <span class="">1</span></p>
                                 </div>
                             </div>
                         </div>
@@ -249,7 +260,7 @@ $home_url = getUrl() . '/';
                         <div class="CO-frame d-flex flex-row mb-3">
                             <div class="border CO-img">
                                 <!-- img -->
-                                <img src="./mvc/database/access_bags/9.jpeg" style="width:100%;">
+                                <img src="./mvc/database/access_bag/9.jpeg" style="width:100%;">
                             </div>
                             <div class="CO-detail ms-3 pt-2">
                                 <h5 class="mb-1">45.00 $</h5>
@@ -259,7 +270,7 @@ $home_url = getUrl() . '/';
                                     &nbsp; &ensp;
                                     <p class="mb-0">XL</p>
                                     &nbsp; &ensp;
-                                    Qty: <p class="mb-0">1</p>
+                                    <p class="mb-0">Qty: <span class="">1</span></p>
                                 </div>
                             </div>
                         </div>
