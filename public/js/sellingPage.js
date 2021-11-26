@@ -1,3 +1,4 @@
+//------------------------------------------//
 function mouseOver_SELLING(obj){ 
     let pathObj = obj.getElementsByTagName("path")[0];
     pathObj.setAttribute("fill", "black");
@@ -7,7 +8,7 @@ function mouseOut_SELLING(obj){
     let pathObj = obj.getElementsByTagName("path")[0];
     pathObj.setAttribute("fill", "gray");
 }
-
+//------------------------------------------//
 function mouseClicked_SELLING(obj){
     let circleObj = obj.getElementsByTagName("circle")[0];
     let getCurrFillColor = circleObj.getAttribute("fill");
@@ -17,7 +18,51 @@ function mouseClicked_SELLING(obj){
     else{
         circleObj.setAttribute("fill", "white");
     }
+
+    // STEP 1: GET CATEGORY AND CLODTH ID => REFORMAT
+    let frameObj = obj.parentElement;
+    let imgObj = frameObj.getElementsByTagName("img")[0];
+    let pathImg = imgObj.getAttribute("src");
+    let splitPathArr = pathImg.split('/');
+    
+    let category = splitPathArr[3];
+    let clothID = splitPathArr[4].replace(".jpeg", "");
+
+    $.ajax({
+        url: './mvc/core/AJAX/addWishlist.php',
+        type: 'POST',
+        dataType: 'json',
+        data: {
+            ajax_category: category,
+            ajax_clothid: clothID
+        }
+    }).done(function(result) {
+        console.log(result);
+    });
 }
+
+function updateHearColorBasedOnWishListExist(arrayFrame){
+    let frameObj = obj.parentElement;
+    let imgObj = frameObj.getElementsByTagName("img")[0];
+    let pathImg = imgObj.getAttribute("src");
+    let splitPathArr = pathImg.split('/');
+    
+    let category = splitPathArr[3];
+    let clothID = splitPathArr[4].replace(".jpeg", "");
+    $.ajax({
+        url: './mvc/core/AJAX/addWishlist.php',
+        type: 'POST',
+        dataType: 'json',
+        data: {
+            ajax_category: category,
+            ajax_clothid: clothID
+        }
+    }).done(function(result) {
+        console.log(result);
+    });    
+}
+
+//------------------------------------------//
 
 // IF EXIST SELLING PAGE
 let sellingClassObj = document.getElementsByClassName("sellingPageLayout");

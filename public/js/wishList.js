@@ -15,7 +15,7 @@ function mouseOut_WishList(obj){
 }
 
 function mouseClicked_WishList(obj){
-    // AJAX CALL :DDD
+    // AJAX CALL 
 }
 
 // IF EXIST SELLING PAGE
