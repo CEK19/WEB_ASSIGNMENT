@@ -26,13 +26,31 @@
     <!-- 1 sản phẩm -->
     <div class="product-detail-frame mb-3">
         <div class="product-detail-img-here">
-                    <!--IMAGE HERE-->
+            <?php
+                $PATH_IMAGE = './mvc/database/'.$data['category'].'/'.$data['id_product'].'.jpeg';                        
+                echo '<img src="'.$PATH_IMAGE.'"'.'style="width:100%;height:100%">';
+            ?>
         </div>
         <div style="width:50%; padding: 0 25px 0 75px;">
-            <h4>Tên của sản phẩm người ta</h4>
+            <h4>
+                <?php                                     
+                    $item_name = $data['img_info'][0]['name'];
+                    echo $item_name;
+                ?>
+            </h4>
             <div class="d-flex flex-row mt-2">
-                <p class="text-decoration-line-through fst-italic fs-5 mb-0 me-5 align-middle">178.000Đ<p>
-                <p class="fw-bolder fs-4 mb-0 align-middle">150.000Đ</p>
+                <p class="text-decoration-line-through fst-italic fs-5 mb-0 me-5 align-middle">
+                    <?php
+                        $item_org_cost = $data['img_info'][0]['cost_origin'];
+                        echo $item_org_cost."$";
+                    ?>
+                </p>
+                <p class="fw-bolder fs-4 mb-0 align-middle">
+                    <?php
+                        $item_cost = $data['img_info'][0]['cost'];
+                        echo $item_cost."$";
+                    ?>
+                </p>
             </div>
             <hr class="mt-2 mb-2">
             <div class="">

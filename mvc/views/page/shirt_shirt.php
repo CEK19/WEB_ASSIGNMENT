@@ -43,10 +43,17 @@
             <div class="selling-frame mb-3">
                 <div class="selling-img-here mb-3">
                     <!--IMAGE HERE-->
-                    <?php
-                        $PATH_IMAGE = './mvc/database/'.$data['folder-img'].'/'.$item['id'].'.jpeg';                        
-                        echo '<img src="'.$PATH_IMAGE.'"'.'style="width:100%;">';
-                    ?>                            
+                    <a 
+                        <?php
+                            $HREF_LINK = './?url=Home/productDetail/'.$data['folder-img'].'/'.$item['id'];
+                            echo 'href="'.$HREF_LINK.'"';
+                        ?>
+                    >
+                        <?php
+                            $PATH_IMAGE = './mvc/database/'.$data['folder-img'].'/'.$item['id'].'.jpeg';                        
+                            echo '<img src="'.$PATH_IMAGE.'"'.'style="width:100%;">';
+                        ?>  
+                    </a>                          
                     <!--IMAGE HERE-->
                     <a class="selling-heart-btn" role="button">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
