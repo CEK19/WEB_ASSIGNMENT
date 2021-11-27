@@ -540,5 +540,6 @@
     <script type="text/javascript" src="./public/js/navbarEffect.js"></script>
     <script type="text/javascript" src="./public/js/sellingPage.js"></script>
     <script type="text/javascript" src="./public/js/wishList.js"></script>
+    <script type="text/javascript" src="./public/js/product-detail.js"></script>
 </body>
 </html>

@@ -39,7 +39,15 @@
                 while($row = mysqli_fetch_assoc($RESULT)){              
                     array_push($RETURN_DATA, $row);                    
                 }
-            }                        
+            }                  
+            
+            $avgStart = 0.00;
+            // echo print_r($RETURN_DATA[0]);
+            $sumReview = intval($RETURN_DATA[0]['1star'])*1 + intval($RETURN_DATA[0]['2star'])*2 + intval($RETURN_DATA[0]['3star'])*3 + intval($RETURN_DATA[0]['4star'])*4 + intval($RETURN_DATA[0]['5star'])*5;
+            if($sumReview > 0){
+                $avgStart = $sumReview/$RETURN_DATA[0]['num_review'];
+            }
+            $RETURN_DATA[0]['avg_star'] = round($avgStart, 1);                                
             return $RETURN_DATA;
         }
     }

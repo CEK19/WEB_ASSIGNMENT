@@ -53,39 +53,13 @@
                     </p>
                 </div>
                 <hr class="mt-2 mb-2">
-                <div class="">
-
-
+                <div class="block-product-fix">
+                    <h3>Brand</h3>            
+                    <div class="equal-start"><?php echo $data['img_info'][0]['brand'] ?></div>
                 </div>
-                <table class="table table-borderless">
-                    <tbody>
-                        <tr class="border-bottom">
-                            <th class="align-middle fs-5">Size</th>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">S</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">M</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">L</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-sm btn-light btn-outline-secondary shadow" style="width: 45px; height:45px;">XL</button>
-                            </td>
-                        </tr>
-                        <tr class="border-top">
-                            <th class="align-middle fs-5">Color</th>
-                            <td>
-                                <button type="button" class="btn-lg btn-dark shadow border border-4 border-primary" style="width: 45px; height:45px;"></button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn-lg btn-light shadow border border-dark" style="width: 45px; height:45px;"></button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <hr class="mt-2 mb-2">
+                <hr class="mt-2 mb-2">                
+                <h3>Rating</h3>
+                <i class="fas fa-star">&nbsp;</i><span class="equal-start"> <?php echo $data['img_info'][0]['avg_star'];?></span>
                 <br>
                 <button type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2" style="width: 100%; border-radius: 15px;">
                     <div class="mb-0" style="font-size: 25px; font-weight:bold;">
@@ -105,36 +79,23 @@
             </div>
         </div>
         <hr class="mt-2 mb-2">
-        <div class="product-detail-more-info mb-3">
+        <div class="product-detail-more-info mb-4">
             <div class="row">
                 <div class="col">
                     <p style=" color: #999999; font-weight: bold;">PRODUCT DETAILS </p>
-                    some silly stuff some silly stuff some silly stuff some silly stuff
-                    some silly stuff <br>
-                    some silly stuff <br>
-                    some silly stuff <br>
-                    some silly stuff <br>
-                    some silly stuff <br>
-                    some silly stuff <br>
+                    <div id="justify-text-content">
+                        <?php echo $data['img_info'][0]['detail']?>
+                    </div>
                 </div>
                 <div class="col">
-                    <div style="height: 140px;">
-                        <p style="color: #999999; font-weight: bold;">PRODUCT CODE </p>
-                        <span style="color: blue; font-weight: bold">#1915672</span>
-                    </div>
                     <div>
                         <p style="color: #999999; font-weight: bold;">BRAND </p>
-                        <span>adidas</span>
+                        <span><?php echo $data['img_info'][0]['brand'] ?></span>
                     </div>
                 </div>
                 <div class="col">
-                    <div style="height: 140px;">
-                        <p style=" color: #999999; font-weight: bold;">ABOUT ME </p>
-                    </div>
-                    <div>
-                        <p style=" color: #999999; font-weight: bold;">RATING </p>
-                        <i class="fas fa-star">&nbsp; 4.5 </i>
-                    </div>
+                    <p style="color: #999999; font-weight: bold;">RATING </p>
+                    <i class="fas fa-star">&nbsp;</i><span><?php echo $data['img_info'][0]['avg_star'];?></span>
                 </div>
             </div>
         </div>
@@ -311,133 +272,4 @@
             </div>
         </div>
     </div>
-
-
-
-
 </div>
-
-
-<script>
-    let val = document.getElementById("user-rating")
-    let star1 = document.getElementById("star-1")
-    let star2 = document.getElementById("star-2")
-    let star3 = document.getElementById("star-3")
-    let star4 = document.getElementById("star-4")
-    let star5 = document.getElementById("star-5")
-
-    function showStar(x) {
-        switch (x) {
-            case 5:
-                star5.classList.remove("far")
-                star5.classList.add("fas")
-            case 4:
-                star4.classList.remove("far")
-                star4.classList.add("fas")
-            case 3:
-                star3.classList.remove("far")
-                star3.classList.add("fas")
-            case 2:
-                star2.classList.remove("far")
-                star2.classList.add("fas")
-            case 1:
-                star1.classList.remove("far")
-                star1.classList.add("fas")
-            default:
-                break;
-        }
-    }
-
-    function showNoStar() {
-        star1.classList.remove("fas")
-        star1.classList.add("far")
-        star2.classList.remove("fas")
-        star2.classList.add("far")
-        star3.classList.remove("fas")
-        star3.classList.add("far")
-        star4.classList.remove("fas")
-        star4.classList.add("far")
-        star5.classList.remove("fas")
-        star5.classList.add("far")
-    }
-
-    function mouseLeaving() {
-        if (val.value == 1) {
-            showNoStar();
-            showStar(1)
-        }
-        else if (val.value == 2){
-            showNoStar()
-            showStar(2)
-        }
-        else if (val.value == 3) {
-            showNoStar()
-            showStar(3)
-        }
-        else if (val.value == 4) {
-            showNoStar()
-            showStar(4)
-        }
-        else if (val.value == 5) {
-            showNoStar()
-            showStar(5)
-        }
-        else {
-            showNoStar();
-        }
-    }
-
-
-    // MOUSE OVER ICON
-    star1.onmouseover = function() {
-        showStar(1)
-    }
-    star2.onmouseover = function() {
-        showStar(2)
-    }
-    star3.onmouseover = function() {
-        showStar(3)
-    }
-    star4.onmouseover = function() {
-        showStar(4)
-    }
-    star5.onmouseover = function() {
-        showStar(5)
-    }
-
-
-    // CLICK THAT ICON
-    star1.onclick = function() {
-        val.value = 1
-    }
-    star2.onclick = function() {
-        val.value = 2
-    }
-    star3.onclick = function() {
-        val.value = 3
-    }
-    star4.onclick = function() {
-        val.value = 4
-    }
-    star5.onclick = function() {
-        val.value = 5
-    }
-
-
-    // LEAVE THAR ICOn
-    star1.onmouseout = function() {
-        mouseLeaving()
-    }
-    star2.onmouseout = function() {
-        mouseLeaving()
-    }
-    star3.onmouseout = function() {
-        mouseLeaving()
-    }
-    star4.onmouseout = function() {
-        mouseLeaving()
-    }
-    star5.onmouseout = function() {
-        mouseLeaving()
-    }
-</script>
