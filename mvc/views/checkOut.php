@@ -13,6 +13,16 @@ $home_url = getUrl() . '/';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check out</title>
+
+    <!-- -----------------Favicon--------------------- -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="./favicon/msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
     <link type="text/css" rel="stylesheet" href="./public/css/checkOut.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 </head>
@@ -55,7 +65,7 @@ $home_url = getUrl() . '/';
                         <h4>Delivery Address</h4>
                         <div class="ps-4 pe-4">
                             <label class="form-label">User Name</label>
-                            <input type="text" class="form-control" style="width: 60%;" readonly value="<?php echo $_SESSION['firstname'].' '.$_SESSION['lastname']?>">
+                            <input type="text" class="form-control" style="width: 60%;" readonly value="<?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname'] ?>">
 
                             <label class="form-label mt-3">Address</label>
                             <input type="text" class="form-control" style="width: 60%;">
@@ -74,7 +84,7 @@ $home_url = getUrl() . '/';
                             </div>
 
                             <div class="form-check">
-                                <input type="radio" class="form-check-input" name="delivery-method" value="20.00" onchange="fixtotal()"> 
+                                <input type="radio" class="form-check-input" name="delivery-method" value="20.00" onchange="fixtotal()">
                                 <label class="form-check-label" for="delivery-method">Normal Delivery - 20.00 $</label>
                                 <blockquote class="blockquote"></blockquote>
                                 <p class="blockquote-footer">The third party will be reponsible for delivery, so it may take 3 to 7 days to deliver your order</p>
@@ -168,7 +178,7 @@ $home_url = getUrl() . '/';
                                 <div class="ps-4 pe-4">
 
                                     <div class="form-check mt-2">
-                                        <input type="radio" class="form-check-input" name="e-wallet-company" >
+                                        <input type="radio" class="form-check-input" name="e-wallet-company">
                                         <label class="form-check-label" for="delivery-method">
                                             <img src="./assets/img/paypal.png" style="width: 56px;" title="PayPal">
                                         </label>
@@ -222,32 +232,32 @@ $home_url = getUrl() . '/';
                     <!-- FRAME ARRAY HERE -->
                     <div class="ps-2">
                         <?php
-                            foreach($data["img_info"] as $item){
+                        foreach ($data["img_info"] as $item) {
                         ?>
-                        <!-- Một sản phẩm -->
-                        <div class="CO-frame d-flex flex-row mb-3">
-                            <div class="border CO-img">
-                                <!-- img -->
-                                <?php 
-                                    $IMG_PATH = "./mvc/database/{$item['category']}/{$item['clothID']}".".jpeg";
-                                    echo '<img src='.$IMG_PATH.' style="width:100%;">';
-                                ?>
-                            </div>
-                            <div class="CO-detail ms-3 pt-2">
-                                <h5 class="mb-1 price_sp" name="price_sp"><?php echo $item['cost']?> $</h5>
-                                <p class="mb-1"><?php echo $item['name'] ?></p>
-                                <div class="CO-detail-ls d-flex flex-row">
-                                    <p class="mb-0"><?php echo $item['color'] ?></p>
-                                    &nbsp; &ensp;
-                                    <p class="mb-0"><?php echo $item['size'] ?></p>
-                                    &nbsp; &ensp;
-                                    <p class="mb-0">Qty: <span class="quantity_sp"><?php echo $item['quantity'] ?></span></p>
+                            <!-- Một sản phẩm -->
+                            <div class="CO-frame d-flex flex-row mb-3">
+                                <div class="border CO-img">
+                                    <!-- img -->
+                                    <?php
+                                    $IMG_PATH = "./mvc/database/{$item['category']}/{$item['clothID']}" . ".jpeg";
+                                    echo '<img src=' . $IMG_PATH . ' style="width:100%;">';
+                                    ?>
+                                </div>
+                                <div class="CO-detail ms-3 pt-2">
+                                    <h5 class="mb-1 price_sp" name="price_sp"><?php echo $item['cost'] ?> $</h5>
+                                    <p class="mb-1"><?php echo $item['name'] ?></p>
+                                    <div class="CO-detail-ls d-flex flex-row">
+                                        <p class="mb-0"><?php echo $item['color'] ?></p>
+                                        &nbsp; &ensp;
+                                        <p class="mb-0"><?php echo $item['size'] ?></p>
+                                        &nbsp; &ensp;
+                                        <p class="mb-0">Qty: <span class="quantity_sp"><?php echo $item['quantity'] ?></span></p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         <?php
-                            }
-                        ?> 
+                        }
+                        ?>
                     </div>
 
                     <hr class="ms-1 me-1">
@@ -255,7 +265,7 @@ $home_url = getUrl() . '/';
                     <div class="ps-2">
                         <div class="d-flex flex-row justify-content-between align-items-center ms-1 me-1">
                             <p class="mb-0">Sub-Total</p>
-                            <p class="mb-0" id ="totalsub"></p>
+                            <p class="mb-0" id="totalsub"></p>
                         </div>
 
                         <div class="d-flex flex-row justify-content-between align-items-center ms-1 me-1">
@@ -268,7 +278,7 @@ $home_url = getUrl() . '/';
 
                     <div class="d-flex flex-row justify-content-between align-items-center ms-1 me-1">
                         <h4 class="mb-0">TOTAL TO PAY</h4>
-                        <p class="mb-0" id ="totalpay"></p>
+                        <p class="mb-0" id="totalpay"></p>
                     </div>
 
                 </div>
@@ -280,31 +290,28 @@ $home_url = getUrl() . '/';
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/signUp.js"></script>
-     <script>
-        
-        
-        
-        function fixtotal(){
-        ship = document.querySelector('input[name="delivery-method"]:checked').value;
-        // console.log(ship);
-        var price = document.getElementsByClassName('price_sp');
-        var quanti = document.getElementsByClassName('quantity_sp');
-        var sum = 0;
-        for (var i = 0; i < price.length; i++){
-        sum+= price[i].innerHTML.slice(0,-1) * quanti[i].innerHTML*1.0;
+    <script>
+        function fixtotal() {
+            ship = document.querySelector('input[name="delivery-method"]:checked').value;
+            // console.log(ship);
+            var price = document.getElementsByClassName('price_sp');
+            var quanti = document.getElementsByClassName('quantity_sp');
+            var sum = 0;
+            for (var i = 0; i < price.length; i++) {
+                sum += price[i].innerHTML.slice(0, -1) * quanti[i].innerHTML * 1.0;
+            }
+
+            var add = document.querySelector("#totalpay");
+            var add2 = document.querySelector("#totalsub");
+            // console.log(add);
+            // add.innerHTML = String(sum) + " $";
+            total = sum * 1.0 + ship * 1.0;
+            add2.innerText = String(sum) + " $";
+            add.innerText = String(total) + " $";
+
         }
-    
-        var add = document.querySelector("#totalpay");
-        var add2 = document.querySelector("#totalsub");
-        // console.log(add);
-        // add.innerHTML = String(sum) + " $";
-        total = sum*1.0 + ship*1.0;
-        add2.innerText = String(sum) + " $";
-        add.innerText = String(total) + " $";
-        
-    }
-    fixtotal();
-     </script>                       
+        fixtotal();
+    </script>
 </body>
 
 </html>
