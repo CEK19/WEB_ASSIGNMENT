@@ -120,41 +120,166 @@ star5.onmouseout = function() {
     mouseLeaving()
 }
 
-$(".product-detail-container button")
+$(document).ready(function(){
+    
+    let frameObj = $(".product-detail-frame");
+    let imgObj = frameObj.find("img");
+
+    let pathImg = imgObj.attr("src");        
+    let splitPathArr = pathImg.split('/');    
+    let category = splitPathArr[3];
+    let clothID = splitPathArr[4].replace(".jpeg", "");
+
+    // PRECONSTANT
+    const id_MBT_button = "move-to-bag-but";
+    const classBefore_MTB = "btn-sm btn-light btn-outline-dark border-4 mt-2";
+    const classAfter_MTB = "btn-sm btn-light btn-outline-success border-4 mt-2"
+    const textBefore_MTB = "MOVE TO BAG";
+    const textAfter_MTB = "ADDED TO YOUR BAG !";
+
+    const id_WL_button = "move-to-wish-list-but";
+    const classBefore_WL = "btn-sm btn-light btn-outline-dark border-4 mt-2";
+    const classAfter_WL = "btn-sm btn-light btn-outline-info border-4 mt-2";        
+    const textBefore_WL = `
+                        FAVORITE <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="35" height="35" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512">
+                        <g transform="translate(512 0) scale(-1 1)">
+                            <path fill="currentColor" d="M453.122 79.012a128 128 0 0 0-181.087.068l-15.511 15.7l-15.382-15.666l-.1-.1a128 128 0 0 0-181.02 0l-6.91 6.91a128 128 0 0 0 0 181.019l182.373 182.371l20.595 21.578l.491-.492l.533.533l19.296-20.359L460.032 266.94a128.147 128.147 0 0 0 0-181.019zM437.4 244.313L256.571 425.146L75.738 244.313a96 96 0 0 1 0-135.764l6.911-6.91a96 96 0 0 1 135.713-.051l38.093 38.787l38.274-38.736a96 96 0 0 1 135.765 0l6.91 6.909a96.11 96.11 0 0 1-.004 135.765z" />
+                        </g>
+                        </svg>
+                        `;
+    const textAfter_WL = "ADDED TO YOUR WISHLIST !";   
+    
+    $.ajax({
+        url: './mvc/core/AJAX/checkBagExist.php',
+        type: 'POST',
+        dataType: 'json',
+        data: {
+            ajax_category: category,
+            ajax_clothid: clothID
+        }
+    }).done(function(result) {                              
+        if(result.result_exist == "no-sign-in"){                
+            $("#move-to-bag-but").attr("class", classBefore_MTB);
+            $("#move-to-bag-but").children().html(textBefore_MTB);
+        }
+        else if(result.result_exist == "non-exist"){            
+            $("#move-to-bag-but").attr("class", classBefore_MTB);
+            $("#move-to-bag-but").children().html(textBefore_MTB);
+        }
+        else{            
+            $("#move-to-bag-but").attr("class", classAfter_MTB);
+            $("#move-to-bag-but").children().html(textAfter_MTB);
+        }
+    });
+
+    $.ajax({
+        url: './mvc/core/AJAX/checkWishlistExist.php',
+        type: 'POST',
+        dataType: 'json',
+        data: {
+            ajax_category: category,
+            ajax_clothid: clothID
+        }
+    }).done(function(result) {                              
+        if(result.result_exist == "no-sign-in"){                 
+            $("#move-to-wish-list-but").attr("class", classBefore_WL);
+            $("#move-to-wish-list-but").children().html(textBefore_WL);
+        }
+        else if(result.result_exist == "non-exist"){
+            $("#move-to-wish-list-but").attr("class", classBefore_WL);
+            $("#move-to-wish-list-but").children().html(textBefore_WL);
+        }
+        else{
+            $("#move-to-wish-list-but").attr("class", classAfter_WL);
+            $("#move-to-wish-list-but").children().html(textAfter_WL);
+        }
+    });    
+
+    $(".product-detail-container button")
     .click(function(){
 
-        let buttonObj = $(this);        
-        let text = buttonObj.children().text().replace(/\s/g, "");        
-        
         // GET CATEGORY AND CLOTH ID 
-        let frameObj = $(".product-detail-frame");
-        let imgObj = frameObj.find("img");
+        let buttonObj = $(this);        
+        let text = buttonObj.children().text().replace(/\s/g, "");             
 
-        let pathImg = imgObj.attr("src");        
-        let splitPathArr = pathImg.split('/');    
-        let category = splitPathArr[3];
-        let clothID = splitPathArr[4].replace(".jpeg", "");
+        if($(this).attr("class") == classBefore_MTB && $(this).attr("id") == id_MBT_button){ // BUTTON MOVE TO BAG
+            $.ajax({
+                url: './mvc/core/AJAX/moveToBag.php',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    ajax_category: category,
+                    ajax_clothid: clothID
+                }
+            }).done(function(result) {                      
+                if(result.is_exist == "no-login"){                                            
+                    alert("Please sign-in to put item to your shopping bag!");
+                }
+                else if(result.is_exist == "non-exist"){
+                    buttonObj.attr("class", classAfter_MTB);
+                    buttonObj.children().html(textAfter_MTB);
+                }
+                else{
+                    console.log("exist-in-bag");
+                }
+            });   
+        }
+        else if($(this).attr("class") == classAfter_MTB && $(this).attr("id") == id_MBT_button){
+            $.ajax({
+                url: './mvc/core/AJAX/deleteBag.php',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    ajax_category: category,
+                    ajax_clothid: clothID
+                }
+            }).done(function(result) {                      
+                if(result.state_response == "error"){                                            
+                    alert("Delete failed");
+                }
+                else{
 
-        if(text == "MOVETOBAG"){ // BUTTON MOVE TO BAG
-            console.log(buttonObj.attr('class'));
+                }
+                buttonObj.attr("class", classBefore_MTB);
+                buttonObj.children().html(textBefore_MTB);                 
+            });  
+
         }
-        else if(text == "FAVORITE"){ // BUTTON MOVE TO WISH LIST
-            
-            // IF NON EXISTED
-            // $.ajax({
-            //     url: './mvc/core/AJAX/addWishlist.php',
-            //     type: 'POST',
-            //     dataType: 'json',
-            //     data: {
-            //         ajax_category: category,
-            //         ajax_clothid: clothID
-            //     }
-            // }).done(function(result) {
-            //     // STEP 3: UPDATE COLOR OF BUTTON
-            //     if(result.state_response == "no-sign-in"){
-            //         alert("Please sign-in to put item to your wishlist");
-            //     }                        
-                // UPDATE SOME THING ON MOVE TO BAG BUTTON                
-            // });
+        else if($(this).attr("class") == classBefore_WL && $(this).attr("id") == id_WL_button){ // BUTTON MOVE TO WISH LIST
+            $.ajax({
+                url: './mvc/core/AJAX/addWishlist.php',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    ajax_category: category,
+                    ajax_clothid: clothID
+                }
+            }).done(function(result) {                
+                if(result.state_response == "no-sign-in"){
+                    alert("Please sign-in to put item to your wishlist");
+                }        
+                else{                    
+                    buttonObj.attr("class", classAfter_WL);                    
+                    buttonObj.children().html(textAfter_WL);                    
+                }
+            });
         }
+        else if($(this).attr("class") == classAfter_WL && $(this).attr("id") == id_WL_button){
+            $.ajax({
+                url: './mvc/core/AJAX/delWishlist.php',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    ajax_category: category,
+                    ajax_clothid: clothID
+                }
+            }).done(function(result) {
+                // STEP 3: UPDATE COLOR OF BUTTON         
+                if(result.state_response == "successful"){                                        
+                    buttonObj.attr("class", classBefore_WL);
+                    buttonObj.children().html(textBefore_WL);
+                }
+            });       
+        }        
     })
+})
