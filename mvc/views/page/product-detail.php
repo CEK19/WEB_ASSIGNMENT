@@ -83,9 +83,7 @@
             <div class="row">
                 <div class="col">
                     <p style=" color: #999999; font-weight: bold;">PRODUCT DETAILS </p>
-                    <div id="justify-text-content">
-                        <?php echo $data['img_info'][0]['detail']?>
-                    </div>
+                    <div id="justify-text-content"><?php echo $data['img_info'][0]['detail']?></div>
                 </div>
                 <div class="col">
                     <div>
