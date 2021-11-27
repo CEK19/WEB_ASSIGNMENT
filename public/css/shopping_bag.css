@@ -6,6 +6,10 @@
     /* .information-mobile{
         display: inline-block !important;
     } */
+    .bi-x-lg{
+        width: 18px !important;
+        height: 18px !important;
+    }
 
     .Sb-container{
         display: block !important;
