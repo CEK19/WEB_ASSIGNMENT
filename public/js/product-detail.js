@@ -119,3 +119,42 @@ star4.onmouseout = function() {
 star5.onmouseout = function() {
     mouseLeaving()
 }
+
+$(".product-detail-container button")
+    .click(function(){
+
+        let buttonObj = $(this);        
+        let text = buttonObj.children().text().replace(/\s/g, "");        
+        
+        // GET CATEGORY AND CLOTH ID 
+        let frameObj = $(".product-detail-frame");
+        let imgObj = frameObj.find("img");
+
+        let pathImg = imgObj.attr("src");        
+        let splitPathArr = pathImg.split('/');    
+        let category = splitPathArr[3];
+        let clothID = splitPathArr[4].replace(".jpeg", "");
+
+        if(text == "MOVETOBAG"){ // BUTTON MOVE TO BAG
+            console.log(buttonObj.attr('class'));
+        }
+        else if(text == "FAVORITE"){ // BUTTON MOVE TO WISH LIST
+            
+            // IF NON EXISTED
+            // $.ajax({
+            //     url: './mvc/core/AJAX/addWishlist.php',
+            //     type: 'POST',
+            //     dataType: 'json',
+            //     data: {
+            //         ajax_category: category,
+            //         ajax_clothid: clothID
+            //     }
+            // }).done(function(result) {
+            //     // STEP 3: UPDATE COLOR OF BUTTON
+            //     if(result.state_response == "no-sign-in"){
+            //         alert("Please sign-in to put item to your wishlist");
+            //     }                        
+                // UPDATE SOME THING ON MOVE TO BAG BUTTON                
+            // });
+        }
+    })

@@ -61,13 +61,13 @@
                 <h3>Rating</h3>
                 <i class="fas fa-star">&nbsp;</i><span class="equal-start"> <?php echo $data['img_info'][0]['avg_star'];?></span>
                 <br>
-                <button type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2" style="width: 100%; border-radius: 15px;">
+                <button id="move-to-bag-but" type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2" style="width: 100%; border-radius: 15px;">
                     <div class="mb-0" style="font-size: 25px; font-weight:bold;">
-                        MOVE TO BAG
+                    MOVE TO BAG
                     </div>
                 </button>
                 <br><br>
-                <button type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2" style="width: 100%; border-radius: 15px; ">
+                <button id="move-to-wish-list-but" type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2" style="width: 100%; border-radius: 15px; ">
                     <div class="mb-0" style="font-size: 25px; font-weight:bold;">
                         FAVORITE <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="35" height="35" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512">
                             <g transform="translate(512 0) scale(-1 1)">
