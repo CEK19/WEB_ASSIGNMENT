@@ -273,3 +273,5 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="./public/js/product-detail.js"></script>
