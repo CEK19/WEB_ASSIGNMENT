@@ -4,6 +4,13 @@
 
     class BagAdd extends db{
 
+        public function isLogin(){            
+            if($_SESSION['login'] == false || !isset($_SESSION['login'])){
+                return false;
+            }
+            return true;
+        }
+
         public function is_exist_item_shoppingbag_base_email($clothID, $category, $email){                                                
             $format_EMAIL = "'".$email."'";
             $format_CATEGORY = "'".$category."'";
@@ -32,12 +39,19 @@
     // $addObj = new WishListAdd();
     // echo $addObj->addWL($_POST['ajax_clothid'], $_POST['ajax_category'], $_SESSION['email']);
     $addBagObj = new BagAdd();
-    if($addBagObj->is_exist_item_shoppingbag_base_email($_POST['ajax_clothid'], $_POST['ajax_category'], $_SESSION['email'])){
-        echo json_encode(array(
-            "is_exist" => "exist"
-        ));
-    }   
+    if($addBagObj->isLogin()){
+        if($addBagObj->is_exist_item_shoppingbag_base_email($_POST['ajax_clothid'], $_POST['ajax_category'], $_SESSION['email'])){
+            echo json_encode(array(
+                "is_exist" => "exist"
+            ));
+        }   
+        else{
+            echo $addBagObj->addShoppingBag($_POST['ajax_clothid'], $_POST['ajax_category'], $_SESSION['email']);
+        }
+    }
     else{
-        echo $addBagObj->addShoppingBag($_POST['ajax_clothid'], $_POST['ajax_category'], $_SESSION['email']);
+        echo json_encode(array(
+            "is_exist" => "no-login"
+        ));
     }
 ?>
