@@ -535,6 +535,8 @@
         </div>
     </footer>
 
+    <script src="https://kit.fontawesome.com/2a58fa4ca5.js" crossorigin="anonymous"></script>
+    
     <script type="text/javascript" src="./public/js/navbarEffect.js"></script>
     <script type="text/javascript" src="./public/js/sellingPage.js"></script>
     <script type="text/javascript" src="./public/js/wishList.js"></script>
