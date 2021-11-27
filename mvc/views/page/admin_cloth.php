@@ -91,10 +91,13 @@
                 <div class="aa-right">
                     <h3>Edit existed cloth</h3>
 
-                    <label class="form-label col-auto">id</label>
-                    <div class="col-8 mb-2">
-                        <input class="form-control" type="number"></input>
+                    <div>
+                        <label class="form-label col-auto">id</label>
+                        <div class="col-8 mb-2">
+                            <input class="form-control" type="number"></input>
+                        </div>
                     </div>
+
 
                     <div class="d-flex mb-2">
                         <div style="width: 40%;">

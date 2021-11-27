@@ -26,3 +26,59 @@ form label{
 .aa-right{
     width: 50%;
 }
+
+
+/* BEGIN RESPONSIVE CODE */
+/* ===================== */
+@media screen and (max-width: 950px) {
+    .admin-container{
+        width: 100%;
+    }
+    .admin-container.ps-5, .aa-top.ps-5{
+        padding-left: 10px !important;
+    }
+    .admin-container.pe-5, .aa-top.pe-5{
+        padding-right: 10px !important;
+    }
+    .aa-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 525px){
+    .aa-top.d-flex{
+        display: block !important;
+    }
+    .aa-left{
+        width: 100%;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aa-right{
+        width: 100%;
+    }
+
+    /* account */
+    #add-btn, #edit-btn{
+        width: fit-content;
+    }
+    #left .col-8{
+        width: 100% !important;
+    }
+
+    /* cloth */
+    .aa-top-top .col-4{
+        width: 80% !important;
+    }
+
+    .col-8{
+        width: 100% !important;
+    }
+}
+
+/* =================== */
+/* END RESPONSIVE CODE */

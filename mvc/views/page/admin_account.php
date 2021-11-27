@@ -16,8 +16,8 @@
                         <button type="button" class="btn btn-dark col-2" id="edit-btn">Edit</button>
                     </div>
 
-                    <div class="d-none" id="left">
-                        <div class="d-none" id="user-id">
+                    <div class="d-none" id="left"> <!-- dont change this id name -->
+                        <div class="d-none" id="user-id"> <!-- dont change this id name -->
                             <label class="form-label col-auto">User ID</label>
                             <div class="col-8 mb-2">
                                 <input class="form-control" type="number">
