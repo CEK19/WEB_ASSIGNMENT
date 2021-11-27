@@ -20,7 +20,7 @@
                         <div class="d-none" id="user-id">
                             <label class="form-label col-auto">User ID</label>
                             <div class="col-8 mb-2">
-                                <input class="form-control" type="text">
+                                <input class="form-control" type="number">
                             </div>
                         </div>
 
@@ -36,7 +36,7 @@
 
                         <label class="form-label col-auto">email</label>
                         <div class="col-8 mb-2">
-                            <input class="form-control" type="text">
+                            <input class="form-control" type="email">
                         </div>
 
                         <div class="d-grid col-8">
@@ -51,7 +51,7 @@
 
                     <label class="form-label col-auto">User ID</label>
                     <div class="col-8 mb-2">
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="number">
                     </div>
 
                     <label class="form-label col-auto">Type</label>
@@ -73,7 +73,7 @@
 
                     <label for="formFile" class="form-label col-auto">Upload file</label>
                     <div class="d-grid col-8 mb-2">
-                        <input class="form-control" type="file" id="formFile">
+                        <input class="form-control" type="file">
                     </div>
 
                     <div class="d-grid col-8">

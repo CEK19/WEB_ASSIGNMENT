@@ -93,7 +93,7 @@
 
                     <label class="form-label col-auto">id</label>
                     <div class="col-8 mb-2">
-                        <input class="form-control" type="text"></input>
+                        <input class="form-control" type="number"></input>
                     </div>
 
                     <div class="d-flex mb-2">
