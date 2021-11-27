@@ -59,7 +59,7 @@
 
 
                     <div class="d-flex mb-2">
-                        <div style="width: 24%;">
+                        <div class="ac-co" style="width: 24%;">
                             <label class="form-label col-auto">cost_origin</label>
                             <div class="col-10">
                                 <input class="form-control" type="number">
@@ -91,12 +91,12 @@
                 <div class="aa-right">
                     <h3>Edit existed cloth</h3>
 
-                    <div>
-                        <label class="form-label col-auto">id</label>
-                        <div class="col-8 mb-2">
-                            <input class="form-control" type="number"></input>
-                        </div>
+
+                    <label class="form-label col-auto">id</label>
+                    <div class="col-8 mb-2">
+                        <input class="form-control" type="number"></input>
                     </div>
+
 
 
                     <div class="d-flex mb-2">
@@ -121,7 +121,7 @@
 
 
                     <div class="d-flex mb-2">
-                        <div style="width: 24%;">
+                        <div class="ac-co" style="width: 24%;">
                             <label class="form-label col-auto">cost_origin</label>
                             <div class="col-10">
                                 <input class="form-control" type="number">

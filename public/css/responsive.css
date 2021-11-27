@@ -1,6 +1,17 @@
 /* BEGIN SHARED CLASS */
 /* ================== */
 /* ---------- footer mobile --------- */
+@media screen and (min-width: 397px) and (max-width: 500px){
+    #navBarSearchForm{
+        width: 40% !important;
+    }
+}
+@media screen and (max-width: 397px){
+    #navBarSearchForm{
+        width: 58% !important;
+    }
+}
+/* ---------- footer mobile --------- */
 @media screen and (max-width: 650px) {
     .del-mobile-footer{
         display: none !important;
@@ -36,12 +47,7 @@
     }
 }
 
-/* ---------- tablet (not used yet) --------- */
-@media screen and (min-width: 650px) and (max-width: 1400px) {
-    .del-mobile-lg{
-        display: none !important;
-    }
-}
+
 
 /* -------------- in mobile ---------------- */
 .information-mobile{

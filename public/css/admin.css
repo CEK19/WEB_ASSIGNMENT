@@ -79,6 +79,23 @@ form label{
         width: 100% !important;
     }
 }
-
+@media screen and (max-width: 550px){
+    .ao-dm{
+        width: 50% !important;
+    }
+}
+@media screen and (max-width: 500px){
+    .ao-a, .ao-b, .ao-c{
+        width: 33% !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .ac-co{
+        margin-right: 20px;
+    }
+    .ao-dm{
+        margin-right: 10px;
+    }
+}
 /* =================== */
 /* END RESPONSIVE CODE */

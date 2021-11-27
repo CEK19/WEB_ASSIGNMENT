@@ -41,7 +41,7 @@
                     <strong>VinBK</strong>
                 </a>                
                 
-                <ul class="nav">                
+                <ul class="nav mb-1">                
                     <li  class="nav-item">
                         <a class="nav-link color-white" aria-current="page" href="./?url=Admin/account" id="admin_account">ACCOUNT</a>
                     </li>

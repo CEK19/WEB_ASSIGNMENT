@@ -29,7 +29,7 @@
 
 
                     <div class="d-flex mb-2">
-                        <div style="width: 20%;">
+                        <div class="ac-co" style="width: 20%;">
                             <label class="form-label col-auto">clothID</label>
                             <div class="col-10">
                                 <input class="form-control" type="number">
@@ -59,7 +59,7 @@
 
 
                     <div class="d-flex mb-2">
-                        <div style="width: 24%;">
+                        <div class="ao-a" style="width: 24%;">
                             <label class="form-label col-auto">color</label>
                             <div class="col-10">
                                 <select class="form-select">
@@ -69,7 +69,7 @@
                             </div>
                         </div>
 
-                        <div style="width: 24%;">
+                        <div class="ao-b" style="width: 24%;">
                             <label class="form-label col-auto">size</label>
                             <div class="col-10">
                                 <select class="form-select">
@@ -81,7 +81,7 @@
                             </div>
                         </div>
 
-                        <div style="width: 23%;">
+                        <div class="ao-c" style="width: 23%;">
                             <label class="form-label col-auto">quantity</label>
                             <div class="col-10">
                                 <input class="form-control" type="number">
@@ -101,7 +101,7 @@
 
 
                     <div class="d-flex mb-2">
-                        <div style="width: 30%;">
+                        <div class="ao-dm" style="width: 30%;">
                             <label class="form-label col-auto">deliveryMethod</label>
                             <div class="col-10 mb-2">
                                 <select class="form-select">
