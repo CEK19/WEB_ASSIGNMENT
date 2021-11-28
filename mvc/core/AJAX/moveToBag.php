@@ -3,7 +3,15 @@
     session_start();
 
     class BagAdd extends db{
-
+        private function _query($sql)
+        {
+            return mysqli_query($this->connect, $sql);
+        }
+        public function count($email){
+            $sql = "SELECT * FROM shopping_bag WHERE Email = '$email'";
+            $query = $this->_query($sql);
+            return mysqli_num_rows($query);
+        }
         public function isLogin(){            
             if($_SESSION['login'] == false || !isset($_SESSION['login'])){
                 return false;
@@ -26,12 +34,14 @@
             $format_CATEGORY = "'".$category."'";
             $format_EMAIL = "'".$email."'";            
             $responseData  = array(                
-                "is_exist" => "exist"
+                "is_exist" => "exist",
+                "datacount"=>$this->count($_SESSION['email'])
             );                                    
             $SQL_QUERY_ADD_BAG = "INSERT INTO shopping_bag (email, clothID, category, color, size, quantity) VALUES ({$format_EMAIL}, {$clothID}, {$format_CATEGORY}, 'black', 'M', 1)";
             if(mysqli_query($this->connect, $SQL_QUERY_ADD_BAG)){
                 $responseData['is_exist'] = "non-exist";
             }
+            $responseData['datacount'] = $this->count($_SESSION['email']);
             return json_encode($responseData);
         }
     }

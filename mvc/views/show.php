@@ -447,7 +447,7 @@
                             <path d="M27.5 30.25C28.2594 30.25 28.875 29.6344 28.875 28.875C28.875 28.1156 28.2594 27.5 27.5 27.5C26.7406 27.5 26.125 28.1156 26.125 28.875C26.125 29.6344 26.7406 30.25 27.5 30.25Z" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M1.375 1.375H6.875L10.56 19.7863C10.6857 20.4193 11.0301 20.9879 11.5329 21.3927C12.0356 21.7974 12.6647 22.0124 13.31 22H26.675C27.3203 22.0124 27.9494 21.7974 28.4521 21.3927C28.9549 20.9879 29.2993 20.4193 29.425 19.7863L31.625 8.25H8.25" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                        <p class="popUp-num mb-0"><?php echo $data['countdata']?></p>
+                        <p class="popUp-num mb-0" id="buble"><?php echo $data['countdata']?></p>
                     </a>
                 </li>
 

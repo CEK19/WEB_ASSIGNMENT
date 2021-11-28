@@ -58,7 +58,12 @@ $(document).ready(function() {
                 if(result.is_exist == "exist"){
                     isWarning = true;                                        
                     alert("Your item have been existed in your shopping bag !");
+                } else{
+                    var add = document.getElementById("buble");
+                    add.innerHTML = result.datacount;
+                    console.log(result.datacount);
                 }
+                
             });   
             
 

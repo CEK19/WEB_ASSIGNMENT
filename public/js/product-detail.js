@@ -218,6 +218,9 @@ $(document).ready(function(){
                 else if(result.is_exist == "non-exist"){
                     buttonObj.attr("class", classAfter_MTB);
                     buttonObj.children().html(textAfter_MTB);
+                    var add = document.getElementById("buble");
+                    add.innerHTML = result.datacount;
+                    console.log(result.datacount);
                 }
                 else{
                     console.log("exist-in-bag");
@@ -238,10 +241,14 @@ $(document).ready(function(){
                     alert("Delete failed");
                 }
                 else{
-
+                    
                 }
                 buttonObj.attr("class", classBefore_MTB);
-                buttonObj.children().html(textBefore_MTB);                 
+                buttonObj.children().html(textBefore_MTB);    
+                var add = document.getElementById("buble");
+                    // add.innerHTML = result.datacount;
+                    console.log(result.data_count);          
+
             });  
 
         }
@@ -260,7 +267,8 @@ $(document).ready(function(){
                 }        
                 else{                    
                     buttonObj.attr("class", classAfter_WL);                    
-                    buttonObj.children().html(textAfter_WL);                    
+                    buttonObj.children().html(textAfter_WL);  
+                                    
                 }
             });
         }
@@ -278,6 +286,7 @@ $(document).ready(function(){
                 if(result.state_response == "successful"){                                        
                     buttonObj.attr("class", classBefore_WL);
                     buttonObj.children().html(textBefore_WL);
+                    
                 }
             });       
         }        
