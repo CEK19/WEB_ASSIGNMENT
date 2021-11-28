@@ -12,14 +12,23 @@
             $query = $this->_query($sql);
             return mysqli_num_rows($query);
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f28a2c6f70a93cd7a6aeb654869c83a64b518ea0
         public function delBAG($clothID, $category, $email){
             $format_CATEGORY = "'".$category."'";
             $format_EMAIL = "'".$email."'";
             $SQL_QUERY_DEL_BAG = "DELETE FROM shopping_bag WHERE clothID = {$clothID} AND email = {$format_EMAIL} AND category={$format_CATEGORY}";
 
             $responseData = array(     
+<<<<<<< HEAD
                 "state_response" => "error"     ,
                 "datacount" =>  $this->count($_SESSION['email'])            
+=======
+                "state_response" => "error",
+                "datacount"=>$this->count($_SESSION['email'])                     
+>>>>>>> f28a2c6f70a93cd7a6aeb654869c83a64b518ea0
             );
             if(mysqli_query($this->connect, $SQL_QUERY_DEL_BAG)){
                 $responseData['state_response'] = "successful";

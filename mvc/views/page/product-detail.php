@@ -31,7 +31,7 @@
                 echo '<img src="' . $PATH_IMAGE . '"' . 'style="width:100%;height:100%">';
                 ?>
             </div>
-            <div style="width:50%; padding: 0 25px 0 75px;">
+            <div class="pd-right" style="width:50%; padding: 0 25px 0 75px;">
                 <h4>
                     <?php
                     $item_name = $data['img_info'][0]['name'];
@@ -60,15 +60,15 @@
                 <hr class="mt-2 mb-2">                
                 <h3>Rating</h3>
                 <i class="fas fa-star">&nbsp;</i><span class="equal-start"> <?php echo $data['img_info'][0]['avg_star'];?></span>
-                <br>
-                <button id="move-to-bag-but" type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2" style="width: 100%; border-radius: 15px;">
-                    <div class="mb-0" style="font-size: 25px; font-weight:bold;">
+
+                <button id="move-to-bag-but" type="button" class="btn-sm btn-light btn-outline-dark border-4" style="width: 100%; border-radius: 15px;">
+                    <div class="pd-btn mb-0" style="font-size: 25px; font-weight:bold;">
                     MOVE TO BAG
                     </div>
                 </button>
-                <br><br>
-                <button id="move-to-wish-list-but" type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2" style="width: 100%; border-radius: 15px; ">
-                    <div class="mb-0" style="font-size: 25px; font-weight:bold;">
+
+                <button id="move-to-wish-list-but" type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-4" style="width: 100%; border-radius: 15px; ">
+                    <div class="mb-0 pd-btn" style="font-size: 25px; font-weight:bold;">
                         FAVORITE <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="35" height="35" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512">
                             <g transform="translate(512 0) scale(-1 1)">
                                 <path fill="currentColor" d="M453.122 79.012a128 128 0 0 0-181.087.068l-15.511 15.7l-15.382-15.666l-.1-.1a128 128 0 0 0-181.02 0l-6.91 6.91a128 128 0 0 0 0 181.019l182.373 182.371l20.595 21.578l.491-.492l.533.533l19.296-20.359L460.032 266.94a128.147 128.147 0 0 0 0-181.019zM437.4 244.313L256.571 425.146L75.738 244.313a96 96 0 0 1 0-135.764l6.911-6.91a96 96 0 0 1 135.713-.051l38.093 38.787l38.274-38.736a96 96 0 0 1 135.765 0l6.91 6.909a96.11 96.11 0 0 1-.004 135.765z" />
@@ -88,7 +88,7 @@
                 <div class="col">
                     <div>
                         <p style="color: #999999; font-weight: bold;">BRAND </p>
-                        <span><?php echo $data['img_info'][0]['brand'] ?></span>
+                        <p class="mb-0"><?php echo $data['img_info'][0]['brand'] ?></p>
                     </div>
                 </div>
                 <div class="col">
@@ -263,7 +263,7 @@
 
             <div style="margin: auto; width: 300px; margin-bottom: 50px;">
                 <button type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2" style="width: 300px;">
-                    <div class="mb-0" style="font-size: 20px; font-weight:bold;">
+                    <div class="mb-0 pd-btn" style="font-size: 20px; font-weight:bold;">
                         LOAD MORE
                     </div>
                 </button>
