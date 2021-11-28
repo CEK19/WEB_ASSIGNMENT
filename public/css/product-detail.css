@@ -8,7 +8,8 @@
     /* width: 1000px; */
     width: 65%;
     margin: auto;
-    height: 300px;
+    height: 200px;
+    min-height: fit-content;
     padding-top: 30px;
 }
 
@@ -39,7 +40,8 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    /* width: 400px; */
+    width: 40%;
     /* height: 600px; */
     height: fit-content;
     border: solid 2px;
@@ -112,3 +114,97 @@
     width:50%; 
     padding: 0 25px 0 75px;
 }
+
+
+/* BEGIN RESPONSIVE CODE */
+/* ===================== */
+@media screen and (max-width: 1250px) {
+    .product-detail-img-here{
+        margin-left: 0px;
+        width: 50%;
+    }
+    .pd-right{
+        padding-right: 0px;
+        padding-left: 50px !important;
+    }
+    .product-detail-frame, .product-detail-more-info, .product-detail-comments{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .product-detail-container{
+        padding-top: 20px !important;
+    }
+    .product-detail-frame{
+        height: fit-content;
+    }
+    .product-detail-img-here{
+        align-self: start !important;
+        margin-top: 0px !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    h4{
+        font-size: xx-large !important;
+    }
+    p, p.fs-5, p.fs-4, .equal-start, #justify-text-content{
+        font-size: large !important;
+    }
+    h3, .pd-btn{
+        font-size: x-large !important;
+    }
+    .pd-btn svg{
+        width: 30px;
+        height: 30px;
+    }
+    .product-detail-comments-avatar{
+        margin-left: 24px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    h4{
+        font-size: x-large !important;
+    }
+    p, p.fs-5, p.fs-4, .equal-start, #justify-text-content{
+        font-size: medium !important;
+    }
+    h3, .pd-btn{
+        font-size: large !important;
+    }
+    .pd-btn svg{
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h4{
+        font-size: larger !important;
+    }
+    p, p.fs-5, p.fs-4, .equal-start, #justify-text-content{
+        font-size: 14px !important;
+    }
+    h3, .pd-btn{
+        font-size: medium !important;
+    }
+    .pd-btn svg{
+        width: 24px;
+        height: 24px;
+    }
+    .pd-right{
+        padding-right: 0px !important;
+        padding-left: 16px !important;
+    }
+    .product-detail-img-here{
+        margin-top: 0px;
+    }
+    .product-detail-container h3 + i{
+        height: 33px;
+    }
+}
+
+/* =================== */
+/* END RESPONSIVE CODE */
