@@ -220,10 +220,10 @@ $(document).ready(function(){
                     buttonObj.children().html(textAfter_MTB);
                     var add = document.getElementById("buble");
                     add.innerHTML = result.datacount;
-                    console.log(result.datacount);
+                    // console.log(result.datacount);
                 }
                 else{
-                    console.log("exist-in-bag");
+                    // console.log("exist-in-bag");
                 }
             });   
         }
@@ -246,8 +246,8 @@ $(document).ready(function(){
                 buttonObj.attr("class", classBefore_MTB);
                 buttonObj.children().html(textBefore_MTB);    
                 var add = document.getElementById("buble");
-                    // add.innerHTML = result.datacount;
-                    console.log(result.data_count);          
+                add.innerHTML = result.datacount;
+                    // console.log(result.data_count);          
 
             });  
 
