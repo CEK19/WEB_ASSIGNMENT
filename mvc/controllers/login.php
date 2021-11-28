@@ -29,6 +29,7 @@ class login extends controller
 
         }else {
             // $_SESSION['error'] = False;
+            // $_SESSION['count'] = $count;
             $_SESSION['login'] = true;
             $_SESSION['firstname'] = $data['firstName'] ;
             $_SESSION['lastname'] = $data['lastName'];

@@ -22,6 +22,11 @@
             }
             return "";
         }
+        public function count_product_shopping_bag($email){
+            $sql = "SELECT * FROM shopping_bag WHERE Email = '$email'";
+            $query = $this->_query($sql);
+            return mysqli_num_rows($query);
+        }
     
     }
 ?>

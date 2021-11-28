@@ -1,9 +1,19 @@
 <?php
     class Home extends Controller{
+        public function count(){
+           if(isset($_SESSION['email'])){
+               return $count = $this->model('loginModel')->count_product_shopping_bag($_SESSION['email']);
+           }
+           else{
+               return 0;
+           }
+        }
         //------------------------------ VIEWHOME ------------------------------//
         public function viewHome(){
+          
             $this->view("show", [
-                "content" => "home"
+                "content" => "home",
+                "countdata" => $this->count()
             ]);
         }
 
@@ -26,7 +36,9 @@
             $this->view("show", [
                 "content" => "wishList",
                 "img_info" => $ITEM_DATA,
-                "info_login" => $INFO_LOGIN
+                "info_login" => $INFO_LOGIN,
+                "countdata" => $this->count()
+
             ]);
         }
         //------------------------------ SHOPPING BAG ------------------------------//
@@ -45,7 +57,8 @@
             $this->view("show", [
                 "content" => "shopping_bag",
                 "img_info"=> $ITEM_DATA,
-                "info_login"=> $INFO_LOGIN
+                "info_login"=> $INFO_LOGIN,
+                "countdata" => $this->count()
             ]);
         }
 
@@ -57,14 +70,16 @@
                 "content" => "product-detail",
                 "img_info" => $ITEM_DATA,
                 "category" => $category_product,
-                "id_product" => $id_product
+                "id_product" => $id_product,
+                "countdata" => $this->count()
             ]);
         }
 
         //------------------------------ SALE ------------------------------//
         public function sale(){
             $this->view("show", [
-                "content" => "sale"
+                "content" => "sale",
+                "countdata" => $this->count()
             ]);
         }
 
@@ -76,7 +91,8 @@
             $this->view("show", [
                 "content" => "shirt_polo",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "shirt_polo"
+                "folder-img" => "shirt_polo",
+                "countdata" => $this->count()
             ]);
         }
 
@@ -86,7 +102,8 @@
             $this->view("show", [
                 "content" => "shirt_tshirt_vest",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "shirt_tshirt_vest"
+                "folder-img" => "shirt_tshirt_vest",
+                "countdata" => $this->count()
             ]);
         }
 
@@ -96,7 +113,8 @@
             $this->view("show", [
                 "content" => "shirt_shirt",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "shirt_shirt"
+                "folder-img" => "shirt_shirt",
+                "countdata" => $this->count()
             ]);
         }
 
@@ -107,7 +125,8 @@
             $this->view("show", [
                 "content" => "shoes_trainers",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "shoes_trainers"
+                "folder-img" => "shoes_trainers",
+                "countdata" => $this->count()
             ]);
         }
 
@@ -117,7 +136,8 @@
             $this->view("show", [
                 "content" => "shoes_sandals_slippers",                
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "shoes_sandals_slippers"
+                "folder-img" => "shoes_sandals_slippers",
+                "countdata" => $this->count()
             ]);
         }
 
@@ -127,7 +147,8 @@
             $this->view("show", [
                 "content" => "shoes_shocks",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "shoes_shocks"
+                "folder-img" => "shoes_shocks",
+                "countdata" => $this->count()
             ]);
         }
 
@@ -138,7 +159,8 @@
             $this->view("show", [
                 "content" => "access_bag",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "access_bag"
+                "folder-img" => "access_bag",
+                "countdata" => $this->count()
             ]);
         }
 
@@ -148,7 +170,8 @@
             $this->view("show", [
                 "content" => "access_caps",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "access_caps"
+                "folder-img" => "access_caps",
+                "countdata" => $this->count()
             ]);
         }
 
@@ -158,7 +181,8 @@
             $this->view("show", [
                 "content" => "access_glass",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "access_glass"
+                "folder-img" => "access_glass",
+                "countdata" => $this->count()
             ]);
         }
 
@@ -169,7 +193,8 @@
             $this->view("show", [
                 "content" => "pants_jeans",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "pants_jeans"
+                "folder-img" => "pants_jeans",
+                "countdata" => $this->count()
             ]);
         }
 
@@ -179,7 +204,8 @@
             $this->view("show", [
                 "content" => "pants_jog",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "pants_jog"
+                "folder-img" => "pants_jog",
+                "countdata" => $this->count()
             ]);
         }
 
@@ -189,7 +215,8 @@
             $this->view("show", [
                 "content" => "pants_lounges",
                 "img_info" => $ITEM_DATA,
-                "folder-img" => "pants_lounges"
+                "folder-img" => "pants_lounges",
+                "countdata" => $this->count()
             ]);
         }
     }

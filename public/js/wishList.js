@@ -23,7 +23,7 @@ $(document).ready(function() {
                 }
             }).done(function(result) {
                 // STEP 3: UPDATE COLOR OF BUTTON         
-                if(result.state_response == "successful"){                                        
+                if(result.state_response == "successful"){                                   
                 }
             });             
 

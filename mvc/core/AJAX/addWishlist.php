@@ -25,8 +25,7 @@
         public function addWL($clothID, $category, $email){
             $format_CATEGORY = "'".$category."'";
             $format_EMAIL = "'".$email."'";
-            $SQL_QUERY_ADD_WL = "INSERT INTO wishlist (email, clothID, category) VALUES ({$format_EMAIL}, {$clothID}, {$format_CATEGORY})";
-
+            $SQL_QUERY_ADD_WL = "INSERT INTO wishlist (email, clothID, category) VALUES ({$format_EMAIL}, {$clothID}, {$format_CATEGORY})";      
             $responseData = array(
                 "state_response" => "error"
             );
