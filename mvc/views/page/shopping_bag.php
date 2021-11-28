@@ -32,6 +32,7 @@
             <form action="checkOut/update_shoppingbag" method="post">
                 <div class="Sb-list mt-3 ps-4 pe-5 pt-4 pb-4">
                     <?php
+                    if(!empty($data["img_info"])){
                     foreach ($data["img_info"] as $item) {
                     ?>
                         <!-- MỘT SẢN PHẨM -->
@@ -92,6 +93,7 @@
                         <hr>
                     <?php
                     }
+                }
                     ?>
                 </div>
 

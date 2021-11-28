@@ -33,6 +33,7 @@
         <div class="wishList-introduce-hot">
         
             <?php
+                if(!empty($data["img_info"])){
                 foreach($data["img_info"] as $item){
             ?>
             <!-- 1 sản phẩm -->
@@ -65,6 +66,7 @@
             </div>
             <?php
                 }
+            }
             ?>
 
         </div>

@@ -19,6 +19,9 @@
 
         //------------------------------ WISHLIST ------------------------------//
         public function wishList(){
+            require_once "./mvc/core/basehref.php";
+       
+            
             $MODEL = $this->model("wishlistModel");                                    
             $INFO_LOGIN = "YOU MUST LOGIN TO SEE YOUR WISHLIST"; // NO LOGIN
             $ITEM_DATA = null; // NO LOGIN
@@ -32,7 +35,9 @@
                     $INFO_LOGIN = "Hi, you wanna add something to your wishlist ?";
                 }
             }
-            
+            if (! isset($_SESSION['login']) || !$_SESSION['login']){
+                header("Location: " . geturl(). "/login");
+            }
             $this->view("show", [
                 "content" => "wishList",
                 "img_info" => $ITEM_DATA,
@@ -43,6 +48,8 @@
         }
         //------------------------------ SHOPPING BAG ------------------------------//
         public function shopping_bag(){  
+            require_once "./mvc/core/basehref.php";
+            
             $MODEL = $this->model("shopping_bagModel");
             $INFO_LOGIN = "YOU MUST LOGIN TO SEE YOUR SHOPPING BAG"; // NO LOGIN;
             $ITEM_DATA = null; // NO LOGIN
@@ -54,6 +61,9 @@
                     $INFO_LOGIN = "NONE ITEM IN YOUR BAG";
                 }
             }   
+            if (! isset($_SESSION['login']) || !$_SESSION['login']){
+                header("Location: " . geturl(). "/login");
+            }
             $this->view("show", [
                 "content" => "shopping_bag",
                 "img_info"=> $ITEM_DATA,

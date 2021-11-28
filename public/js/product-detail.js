@@ -246,7 +246,7 @@ $(document).ready(function(){
                 buttonObj.attr("class", classBefore_MTB);
                 buttonObj.children().html(textBefore_MTB);    
                 var add = document.getElementById("buble");
-                    // add.innerHTML = result.datacount;
+                    add.innerHTML = result.datacount;
                     console.log(result.data_count);          
 
             });  

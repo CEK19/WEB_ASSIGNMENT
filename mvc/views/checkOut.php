@@ -232,6 +232,7 @@ $home_url = getUrl() . '/';
                     <!-- FRAME ARRAY HERE -->
                     <div class="ps-2">
                         <?php
+                        if(!empty($data["img_info"])){
                         foreach ($data["img_info"] as $item) {
                         ?>
                             <!-- Một sản phẩm -->
@@ -257,6 +258,7 @@ $home_url = getUrl() . '/';
                             </div>
                         <?php
                         }
+                    }
                         ?>
                     </div>
 

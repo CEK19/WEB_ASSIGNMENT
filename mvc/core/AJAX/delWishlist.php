@@ -23,7 +23,6 @@
             );
             if(mysqli_query($this->connect, $SQL_QUERY_DEL_WL)){
                 $responseData['state_response'] = "successful";
-               
             }
             $responseData['datacount'] = $this->count($_SESSION['email']);
             return json_encode($responseData);
