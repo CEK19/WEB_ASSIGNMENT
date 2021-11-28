@@ -193,7 +193,7 @@ $(document).ready(function(){
             $("#move-to-wish-list-but").attr("class", classAfter_WL);
             $("#move-to-wish-list-but").children().html(textAfter_WL);
         }
-    });    
+    });          
 
     $(".product-detail-container button")
     .click(function(){
@@ -246,13 +246,8 @@ $(document).ready(function(){
                 buttonObj.attr("class", classBefore_MTB);
                 buttonObj.children().html(textBefore_MTB);    
                 var add = document.getElementById("buble");
-<<<<<<< HEAD
-                    add.innerHTML = result.datacount;
-                    console.log(result.data_count);          
-=======
                 add.innerHTML = result.datacount;
                     // console.log(result.data_count);          
->>>>>>> f28a2c6f70a93cd7a6aeb654869c83a64b518ea0
 
             });  
 
@@ -296,4 +291,35 @@ $(document).ready(function(){
             });       
         }        
     })
+
+    var num_of_cmt = 2;
+    $.ajax({
+        url: './mvc/core/AJAX/loadComment.php',
+        type: 'POST',
+        dataType: 'html',
+        data: {
+            ajax_category: category,
+            ajax_clothid: clothID,
+            ajax_num_of_cmt: num_of_cmt
+        }
+    }).done(function(result) {
+        $(".export-comment-area").html(result);
+    });  
+
+    $("#load-more-button")
+        .click(function(){
+            num_of_cmt = num_of_cmt + 2;
+            $.ajax({
+                url: './mvc/core/AJAX/loadComment.php',
+                type: 'POST',
+                dataType: 'html',
+                data: {
+                    ajax_category: category,
+                    ajax_clothid: clothID,
+                    ajax_num_of_cmt: num_of_cmt
+                }
+            }).done(function(result) {
+                $(".export-comment-area").html(result);
+            });  
+        })
 })

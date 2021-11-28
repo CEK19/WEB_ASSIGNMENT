@@ -114,10 +114,7 @@
                     <div style="display: flex; flex-direction: column;">
                         <div class="product-detail-comments-name">
                             Trong Ho
-                        </div>
-                        <div class="product-detail-date-cmt" style="color: #929090; padding-left: 10px">
-                            20/11/2021
-                        </div>
+                        </div>                        
                     </div>
 
                     <div class="ms-2" style="margin-top: 20px;">
@@ -142,127 +139,16 @@
             </div>
 
             <!-- ---- other comment ---- -->
-            <div class="product-detail-comments-frame">
-                <div class="product-detail-comments-account">
-                    <div class="product-detail-comments-avatar">
-                        <img src="./assets/img/av5.jpg" style="height: 100%; width: 100%;">
-                    </div>
-
-                    <div style="display: flex; flex-direction: column;">
-                        <div class="product-detail-comments-name">
-                            Trong Ho
-                        </div>
-                        <div class="product-detail-date-cmt" style="color: #929090; padding-left: 10px">
-                            20/11/2021
-                        </div>
-                    </div>
-
-                    <div class="ms-2" style="margin-top: 20px;">
-                        <i class="fas fa-star">&nbsp; 4 </i>
-                    </div>
-                </div>
-                <div class="product-detail-comment" style="padding: 20px 20px 20px 20px;">
-                    Comment gì đó không biết nữa <br>
-                    Comment gì đó không biết nữa <br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa Comment gì đó không biết nữa Comment gì đó không biết nữa Comment gì đó không biết nữa Comment gì đó không biết nữa
-                </div>
+            <div class="export-comment-area">
+                
             </div>
-
-            <div class="product-detail-comments-frame">
-                <div class="product-detail-comments-account">
-                    <div class="product-detail-comments-avatar">
-                        <img src="./assets/img/av0.png" style="height: 100%; width: 100%;">
-                    </div>
-
-                    <div style="display: flex; flex-direction: column;">
-                        <div class="product-detail-comments-name">
-                            Trong Ho
-                        </div>
-                        <div class="product-detail-date-cmt" style="color: #929090; padding-left: 10px">
-                            20/11/2021
-                        </div>
-                    </div>
-                    <div class="ms-2" style="margin-top: 20px;">
-                        <i class="fas fa-star">&nbsp; 2 </i>
-                    </div>
-                </div>
-                <div class="product-detail-comment" style="padding: 20px 20px 20px 20px;">
-                    Comment gì đó không biết nữa <br>
-                    Comment gì đó không biết nữa <br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa Comment gì đó không biết nữa Comment gì đó không biết nữa Comment gì đó không biết nữa Comment gì đó không biết nữa
-                </div>
-            </div>
-
-            <div class="product-detail-comments-frame">
-                <div class="product-detail-comments-account">
-                    <div class="product-detail-comments-avatar">
-                        <img src="./assets/img/av3.jpg" style="height: 100%; width: 100%;">
-                    </div>
-
-                    <div style="display: flex; flex-direction: column;">
-                        <div class="product-detail-comments-name">
-                            Trong Ho
-                        </div>
-                        <div class="product-detail-date-cmt" style="color: #929090; padding-left: 10px">
-                            20/11/2021
-                        </div>
-                    </div>
-                    <div class="ms-2" style="margin-top: 20px;">
-                        <i class="fas fa-star">&nbsp; 5 </i>
-                    </div>
-                </div>
-                <div class="product-detail-comment" style="padding: 20px 20px 20px 20px;">
-                    Comment gì đó không biết nữa <br>
-                    Comment gì đó không biết nữa <br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa Comment gì đó không biết nữa Comment gì đó không biết nữa Comment gì đó không biết nữa Comment gì đó không biết nữa
-                </div>
-            </div>
-            <div class="product-detail-comments-frame">
-                <div class="product-detail-comments-account">
-                    <div class="product-detail-comments-avatar">
-                        <img src="./assets/img/av4.jpg" style="height: 100%; width: 100%;">
-                    </div>
-
-                    <div style="display: flex; flex-direction: column;">
-                        <div class="product-detail-comments-name">
-                            Trong Ho
-                        </div>
-                        <div class="product-detail-date-cmt" style="color: #929090; padding-left: 10px">
-                            20/11/2021
-                        </div>
-                    </div>
-                    <div class="ms-2" style="margin-top: 20px;">
-                        <i class="fas fa-star">&nbsp; 4 </i>
-                    </div>
-                </div>
-                <div class="product-detail-comment" style="padding: 20px 20px 20px 20px;">
-                    Comment gì đó không biết nữa <br>
-                    Comment gì đó không biết nữa <br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa<br>
-                    Comment gì đó không biết nữa Comment gì đó không biết nữa Comment gì đó không biết nữa Comment gì đó không biết nữa Comment gì đó không biết nữa
-                </div>
-            </div>
+                        
             <div class="product-detail-cmt-count">
 
             </div>
 
             <div style="margin: auto; width: 300px; margin-bottom: 50px;">
-                <button type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2" style="width: 300px;">
+                <button id="load-more-button" type="button" class="btn-sm btn-light btn-outline-dark border-4 mt-2" style="width: 300px;">
                     <div class="mb-0 pd-btn" style="font-size: 20px; font-weight:bold;">
                         LOAD MORE
                     </div>

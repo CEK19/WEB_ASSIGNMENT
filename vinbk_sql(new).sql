@@ -240,7 +240,19 @@ INSERT INTO `comments` (`id`, `email`, `clothID`, `category`, `star`, `comment`)
 (17, 'trong.user@hcmut.edu.vn', 3, 'shoes_shocks', 1, 'Giao vớ bị lủng'),
 (18, 'trong.user@hcmut.edu.vn', 2, 'shirt_shirt', 2, 'Áo bị bung chỉ'),
 (19, 'cong.user@hcmut.edu.vn', 3, 'shirt_shirt', 3, 'Ngoài giao hàng chậm, còn lại đều ổn, tôi vote 3 sao'),
-(20, 'tu.user@hcmut.edu.vn', 3, 'shoes_trainers', 5, 'Giày đi vừa chân, êm, chạy rất nhẹ');
+(20, 'tu.user@hcmut.edu.vn', 3, 'shoes_trainers', 5, 'Giày đi vừa chân, êm, chạy rất nhẹ'),
+(21, 'nhan.user@hcmut.edu.vn', 9, 'access_glass', 5, 'giao hàng quá xá nhanh'),
+(22, 'trong.user@hcmut.edu.vn', 9, 'access_glass', 3, 'shop đóng gói rất cẩn thận, sản phẩm gồm hộp kính, kính, khăn lau và vít để điều chỉnh kính khi cần. Kính khá là chắc chắn, chất lượng tốt cảm ơn shop :)))'),
+(23, 'nhan.user@hcmut.edu.vn', 9, 'access_glass', 2, 'Sản phẩm rất tuyệt vời, tôi đeo rất êm, không bị nhức đầu'),
+(24, 'tu.user@hcmut.edu.vn', 9, 'access_glass', 1, 'kính đẹp, giống hình'),
+(25, 'nhan.user@hcmut.edu.vn', 9, 'access_glass', 2, 'gọng đẹp, chắc chắn, đóng gói cẩn thận. Các sản phẩm đi kèm đầy đủ'),
+(26, 'tu.user@hcmut.edu.vn', 9, 'access_glass', 3, 'quá đẹp nhé mọi người'),
+(27, 'trong.user@hcmut.edu.vn', 9, 'access_glass', 4, 'Hàng giao nhanh ,kính chất lượng cai'),
+(28, 'nhan.user@hcmut.edu.vn', 9, 'access_glass', 5, 'hàng đẹp, đầy đủ phụ kiện cọng kính khá chắc chắn'),
+(29, 'nhan.user@hcmut.edu.vn', 9, 'access_glass', 5, 'cực kỳ hài lòng với sản phẩm ..kính đẹp chắc chắn.cho shop 5sao'),
+(30, 'trong.user@hcmut.edu.vn', 9, 'access_glass', 2, 'rất rốt nha hộp đựng kính cũng đẹp nữa'),
+(31, 'nhan.user@hcmut.edu.vn', 9, 'access_glass', 1, 'Quá đẹp,đáng đồng tiền bát gạo...uy tín'),
+(32, 'trong.user@hcmut.edu.vn', 9, 'access_glass', 3, 'kính giống hình quảng cáo.');
 
 -- --------------------------------------------------------
 
