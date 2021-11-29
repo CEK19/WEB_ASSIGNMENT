@@ -114,7 +114,9 @@
                     <div style="display: flex; flex-direction: column;">
                         <div class="product-detail-comments-name">
                             <?php
+                                if( isset($_SESSION['login']) && $_SESSION['login'] ) {
                                 echo $data['name'][0]['firstName']." ".$data['name'][0]['lastName'];
+                                }
                             ?>
                         </div>                        
                     </div>
