@@ -105,7 +105,7 @@
             <p style="color: #999999; font-weight: bold; ">REVIEWS </p>
 
             <!-- ---- write own commnet ---- -->
-            <div class="product-detail-comments-frame" style="<?php if(!isset($_SESSION['login']) || $_SESSION['login']) echo "display:none"?>">
+            <div class="product-detail-comments-frame" style="<?php if(!isset($_SESSION['login']) || !$_SESSION['login']) echo "display:none"?>">
                 <div class="product-detail-comments-account">
                     <div class="product-detail-comments-avatar">
                         <img src="./assets/img/av0.png" style="height: 100%; width: 100%;">
