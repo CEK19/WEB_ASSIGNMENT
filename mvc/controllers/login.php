@@ -8,7 +8,7 @@ class login extends controller
     public function viewHome()
     {
         require_once "./mvc/core/basehref.php";
-        // $productsByType = $this->model('ProductsModel')->getProductByType();
+       
         if (isset($_SESSION['login']) && $_SESSION['login']){
             header("Location: " . geturl(). "/Home");
         }
@@ -30,6 +30,7 @@ class login extends controller
         }else {
             // $_SESSION['error'] = False;
             // $_SESSION['count'] = $count;
+            $_SESSION['type'] = $data['level'];
             $_SESSION['login'] = true;
             $_SESSION['firstname'] = $data['firstName'] ;
             $_SESSION['lastname'] = $data['lastName'];
@@ -38,7 +39,13 @@ class login extends controller
             $_SESSION['user_ID'] = $data['user_id'];
             $_SESSION['email'] = $data['email'];
             $_SESSION['birthday'] = $data['birthday'];
-            header("Location: " . geturl(). "/Home");
+            if($_SESSION['type'] == 1) {
+                header("Location: " . geturl(). "/Home");
+            }
+            else {
+                header("Location: " . geturl(). "/?url=Admin/account");
+            }
+           
         }
     }
 }
