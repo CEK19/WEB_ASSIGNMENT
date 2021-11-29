@@ -142,29 +142,27 @@
                         <th>Fucntion</th>
                     </tr>
 
-                    <tr>
-                        <td>1</td>
-                        <td>tu.user@hcmut.edu.vn</td>
-                        <td>15</td>
-                        <td>pants_jeans</td>
-                        <td>4</td>
-                        <td>Sản phẩm đúng như mô tả, cám ơn vinBK rất nhiều</td>
-                        <td>
-                            <button class="btn btn-danger">Del</button>
-                        </td>
-                    </tr>
+                    <?php
+                    if (isset($data['item_data'])) {
+                        foreach ($data['item_data'] as $item) {
+                    ?>
 
-                    <tr>
-                        <td>1</td>
-                        <td>tu.user@hcmut.edu.vn</td>
-                        <td>15</td>
-                        <td>pants_jeans</td>
-                        <td>4</td>
-                        <td>Sản phẩm đúng như mô tả, cám ơn vinBK rất nhiều</td>
-                        <td>
-                            <button class="btn btn-danger">Del</button>
-                        </td>
-                    </tr>
+                            <tr id="comment-row-<?php echo $item['id']; ?>">
+                                <td><?php echo $item['id']; ?></td>
+                                <td><?php echo $item['email']; ?></td>
+                                <td><?php echo $item['clothID']; ?></td>
+                                <td><?php echo $item['category']; ?></td>
+                                <td><?php echo $item['star']; ?></td>
+                                <td><?php echo $item['comment']; ?></td>
+                                <td>
+                                    <button class="btn btn-danger">Del</button>
+                                </td>
+                            </tr>
+
+                    <?php
+                        }
+                    }
+                    ?>
 
 
                 </table>

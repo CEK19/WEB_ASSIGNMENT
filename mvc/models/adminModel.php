@@ -10,8 +10,32 @@
             return $query;
         }
 
-        public function getOrder_data(){                    
-            $SQL_QUERY = "SELECT id, email, clothID, category, color, size, quantity, phone, address, deliveryMethod, paymentMethod, cardNumber, 'e-wallet' FROM orders";
+        public function getOrder_data(){
+            $SQL_QUERY = "SELECT id, email, clothID, category, color, size, quantity, phone, address, deliveryMethod, paymentMethod, cardNumber, `e-wallet` FROM orders";
+            $RESULT = mysqli_query($this->connect, $SQL_QUERY);                         
+            $RETURN_DATA = array();                                               
+            if(mysqli_num_rows($RESULT) > 0){                           
+                while($row = mysqli_fetch_assoc($RESULT)){              
+                    array_push($RETURN_DATA, $row);                  
+                }
+            }                        
+            return $RETURN_DATA;
+        }
+
+        public function getComment_data(){
+            $SQL_QUERY = "SELECT id, email, clothID, category, star, comment FROM comments";
+            $RESULT = mysqli_query($this->connect, $SQL_QUERY);                         
+            $RETURN_DATA = array();                                               
+            if(mysqli_num_rows($RESULT) > 0){                           
+                while($row = mysqli_fetch_assoc($RESULT)){              
+                    array_push($RETURN_DATA, $row);                  
+                }
+            }                        
+            return $RETURN_DATA;
+        }
+
+        public function getCloth_data($my_table){
+            $SQL_QUERY = "SELECT id, name, brand, detail, cost_origin, cost, quantity, rating, 1star, 2star, 3star, 4star, 5star, num_review FROM '$my_table'";
             $RESULT = mysqli_query($this->connect, $SQL_QUERY);                         
             $RETURN_DATA = array();                                               
             if(mysqli_num_rows($RESULT) > 0){                           

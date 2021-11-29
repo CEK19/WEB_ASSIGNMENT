@@ -174,6 +174,37 @@
                         <th>Fucntion</th>
                     </tr>
 
+                    <?php
+                    // if (isset($data['item_data'])) {
+                    //     foreach ($data['item_data'] as $item) {
+                    ?>
+
+                            <!-- <tr id="order-row-<?php// echo $item['id']; ?>">
+                                <td><?php// echo $item['id']; ?></td>
+                                <td><?php// echo $item['name']; ?></td>
+                                <td><?php// echo $item['brand']; ?></td>
+                                <td><?php// echo $item['detail']; ?></td>
+                                <td><?php// echo $item['cost_origin']; ?></td>
+                                <td><?php// echo $item['cost']; ?></td>
+                                <td><?php// echo $item['quantity']; ?></td>
+                                <td><?php// echo $item['rating']; ?></td>
+                                <td><?php// echo $item['1star']; ?></td>
+                                <td><?php// echo $item['2star']; ?></td>
+                                <td><?php// echo $item['3star']; ?></td>
+                                <td><?php// echo $item['4star']; ?></td>
+                                <td><?php// echo $item['5star']; ?></td>
+                                <td><?php// echo $item['num_review']; ?></td>
+                                <td><?php// echo $item['e-wallet']; ?></td>
+                                <td>
+                                    <button class="btn btn-danger">Del</button>
+                                </td>
+                            </tr> -->
+
+                    <?php
+                    //     }
+                    // }
+                    ?>
+
                     <tr>
                         <td>1</td>
                         <td>Gucchi 2018</td>

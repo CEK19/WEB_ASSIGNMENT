@@ -10,8 +10,13 @@
         }
 
         public function cloth(){
+            require_once "./mvc/core/basehref.php";
+            $MODEL = $this->model("adminModel");
+            $ITEM_DATA = $MODEL->getCloth_data("access_bag");
+
             $this->view("adminpage", [
-                "content" => "admin_cloth"
+                "content" => "admin_cloth",
+                "item_data" => $ITEM_DATA
             ]);
         }
 
@@ -24,18 +29,16 @@
                 "content" => "admin_order",
                 "item_data" => $ITEM_DATA
             ]);
-
-            // $this->view("show", [
-            //     "content" => "shirt_polo",
-            //     "img_info" => $ITEM_DATA,
-            //     "folder-img" => "shirt_polo",
-            //     "countdata" => $this->count()
-            // ]);
         }
 
         public function comment(){
+            require_once "./mvc/core/basehref.php";
+            $MODEL = $this->model("adminModel");
+            $ITEM_DATA = $MODEL->getComment_data();
+
             $this->view("adminpage", [
-                "content" => "admin_comment"
+                "content" => "admin_comment",
+                "item_data" => $ITEM_DATA
             ]);
         }
     }

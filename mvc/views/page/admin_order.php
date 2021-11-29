@@ -163,26 +163,38 @@
                         <th>Fucntion</th>
                     </tr>
 
-                    <tr>
-                        <td>2</td>
-                        <td>tu.user@hcmut.edu.vn</td>
-                        <td>2</td>
-                        <td>pants_jog</td>
-                        <td>black</td>
-                        <td>M</td>
-                        <td>2</td>
-                        <td>0915882863</td>
-                        <td>Bình Hưng Hòa, Ga Hòa Hưng, kênh nhiêu lộc</td>
-                        <td>fast</td>
-                        <td>card</td>
-                        <td>123087653</td>
-                        <td>paypal</td>
-                        <td>
-                            <button class="btn btn-danger">Del</button>
-                        </td>
-                    </tr>
+                    <?php
+                    if (isset($data['item_data'])) {
+                        foreach ($data['item_data'] as $item) {
+                    ?>
 
-                    <tr>
+                            <tr id="order-row-<?php echo $item['id']; ?>">
+                                <td><?php echo $item['id']; ?></td>
+                                <td><?php echo $item['email']; ?></td>
+                                <td><?php echo $item['clothID']; ?></td>
+                                <td><?php echo $item['category']; ?></td>
+                                <td><?php echo $item['color']; ?></td>
+                                <td><?php echo $item['size']; ?></td>
+                                <td><?php echo $item['quantity']; ?></td>
+                                <td><?php echo $item['phone']; ?></td>
+                                <td><?php echo $item['address']; ?></td>
+                                <td><?php echo $item['deliveryMethod']; ?></td>
+                                <td><?php echo $item['paymentMethod']; ?></td>
+                                <td><?php echo $item['cardNumber']; ?></td>
+                                <td><?php echo $item['e-wallet']; ?></td>
+                                <td>
+                                    <button class="btn btn-danger">Del</button>
+                                </td>
+                            </tr>
+
+                    <?php
+                        }
+                    }
+                    ?>
+
+
+
+                    <!-- <tr>
                         <td>2</td>
                         <td>tu.user@hcmut.edu.vn</td>
                         <td>15</td>
@@ -199,7 +211,7 @@
                         <td>
                             <button class="btn btn-danger">Del</button>
                         </td>
-                    </tr>
+                    </tr> -->
 
                 </table>
             </div>
