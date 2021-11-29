@@ -52,7 +52,8 @@
         }
 
         public function getCurrentUserName(){
-            $format_email = '"'.$_SESSION['email'].'"';
+            if(isset($_SESSION['login']) && $_SESSION['login']) {
+                $format_email = '"'.$_SESSION['email'].'"';
             $SQL_LOAD_NAME = "SELECT firstName, lastName FROM account WHERE email={$format_email}";   
             $result = mysqli_query($this->connect, $SQL_LOAD_NAME);
             $RETURN_DATA = array();
@@ -63,6 +64,8 @@
                 }
             }            
             return $RETURN_DATA;
+            }
+            
         }        
     }
 ?>
