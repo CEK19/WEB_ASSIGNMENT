@@ -112,35 +112,35 @@
                         </td>
                     </tr>
 
-                    <tr>
-                        <td>3</td>
-                        <td class="py-1">
-                            <div style="width: 50px;"><img src="./assets/img/av0.png" width="100%"></div>
-                        </td>
-                        <td>tu</td>
-                        <td>le</td>
-                        <td>tu.user@hcmut.edu.vn</td>
-                        <td>user</td>
-                        <td>
-                            <button class="btn btn-danger">Kick</button>
-                            <button class="btn btn-warning">Del img</button>
-                        </td>
-                    </tr>
+                    <?php
+                    if (isset($data['item_data'])) {
+                        foreach ($data['item_data'] as $item) {
+                    ?>
 
-                    <tr>
-                        <td>3</td>
-                        <td class="py-1">
-                            <div style="width: 50px;"><img src="./assets/img/av0.png" width="100%"></div>
-                        </td>
-                        <td>tu</td>
-                        <td>le</td>
-                        <td>tu.user@hcmut.edu.vn</td>
-                        <td>user</td>
-                        <td>
-                            <button class="btn btn-danger">Kick</button>
-                            <button class="btn btn-warning">Del img</button>
-                        </td>
-                    </tr>
+                            <tr id="comment-row-<?php echo $item['user_id']; ?>">
+                                <td><?php echo $item['user_id']; ?></td>
+                                <td class="py-1">
+                                    <div style="width: 50px;"><img src="./assets/img/av0.png" width="100%"></div>
+                                </td>
+                                <td><?php echo $item['firstName']; ?></td>
+                                <td><?php echo $item['lastName']; ?></td>
+                                <td><?php echo $item['email']; ?></td>
+                                <td><?php 
+                                    if($item['level'] == 1) echo "user";
+                                    else if($item['level'] == 2) echo "admin";
+                                    else echo "undefined";
+                                ?></td>
+                                <td>
+                                    <button class="btn btn-danger">Kick</button>
+                                    <button class="btn btn-warning">Del img</button>
+                                </td>
+                            </tr>
+
+                    <?php
+                        }
+                    }
+                    ?>
+                    
                 </table>
             </div>
         </form>

@@ -4,6 +4,10 @@
         // HAVE SHOW COMMENT
         public function account(){
             require_once "./mvc/core/basehref.php";
+            $MODEL = $this->model("adminModel");
+            $ITEM_DATA = $MODEL->getAccount_data();
+
+            require_once "./mvc/core/basehref.php";
             $this->view("adminpage", [
                 "content" => "admin_account"
             ]);

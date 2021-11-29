@@ -11,8 +11,7 @@
                 <h3>Choose category you want to do with</h3>
                 <div class="col-4 mb-2">
                     <select class="form-select">
-                        <option selected>Choose one category</option>
-                        <option value="access_bag">access_bag</option>
+                        <option selected value="access_bag">access_bag</option>
                         <option value="access_caps">access_caps</option>
                         <option value="access_glass">access_glass</option>
                         <option value="pants_jeans">pants_jeans</option>
@@ -175,75 +174,34 @@
                     </tr>
 
                     <?php
-                    // if (isset($data['item_data'])) {
-                    //     foreach ($data['item_data'] as $item) {
+                    if (isset($data['item_data'])) {
+                        foreach ($data['item_data'] as $item) {
                     ?>
 
-                            <!-- <tr id="order-row-<?php// echo $item['id']; ?>">
-                                <td><?php// echo $item['id']; ?></td>
-                                <td><?php// echo $item['name']; ?></td>
-                                <td><?php// echo $item['brand']; ?></td>
-                                <td><?php// echo $item['detail']; ?></td>
-                                <td><?php// echo $item['cost_origin']; ?></td>
-                                <td><?php// echo $item['cost']; ?></td>
-                                <td><?php// echo $item['quantity']; ?></td>
-                                <td><?php// echo $item['rating']; ?></td>
-                                <td><?php// echo $item['1star']; ?></td>
-                                <td><?php// echo $item['2star']; ?></td>
-                                <td><?php// echo $item['3star']; ?></td>
-                                <td><?php// echo $item['4star']; ?></td>
-                                <td><?php// echo $item['5star']; ?></td>
-                                <td><?php// echo $item['num_review']; ?></td>
-                                <td><?php// echo $item['e-wallet']; ?></td>
+                            <tr id="order-row-<?php echo $item['id']; ?>">
+                                <td><?php echo $item['id']; ?></td>
+                                <td><?php echo $item['name']; ?></td>
+                                <td><?php echo $item['brand']; ?></td>
+                                <td><?php echo $item['detail']; ?></td>
+                                <td><?php echo $item['cost_origin']; ?></td>
+                                <td><?php echo $item['cost']; ?></td>
+                                <td><?php echo $item['quantity']; ?></td>
+                                <td><?php echo $item['rating']; ?></td>
+                                <td><?php echo $item['1star']; ?></td>
+                                <td><?php echo $item['2star']; ?></td>
+                                <td><?php echo $item['3star']; ?></td>
+                                <td><?php echo $item['4star']; ?></td>
+                                <td><?php echo $item['5star']; ?></td>
+                                <td><?php echo $item['num_review']; ?></td>
                                 <td>
                                     <button class="btn btn-danger">Del</button>
                                 </td>
-                            </tr> -->
+                            </tr>
 
                     <?php
-                    //     }
-                    // }
+                        }
+                    }
                     ?>
-
-                    <tr>
-                        <td>1</td>
-                        <td>Gucchi 2018</td>
-                        <td>Gucchi</td>
-                        <td>Lấy chất liệu từ da dê truyền thống, mang đậm chất 2018</td>
-                        <td>303.5</td>
-                        <td>202.1</td>
-                        <td>13</td>
-                        <td>4.4</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>
-                            <button class="btn btn-danger">Del</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>1</td>
-                        <td>Gucchi 2018</td>
-                        <td>Gucchi</td>
-                        <td>Lấy chất liệu từ da dê truyền thống, mang đậm chất 2018</td>
-                        <td>303.5</td>
-                        <td>202.1</td>
-                        <td>13</td>
-                        <td>4.4</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>
-                            <button class="btn btn-danger">Del</button>
-                        </td>
-                    </tr>
 
 
                 </table>
