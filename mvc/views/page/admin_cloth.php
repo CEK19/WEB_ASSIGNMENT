@@ -26,7 +26,7 @@
                     </select>
                 </div>
                 <div class="d-grid col-4">
-                    <button class="btn btn-success">CHOOSE</button>
+                    <button type="button" id="category-show-button" class="btn btn-success">CHOOSE</button>
                 </div>
             </div>
 
@@ -170,7 +170,7 @@
                         <th>4star</th>
                         <th>5star</th>
                         <th>num_review</th>
-                        <th>Fucntion</th>
+                        <th>Function</th>
                     </tr>
 
                     <?php
@@ -194,7 +194,7 @@
                                 <td><?php echo $item['5star']; ?></td>
                                 <td><?php echo $item['num_review']; ?></td>
                                 <td>
-                                    <button class="btn btn-danger">Del</button>
+                                    <button type="button" class="btn btn-danger del-item-button-admin">Del</button>
                                 </td>
                             </tr>
 
@@ -209,3 +209,4 @@
         </form>
     </div>
 </div>
+<script type="text/javascript" src="./public/js/admin_cloth.js"></script>

@@ -14,10 +14,10 @@
             ]);
         }
 
-        public function cloth(){
+        public function cloth($param = "access_bag"){            
             require_once "./mvc/core/basehref.php";
             $MODEL = $this->model("adminModel");
-            $ITEM_DATA = $MODEL->getCloth_data("access_bag");
+            $ITEM_DATA = $MODEL->getCloth_data($param);
 
             $this->view("adminpage", [
                 "content" => "admin_cloth",

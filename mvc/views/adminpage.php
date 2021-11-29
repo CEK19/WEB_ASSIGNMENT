@@ -59,7 +59,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link color-white" aria-current="page" href="./?url=Admin/cloth" id="admin_cloth">CLOTH</a>
+                    <a class="nav-link color-white" aria-current="page" href="./?url=Admin/cloth/access_bag" id="admin_cloth">CLOTH</a>
                 </li>
 
                 <li class="nav-item">
