@@ -24,12 +24,12 @@
                             </div>
                         </div>
 
-                        <label class="form-label col-auto">F_Name</label>
+                        <label class="form-label col-auto">First Name</label>
                         <div class="col-8 mb-2">
                             <input class="form-control" type="text">
                         </div>
 
-                        <label class="form-label col-auto">L_Name</label>
+                        <label class="form-label col-auto">Last Name</label>
                         <div class="col-8 mb-2">
                             <input class="form-control" type="text">
                         </div>
@@ -67,18 +67,7 @@
                         <button class="btn btn-success">OK</button>
                     </div>
 
-                    <!-- =================================== -->
-
-                    <h3 class="mt-5">Import img for user</h3>
-
-                    <label for="formFile" class="form-label col-auto">Upload file</label>
-                    <div class="d-grid col-8 mb-2">
-                        <input class="form-control" type="file">
-                    </div>
-
-                    <div class="d-grid col-8">
-                        <button class="btn btn-success">SUBMIT</button>
-                    </div>
+                    <!-- =================================== -->                    
                 </div>
             </div>
 
@@ -90,8 +79,8 @@
                     <tr>
                         <th>UserID</th>
                         <th>Avatar</th>
-                        <th>F_Name</th>
-                        <th>L_Name</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
                         <th>Email</th>
                         <th>Type</th>
                         <th>Fucntion</th>
@@ -107,8 +96,7 @@
                         <td>admin@gmail.com</td>
                         <td>admin</td>
                         <td>
-                            <button class="btn btn-danger">Kick</button>
-                            <button class="btn btn-warning">Del img</button>
+                            <button class="btn btn-danger">Kick</button>                            
                         </td>
                     </tr>
 
@@ -131,8 +119,7 @@
                                     else echo "undefined";
                                 ?></td>
                                 <td>
-                                    <button class="btn btn-danger">Kick</button>
-                                    <button class="btn btn-warning">Del img</button>
+                                    <button class="btn btn-danger">Kick</button>                                    
                                 </td>
                             </tr>
 
