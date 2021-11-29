@@ -18,29 +18,29 @@
 
                     <div class="d-none" id="left"> <!-- dont change this id name -->
                         <div class="d-none" id="user-id"> <!-- dont change this id name -->
-                            <label class="form-label col-auto">User ID</label>
+                            <label for="user-id-add-edit" class="form-label col-auto">User ID</label>
                             <div class="col-8 mb-2">
-                                <input class="form-control" type="number">
+                                <input name="user-id-add-edit" id="user-id-add-edit" class="form-control" type="number">
                             </div>
                         </div>
 
-                        <label class="form-label col-auto">First Name</label>
+                        <label for="name-fname-add-edit" class="form-label col-auto">First Name</label>
                         <div class="col-8 mb-2">
-                            <input class="form-control" type="text">
+                            <input name="name-fname-add-edit" id="name-fname-add-edit" class="form-control" type="text">
                         </div>
 
-                        <label class="form-label col-auto">Last Name</label>
+                        <label for="name-lname-add-edit" class="form-label col-auto">Last Name</label>
                         <div class="col-8 mb-2">
-                            <input class="form-control" type="text">
+                            <input name="name-lname-add-edit" id="name-lname-add-edit" class="form-control" type="text">
                         </div>
 
-                        <label class="form-label col-auto">email</label>
+                        <label for="email-add-edit-adm" class="form-label col-auto">Email</label>
                         <div class="col-8 mb-2">
-                            <input class="form-control" type="email">
+                            <input name="email-add-edit-adm" id="email-add-edit-adm" class="form-control" type="email">
                         </div>
 
                         <div class="d-grid col-8">
-                            <button class="btn btn-success">OK</button>
+                            <button type="button" id="admin-submit-add-edit" class="btn btn-success">OK</button>
                         </div>
                     </div>
 
@@ -51,12 +51,12 @@
 
                     <label class="form-label col-auto">User ID</label>
                     <div class="col-8 mb-2">
-                        <input class="form-control" type="number">
+                        <input id="user-id-type-edit" name="user-id-type-edit" class="form-control" type="number">
                     </div>
 
                     <label class="form-label col-auto">Type</label>
                     <div class="col-8 mb-2">
-                        <select class="form-select">
+                        <select id="user-select-type" name="user-select-type" class="form-select">
                             <option selected>Choose level for account</option>
                             <option value="1">user level</option>
                             <option value="2">admin level</option>
@@ -64,7 +64,7 @@
                     </div>
 
                     <div class="d-grid col-8">
-                        <button class="btn btn-success">OK</button>
+                        <button id="admin-button-edit-type-account" type="button" class="btn btn-success">OK</button>
                     </div>
 
                     <!-- =================================== -->                    
@@ -75,7 +75,7 @@
 
             <!-- ===== TABLE ====== -->
             <div class="table-responsive">
-                <table class="table table-striped align-middle table-hover">
+                <table id="table-area-data-export" class="table table-striped align-middle table-hover">
                     <tr>
                         <th>UserID</th>
                         <th>Avatar</th>
@@ -83,23 +83,9 @@
                         <th>Last Name</th>
                         <th>Email</th>
                         <th>Type</th>
-                        <th>Fucntion</th>
+                        <th>Function</th>
                     </tr>
-
-                    <tr>
-                        <td>9</td>
-                        <td class="py-1">
-                            <div style="width: 50px;"><img src="./assets/img/av0.png" width="100%"></div>
-                        </td>
-                        <td>Kong</td>
-                        <td>Cute</td>
-                        <td>admin@gmail.com</td>
-                        <td>admin</td>
-                        <td>
-                            <button class="btn btn-danger">Kick</button>                            
-                        </td>
-                    </tr>
-
+                    
                     <?php
                     if (isset($data['item_data'])) {
                         foreach ($data['item_data'] as $item) {
