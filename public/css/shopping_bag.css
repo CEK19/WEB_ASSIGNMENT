@@ -256,6 +256,13 @@
         width: 100%;
     }
 
+    .Sb-frame a{
+        color: black;
+    }
+    .Sb-frame a:hover{
+        color: black;
+    }
+
 
 /* ------------------------------------- */
 
