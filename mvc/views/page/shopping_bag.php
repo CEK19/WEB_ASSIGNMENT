@@ -27,7 +27,15 @@
     <div class="Sb-container mt-3 d-flex flex-row justify-content-between">
         <div class="Sb-left mb-3">
             <div class="ps-4 pe-5 pt-4 pb-4">
-                <h4 class="mb-0">MY BAG</h4>
+                <h4 class="mb-0">
+                    <?php 
+                    if (empty($data["img_info"])) {
+                        echo $data["info_login"];
+                    } else {
+                        echo "MY BAG";
+                    }
+                    ?>
+                </h4>
             </div>
             <form action="checkOut/update_shoppingbag" method="post">
                 <div class="Sb-list mt-3 ps-4 pe-5 pt-4 pb-4">

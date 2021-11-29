@@ -27,7 +27,7 @@ class checkOut extends controller
     public function update_shoppingbag()
     {
         require_once "./mvc/core/basehref.php";
-        $colors = $_POST['colors'];
+        $colors = $_POST['colors']; // Mảng color
         $sizes = $_POST['sizes'];
         $quantities = $_POST['quantities'];
         $ids = $_POST['ids'];
