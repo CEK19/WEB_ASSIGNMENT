@@ -8,7 +8,7 @@
     <div class="admin-container bg-white pt-4 ps-5 pe-5">
         <form>
             <div class="aa-top-top ps-5 mb-5">
-                <h3>Choose category you want to do with</h3>
+                <h3>Choose category you want to see</h3>
                 <div class="col-4 mb-2">
                     <select class="form-select">
                         <option selected value="access_bag">access_bag</option>
@@ -32,7 +32,7 @@
 
             <hr>
 
-            <div class="aa-top d-flex mt-5 ps-5">
+            <!-- <div class="aa-top d-flex mt-5 ps-5">
                 <div class="aa-left">
                     <h3>Add new cloth</h3>
 
@@ -148,7 +148,7 @@
                 </div>
 
 
-            </div>
+            </div> -->
 
             <br>
 
