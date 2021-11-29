@@ -47,14 +47,14 @@ $(document).ready(function(){
                 $.ajax({
                     url: './mvc/core/AJAX/adminAddUser.php',
                     type: 'POST',
-                    dataType: 'html',
+                    dataType: 'json',
                     data: {
                         ajax_fname: ptr_fname.val(),
                         ajax_lname: ptr_lname.val(),
                         ajax_email: ptr_email.val()
                     }
-                }).done(function(result) {                       
-                    $("#table-area-data-export").html(result);
+                }).done(function(result) {     
+                    location.reload();                
                 });  
             }
             else{
@@ -64,19 +64,19 @@ $(document).ready(function(){
         // EDIT MODE
         else{
             let pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;     
-            if(ptr_email.val().match(pattern) && ptr_fname.val().length > 0 && ptr_lname.val().length > 0 && ptr_user_id.length > 0){
+            if(ptr_email.val().match(pattern) && ptr_fname.val().length > 0 && ptr_lname.val().length > 0 && ptr_user_id.val().length > 0){
                 $.ajax({
                     url: './mvc/core/AJAX/adminEditUser.php',
                     type: 'POST',
-                    dataType: 'html',
+                    dataType: 'json',
                     data: {
                         ajax_id: ptr_user_id.val(),
                         ajax_fname: ptr_fname.val(),
                         ajax_lname: ptr_lname.val(),
                         ajax_email: ptr_email.val()
                     }
-                }).done(function(result) {                                       
-                    $("#table-area-data-export").html(result);
+                }).done(function(result) {   
+                    location.reload();                                    
                 });  
     
             }
@@ -103,15 +103,36 @@ $(document).ready(function(){
                 $.ajax({
                     url: './mvc/core/AJAX/editTypeUser.php',
                     type: 'POST',
-                    dataType: 'html',
+                    dataType: 'json',
                     data: {
                         ajax_id: ptr_user_id.val(),
                         ajax_type: ptr_user_type_select.val()
                     }
                 }).done(function(result) {                                       
-                    $("#table-area-data-export").html(result);
+                    location.reload();
                 });  
             }
 
         });
+
+    //----- KICK USER FUNCTION -----//
+    $(".kick-user-button")
+        .click(function(){ 
+            
+            let btnObj = $(this);
+            let trObj = btnObj.closest("tr");
+            let emailKickObj = (trObj.children()[4]);
+            let emailKick = emailKickObj.innerHTML;            
+            
+            $.ajax({
+                url: './mvc/core/AJAX/adminDelUser.php',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    ajax_email: emailKick
+                }
+            }).done(function(result) {                                       
+                location.reload();
+            });  
+        })
 })

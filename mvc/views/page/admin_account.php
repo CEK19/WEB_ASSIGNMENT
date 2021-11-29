@@ -105,7 +105,7 @@
                                     else echo "undefined";
                                 ?></td>
                                 <td>
-                                    <button class="btn btn-danger">Kick</button>                                    
+                                    <button type="button" class="btn btn-danger kick-user-button">Kick</button>                                    
                                 </td>
                             </tr>
 

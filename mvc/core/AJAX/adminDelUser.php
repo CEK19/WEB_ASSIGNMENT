@@ -2,7 +2,7 @@
     require_once("../db.php");
     session_start();
 
-    class adminAddUser extends db{
+    class adminKickUser extends db{
 
         public function getAccount_data(){
             $SQL_QUERY = "SELECT `user_id`, firstName, lastName, email, `level` FROM account";
@@ -16,23 +16,17 @@
             return $RETURN_DATA;
         }
 
-        public function adminAdd($fname, $lname, $email){
-            $format_fname = "'".$fname."'";
-            $format_lname = "'".$lname."'";
+        public function adminKickUser($email){                              
             $format_email = "'".$email."'";
-                        
-            $SQL_QUERY_ADD = "INSERT INTO account (firstName, lastName, birthday, email, password, level) VALUES ({$format_fname}, {$format_lname} , '2001-02-13' , {$format_email}, '8c649e23ba34274f603b93d38e8840eb', 2)";            
-            
+            $SQL_QUERY_KICK = "DELETE FROM account WHERE email = {$format_email}";                         
             $data = array();
-            if(mysqli_query($this->connect, $SQL_QUERY_ADD)){                                                
-                $data['item_data'] = $this->getAccount_data();                                
+            if(mysqli_query($this->connect, $SQL_QUERY_KICK)){                                                
+                $data['item_data'] = $this->getAccount_data();                                  
             }                                    
             return $data;
         }
     }
-
-    $newObj = new adminAddUser();
-    $data = $newObj->adminAdd($_POST['ajax_fname'], $_POST['ajax_lname'], $_POST['ajax_email']);
+    $newObj = new adminKickUser();
+    $data = $newObj->adminKickUser($_POST['ajax_email']);
     echo json_encode($data);
 ?>
-
