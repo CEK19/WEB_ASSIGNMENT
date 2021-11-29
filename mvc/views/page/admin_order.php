@@ -11,20 +11,13 @@
                 <div style="width: 80%;">
                     <h3 class="mb-3">Edit existed order</h3>
 
-                    <div class="d-flex">
-                        <div style="width: 20%;">
-                            <label class="form-label col-auto">id</label>
-                            <div class="col-10 mb-2">
-                                <input class="form-control" type="text">
-                            </div>
-                        </div>
+                    <label class="form-label col-auto">id</label>
+                    <div class="col-8 mb-2">
+                        <input class="form-control" type="number">
+                    </div>
 
-                        <div style="width: 70%;">
-                            <label class="form-label col-auto">email</label>
-                            <div class="col-8 mb-2">
-                                <input class="form-control" type="email">
-                            </div>
-                        </div>
+                    <div class="d-grid col-8 mb-5">
+                        <button class="btn btn-success">QUERY</button>
                     </div>
 
 

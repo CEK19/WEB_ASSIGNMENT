@@ -4,11 +4,23 @@
             return mysqli_query($this->connect, $sql);
         }
         
-        public function updateAccount($email, $password, $fname, $lname, $id){
-            $sql = "UPDATE account SET email = '$email', password = '$password',firstName = '$fname', lastName = '$lname' WHERE user_id = '$id'";
-            $query = $this->_query($sql);
-            return $query;
+        // public function updateAccount($email, $password, $fname, $lname, $id){
+        //     $sql = "UPDATE account SET email = '$email', password = '$password',firstName = '$fname', lastName = '$lname' WHERE user_id = '$id'";
+        //     $query = $this->_query($sql);
+        //     return $query;
+        // }
+
+
+        // _____________ SOME FUNCTION HERE ____________ //
+        // ============================================= //
+
+        public function updateOrder($id, $email ,$clothID, $category){
+            $SQL_COMMAND = "UPDATE orders SET clothID = '$clothID', category='$category', color='' WHERE id='$id', email='$email' ";
         }
+
+
+        // _______________ GET DATA FROM DATABASE ____________ //
+        // =================================================== //
 
         public function getOrder_data(){
             $SQL_QUERY = "SELECT id, email, clothID, category, color, size, quantity, phone, `address`, deliveryMethod, paymentMethod, cardNumber, `e-wallet` FROM orders";
