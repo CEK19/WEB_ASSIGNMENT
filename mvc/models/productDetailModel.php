@@ -47,8 +47,22 @@
             if($sumReview > 0){
                 $avgStart = $sumReview/$RETURN_DATA[0]['num_review'];
             }
-            $RETURN_DATA[0]['avg_star'] = round($avgStart, 1);                                
+            $RETURN_DATA[0]['avg_star'] = round($avgStart, 1);  
             return $RETURN_DATA;
         }
+
+        public function getCurrentUserName(){
+            $format_email = '"'.$_SESSION['email'].'"';
+            $SQL_LOAD_NAME = "SELECT firstName, lastName FROM account WHERE email={$format_email}";   
+            $result = mysqli_query($this->connect, $SQL_LOAD_NAME);
+            $RETURN_DATA = array();
+
+            if(mysqli_num_rows($result) > 0){
+                while($row = mysqli_fetch_assoc($result)){
+                    array_push($RETURN_DATA, $row) ;
+                }
+            }            
+            return $RETURN_DATA;
+        }        
     }
 ?>

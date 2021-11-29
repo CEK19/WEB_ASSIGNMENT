@@ -6,7 +6,7 @@
 
         public function loadCommentFunction($clothID, $category, $limit){                                                
             $format_CATEGORY = "'".$category."'";
-            $SQL_LOAD = "SELECT * FROM comments WHERE clothID={$clothID} AND category={$format_CATEGORY} LIMIT $limit"; 
+            $SQL_LOAD = "SELECT * FROM comments WHERE clothID={$clothID} AND category={$format_CATEGORY} ORDER BY id DESC LIMIT $limit"; 
             $result = mysqli_query($this->connect, $SQL_LOAD);      
             
             $RETURN_DATA = array();

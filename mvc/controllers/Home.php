@@ -76,12 +76,14 @@
         public function productDetail($category_product, $id_product){
             $MODEL = $this->model("productDetailModel");    
             $ITEM_DATA = $MODEL->get_info_base_category_clothid($category_product, $id_product);
+            $currentUser = $MODEL->getCurrentUserName();            
             $this->view("show", [
                 "content" => "product-detail",
                 "img_info" => $ITEM_DATA,
                 "category" => $category_product,
                 "id_product" => $id_product,
-                "countdata" => $this->count()
+                "countdata" => $this->count(),          
+                "name" => $currentUser
             ]);
         }
 

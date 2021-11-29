@@ -156,7 +156,7 @@
             <div class="table-responsive">
                 <table class="table table-striped align-middle table-hover table-bordered">
                     <tr>
-                        <th>id</th>
+                        <th>clothID</th>
                         <th>name</th>
                         <th>brand</th>
                         <th style="padding-right: 100px;">detail</th>

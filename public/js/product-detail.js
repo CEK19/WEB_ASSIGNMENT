@@ -321,5 +321,40 @@ $(document).ready(function(){
             }).done(function(result) {
                 $(".export-comment-area").html(result);
             });  
-        })
+        });
+
+    $("#submit-comment-but")
+        .click(function(){
+            let cmtText = $("textarea#text-comment-field").val();
+            let startCmt = $("#user-rating").val();
+            if(cmtText.length > 0 && startCmt > 0){                
+                $.ajax({
+                    url: './mvc/core/AJAX/addComment.php',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {
+                        ajax_category: category,
+                        ajax_clothid: clothID,                        
+                        ajax_star : startCmt,
+                        ajax_comment: cmtText
+                    }
+                }).done(function(result) {
+                    if(result.status_update == "successful" && result.status_add == "successful"){
+                        num_of_cmt = num_of_cmt + 1;
+                        $.ajax({
+                            url: './mvc/core/AJAX/loadComment.php',
+                            type: 'POST',
+                            dataType: 'html',
+                            data: {
+                                ajax_category: category,
+                                ajax_clothid: clothID,
+                                ajax_num_of_cmt: num_of_cmt
+                            }
+                        }).done(function(result) {
+                            $(".export-comment-area").html(result);
+                        });
+                    }
+                });          
+            }
+        });
 })

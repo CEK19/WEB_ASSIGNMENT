@@ -105,7 +105,7 @@
             <p style="color: #999999; font-weight: bold; ">REVIEWS </p>
 
             <!-- ---- write own commnet ---- -->
-            <div class="product-detail-comments-frame">
+            <div class="product-detail-comments-frame" style="<?php if($_SESSION['login'] == false) echo "display:none"?>">
                 <div class="product-detail-comments-account">
                     <div class="product-detail-comments-avatar">
                         <img src="./assets/img/av0.png" style="height: 100%; width: 100%;">
@@ -113,7 +113,9 @@
 
                     <div style="display: flex; flex-direction: column;">
                         <div class="product-detail-comments-name">
-                            Trong Ho
+                            <?php
+                                echo $data['name'][0]['firstName']." ".$data['name'][0]['lastName'];
+                            ?>
                         </div>                        
                     </div>
 
@@ -128,8 +130,8 @@
                 </div>
                 <div class="product-detail-comment" style="padding: 20px 20px 20px 20px;">
                     <form style="position: relative;">
-                        <textarea class="form-control" placeholder="Write your own comment here" spellcheck="false" style="height: 70px; min-height:70px;"></textarea>
-                        <a role="button">
+                        <textarea id="text-comment-field" name="text-comment-field" class="form-control" placeholder="Write your own comment here" spellcheck="false" style="height: 70px; min-height:70px;"></textarea>
+                        <a id="submit-comment-but" role="button">
                             <svg class="pd-send-icon" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.392127 7.04697C-0.129873 6.87297 -0.134873 6.59197 0.402127 6.41297L19.4891 0.0509739C20.0181 -0.125026 20.3211 0.170974 20.1731 0.688974L14.7191 19.775C14.5691 20.304 14.2641 20.322 14.0401 19.82L10.4461 11.732L16.4461 3.73197L8.44613 9.73197L0.392127 7.04697V7.04697Z" fill="black" />
                             </svg>
