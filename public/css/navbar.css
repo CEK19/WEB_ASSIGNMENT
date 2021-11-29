@@ -72,15 +72,15 @@
     display: inline-block;
   }
   
-  input {
+  /* input {
     float: none;
     border: 1px solid transparent;
     background-color: #f86d6d;
     padding: 15px;
     font-size: 16px;
-  }
+  } */
   
-  input[type=text] {
+  .autocomplete input[type=text] {
     float: none;
     padding: 6px;
     margin-top: 8px;
