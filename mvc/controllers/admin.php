@@ -9,7 +9,8 @@
 
             require_once "./mvc/core/basehref.php";
             $this->view("adminpage", [
-                "content" => "admin_account"
+                "content" => "admin_account",
+                "item_data" => $ITEM_DATA
             ]);
         }
 
