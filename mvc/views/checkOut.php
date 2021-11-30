@@ -272,7 +272,7 @@ $home_url = getUrl() . '/';
 
                         <div class="d-flex flex-row justify-content-between align-items-center ms-1 me-1">
                             <p class="mb-0">Delivery</p>
-                            <p class="mb-0">40.00 $</p>
+                            <p id="fast-deli" class="mb-0">40.00 $</p>
                         </div>
                     </div>
 
@@ -294,8 +294,13 @@ $home_url = getUrl() . '/';
     <script src="assets/js/signUp.js"></script>
     <script>
         function fixtotal() {
-            ship = document.querySelector('input[name="delivery-method"]:checked').value;
-            // console.log(ship);
+            var ship = document.querySelector('input[name="delivery-method"]:checked').value;
+            if(ship == 40){
+                document.getElementById("fast-deli").innerHTML = '40.00 $';
+            }
+            else{
+                document.getElementById("fast-deli").innerHTML = '20.00 $';
+            }
             var price = document.getElementsByClassName('price_sp');
             var quanti = document.getElementsByClassName('quantity_sp');
             var sum = 0;
