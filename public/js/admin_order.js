@@ -2,7 +2,12 @@ $(document).ready(function(){
     $("#admin-order-query-but")
         .click(function(){
             let email = $("#text-query-email").val();
-            window.location.href = "./?url=Admin/order_query/" + email;  // Sadly this reloads]
+            if(email.length > 0){
+                window.location.href = "./?url=Admin/order_query/" + email;  // Sadly this reloads]
+            }
+            else{
+                alert("SELECT EMAIL");
+            }
         })
 
     $(".del-order-but")

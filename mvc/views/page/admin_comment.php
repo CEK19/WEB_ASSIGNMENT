@@ -33,7 +33,7 @@
                             <td><?php echo $item['star']; ?></td>
                             <td><?php echo $item['comment']; ?></td>
                             <td>
-                                <button class="btn btn-danger">Del</button>
+                                <button class="del-cmt-btn-admin btn btn-danger">Del</button>
                             </td>
                         </tr>
 
@@ -48,3 +48,4 @@
 
     </div>
 </div>
+<script type="text/javascript" src="./public/js/admin_comment.js"></script>
