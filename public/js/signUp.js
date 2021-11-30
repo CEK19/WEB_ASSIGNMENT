@@ -53,9 +53,9 @@ function validattion() {
 
     // check Password
     let password = document.forms["my_form"]["password"].value;
-    if (password.length < 2 || password.length > 30) {
+    if (password.length < 10 || password.length > 30) {
         isError = true
-        msg += "Your password length must be from 2 to 30\n"
+        msg += "Your password length must be from 10 to 30\n"
     }
 
     // check valid date
