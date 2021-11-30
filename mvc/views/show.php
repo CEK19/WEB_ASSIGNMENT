@@ -1,11 +1,14 @@
 <?php
-// require_once "./mvc/core/basehref.php";
-// $home_url = getUrl().'/';
+require_once "./mvc/core/basehref.php";
+$home_url = getUrl().'/';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <?php
+    echo "<base href='${home_url}'>";
+    ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

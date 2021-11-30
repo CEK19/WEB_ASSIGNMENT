@@ -45,11 +45,14 @@ class checkOut extends controller
         header("Location: " . getUrl(). "/checkOut");
     }
     public function delete_shoppingbag(){
-        require_once "./mvc/core/basehref.php";
+        // require_once "./mvc/core/basehref.php";
         $result = $this->model('checkoutModel')->delete_bag();
         echo "<script>alert('Success payment')</script>";
 
-        $this->view("checkOut",["countdata" => $this->count()]);
+        $this->view("checkOut", [
+            "info_login"=> "NONE ITEM IN YOUR BAG",
+            "countdata" => $this->count()
+        ]);
 
     }
 }
