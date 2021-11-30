@@ -59,11 +59,13 @@
 
                                 <div class="d-flex row ms-0 me-0">
                                     <select name="colors[]" class="form-select me-2 mb-1 Sb-detail-color" style="width:21%">
+                                        <option value="<?php echo $item['color'] ?>" selected><?php echo $item['color'] ?></option>
                                         <option value="black">Black</option>
                                         <option value="white">White</option>
                                     </select>
 
                                     <select name="sizes[]" class="form-select me-2 mb-1 Sb-detail-size" style="width:15%">
+                                        <option value="<?php echo $item['size'] ?>" selected><?php echo $item['size'] ?></option>
                                         <option value="S">S</option>
                                         <option value="M">M</option>
                                         <option value="L">L</option>
@@ -71,6 +73,7 @@
                                     </select>
 
                                     <select name="quantities[]" class="form-select mb-1 Sb-detail-quantity quantity_sp" onchange="fixtotal()" style="width:22%">
+                                        <option value="<?php echo $item['quantity'] ?>" selected><?php echo $item['quantity'] ?></option>
                                         <option value="1">Qty 1</option>
                                         <option value="2">Qty 2</option>
                                         <option value="3">Qty 3</option>

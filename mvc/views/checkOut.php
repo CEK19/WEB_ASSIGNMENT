@@ -61,7 +61,7 @@ $home_url = getUrl() . '/';
             <!-- ========================== -->
             <div class="CO-left">
                 <div class="ps-4 pe-5 pt-4 pb-4">
-                    <form>
+                    <form action="checkOut/delete_shoppingbag" method="post">
                         <h4>Delivery Address</h4>
                         <div class="ps-4 pe-4">
                             <label class="form-label">User Name</label>
@@ -205,7 +205,7 @@ $home_url = getUrl() . '/';
                             <hr class="mt-4 mb-4">
 
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-success">
+                                <button type="submit" class="btn btn-success" onsubmit="success_order()">
                                     <h5 class="mb-1 mt-1">ORDER</h5>
                                 </button>
                             </div>
@@ -221,7 +221,7 @@ $home_url = getUrl() . '/';
                 <div class="ps-3 pe-4 pt-3 pb-3">
                     <div class="d-flex flex-row justify-content-between align-items-center">
                         <div class="d-flex flex-row ps-1">
-                            <h4 class="mb-0">3 &nbsp;</h4>
+                            <h4 class="mb-0"><?php echo $data['countdata']; ?>  &nbsp;</h4>
                             <h4 class="mb-0">Items</h4>
                         </div>
                         <a class="mb-0 CO-edit pe-2" href="?url=Home/shopping_bag">Edit</a>
@@ -311,6 +311,9 @@ $home_url = getUrl() . '/';
             add2.innerText = String(sum) + " $";
             add.innerText = String(total) + " $";
 
+        }
+        function success_order(){
+            alert("Success order");
         }
         fixtotal();
     </script>

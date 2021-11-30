@@ -10,6 +10,11 @@
             $query = $this->_query($sql);
             return $query;
         }
-    
+        public function delete_bag(){
+            $email = $_SESSION['email'];
+            $sql = "DELETE FROM shopping_bag WHERE email = '$email'";
+            $query = $this->_query($sql);
+            return 0;
+        }
     }
 ?>

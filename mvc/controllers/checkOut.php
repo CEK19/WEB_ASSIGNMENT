@@ -4,7 +4,14 @@ use function PHPSTORM_META\type;
 
 class checkOut extends controller
 {
-
+    public function count(){
+        if(isset($_SESSION['email'])){
+            return $count = $this->model('loginModel')->count_product_shopping_bag($_SESSION['email']);
+        }
+        else{
+            return 0;
+        }
+     }
     public function viewHome()
     {
         $MODEL = $this->model("shopping_bagModel");
@@ -20,7 +27,8 @@ class checkOut extends controller
             }   
             $this->view("checkOut", [
                 "img_info"=> $ITEM_DATA,
-                "info_login"=> $INFO_LOGIN
+                "info_login"=> $INFO_LOGIN,
+                "countdata" => $this->count()
             ]);
        
     }
@@ -35,6 +43,14 @@ class checkOut extends controller
             $temp = $this->model('checkoutModel')->update_shopping_bag($colors[$i], $sizes[$i], $quantities[$i], $ids[$i]);
         }
         header("Location: " . getUrl(). "/checkOut");
+    }
+    public function delete_shoppingbag(){
+        require_once "./mvc/core/basehref.php";
+        $result = $this->model('checkoutModel')->delete_bag();
+        echo "<script>alert('Success payment')</script>";
+
+        $this->view("checkOut",["countdata" => $this->count()]);
+
     }
 }
 ?>
