@@ -192,8 +192,8 @@ CREATE TABLE `account` (
 --
 
 INSERT INTO `account` (`user_id`, `firstName`, `lastName`, `birthday`, `email`, `password`, `level`) VALUES
-(1, 'Admin', 'Admin', '2001-02-13', 'admin.admin@hcmut.edu.vn', '8c649e23ba34274f603b93d38e8840eb', 1),
-(2, 'Admin', 'Admin', '2001-02-13', 'admin2.admin@hcmut.edu.vn', '8c649e23ba34274f603b93d38e8840eb', 1),
+(1, 'Admin', 'Admin', '2001-02-13', 'admin.admin@hcmut.edu.vn', '8c649e23ba34274f603b93d38e8840eb', 2),
+(2, 'Admin', 'Admin', '2001-02-13', 'admin2.admin@hcmut.edu.vn', '8c649e23ba34274f603b93d38e8840eb', 2),
 (3, 'Tu', 'Le', '2001-02-13', 'tu.user@hcmut.edu.vn', 'c5edba99599009bfa7b950c5c42825a0', 1),
 (4, 'Nhan', 'Nguyen', '2001-12-13', 'nhan.user@hcmut.edu.vn', 'd2ad33faa1e2dd36709b17470b87e294', 1),
 (5, 'Cong', 'Vu', '2001-07-13', 'cong.user@hcmut.edu.vn', 'bcbc63d8f601f17bd120890b8abb7578', 1),
