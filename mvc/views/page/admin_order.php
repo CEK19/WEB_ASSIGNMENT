@@ -13,11 +13,11 @@
 
                     <label class="form-label col-auto">Email</label>
                     <div class="col-8 mb-2">
-                        <input class="form-control" type="text">
+                        <input id="text-query-email" class="form-control" type="text">
                     </div>
 
                     <div class="d-grid col-8 mb-5">
-                        <button class="btn btn-success">QUERY BASED ON EMAIL</button>
+                        <button type="button" id="admin-order-query-but" class="btn btn-success">QUERY BASED ON EMAIL</button>
                     </div>
                 </div>
 
@@ -66,7 +66,7 @@
                                 <td><?php echo $item['cardNumber']; ?></td>
                                 <td><?php echo $item['e-wallet']; ?></td>
                                 <td>
-                                    <button class="btn btn-danger">Del</button>
+                                    <button type="button" class="btn btn-danger del-order-but">Del</button>
                                 </td>
                             </tr>
 
@@ -74,32 +74,10 @@
                         }
                     }
                     ?>
-
-
-
-                    <!-- <tr>
-                        <td>2</td>
-                        <td>tu.user@hcmut.edu.vn</td>
-                        <td>15</td>
-                        <td>pants_jeans</td>
-                        <td>black</td>
-                        <td>M</td>
-                        <td>2</td>
-                        <td>0915882863</td>
-                        <td>Bình Hưng Hòa, Ga Hòa Hưng, kênh nhiêu lộc</td>
-                        <td>fast</td>
-                        <td>card</td>
-                        <td>123087653</td>
-                        <td>paypal</td>
-                        <td>
-                            <button class="btn btn-danger">Del</button>
-                        </td>
-                    </tr> -->
-
                 </table>
             </div>
         </form>
     </div>
 </div>
 
-<!-- <script type="text/javascript" src="./public/js/admin_account.js"></script> -->
+<script type="text/javascript" src="./public/js/admin_order.js"></script>

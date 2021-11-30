@@ -36,6 +36,16 @@
             ]);
         }
 
+        public function order_query($email){
+            // require_once "./mvc/core/basehref.php";
+            $MODEL = $this->model("adminModel");
+            $ITEM_DATA = $MODEL->queryFunc($email);            
+            $this->view("adminpage", [
+                "content" => "admin_order",
+                "item_data" => $ITEM_DATA
+            ]);
+        }
+
         public function comment(){
             require_once "./mvc/core/basehref.php";
             $MODEL = $this->model("adminModel");

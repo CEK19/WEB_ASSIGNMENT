@@ -69,5 +69,20 @@
             }                        
             return $RETURN_DATA;
         }
+
+        public function queryFunc($email){
+            $format_email = "'".$email."'";
+
+            $SQL_QUERY = "SELECT id, email, clothID, category, color, size, quantity, phone, `address`, deliveryMethod, paymentMethod, cardNumber, `e-wallet` FROM orders WHERE email = {$format_email}";
+            $RESULT = mysqli_query($this->connect, $SQL_QUERY);                         
+            $RETURN_DATA = array();                                               
+            if(mysqli_num_rows($RESULT) > 0){                           
+                while($row = mysqli_fetch_assoc($RESULT)){              
+                    array_push($RETURN_DATA, $row);                  
+                }
+            }                                    
+            return $RETURN_DATA;
+        }
+        
     }
 ?>
